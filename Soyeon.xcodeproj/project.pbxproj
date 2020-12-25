@@ -36,6 +36,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0067AC21259632900005AD86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */,
+				D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */,
+				D8795C4D258E6A2500DF4D64 /* Info.plist */,
+				D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D8795C33258E6A2100DF4D64 = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +66,8 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
-				D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */,
-				D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */,
+				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
-				D8795C48258E6A2500DF4D64 /* Assets.xcassets */,
-				D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */,
-				D8795C4D258E6A2500DF4D64 /* Info.plist */,
 				D8795C55258E819800DF4D64 /* Resources */,
 			);
 			path = Soyeon;
@@ -69,6 +76,7 @@
 		D8795C55258E819800DF4D64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8795C48258E6A2500DF4D64 /* Assets.xcassets */,
 				D8795C56258E81B700DF4D64 /* NanumSquareRoundR.ttf */,
 			);
 			path = Resources;
@@ -90,6 +98,8 @@
 			dependencies = (
 			);
 			name = Soyeon;
+			packageProductDependencies = (
+			);
 			productName = Soyeon;
 			productReference = D8795C3C258E6A2100DF4D64 /* Soyeon.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +128,8 @@
 				Base,
 			);
 			mainGroup = D8795C33258E6A2100DF4D64;
+			packageReferences = (
+			);
 			productRefGroup = D8795C3D258E6A2100DF4D64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,7 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Soyeon/Info.plist;
+				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Soyeon/Info.plist;
+				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
