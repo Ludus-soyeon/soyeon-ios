@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Soyeon
 //
-//  Created by Cho Junyeong on 2020/12/20.
+//  Created by junyng on 2020/12/20.
 //  Copyright © 2020 ludus. All rights reserved.
 //
 
