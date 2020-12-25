@@ -1,0 +1,19 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Force Xcode 12
+      run: sudo xcode-select -switch /Applications/Xcode_12.3.app
+    - name: Build
+      run: swift build -v
