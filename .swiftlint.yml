@@ -1,0 +1,13 @@
+disabled_rules:
+- leading_whitespace
+- trailing_whitespace
+
+opt_in_rules:
+identifier_name:
+    min_length:
+        warning: 1
+
+excluded:
+- Supporting Files
+- Pods
+- Soyeon-package

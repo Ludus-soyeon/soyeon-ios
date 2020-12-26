@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
+		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
 		D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
+		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,11 +54,31 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		572976794A38FB21146A1A93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */,
+				0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		987D4D40C92AB7DA7A4AEC60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8795C33258E6A2100DF4D64 = {
 			isa = PBXGroup;
 			children = (
+				00B3719E25973A65003F6C76 /* .swiftlint.yml */,
 				D8795C3E258E6A2100DF4D64 /* Soyeon */,
 				D8795C3D258E6A2100DF4D64 /* Products */,
+				572976794A38FB21146A1A93 /* Pods */,
+				987D4D40C92AB7DA7A4AEC60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,17 +116,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8795C50258E6A2500DF4D64 /* Build configuration list for PBXNativeTarget "Soyeon" */;
 			buildPhases = (
+				D204F10CB571E3CCF05AD57C /* [CP] Check Pods Manifest.lock */,
 				D8795C38258E6A2100DF4D64 /* Sources */,
 				D8795C39258E6A2100DF4D64 /* Frameworks */,
 				D8795C3A258E6A2100DF4D64 /* Resources */,
+				00B371A125973AC2003F6C76 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Soyeon;
-			packageProductDependencies = (
-			);
 			productName = Soyeon;
 			productReference = D8795C3C258E6A2100DF4D64 /* Soyeon.app */;
 			productType = "com.apple.product-type.application";
@@ -128,8 +155,6 @@
 				Base,
 			);
 			mainGroup = D8795C33258E6A2100DF4D64;
-			packageReferences = (
-			);
 			productRefGroup = D8795C3D258E6A2100DF4D64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
@@ -151,6 +177,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B371A125973AC2003F6C76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		D204F10CB571E3CCF05AD57C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Soyeon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8795C38258E6A2100DF4D64 /* Sources */ = {
@@ -300,6 +368,7 @@
 		};
 		D8795C51258E6A2500DF4D64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +386,7 @@
 		};
 		D8795C52258E6A2500DF4D64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
