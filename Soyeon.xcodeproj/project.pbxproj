@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
+		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
+		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
+		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
+		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
+		00B371AD25973E86003F6C76 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -28,7 +34,6 @@
 		D8795C48258E6A2500DF4D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8795C56258E81B700DF4D64 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +108,10 @@
 		D8795C55258E819800DF4D64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00B371AD25973E86003F6C76 /* NanumSquareB.ttf */,
+				00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */,
+				00B371AB25973E86003F6C76 /* NanumSquareR.ttf */,
 				D8795C48258E6A2500DF4D64 /* Assets.xcassets */,
-				D8795C56258E81B700DF4D64 /* NanumSquareRoundR.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,8 +176,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
+				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
+				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
 			);
