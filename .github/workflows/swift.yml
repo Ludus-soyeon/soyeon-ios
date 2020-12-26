@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Force Xcode 12
-      run: sudo xcode-select -switch /Applications/Xcode_12.3.app
+    - name: Force Xcode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.5.app
     - name: Build
       run: swift build -v
