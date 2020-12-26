@@ -2,4 +2,4 @@
 
 set -eo pipefail
 
-cd Soyeon-package; swift build --parallel; cd..
+cd Soyeon-package; swift build; cd ..

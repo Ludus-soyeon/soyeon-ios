@@ -2,7 +2,6 @@
 
 set -eo pipefail
 
-xcodebuild -workspace Soyeon.xcodeproj \
+xcodebuild -project Soyeon.xcodeproj \
             -scheme Soyeon \
-            -destination platform=iOS\ Simulator,OS=13.3,name=iPhone\ 11 \
-	    clean test | xcpretty
+            -destination platform=iOS\ Simulator,OS=14.2,name=iPhone\ 11 \
