@@ -37,9 +37,9 @@ extension AgreementInteractor: AgreementViewControllerOutput {
     // MARK: - Business logic
     func updateAgreements(_ item: Agreement.Request) {
         var item = item
-        var target = item.agreement
-        worker.nagativeValue(&target.1)
-        item.agreements.setButtonState(target)
+        worker.nagativeValue(&item.state)
+        item.agreements.setButtonState(item.buttonType,
+                                       state: item.state)
         
         output.present(response: Agreement.Response(agreements: item.agreements))
         

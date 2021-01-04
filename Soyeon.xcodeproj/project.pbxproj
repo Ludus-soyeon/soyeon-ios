@@ -13,15 +13,15 @@
 		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
-		0AA81E61259F7C2A002E365A /* AgreementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E52259F7C2A002E365A /* AgreementViewModel.swift */; };
-		0AA81E62259F7C2A002E365A /* AgreementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E54259F7C2A002E365A /* AgreementPresenter.swift */; };
-		0AA81E63259F7C2A002E365A /* AgreementCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E56259F7C2A002E365A /* AgreementCustomButtons.swift */; };
-		0AA81E64259F7C2A002E365A /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E57259F7C2A002E365A /* AgreementViewController.swift */; };
-		0AA81E65259F7C2A002E365A /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA81E58259F7C2A002E365A /* AgreementViewController.xib */; };
-		0AA81E66259F7C2A002E365A /* AgreementConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E5A259F7C2A002E365A /* AgreementConfigurator.swift */; };
-		0AA81E67259F7C2A002E365A /* AgreementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E5C259F7C2A002E365A /* AgreementWorker.swift */; };
-		0AA81E68259F7C2A002E365A /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E5E259F7C2A002E365A /* AgreementInteractor.swift */; };
-		0AA81E69259F7C2A002E365A /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81E60259F7C2A002E365A /* AgreementRouter.swift */; };
+		1D19083925A9EEF9008210D1 /* AgreementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19082A25A9EEF9008210D1 /* AgreementViewModel.swift */; };
+		1D19083A25A9EEF9008210D1 /* AgreementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19082C25A9EEF9008210D1 /* AgreementPresenter.swift */; };
+		1D19083B25A9EEF9008210D1 /* AgreementCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19082E25A9EEF9008210D1 /* AgreementCustomButtons.swift */; };
+		1D19083C25A9EEF9008210D1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19082F25A9EEF9008210D1 /* AgreementViewController.swift */; };
+		1D19083D25A9EEF9008210D1 /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D19083025A9EEF9008210D1 /* AgreementViewController.xib */; };
+		1D19083E25A9EEF9008210D1 /* AgreementConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19083225A9EEF9008210D1 /* AgreementConfigurator.swift */; };
+		1D19083F25A9EEF9008210D1 /* AgreementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19083425A9EEF9008210D1 /* AgreementWorker.swift */; };
+		1D19084025A9EEF9008210D1 /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19083625A9EEF9008210D1 /* AgreementInteractor.swift */; };
+		1D19084125A9EEF9008210D1 /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19083825A9EEF9008210D1 /* AgreementRouter.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -37,16 +37,16 @@
 		00B371AD25973E86003F6C76 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		0AA81E52259F7C2A002E365A /* AgreementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewModel.swift; sourceTree = "<group>"; };
-		0AA81E54259F7C2A002E365A /* AgreementPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementPresenter.swift; sourceTree = "<group>"; };
-		0AA81E56259F7C2A002E365A /* AgreementCustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementCustomButtons.swift; sourceTree = "<group>"; };
-		0AA81E57259F7C2A002E365A /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
-		0AA81E58259F7C2A002E365A /* AgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgreementViewController.xib; sourceTree = "<group>"; };
-		0AA81E5A259F7C2A002E365A /* AgreementConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementConfigurator.swift; sourceTree = "<group>"; };
-		0AA81E5C259F7C2A002E365A /* AgreementWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementWorker.swift; sourceTree = "<group>"; };
-		0AA81E5E259F7C2A002E365A /* AgreementInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementInteractor.swift; sourceTree = "<group>"; };
-		0AA81E60259F7C2A002E365A /* AgreementRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementRouter.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
+		1D19082A25A9EEF9008210D1 /* AgreementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewModel.swift; sourceTree = "<group>"; };
+		1D19082C25A9EEF9008210D1 /* AgreementPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementPresenter.swift; sourceTree = "<group>"; };
+		1D19082E25A9EEF9008210D1 /* AgreementCustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementCustomButtons.swift; sourceTree = "<group>"; };
+		1D19082F25A9EEF9008210D1 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		1D19083025A9EEF9008210D1 /* AgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgreementViewController.xib; sourceTree = "<group>"; };
+		1D19083225A9EEF9008210D1 /* AgreementConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementConfigurator.swift; sourceTree = "<group>"; };
+		1D19083425A9EEF9008210D1 /* AgreementWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementWorker.swift; sourceTree = "<group>"; };
+		1D19083625A9EEF9008210D1 /* AgreementInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementInteractor.swift; sourceTree = "<group>"; };
+		1D19083825A9EEF9008210D1 /* AgreementRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementRouter.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,82 +81,74 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0AA81E4F259F7C2A002E365A /* Agreement */ = {
+		1D19082825A9EEF9008210D1 /* Agreement */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E50259F7C2A002E365A /* Agreement */,
+				1D19082925A9EEF9008210D1 /* ViewModel */,
+				1D19082B25A9EEF9008210D1 /* Presenter */,
+				1D19082D25A9EEF9008210D1 /* View */,
+				1D19083125A9EEF9008210D1 /* Configurator */,
+				1D19083325A9EEF9008210D1 /* Worker */,
+				1D19083525A9EEF9008210D1 /* Interactor */,
+				1D19083725A9EEF9008210D1 /* Router */,
 			);
 			path = Agreement;
 			sourceTree = "<group>";
 		};
-		0AA81E50259F7C2A002E365A /* Agreement */ = {
+		1D19082925A9EEF9008210D1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E51259F7C2A002E365A /* ViewModel */,
-				0AA81E53259F7C2A002E365A /* Presenter */,
-				0AA81E55259F7C2A002E365A /* View */,
-				0AA81E59259F7C2A002E365A /* Configurator */,
-				0AA81E5B259F7C2A002E365A /* Worker */,
-				0AA81E5D259F7C2A002E365A /* Interactor */,
-				0AA81E5F259F7C2A002E365A /* Router */,
-			);
-			path = Agreement;
-			sourceTree = "<group>";
-		};
-		0AA81E51259F7C2A002E365A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				0AA81E52259F7C2A002E365A /* AgreementViewModel.swift */,
+				1D19082A25A9EEF9008210D1 /* AgreementViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		0AA81E53259F7C2A002E365A /* Presenter */ = {
+		1D19082B25A9EEF9008210D1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E54259F7C2A002E365A /* AgreementPresenter.swift */,
+				1D19082C25A9EEF9008210D1 /* AgreementPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		0AA81E55259F7C2A002E365A /* View */ = {
+		1D19082D25A9EEF9008210D1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E56259F7C2A002E365A /* AgreementCustomButtons.swift */,
-				0AA81E57259F7C2A002E365A /* AgreementViewController.swift */,
-				0AA81E58259F7C2A002E365A /* AgreementViewController.xib */,
+				1D19082E25A9EEF9008210D1 /* AgreementCustomButtons.swift */,
+				1D19082F25A9EEF9008210D1 /* AgreementViewController.swift */,
+				1D19083025A9EEF9008210D1 /* AgreementViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0AA81E59259F7C2A002E365A /* Configurator */ = {
+		1D19083125A9EEF9008210D1 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E5A259F7C2A002E365A /* AgreementConfigurator.swift */,
+				1D19083225A9EEF9008210D1 /* AgreementConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		0AA81E5B259F7C2A002E365A /* Worker */ = {
+		1D19083325A9EEF9008210D1 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E5C259F7C2A002E365A /* AgreementWorker.swift */,
+				1D19083425A9EEF9008210D1 /* AgreementWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
 		};
-		0AA81E5D259F7C2A002E365A /* Interactor */ = {
+		1D19083525A9EEF9008210D1 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E5E259F7C2A002E365A /* AgreementInteractor.swift */,
+				1D19083625A9EEF9008210D1 /* AgreementInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		0AA81E5F259F7C2A002E365A /* Router */ = {
+		1D19083725A9EEF9008210D1 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E60259F7C2A002E365A /* AgreementRouter.swift */,
+				1D19083825A9EEF9008210D1 /* AgreementRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -200,7 +192,7 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81E4F259F7C2A002E365A /* Agreement */,
+				1D19082825A9EEF9008210D1 /* Agreement */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -284,7 +276,7 @@
 				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
-				0AA81E65259F7C2A002E365A /* AgreementViewController.xib in Resources */,
+				1D19083D25A9EEF9008210D1 /* AgreementViewController.xib in Resources */,
 				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
@@ -341,18 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA81E63259F7C2A002E365A /* AgreementCustomButtons.swift in Sources */,
+				1D19083B25A9EEF9008210D1 /* AgreementCustomButtons.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
-				0AA81E61259F7C2A002E365A /* AgreementViewModel.swift in Sources */,
-				0AA81E66259F7C2A002E365A /* AgreementConfigurator.swift in Sources */,
-				0AA81E69259F7C2A002E365A /* AgreementRouter.swift in Sources */,
+				1D19083925A9EEF9008210D1 /* AgreementViewModel.swift in Sources */,
+				1D19083E25A9EEF9008210D1 /* AgreementConfigurator.swift in Sources */,
+				1D19084125A9EEF9008210D1 /* AgreementRouter.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
-				0AA81E62259F7C2A002E365A /* AgreementPresenter.swift in Sources */,
-				0AA81E67259F7C2A002E365A /* AgreementWorker.swift in Sources */,
-				0AA81E68259F7C2A002E365A /* AgreementInteractor.swift in Sources */,
-				0AA81E64259F7C2A002E365A /* AgreementViewController.swift in Sources */,
+				1D19083A25A9EEF9008210D1 /* AgreementPresenter.swift in Sources */,
+				1D19083F25A9EEF9008210D1 /* AgreementWorker.swift in Sources */,
+				1D19084025A9EEF9008210D1 /* AgreementInteractor.swift in Sources */,
+				1D19083C25A9EEF9008210D1 /* AgreementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

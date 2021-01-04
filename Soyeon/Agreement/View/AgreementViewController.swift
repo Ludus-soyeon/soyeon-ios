@@ -31,7 +31,7 @@ final class AgreementViewController: UIViewController {
 
     // MARK: - Initializers
 
-    init(configurator: AgreementConfigurator = AgreementConfigurator.sharedInstance) {
+    init(configurator: AgreementConfigurator = AgreementConfigurator.shared) {
         
         super.init(nibName: nil, bundle: nil)
 
@@ -47,7 +47,7 @@ final class AgreementViewController: UIViewController {
 
     // MARK: - Configurator
 
-    private func configure(configurator: AgreementConfigurator = AgreementConfigurator.sharedInstance) {
+    private func configure(configurator: AgreementConfigurator = AgreementConfigurator.shared) {
 
         configurator.configure(viewController: self)
     }
@@ -64,7 +64,8 @@ final class AgreementViewController: UIViewController {
             let state = viewModel.getButtonState(type)
              
             output.updateAgreements(Agreement.Request(agreements: viewModel.agreements,
-                                                     agreement: (type, state)))
+                                                      buttonType: type,
+                                                      state: state))
         }
         
     }
