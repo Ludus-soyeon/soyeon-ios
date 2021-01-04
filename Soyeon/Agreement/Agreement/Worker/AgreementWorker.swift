@@ -12,7 +12,7 @@ class AgreementWorker {
 
     // MARK: - Business Logic
     func nagativeValue(_ value: inout Bool) {
-        value = !value
+        value.toggle()
     }
  
 }

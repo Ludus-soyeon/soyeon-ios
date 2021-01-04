@@ -9,8 +9,7 @@
 import UIKit
 
 enum Agreement {
-    
-    typealias AgreementType = (AgreementButtonTag, Bool)
+     
     enum AgreementButtonTag: Int {
         case all            = 100
         case privacy        = 101
@@ -35,10 +34,8 @@ enum Agreement {
             }
         }
         
-        mutating func setButtonState(_ type: AgreementType) {
-            let buttonType = type.0
-            let state = type.1
-            
+        mutating func setButtonState(_ buttonType: AgreementButtonTag,
+                                     state: Bool) {
             switch buttonType {
             case .all:
                 all = state
@@ -54,7 +51,8 @@ enum Agreement {
     
     struct Request {
         var agreements: Agreements
-        let agreement: AgreementType
+        let buttonType: AgreementButtonTag
+        var state: Bool
     }
     
     struct Response {

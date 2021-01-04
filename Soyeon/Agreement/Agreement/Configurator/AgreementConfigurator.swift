@@ -12,7 +12,7 @@ final class AgreementConfigurator {
 
     // MARK: - Singleton
 
-    static let sharedInstance: AgreementConfigurator = AgreementConfigurator()
+    static let shared: AgreementConfigurator = AgreementConfigurator()
 
     // MARK: - Configuration
 
