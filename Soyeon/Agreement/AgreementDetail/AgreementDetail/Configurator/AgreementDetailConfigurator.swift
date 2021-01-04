@@ -11,7 +11,7 @@ import UIKit
 final class AgreementDetailConfigurator {
  
     // MARK: - Singleton
-    static let sharedInstance: AgreementDetailConfigurator = AgreementDetailConfigurator()
+    static let shared: AgreementDetailConfigurator = AgreementDetailConfigurator()
  
     // MARK: - Configuration 
     func configure(viewController: AgreementDetailViewController) {

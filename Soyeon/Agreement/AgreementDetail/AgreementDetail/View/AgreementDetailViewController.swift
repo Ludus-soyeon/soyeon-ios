@@ -30,7 +30,7 @@ final class AgreementDetailViewController: UIViewController {
     // MARK: - Initializers
 
     init(type: AgreementDetail.AgreementDetailType,
-         configurator: AgreementDetailConfigurator = AgreementDetailConfigurator.sharedInstance) {
+         configurator: AgreementDetailConfigurator = AgreementDetailConfigurator.shared) {
         
         super.init(nibName: nil, bundle: nil)
         
@@ -48,7 +48,7 @@ final class AgreementDetailViewController: UIViewController {
     }
  
     // MARK: - Configurator
-    private func configure(configurator: AgreementDetailConfigurator = AgreementDetailConfigurator.sharedInstance) {
+    private func configure(configurator: AgreementDetailConfigurator = AgreementDetailConfigurator.shared) {
 
         configurator.configure(viewController: self)
     }
