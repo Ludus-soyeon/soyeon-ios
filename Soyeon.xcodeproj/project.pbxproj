@@ -12,7 +12,7 @@
 		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
 		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
-		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
+		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; }; 
 		0AA81EB725A0341A002E365A /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EA825A0341A002E365A /* AgreementDetailViewModel.swift */; };
 		0AA81EB825A0341A002E365A /* DetailContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EA925A0341A002E365A /* DetailContents.swift */; };
 		0AA81EB925A0341A002E365A /* AgreementDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EAB25A0341A002E365A /* AgreementDetailPresenter.swift */; };
@@ -21,7 +21,7 @@
 		0AA81EBC25A0341A002E365A /* AgreementDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EB025A0341A002E365A /* AgreementDetailConfigurator.swift */; };
 		0AA81EBD25A0341A002E365A /* AgreementDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EB225A0341A002E365A /* AgreementDetailWorker.swift */; };
 		0AA81EBE25A0341A002E365A /* AgreementDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EB425A0341A002E365A /* AgreementDetailInteractor.swift */; };
-		0AA81EBF25A0341A002E365A /* AgreementDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EB625A0341A002E365A /* AgreementDetailRouter.swift */; };
+		0AA81EBF25A0341A002E365A /* AgreementDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA81EB625A0341A002E365A /* AgreementDetailRouter.swift */; }; 
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -47,6 +47,15 @@
 		0AA81EB425A0341A002E365A /* AgreementDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailInteractor.swift; sourceTree = "<group>"; };
 		0AA81EB625A0341A002E365A /* AgreementDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailRouter.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
+		1D19082A25A9EEF9008210D1 /* AgreementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewModel.swift; sourceTree = "<group>"; };
+		1D19082C25A9EEF9008210D1 /* AgreementPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementPresenter.swift; sourceTree = "<group>"; };
+		1D19082E25A9EEF9008210D1 /* AgreementCustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementCustomButtons.swift; sourceTree = "<group>"; };
+		1D19082F25A9EEF9008210D1 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		1D19083025A9EEF9008210D1 /* AgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgreementViewController.xib; sourceTree = "<group>"; };
+		1D19083225A9EEF9008210D1 /* AgreementConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementConfigurator.swift; sourceTree = "<group>"; };
+		1D19083425A9EEF9008210D1 /* AgreementWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementWorker.swift; sourceTree = "<group>"; };
+		1D19083625A9EEF9008210D1 /* AgreementInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementInteractor.swift; sourceTree = "<group>"; };
+		1D19083825A9EEF9008210D1 /* AgreementRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementRouter.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +89,7 @@
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EA525A0341A002E365A /* AgreementDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,56 +117,56 @@
 			isa = PBXGroup;
 			children = (
 				0AA81EA825A0341A002E365A /* AgreementDetailViewModel.swift */,
-				0AA81EA925A0341A002E365A /* DetailContents.swift */,
+				0AA81EA925A0341A002E365A /* DetailContents.swift */, 
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EAA25A0341A002E365A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81EAB25A0341A002E365A /* AgreementDetailPresenter.swift */,
+				0AA81EAB25A0341A002E365A /* AgreementDetailPresenter.swift */, 
 			);
 			path = Presenter;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EAC25A0341A002E365A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				0AA81EAD25A0341A002E365A /* AgreementDetailViewController.xib */,
-				0AA81EAE25A0341A002E365A /* AgreementDetailViewController.swift */,
+				0AA81EAE25A0341A002E365A /* AgreementDetailViewController.swift */, 
 			);
 			path = View;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EAF25A0341A002E365A /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81EB025A0341A002E365A /* AgreementDetailConfigurator.swift */,
+				0AA81EB025A0341A002E365A /* AgreementDetailConfigurator.swift */, 
 			);
 			path = Configurator;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EB125A0341A002E365A /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81EB225A0341A002E365A /* AgreementDetailWorker.swift */,
+				0AA81EB225A0341A002E365A /* AgreementDetailWorker.swift */, 
 			);
 			path = Worker;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EB325A0341A002E365A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81EB425A0341A002E365A /* AgreementDetailInteractor.swift */,
+				0AA81EB425A0341A002E365A /* AgreementDetailInteractor.swift */, 
 			);
 			path = Interactor;
 			sourceTree = "<group>";
-		};
+		}; 
 		0AA81EB525A0341A002E365A /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0AA81EB625A0341A002E365A /* AgreementDetailRouter.swift */,
+				0AA81EB625A0341A002E365A /* AgreementDetailRouter.swift */, 
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -200,8 +209,8 @@
 		};
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
-			children = (
-				0AA81EA525A0341A002E365A /* AgreementDetail */,
+			children = ( 
+				0AA81EA525A0341A002E365A /* AgreementDetail */, 
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -285,6 +294,7 @@
 				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
+				1D19083D25A9EEF9008210D1 /* AgreementViewController.xib in Resources */,
 				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				0AA81EBA25A0341A002E365A /* AgreementDetailViewController.xib in Resources */,
 				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
@@ -341,7 +351,7 @@
 		D8795C38258E6A2100DF4D64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
+			files = ( 
 				0AA81EBE25A0341A002E365A /* AgreementDetailInteractor.swift in Sources */,
 				0AA81EBC25A0341A002E365A /* AgreementDetailConfigurator.swift in Sources */,
 				0AA81EBB25A0341A002E365A /* AgreementDetailViewController.swift in Sources */,
@@ -349,11 +359,11 @@
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				0AA81EBF25A0341A002E365A /* AgreementDetailRouter.swift in Sources */,
-				0AA81EB925A0341A002E365A /* AgreementDetailPresenter.swift in Sources */,
+				0AA81EB925A0341A002E365A /* AgreementDetailPresenter.swift in Sources */, 
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				0AA81EB825A0341A002E365A /* DetailContents.swift in Sources */,
-				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
-				0AA81EBD25A0341A002E365A /* AgreementDetailWorker.swift in Sources */,
+				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */, 
+				0AA81EBD25A0341A002E365A /* AgreementDetailWorker.swift in Sources */, 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HC2Z7MJWST;
 				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HC2Z7MJWST;
 				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
