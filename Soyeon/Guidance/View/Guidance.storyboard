@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rjo-EP-ggJ">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareB.ttf">
+            <string>NanumSquareB</string>
+        </array>
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Guidance View Controller-->
+        <scene sceneID="Xcg-B8-umg">
+            <objects>
+                <viewController storyboardIdentifier="GuidanceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rjo-EP-ggJ" customClass="GuidanceViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bZ-bQ-eMK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rz-xK-WFh">
+                                <rect key="frame" x="69.333333333333329" y="534.33333333333337" width="236.33333333333337" height="46"/>
+                                <color key="backgroundColor" name="105119228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Rz-xK-WFh" secondAttribute="height" multiplier="236:46" id="WTh-oZ-q1L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
+                                <state key="normal" title="소연 이용 가이드">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-AY-y82">
+                                <rect key="frame" x="55.666666666666657" y="448.66666666666669" width="263.66666666666674" height="65.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입 심사중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-3k-R9r">
+                                        <rect key="frame" x="0.0" y="0.0" width="263.66666666666669" height="20"/>
+                                        <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="18"/>
+                                        <color key="textColor" name="202020"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-3H-nLc">
+                                        <rect key="frame" x="0.0" y="29.999999999999996" width="263.66666666666669" height="35.666666666666657"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">회원님의 가입심사를 진행하고 있습니다.
+조금만 기다려 주세요!</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="515151"/>
+                                                    <font key="NSFont" size="16" name="NanumSquareR"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSubscriptionReview" translatesAutoresizingMaskIntoConstraints="NO" id="Lco-k9-qXR">
+                                <rect key="frame" x="7.6666666666666572" y="140.33333333333334" width="360" height="288.33333333333326"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5SN-fy-dJC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="width" secondItem="6bZ-bQ-eMK" secondAttribute="width" multiplier="0.63" id="61d-yC-myy"/>
+                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="NuZ-2J-75f"/>
+                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="top" secondItem="l1L-AY-y82" secondAttribute="bottom" constant="20" id="Qfz-jt-2AK"/>
+                            <constraint firstItem="Lco-k9-qXR" firstAttribute="centerY" secondItem="5SN-fy-dJC" secondAttribute="centerY" multiplier="0.692" id="RDJ-Dd-uK2"/>
+                            <constraint firstItem="l1L-AY-y82" firstAttribute="top" secondItem="Lco-k9-qXR" secondAttribute="bottom" constant="20" id="SZG-OS-t4m"/>
+                            <constraint firstItem="l1L-AY-y82" firstAttribute="centerX" secondItem="Lco-k9-qXR" secondAttribute="centerX" id="cC2-A2-zkt"/>
+                            <constraint firstItem="Lco-k9-qXR" firstAttribute="width" secondItem="6bZ-bQ-eMK" secondAttribute="width" multiplier="0.96" id="epI-1j-wCu"/>
+                            <constraint firstItem="Lco-k9-qXR" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="fxN-Rj-bl3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guidanceButton" destination="5Rz-xK-WFh" id="6ci-OR-yaQ"/>
+                        <outlet property="guidanceContentLabel" destination="Fow-3H-nLc" id="mQm-fo-KcT"/>
+                        <outlet property="guidanceImageView" destination="Lco-k9-qXR" id="L9k-Gp-WoF"/>
+                        <outlet property="guidanceTitleLabel" destination="ooh-3k-R9r" id="VCl-P8-asa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAb-R1-X4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgSubscriptionReview" width="360" height="288.33334350585938"/>
+        <namedColor name="105119228">
+            <color red="0.41176470588235292" green="0.46666666666666667" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="202020">
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="515151">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
