@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareB.ttf">
+            <string>NanumSquareB</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgreementDetailViewController" customModule="Soyeon" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTextView" destination="odD-jj-cND" id="xMf-2Z-sa2"/>
+                <outlet property="navigationTitle" destination="AYw-BF-YYC" id="QGL-TH-8rQ"/>
+                <outlet property="view" destination="zfw-Nw-2qa" id="wnb-ay-ogo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zfw-Nw-2qa">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H03-nU-UUC" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서비스 이용약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYw-BF-YYC">
+                            <rect key="frame" x="147" y="12" width="120" height="20"/>
+                            <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlS-Qf-bG7">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="ZAh-gd-IwM"/>
+                            </constraints>
+                            <state key="normal" image="btn_navigation_back"/>
+                            <connections>
+                                <action selector="backButtonDidTap:" destination="-1" eventType="touchUpInside" id="pSI-0S-RAD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UlS-Qf-bG7" secondAttribute="bottom" id="XBO-aN-zzG"/>
+                        <constraint firstItem="UlS-Qf-bG7" firstAttribute="leading" secondItem="H03-nU-UUC" secondAttribute="leading" id="ecC-fM-PT3"/>
+                        <constraint firstAttribute="height" constant="44" id="n7Y-6X-bcL"/>
+                        <constraint firstItem="AYw-BF-YYC" firstAttribute="centerY" secondItem="H03-nU-UUC" secondAttribute="centerY" id="uaA-He-5jS"/>
+                        <constraint firstItem="UlS-Qf-bG7" firstAttribute="top" secondItem="H03-nU-UUC" secondAttribute="top" id="xvQ-zB-yuE"/>
+                        <constraint firstItem="AYw-BF-YYC" firstAttribute="centerX" secondItem="H03-nU-UUC" secondAttribute="centerX" id="yUC-hh-a55"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odD-jj-cND">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EQa-yD-3By"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EQa-yD-3By" firstAttribute="trailing" secondItem="H03-nU-UUC" secondAttribute="trailing" id="1W0-SL-q8R"/>
+                <constraint firstItem="odD-jj-cND" firstAttribute="leading" secondItem="EQa-yD-3By" secondAttribute="leading" id="6PC-gi-xyD"/>
+                <constraint firstItem="odD-jj-cND" firstAttribute="top" secondItem="H03-nU-UUC" secondAttribute="bottom" id="AP0-qP-0SN"/>
+                <constraint firstItem="H03-nU-UUC" firstAttribute="top" secondItem="EQa-yD-3By" secondAttribute="top" id="H2L-y9-v7i"/>
+                <constraint firstAttribute="trailing" secondItem="odD-jj-cND" secondAttribute="trailing" id="Px4-Qn-j4p"/>
+                <constraint firstItem="EQa-yD-3By" firstAttribute="bottom" secondItem="odD-jj-cND" secondAttribute="bottom" id="gie-T2-Din"/>
+                <constraint firstItem="H03-nU-UUC" firstAttribute="leading" secondItem="zfw-Nw-2qa" secondAttribute="leading" id="ySD-IJ-zLH"/>
+            </constraints>
+            <point key="canvasLocation" x="-487" y="-205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_navigation_back" width="20" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
