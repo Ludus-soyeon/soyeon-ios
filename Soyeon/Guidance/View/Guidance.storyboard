@@ -26,42 +26,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rz-xK-WFh">
-                                <rect key="frame" x="69.333333333333329" y="534.33333333333337" width="236.33333333333337" height="46"/>
-                                <color key="backgroundColor" name="105119228"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="5Rz-xK-WFh" secondAttribute="height" multiplier="236:46" id="WTh-oZ-q1L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
-                                <state key="normal" title="소연 이용 가이드">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-AY-y82">
-                                <rect key="frame" x="55.666666666666657" y="448.66666666666669" width="263.66666666666674" height="65.666666666666686"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="skf-6r-Peg">
+                                <rect key="frame" x="69.666666666666686" y="448.66666666666669" width="236" height="149.33333333333331"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입 심사중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-3k-R9r">
-                                        <rect key="frame" x="0.0" y="0.0" width="263.66666666666669" height="20"/>
-                                        <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="18"/>
-                                        <color key="textColor" name="202020"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-3H-nLc">
-                                        <rect key="frame" x="0.0" y="29.999999999999996" width="263.66666666666669" height="35.666666666666657"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">회원님의 가입심사를 진행하고 있습니다.
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-AY-y82">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="83.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입 심사중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-3k-R9r">
+                                                <rect key="frame" x="0.0" y="0.0" width="236" height="20"/>
+                                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="18"/>
+                                                <color key="textColor" name="202020"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-3H-nLc">
+                                                <rect key="frame" x="0.0" y="30.000000000000004" width="236" height="53.333333333333343"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">회원님의 가입심사를 진행하고 있습니다.
 조금만 기다려 주세요!</string>
-                                                <attributes>
-                                                    <color key="NSColor" name="515151"/>
-                                                    <font key="NSFont" size="16" name="NanumSquareR"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                                        <attributes>
+                                                            <color key="NSColor" name="515151"/>
+                                                            <font key="NSFont" size="16" name="NanumSquareR"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rz-xK-WFh">
+                                        <rect key="frame" x="0.0" y="103.33333333333331" width="236" height="46"/>
+                                        <color key="backgroundColor" name="105119228"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="236" id="2cr-sL-ARh"/>
+                                            <constraint firstAttribute="height" constant="46" id="TTY-3M-dIH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
+                                        <state key="normal" title="소연 이용 가이드">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Rz-xK-WFh" firstAttribute="centerX" secondItem="l1L-AY-y82" secondAttribute="centerX" id="ajU-uH-m9Y"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSubscriptionReview" translatesAutoresizingMaskIntoConstraints="NO" id="Lco-k9-qXR">
                                 <rect key="frame" x="7.6666666666666572" y="140.33333333333334" width="360" height="288.33333333333326"/>
@@ -70,14 +79,14 @@
                         <viewLayoutGuide key="safeArea" id="5SN-fy-dJC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="width" secondItem="6bZ-bQ-eMK" secondAttribute="width" multiplier="0.63" id="61d-yC-myy"/>
-                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="NuZ-2J-75f"/>
-                            <constraint firstItem="5Rz-xK-WFh" firstAttribute="top" secondItem="l1L-AY-y82" secondAttribute="bottom" constant="20" id="Qfz-jt-2AK"/>
+                            <constraint firstItem="Fow-3H-nLc" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="1vB-pR-EmS"/>
                             <constraint firstItem="Lco-k9-qXR" firstAttribute="centerY" secondItem="5SN-fy-dJC" secondAttribute="centerY" multiplier="0.692" id="RDJ-Dd-uK2"/>
-                            <constraint firstItem="l1L-AY-y82" firstAttribute="top" secondItem="Lco-k9-qXR" secondAttribute="bottom" constant="20" id="SZG-OS-t4m"/>
-                            <constraint firstItem="l1L-AY-y82" firstAttribute="centerX" secondItem="Lco-k9-qXR" secondAttribute="centerX" id="cC2-A2-zkt"/>
+                            <constraint firstItem="5SN-fy-dJC" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="skf-6r-Peg" secondAttribute="bottom" constant="20" id="TOb-1v-TmL"/>
+                            <constraint firstItem="Fow-3H-nLc" firstAttribute="width" secondItem="6bZ-bQ-eMK" secondAttribute="width" multiplier="0.9" id="WJf-U0-xKr"/>
+                            <constraint firstItem="skf-6r-Peg" firstAttribute="top" secondItem="Lco-k9-qXR" secondAttribute="bottom" constant="20" id="eZu-2f-eIO"/>
                             <constraint firstItem="Lco-k9-qXR" firstAttribute="width" secondItem="6bZ-bQ-eMK" secondAttribute="width" multiplier="0.96" id="epI-1j-wCu"/>
                             <constraint firstItem="Lco-k9-qXR" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="fxN-Rj-bl3"/>
+                            <constraint firstItem="skf-6r-Peg" firstAttribute="centerX" secondItem="5SN-fy-dJC" secondAttribute="centerX" id="p0L-Tm-B9V"/>
                         </constraints>
                     </view>
                     <connections>

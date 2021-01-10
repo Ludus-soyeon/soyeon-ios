@@ -39,4 +39,3 @@ extension GuidancePresenter: GuidancePresenterInput {
         output.displayGuidance(viewModel: viewModel)
     }
 }
-

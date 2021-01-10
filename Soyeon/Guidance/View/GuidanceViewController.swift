@@ -52,7 +52,19 @@ final class GuidanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        doGuidanceOnLoad()
+        setUI()
+    }
+
+    // MARK: - Load data
+    private func doGuidanceOnLoad() {
         output.doGuidanceOnLoad()
+    }
+
+    private func setUI() {
+        guidanceContentLabel.setLineSpacing(7)
+        guidanceContentLabel.textAlignment = .center
+        guidanceButton.setRadius(23)
     }
 }
 
