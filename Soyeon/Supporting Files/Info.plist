@@ -22,7 +22,9 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NanumSquareRoundR.ttf</string>
+		<string>NanumSquareB.ttf</string>
+		<string>NanumSquareEB.ttf</string>
+		<string>NanumSquareR.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
