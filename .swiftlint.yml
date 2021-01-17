@@ -8,6 +8,6 @@ identifier_name:
         warning: 1
 
 excluded:
-- Supporting Files
+- Soyeon/Supporting Files
 - Pods
 - Soyeon-package
