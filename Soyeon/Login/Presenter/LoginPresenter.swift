@@ -35,4 +35,3 @@ extension LoginPresenter: LoginPresenterInput {
         output.displayLoginTableView(viewModel: viewModel)
     }
 }
-

@@ -24,4 +24,3 @@ final class LoginConfigurator {
         viewController.router = router
     }
 }
-

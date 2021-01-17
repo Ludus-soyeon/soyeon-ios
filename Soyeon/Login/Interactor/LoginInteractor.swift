@@ -42,4 +42,3 @@ extension LoginInteractor: LoginViewControllerOutput {
         output.presentLogin(platform: platforms)
     }
 }
-

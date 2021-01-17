@@ -41,4 +41,3 @@ extension LoginRouter: LoginRouterProtocol {
         }
     }
 }
-

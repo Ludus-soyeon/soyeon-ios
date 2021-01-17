@@ -32,4 +32,3 @@ enum Login {
         var platforms: [Login.Platform]
     }
 }
-
