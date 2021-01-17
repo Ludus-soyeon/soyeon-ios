@@ -52,7 +52,6 @@ enum Guidance {
             case .suspendedAccount: return "서비스 이용 불가"
             }
         }
-
     }
 
     struct GuidanceViewModel {

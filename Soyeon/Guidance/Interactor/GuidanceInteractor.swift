@@ -35,7 +35,7 @@ extension GuidanceInteractor: GuidanceViewControllerOutput {
     // MARK: - Business logic
 
     func doGuidanceOnLoad() {
-//        worker.doSomeWork()
-        output.presentGuidance(type: .signupWating)
+        let guidanceType = worker.setGuidanceType(Guidance.GuidanceType.signupWating)
+        output.presentGuidance(type: guidanceType)
     }
 }

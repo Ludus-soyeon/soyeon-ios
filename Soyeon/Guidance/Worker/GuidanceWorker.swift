@@ -10,8 +10,7 @@ import UIKit
 
 class GuidanceWorker {
     // MARK: - Business Logic
-
-    func doSomeWork() {
-
+    func setGuidanceType(_ type: Guidance.GuidanceType) -> Guidance.GuidanceType {
+        return type
     }
 }

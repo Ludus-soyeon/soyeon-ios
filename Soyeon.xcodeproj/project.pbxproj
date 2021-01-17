@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */; };
+		000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3525B484A800F64A28 /* GuidancePresenter.swift */; };
+		000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3725B484A800F64A28 /* GuidanceViewController.swift */; };
+		000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000CEB3825B484A800F64A28 /* Guidance.storyboard */; };
+		000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3A25B484A800F64A28 /* GuidanceConfigurator.swift */; };
+		000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3C25B484A800F64A28 /* GuidanceWorker.swift */; };
+		000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3E25B484A800F64A28 /* GuidanceInteractor.swift */; };
+		000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4025B484A800F64A28 /* GuidanceRouter.swift */; };
+		000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4B25B484C800F64A28 /* UILabel+.swift */; };
+		000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4C25B484C800F64A28 /* UIButton+.swift */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
 		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
@@ -22,6 +32,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
+		000CEB3525B484A800F64A28 /* GuidancePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidancePresenter.swift; sourceTree = "<group>"; };
+		000CEB3725B484A800F64A28 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
+		000CEB3825B484A800F64A28 /* Guidance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guidance.storyboard; sourceTree = "<group>"; };
+		000CEB3A25B484A800F64A28 /* GuidanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceConfigurator.swift; sourceTree = "<group>"; };
+		000CEB3C25B484A800F64A28 /* GuidanceWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceWorker.swift; sourceTree = "<group>"; };
+		000CEB3E25B484A800F64A28 /* GuidanceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceInteractor.swift; sourceTree = "<group>"; };
+		000CEB4025B484A800F64A28 /* GuidanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceRouter.swift; sourceTree = "<group>"; };
+		000CEB4B25B484C800F64A28 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		000CEB4C25B484C800F64A28 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
@@ -52,6 +72,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000CEB3125B484A800F64A28 /* Guidance */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3225B484A800F64A28 /* ViewModel */,
+				000CEB3425B484A800F64A28 /* Presenter */,
+				000CEB3625B484A800F64A28 /* View */,
+				000CEB3925B484A800F64A28 /* Configurator */,
+				000CEB3B25B484A800F64A28 /* Worker */,
+				000CEB3D25B484A800F64A28 /* Interactor */,
+				000CEB3F25B484A800F64A28 /* Router */,
+			);
+			path = Guidance;
+			sourceTree = "<group>";
+		};
+		000CEB3225B484A800F64A28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		000CEB3425B484A800F64A28 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3525B484A800F64A28 /* GuidancePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		000CEB3625B484A800F64A28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3725B484A800F64A28 /* GuidanceViewController.swift */,
+				000CEB3825B484A800F64A28 /* Guidance.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		000CEB3925B484A800F64A28 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3A25B484A800F64A28 /* GuidanceConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		000CEB3B25B484A800F64A28 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3C25B484A800F64A28 /* GuidanceWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		000CEB3D25B484A800F64A28 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3E25B484A800F64A28 /* GuidanceInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		000CEB3F25B484A800F64A28 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB4025B484A800F64A28 /* GuidanceRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		000CEB4A25B484C800F64A28 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB4B25B484C800F64A28 /* UILabel+.swift */,
+				000CEB4C25B484C800F64A28 /* UIButton+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0067AC21259632900005AD86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +202,8 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
+				000CEB4A25B484C800F64A28 /* Extension */,
+				000CEB3125B484A800F64A28 /* Guidance */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -184,6 +286,7 @@
 			files = (
 				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
+				000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
@@ -241,10 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */,
+				000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */,
+				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */,
+				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
+				000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */,
+				000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
+				000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
+				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
