@@ -7,10 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009B025825B42C5A00753847 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B025725B42C5A00753847 /* UIView+.swift */; };
+		00B2256725AA3BCC00766110 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2255A25AA3BCC00766110 /* GuidanceViewModel.swift */; };
+		00B2256825AA3BCC00766110 /* GuidancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2255C25AA3BCC00766110 /* GuidancePresenter.swift */; };
+		00B2256925AA3BCC00766110 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2255E25AA3BCC00766110 /* GuidanceViewController.swift */; };
+		00B2256A25AA3BCC00766110 /* GuidanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2256025AA3BCC00766110 /* GuidanceConfigurator.swift */; };
+		00B2256B25AA3BCC00766110 /* GuidanceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2256225AA3BCC00766110 /* GuidanceWorker.swift */; };
+		00B2256C25AA3BCC00766110 /* GuidanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2256425AA3BCC00766110 /* GuidanceInteractor.swift */; };
+		00B2256D25AA3BCC00766110 /* GuidanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2256625AA3BCC00766110 /* GuidanceRouter.swift */; };
+		00B2257425AA3CB200766110 /* Guidance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B2257325AA3CB200766110 /* Guidance.storyboard */; };
+		00B2257A25AAD74A00766110 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2257925AAD74A00766110 /* UILabel+.swift */; };
+		00B2257D25AAD92F00766110 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2257C25AAD92F00766110 /* UIButton+.swift */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
 		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
 		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
+		00B37211259F8F20003F6C76 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B371F7259F8F20003F6C76 /* LoginViewModel.swift */; };
+		00B37212259F8F20003F6C76 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B371F9259F8F20003F6C76 /* LoginPresenter.swift */; };
+		00B37213259F8F20003F6C76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B371FB259F8F20003F6C76 /* LoginViewController.swift */; };
+		00B37214259F8F20003F6C76 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B371FD259F8F20003F6C76 /* LoginConfigurator.swift */; };
+		00B37215259F8F20003F6C76 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B371FF259F8F20003F6C76 /* LoginWorker.swift */; };
+		00B37216259F8F20003F6C76 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B37201259F8F20003F6C76 /* LoginInteractor.swift */; };
+		00B37217259F8F20003F6C76 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B37203259F8F20003F6C76 /* LoginRouter.swift */; };
+		00B37222259F8F70003F6C76 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B37221259F8F70003F6C76 /* Login.storyboard */; };
+		00B3723C25A0AE13003F6C76 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B3723B25A0AE13003F6C76 /* LoginPlatformCel.xib */; };
+		00B3723F25A0C569003F6C76 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3723E25A0C569003F6C76 /* LoginPlatformCell.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
@@ -22,10 +43,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009B025725B42C5A00753847 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		00B2255A25AA3BCC00766110 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
+		00B2255C25AA3BCC00766110 /* GuidancePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidancePresenter.swift; sourceTree = "<group>"; };
+		00B2255E25AA3BCC00766110 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
+		00B2256025AA3BCC00766110 /* GuidanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceConfigurator.swift; sourceTree = "<group>"; };
+		00B2256225AA3BCC00766110 /* GuidanceWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceWorker.swift; sourceTree = "<group>"; };
+		00B2256425AA3BCC00766110 /* GuidanceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceInteractor.swift; sourceTree = "<group>"; };
+		00B2256625AA3BCC00766110 /* GuidanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceRouter.swift; sourceTree = "<group>"; };
+		00B2257325AA3CB200766110 /* Guidance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guidance.storyboard; sourceTree = "<group>"; };
+		00B2257925AAD74A00766110 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		00B2257C25AAD92F00766110 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
 		00B371AD25973E86003F6C76 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
+		00B371F7259F8F20003F6C76 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		00B371F9259F8F20003F6C76 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		00B371FB259F8F20003F6C76 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		00B371FD259F8F20003F6C76 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		00B371FF259F8F20003F6C76 /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		00B37201259F8F20003F6C76 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		00B37203259F8F20003F6C76 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		00B37221259F8F70003F6C76 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		00B3723B25A0AE13003F6C76 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
+		00B3723E25A0C569003F6C76 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +103,160 @@
 				D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00B2255825AA3BCC00766110 /* Guidance */ = {
+			isa = PBXGroup;
+			children = (
+				00B2255925AA3BCC00766110 /* ViewModel */,
+				00B2255B25AA3BCC00766110 /* Presenter */,
+				00B2255D25AA3BCC00766110 /* View */,
+				00B2255F25AA3BCC00766110 /* Configurator */,
+				00B2256125AA3BCC00766110 /* Worker */,
+				00B2256325AA3BCC00766110 /* Interactor */,
+				00B2256525AA3BCC00766110 /* Router */,
+			);
+			path = Guidance;
+			sourceTree = "<group>";
+		};
+		00B2255925AA3BCC00766110 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00B2255A25AA3BCC00766110 /* GuidanceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00B2255B25AA3BCC00766110 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				00B2255C25AA3BCC00766110 /* GuidancePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		00B2255D25AA3BCC00766110 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00B2255E25AA3BCC00766110 /* GuidanceViewController.swift */,
+				00B2257325AA3CB200766110 /* Guidance.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00B2255F25AA3BCC00766110 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				00B2256025AA3BCC00766110 /* GuidanceConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		00B2256125AA3BCC00766110 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				00B2256225AA3BCC00766110 /* GuidanceWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		00B2256325AA3BCC00766110 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				00B2256425AA3BCC00766110 /* GuidanceInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		00B2256525AA3BCC00766110 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				00B2256625AA3BCC00766110 /* GuidanceRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		00B2257825AAD5E400766110 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00B2257925AAD74A00766110 /* UILabel+.swift */,
+				00B2257C25AAD92F00766110 /* UIButton+.swift */,
+				009B025725B42C5A00753847 /* UIView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		00B371F5259F8F20003F6C76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				00B371F6259F8F20003F6C76 /* ViewModel */,
+				00B371F8259F8F20003F6C76 /* Presenter */,
+				00B371FA259F8F20003F6C76 /* View */,
+				00B371FC259F8F20003F6C76 /* Configurator */,
+				00B371FE259F8F20003F6C76 /* Worker */,
+				00B37200259F8F20003F6C76 /* Interactor */,
+				00B37202259F8F20003F6C76 /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		00B371F6259F8F20003F6C76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00B371F7259F8F20003F6C76 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00B371F8259F8F20003F6C76 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				00B371F9259F8F20003F6C76 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		00B371FA259F8F20003F6C76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00B371FB259F8F20003F6C76 /* LoginViewController.swift */,
+				00B3723E25A0C569003F6C76 /* LoginPlatformCell.swift */,
+				00B37221259F8F70003F6C76 /* Login.storyboard */,
+				00B3723B25A0AE13003F6C76 /* LoginPlatformCel.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00B371FC259F8F20003F6C76 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				00B371FD259F8F20003F6C76 /* LoginConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		00B371FE259F8F20003F6C76 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				00B371FF259F8F20003F6C76 /* LoginWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		00B37200259F8F20003F6C76 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				00B37201259F8F20003F6C76 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		00B37202259F8F20003F6C76 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				00B37203259F8F20003F6C76 /* LoginRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		572976794A38FB21146A1A93 /* Pods */ = {
@@ -102,6 +298,9 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
+				00B2257825AAD5E400766110 /* Extension */,
+				00B2255825AA3BCC00766110 /* Guidance */,
+				00B371F5259F8F20003F6C76 /* Login */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -185,10 +384,13 @@
 				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
+				00B3723C25A0AE13003F6C76 /* LoginPlatformCel.xib in Resources */,
+				00B2257425AA3CB200766110 /* Guidance.storyboard in Resources */,
 				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
+				00B37222259F8F70003F6C76 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,10 +443,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B37212259F8F20003F6C76 /* LoginPresenter.swift in Sources */,
+				00B2257D25AAD92F00766110 /* UIButton+.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				00B2257A25AAD74A00766110 /* UILabel+.swift in Sources */,
+				00B2256C25AA3BCC00766110 /* GuidanceInteractor.swift in Sources */,
+				00B37217259F8F20003F6C76 /* LoginRouter.swift in Sources */,
+				00B2256925AA3BCC00766110 /* GuidanceViewController.swift in Sources */,
+				00B37214259F8F20003F6C76 /* LoginConfigurator.swift in Sources */,
+				009B025825B42C5A00753847 /* UIView+.swift in Sources */,
+				00B37216259F8F20003F6C76 /* LoginInteractor.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
+				00B37211259F8F20003F6C76 /* LoginViewModel.swift in Sources */,
+				00B2256A25AA3BCC00766110 /* GuidanceConfigurator.swift in Sources */,
+				00B2256725AA3BCC00766110 /* GuidanceViewModel.swift in Sources */,
+				00B2256D25AA3BCC00766110 /* GuidanceRouter.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
+				00B3723F25A0C569003F6C76 /* LoginPlatformCell.swift in Sources */,
+				00B2256825AA3BCC00766110 /* GuidancePresenter.swift in Sources */,
+				00B37213259F8F20003F6C76 /* LoginViewController.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
+				00B37215259F8F20003F6C76 /* LoginWorker.swift in Sources */,
+				00B2256B25AA3BCC00766110 /* GuidanceWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
