@@ -8,7 +8,7 @@
 
 enum Login {
 
-    enum Platform: Int {
+    enum Platform: Int, CaseIterable {
         case naver
         case kakao
         case google

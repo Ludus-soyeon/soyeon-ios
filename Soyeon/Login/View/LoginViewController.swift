@@ -82,9 +82,10 @@ extension LoginViewController: LoginViewControllerInput {
 
 // MARK: - UITableViewDataSource
 extension LoginViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return Login.Platform.allCases.count
     }
 
     func tableView(_ tableView: UITableView,
@@ -109,14 +110,14 @@ extension LoginViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
+        switch Login.Platform(rawValue: indexPath.row) {
+        case .naver:
             didTappedNaver()
-        case 1:
+        case .kakao:
             didTappedKakao()
-        case 2:
+        case .google:
             didTappedGoggle()
-        case 3:
+        case .apple:
             didTappedApple()
         default:
             break

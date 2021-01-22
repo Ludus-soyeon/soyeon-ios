@@ -30,8 +30,8 @@ final class LoginPresenter {
 extension LoginPresenter: LoginPresenterInput {
 
     // MARK: - Presentation logic
-    func presentLogin(platform: [Login.Platform]) {
-        let viewModel = Login.LoginViewModel(platforms: platform)
+    func presentLogin(platforms: [Login.Platform]) {
+        let viewModel = Login.LoginViewModel(platforms: platforms)
         output.displayLoginTableView(viewModel: viewModel)
     }
 }

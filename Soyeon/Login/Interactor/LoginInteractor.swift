@@ -13,7 +13,7 @@ protocol LoginInteractorInput: LoginViewControllerOutput {
 }
 
 protocol LoginInteractorOutput {
-    func presentLogin(platform: [Login.Platform])
+    func presentLogin(platforms: [Login.Platform])
 }
 
 protocol LoginDataStore {
@@ -39,6 +39,6 @@ extension LoginInteractor: LoginViewControllerOutput {
     // MARK: - Business logic
     func displayLoginOnLoad() {
         let platforms: [Login.Platform] = [.naver, .kakao, .google, .apple]
-        output.presentLogin(platform: platforms)
+        output.presentLogin(platforms: platforms)
     }
 }
