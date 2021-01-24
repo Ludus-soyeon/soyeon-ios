@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB2C25B47FF400F64A28 /* UIView+.swift */; };
-		009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A025B47E9E00753847 /* LoginViewModel.swift */; };
-		009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A225B47E9E00753847 /* LoginPresenter.swift */; };
-		009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A425B47E9E00753847 /* LoginViewController.swift */; };
-		009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A625B47E9E00753847 /* LoginConfigurator.swift */; };
-		009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A825B47E9E00753847 /* LoginWorker.swift */; };
-		009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AA25B47E9E00753847 /* LoginInteractor.swift */; };
-		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
-		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
-		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
-		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */; };
 		000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3525B484A800F64A28 /* GuidancePresenter.swift */; };
 		000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3725B484A800F64A28 /* GuidanceViewController.swift */; };
@@ -28,6 +18,16 @@
 		000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4025B484A800F64A28 /* GuidanceRouter.swift */; };
 		000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4B25B484C800F64A28 /* UILabel+.swift */; };
 		000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4C25B484C800F64A28 /* UIButton+.swift */; };
+		009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A025B47E9E00753847 /* LoginViewModel.swift */; };
+		009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A225B47E9E00753847 /* LoginPresenter.swift */; };
+		009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A425B47E9E00753847 /* LoginViewController.swift */; };
+		009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A625B47E9E00753847 /* LoginConfigurator.swift */; };
+		009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A825B47E9E00753847 /* LoginWorker.swift */; };
+		009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AA25B47E9E00753847 /* LoginInteractor.swift */; };
+		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
+		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
+		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
+		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
 		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
@@ -54,6 +54,7 @@
 		1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087325A9F77E008210D1 /* AgreementRouter.swift */; };
 		1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
+		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
 		D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Main.storyboard */; };
@@ -73,16 +74,6 @@
 
 /* Begin PBXFileReference section */
 		000CEB2C25B47FF400F64A28 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		009B02A625B47E9E00753847 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
-		009B02A825B47E9E00753847 /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
-		009B02AA25B47E9E00753847 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
-		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
-		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
 		000CEB3525B484A800F64A28 /* GuidancePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidancePresenter.swift; sourceTree = "<group>"; };
 		000CEB3725B484A800F64A28 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +84,16 @@
 		000CEB4025B484A800F64A28 /* GuidanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceRouter.swift; sourceTree = "<group>"; };
 		000CEB4B25B484C800F64A28 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		000CEB4C25B484C800F64A28 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		009B02A625B47E9E00753847 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		009B02A825B47E9E00753847 /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		009B02AA25B47E9E00753847 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
+		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
+		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		1D19088F25A9F7A8008210D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
+		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,7 +229,7 @@
 			children = (
 				000CEB4B25B484C800F64A28 /* UILabel+.swift */,
 				000CEB4C25B484C800F64A28 /* UIButton+.swift */,
-        	000CEB2C25B47FF400F64A28 /* UIView+.swift */,
+				000CEB2C25B47FF400F64A28 /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -495,6 +497,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D80D664A25BDBA1C002F47B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D8795C33258E6A2100DF4D64 = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +533,7 @@
 				000CEB4A25B484C800F64A28 /* Extension */,
 				000CEB3125B484A800F64A28 /* Guidance */,
 				1D19085125A9F77E008210D1 /* Agreement */,
+				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -731,6 +742,7 @@
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
+				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
