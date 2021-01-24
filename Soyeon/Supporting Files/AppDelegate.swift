@@ -14,7 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let backButtonImage = UIImage(named: "icoBackGnbNormal")?.withRenderingMode(.alwaysOriginal)
+        let barAppearance = UINavigationBar.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
+        barAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1.0),
+            .font: Fonts.nanumSquareB.size(18.0)
+        ]
+        barAppearance.backIndicatorImage = backButtonImage
+        barAppearance.backIndicatorTransitionMaskImage = backButtonImage
         return true
     }
 
