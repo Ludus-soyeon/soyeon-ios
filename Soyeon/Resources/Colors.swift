@@ -5,8 +5,7 @@
 //  Created by 박은비 on 2020/12/26.
 //  Copyright © 2020 ludus. All rights reserved.
 //
-
-import Foundation
+ 
 import UIKit.UIColor
 
 enum Colors: String {
