@@ -29,9 +29,6 @@
 		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
 		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
-		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
-		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
-		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
@@ -53,6 +50,19 @@
 		1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087125A9F77E008210D1 /* AgreementInteractor.swift */; };
 		1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087325A9F77E008210D1 /* AgreementRouter.swift */; };
 		1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */; };
+		1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */; };
+		1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908C425AA13DF008210D1 /* PagingView.xib */; };
+		1D1908C925AA1645008210D1 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1908C825AA1645008210D1 /* PagingView.swift */; };
+		1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */; };
+		1D5B63C325B481BA00A5321C /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C225B481BA00A5321C /* XibView.swift */; };
+		1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */; };
+		1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4525AAEE7600822E99 /* PageViewType.swift */; };
+		1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */; };
+		1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */; };
+		1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */; };
+		1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */; };
+		1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */; };
+		1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
@@ -95,9 +105,6 @@
 		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
-		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
-		00B371AD25973E86003F6C76 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +129,19 @@
 		1D19088B25A9F7A8008210D1 /* SoyeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonTests.swift; sourceTree = "<group>"; };
 		1D19088F25A9F7A8008210D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartSplashViewController.xib; sourceTree = "<group>"; };
+		1D1908C425AA13DF008210D1 /* PagingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingView.xib; sourceTree = "<group>"; };
+		1D1908C825AA1645008210D1 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageView.swift; sourceTree = "<group>"; };
+		1D5B63C225B481BA00A5321C /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
+		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
+		1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChareactorInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoupleInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
+		1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
+		1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
@@ -480,6 +500,31 @@
 			path = SoyeonTests;
 			sourceTree = "<group>";
 		};
+		1D1908A625AA120F008210D1 /* StartSplash */ = {
+			isa = PBXGroup;
+			children = (
+				1DC9DF3A25AAEC1300822E99 /* PagingView */,
+				1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */,
+				1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */,
+				1D1908C425AA13DF008210D1 /* PagingView.xib */,
+				1D1908C825AA1645008210D1 /* PagingView.swift */,
+				1DC9DF4525AAEE7600822E99 /* PageViewType.swift */,
+				1D5B63C225B481BA00A5321C /* XibView.swift */,
+			);
+			path = StartSplash;
+			sourceTree = "<group>";
+		};
+		1DC9DF3A25AAEC1300822E99 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */,
+				1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */,
+				1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */,
+				1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */,
+			);
+			path = PagingView;
+			sourceTree = "<group>";
+		};
 		572976794A38FB21146A1A93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +577,7 @@
 				009B029E25B47E9E00753847 /* Login */,
 				000CEB4A25B484C800F64A28 /* Extension */,
 				000CEB3125B484A800F64A28 /* Guidance */,
+				1D1908A625AA120F008210D1 /* StartSplash */,
 				1D19085125A9F77E008210D1 /* Agreement */,
 				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
@@ -544,11 +590,11 @@
 		D8795C55258E819800DF4D64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */,
+				1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */,
+				1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */,
 				0A6DECA92597716500B8713B /* Colors.swift */,
 				0A6DECAA2597716500B8713B /* Fonts.swift */,
-				00B371AD25973E86003F6C76 /* NanumSquareB.ttf */,
-				00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */,
-				00B371AB25973E86003F6C76 /* NanumSquareR.ttf */,
 				D8795C48258E6A2500DF4D64 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -644,15 +690,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
+				1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */,
+				1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */,
+				1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
-				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
+				1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */,
 				1D19088125A9F77E008210D1 /* AgreementViewController.xib in Resources */,
-				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
+				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
+				1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */,
+				1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */,
+				1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
 				009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */,
 				009B02BB25B47F3B00753847 /* Login.storyboard in Resources */,
@@ -733,6 +784,7 @@
 				009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
 				1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */,
+				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
@@ -744,12 +796,16 @@
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
 				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
+				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
+				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
 				1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */,
 				1D19087E25A9F77E008210D1 /* AgreementPresenter.swift in Sources */,
 				000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */,
+				1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */,
+				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
 				1D19087A25A9F77E008210D1 /* AgreementDetailWorker.swift in Sources */,

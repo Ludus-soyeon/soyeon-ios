@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareEB.ttf">
+            <string>NanumSquareEB</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8tZ-xT-uOH">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-h8-LS4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy6-p5-6OP" customClass="MarqueeScrollView" customModule="Soyeon" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="335.66666666666669"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" image="img_startsplash_characterlist" translatesAutoresizingMaskIntoConstraints="NO" id="ZXm-rJ-0DN">
+                                    <rect key="frame" x="0.0" y="0.0" width="3713" height="334"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ZXm-rJ-0DN" firstAttribute="leading" secondItem="laE-ad-93k" secondAttribute="leading" priority="999" id="3mF-8I-ZmJ"/>
+                                <constraint firstItem="ZXm-rJ-0DN" firstAttribute="trailing" secondItem="laE-ad-93k" secondAttribute="trailing" priority="999" constant="3713" id="6jh-H8-21u"/>
+                                <constraint firstItem="ZXm-rJ-0DN" firstAttribute="top" secondItem="laE-ad-93k" secondAttribute="top" priority="999" id="9jl-4R-pGF"/>
+                                <constraint firstItem="ZXm-rJ-0DN" firstAttribute="bottom" secondItem="laE-ad-93k" secondAttribute="bottom" priority="999" constant="334" id="YQj-aA-Haw"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="laE-ad-93k"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="PVh-eJ-stS"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="6Et-bA-y1W"/>
+                            </connections>
+                        </scrollView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" text="나만의 성격 캐릭터" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fib-Qt-GtO">
+                            <rect key="frame" x="0.0" y="357.66666666666669" width="414" height="22.333333333333314"/>
+                            <fontDescription key="fontDescription" name="NanumSquareEB" family="NanumSquare" pointSize="20"/>
+                            <color key="textColor" name="strongBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wif-hj-dst">
+                            <rect key="frame" x="0.0" y="402" width="414" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="SXq-og-IyQ"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">심리검사 기반으로 매칭되는 상대와
+서로의 캐릭터를 주제로 대화를
+시작해보세요!</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="18" name="NanumSquareR"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="24" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="x8F-h8-LS4" firstAttribute="top" secondItem="8tZ-xT-uOH" secondAttribute="top" id="UJR-Kp-tOe"/>
+                <constraint firstAttribute="bottom" secondItem="x8F-h8-LS4" secondAttribute="bottom" id="Yas-8i-2V7"/>
+                <constraint firstAttribute="trailing" secondItem="x8F-h8-LS4" secondAttribute="trailing" id="t4C-PQ-K4u"/>
+                <constraint firstItem="x8F-h8-LS4" firstAttribute="leading" secondItem="8tZ-xT-uOH" secondAttribute="leading" id="vkx-mr-eqA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-62.318840579710148" y="131.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_startsplash_characterlist" width="3713" height="334"/>
+        <namedColor name="strongBlack">
+            <color red="0.078000001609325409" green="0.078000001609325409" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
