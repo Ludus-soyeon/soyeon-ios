@@ -9,8 +9,5 @@
 import UIKit
 
 extension UIButton {
-
-    func setRadius(_ radius: CGFloat) {
-        self.layer.cornerRadius = radius
-    }
+ 
 }
