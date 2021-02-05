@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIView {
-
     /**
      Set a shadow on a UIView.
      - parameters:
@@ -30,4 +29,21 @@ extension UIView {
         layer.shadowRadius = radius
         layer.cornerRadius = viewCornerRadius
     }
+    
+    /**
+     Set a border on a UIView.
+     - parameters:
+        - color: Border color, defaults to clear
+        - width: Border width, defaults to 0
+    */
+    func setBorderWithColor(_ color: UIColor?,
+                            width: CGFloat = 0) {
+        layer.borderColor =  color?.cgColor ?? UIColor.clear.cgColor
+        layer.borderWidth = width
+    }
+ 
+    func setRadius(_ radius: CGFloat) {
+        layer.cornerRadius = radius
+    }
+    
 }
