@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SoyeonBasicAlertView" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="SoyeonBasicAlertView" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9Z-KB-IOJ">
+                    <rect key="frame" x="52" y="359.33333333333331" width="310" height="177.33333333333331"/>
+                    <subviews>
+                        <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S7c-ta-LoI" userLabel="Contents">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="177.33333333333334"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxe-cw-KZY" userLabel="Header">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="45"/>
+                                    <subviews>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o8-FA-tjJ">
+                                            <rect key="frame" x="265" y="0.0" width="45" height="45"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="Vdo-eI-YTb"/>
+                                                <constraint firstAttribute="height" constant="45" id="yQC-E8-I0O"/>
+                                            </constraints>
+                                            <state key="normal" image="but_exit_signup"/>
+                                            <connections>
+                                                <action selector="closeButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="a8g-Ns-Wrd"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="8o8-FA-tjJ" secondAttribute="bottom" id="9Ks-wl-53N"/>
+                                        <constraint firstAttribute="trailing" secondItem="8o8-FA-tjJ" secondAttribute="trailing" id="Te4-Y7-MUx"/>
+                                        <constraint firstItem="8o8-FA-tjJ" firstAttribute="top" secondItem="dxe-cw-KZY" secondAttribute="top" id="bWU-5D-3ro"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-iv-5tp" userLabel="Content">
+                                    <rect key="frame" x="0.0" y="44.999999999999993" width="310" height="88.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQQ-8p-8hk">
+                                            <rect key="frame" x="10" y="13" width="290" height="32"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Soyeon Basic Alert">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="17" name="NanumSquareR"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="24" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="nQQ-8p-8hk" secondAttribute="bottom" constant="43.5" id="EgR-xA-3ME"/>
+                                        <constraint firstItem="nQQ-8p-8hk" firstAttribute="centerX" secondItem="fZf-iv-5tp" secondAttribute="centerX" id="H8j-Fx-rMw"/>
+                                        <constraint firstItem="nQQ-8p-8hk" firstAttribute="top" secondItem="fZf-iv-5tp" secondAttribute="top" constant="13" id="fvc-fm-v3w"/>
+                                        <constraint firstAttribute="trailing" secondItem="nQQ-8p-8hk" secondAttribute="trailing" constant="10" id="sp1-nC-h1d"/>
+                                        <constraint firstItem="nQQ-8p-8hk" firstAttribute="leading" secondItem="fZf-iv-5tp" secondAttribute="leading" constant="10" id="vtQ-LU-kCJ"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88.5" id="zOF-kQ-ccv"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-mA-9x4" userLabel="Bottom">
+                                    <rect key="frame" x="0.0" y="133.33333333333337" width="310" height="44"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIL-ka-j4Z" userLabel="Line">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="1"/>
+                                            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="exQ-Nb-DM7"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-yc-Jnx" userLabel="Button">
+                                            <rect key="frame" x="0.0" y="1" width="310" height="43"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="Acv-MH-dSj"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fZf-iv-5tp" firstAttribute="width" secondItem="S7c-ta-LoI" secondAttribute="width" id="wos-hg-ykR"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="S7c-ta-LoI" secondAttribute="trailing" id="5ft-yo-oT3"/>
+                        <constraint firstItem="S7c-ta-LoI" firstAttribute="leading" secondItem="B9Z-KB-IOJ" secondAttribute="leading" id="KtX-UL-gOK"/>
+                        <constraint firstAttribute="bottom" secondItem="S7c-ta-LoI" secondAttribute="bottom" id="Nzv-It-Usq"/>
+                        <constraint firstItem="S7c-ta-LoI" firstAttribute="top" secondItem="B9Z-KB-IOJ" secondAttribute="top" id="qbq-dw-Vcg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.79807692307692313" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="B9Z-KB-IOJ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3z8-b5-NyM"/>
+                <constraint firstItem="B9Z-KB-IOJ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="9x5-j7-uSd"/>
+                <constraint firstItem="B9Z-KB-IOJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.748792" id="Ifj-jI-CuU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alertView" destination="B9Z-KB-IOJ" id="t1w-dF-xww"/>
+                <outlet property="buttonStackView" destination="HjO-yc-Jnx" id="Pvx-vz-oRj"/>
+                <outlet property="closeButton" destination="8o8-FA-tjJ" id="Pxk-iV-xyP"/>
+                <outlet property="messageLabel" destination="nQQ-8p-8hk" id="Phu-JI-7uP"/>
+            </connections>
+            <point key="canvasLocation" x="-270" y="162"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="but_exit_signup" width="13.666666984558105" height="13.666666984558105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
