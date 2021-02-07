@@ -9,7 +9,7 @@
 import UIKit.UIButton
 
 class SoyeonAlertButton<Action>: UIButton {
-    typealias AlertStyle = Action
+    typealias ActionStyle = Action
     private var actionClosure: (() -> Void)?
     
     @objc private func targetAction() {

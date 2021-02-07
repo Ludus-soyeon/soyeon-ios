@@ -11,21 +11,18 @@ import UIKit
 final class SoyeonBasicAlertView: SoyeonAlert<SoyeonBasicAlertView>, SoyeonAlertActionable {
     typealias ActionStyle = SoyeonAlertStyle.ActionBasic
      
-    @IBOutlet weak private var alertView: UIView!
-    @IBOutlet weak private var messageLabel: UILabel!
-    @IBOutlet weak private var buttonStackView: UIStackView!
-    @IBOutlet weak private var closeButton: UIButton!
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        alertView.setRadius(4)
-    }
-     
+    @IBOutlet private weak var alertView: UIView!
+    @IBOutlet private weak var messageLabel: UILabel!
+    @IBOutlet private weak var buttonStackView: UIStackView!
+    @IBOutlet private weak var closeButton: UIButton!
+ 
     static func alert(style: SoyeonAlertStyle.Basic? = nil,
                       message: String) -> Custom? {
         guard let alert = super.alert() else {
             return nil
         }
+        
+        alert.setLayout()
         
         switch style {
         case .close:
@@ -37,6 +34,10 @@ final class SoyeonBasicAlertView: SoyeonAlert<SoyeonBasicAlertView>, SoyeonAlert
         alert.messageLabel.text = message
         
         return alert
+    }
+    
+    private func setLayout() {
+        alertView.setRadius(4)
     }
     
     @discardableResult
