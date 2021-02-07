@@ -9,18 +9,18 @@
 import UIKit.UIButton
 
 final class SoyeonRoundAlertButton: SoyeonAlertButton<SoyeonAlertStyle.ActionRound> {
-    convenience init(_ style: AlertStyle, action: @escaping () -> Void) {
+    convenience init(_ style: ActionStyle, action: @escaping () -> Void) {
         self.init(action: action)
         setLayout(style: style)
     }
     
     @available(iOS 14.0, *)
-    convenience init(_ style: AlertStyle, action: UIAction?) {
+    convenience init(_ style: ActionStyle, action: UIAction?) {
         self.init(action: action)
         setLayout(style: style)
     }
     
-    private func setLayout(style: AlertStyle) {
+    private func setLayout(style: ActionStyle) {
         setRadius(23)
         titleLabel?.font = Fonts.nanumSquareR.size(16)
         heightAnchor.constraint(equalToConstant: 46).isActive = true

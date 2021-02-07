@@ -11,25 +11,25 @@ import UIKit
 final class SoyeonRoundAlertView: SoyeonAlert<SoyeonRoundAlertView>, SoyeonAlertActionable {
     typealias ActionStyle = SoyeonAlertStyle.ActionRound
     
-    @IBOutlet weak private var alertView: UIView!
-    @IBOutlet weak private var messageLabel: UILabel!
-    @IBOutlet weak private var buttonStackView: UIStackView!
-      
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        alertView.setRadius(4)
-    }
-    
+    @IBOutlet private weak var alertView: UIView!
+    @IBOutlet private weak var messageLabel: UILabel!
+    @IBOutlet private weak var buttonStackView: UIStackView!
+  
     static func alert(message: String) -> Custom? {
         guard let alert = super.alert() else {
             return nil
         }
+        alert.setLayout()
         
         alert.messageLabel.text = message
           
         return alert
     }
      
+    private func setLayout() {
+        alertView.setRadius(4)
+    }
+    
     @discardableResult
     func action(style: ActionStyle,
                 completion: @escaping (() -> Void)) -> Self {

@@ -9,18 +9,18 @@
 import UIKit.UIButton
 
 final class SoyeonBasicAlertButton: SoyeonAlertButton<SoyeonAlertStyle.ActionBasic> {
-    convenience init(_ style: AlertStyle, action: @escaping () -> Void) {
+    convenience init(_ style: ActionStyle, action: @escaping () -> Void) {
         self.init(action: action)
         setLayout(style: style)
     }
     
     @available(iOS 14.0, *)
-    convenience init(_ style: AlertStyle, action: UIAction?) {
+    convenience init(_ style: ActionStyle, action: UIAction?) {
         self.init(action: action)
         setLayout(style: style)
     }
     
-    private func setLayout(style: AlertStyle) {
+    private func setLayout(style: ActionStyle) {
         switch style {
         case .basic(let title):
             setTitle(title, for: .normal)
