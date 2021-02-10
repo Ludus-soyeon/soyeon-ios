@@ -81,7 +81,6 @@
 		D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */; };
 		D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */; };
 		D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */; };
-		D875577B25C6A08500380F1E /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875577825C6A05400380F1E /* CustomBackButtonNavController.swift */; };
 		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -179,7 +178,6 @@
 		D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountWorker.swift; sourceTree = "<group>"; };
 		D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountInteractor.swift; sourceTree = "<group>"; };
 		D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountRouter.swift; sourceTree = "<group>"; };
-		D875577825C6A05400380F1E /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomBackButtonNavController.swift; path = Soyeon/Common/CustomBackButtonNavController.swift; sourceTree = SOURCE_ROOT; };
 		D875578C25C6C20300380F1E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -562,6 +560,49 @@
 			path = StartSplash;
 			sourceTree = "<group>";
 		};
+		1DBA14DD25D46BE000979BB2 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA14E025D46C0200979BB2 /* Step3 */,
+				1DBA14DF25D46BFE00979BB2 /* Step2 */,
+				1DBA14DE25D46BF900979BB2 /* Step1 */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1DBA14DE25D46BF900979BB2 /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D1908A625AA120F008210D1 /* StartSplash */,
+				D8354D5B25B433F400C9C531 /* NewAccount */,
+				1D19085125A9F77E008210D1 /* Agreement */,
+				009B029E25B47E9E00753847 /* Login */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
+		1DBA14DF25D46BFE00979BB2 /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Step2;
+			sourceTree = "<group>";
+		};
+		1DBA14E025D46C0200979BB2 /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
+		1DBA14E125D46C0D00979BB2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3125B484A800F64A28 /* Guidance */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		1DC9DF3A25AAEC1300822E99 /* PagingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,12 +757,9 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
-				009B029E25B47E9E00753847 /* Login */,
+				1DBA14E125D46C0D00979BB2 /* Main */,
+				1DBA14DD25D46BE000979BB2 /* Signup */,
 				000CEB4A25B484C800F64A28 /* Extension */,
-				000CEB3125B484A800F64A28 /* Guidance */,
-				1D1908A625AA120F008210D1 /* StartSplash */,
-				D8354D5B25B433F400C9C531 /* NewAccount */,
-				1D19085125A9F77E008210D1 /* Agreement */,
 				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
