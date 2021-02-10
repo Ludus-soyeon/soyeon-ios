@@ -81,6 +81,7 @@
 		D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */; };
 		D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */; };
 		D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */; };
+		D8569C2925D4701000542872 /* Soyeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8569C2825D4701000542872 /* Soyeon.swift */; };
 		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -178,6 +179,7 @@
 		D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountWorker.swift; sourceTree = "<group>"; };
 		D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountInteractor.swift; sourceTree = "<group>"; };
 		D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountRouter.swift; sourceTree = "<group>"; };
+		D8569C2825D4701000542872 /* Soyeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soyeon.swift; sourceTree = "<group>"; };
 		D875578C25C6C20300380F1E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -733,6 +735,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D8569C2725D4700200542872 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D8569C2825D4701000542872 /* Soyeon.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		D8795C33258E6A2100DF4D64 = {
 			isa = PBXGroup;
 			children = (
@@ -759,6 +769,7 @@
 			children = (
 				1DBA14E125D46C0D00979BB2 /* Main */,
 				1DBA14DD25D46BE000979BB2 /* Signup */,
+				D8569C2725D4700200542872 /* Network */,
 				000CEB4A25B484C800F64A28 /* Extension */,
 				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
@@ -956,6 +967,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8569C2925D4701000542872 /* Soyeon.swift in Sources */,
 				0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */,
 				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
