@@ -19,7 +19,6 @@ protocol AgreementDetailViewControllerOutput {
 
 final class AgreementDetailViewController: UIViewController {
     
-    @IBOutlet private weak var navigationTitle: UILabel!
     @IBOutlet private weak var contentTextView: UITextView!
     
     var detailType: AgreementDetail.AgreementDetailType!
@@ -56,9 +55,13 @@ final class AgreementDetailViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentTextView.contentInset = UIEdgeInsets.init(top: 26, left: 42, bottom: 26, right: 42)
         
+        setupLayout()
         doAgreementDetailOnLoad()
+    }
+    
+    private func setupLayout() {
+        contentTextView.contentInset = UIEdgeInsets(top: 26, left: 42, bottom: 26, right: 42)
     }
     
     // MARK: - Load data
@@ -76,7 +79,7 @@ final class AgreementDetailViewController: UIViewController {
 extension AgreementDetailViewController: AgreementDetailViewControllerInput {
     // MARK: - Display logic
     func displayAgreementDetail(viewModel: AgreementDetail.AgreementDetailViewModel) {
-        navigationTitle.text = viewModel.title
+        setNavigationTitle(viewModel.title ?? "")
         contentTextView.text = viewModel.content
     }
 }

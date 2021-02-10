@@ -57,8 +57,13 @@ final class AgreementViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        setupLayout()
     }
- 
+    
+    private func setupLayout() {
+        setNavigationTitle("이용 약관 동의")
+    }
+    
     @IBAction func agreeButtonDidTap(_ sender: UIButton) {
         if let type = Agreement.AgreementButtonTag(rawValue: sender.tag) {
             let state = viewModel.getButtonState(type)
