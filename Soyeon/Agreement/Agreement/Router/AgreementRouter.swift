@@ -35,7 +35,12 @@ extension AgreementRouter: AgreementRouterProtocol {
     // MARK: - Navigation
     
     func navigateToAgreementDetail(type: Agreement.AgreementButtonTag) {
-        print("navigateToAgreementDetail \(type)")
+        
+        if let type = AgreementDetail.AgreementDetailType(rawValue: type.rawValue) {
+            let agreementDetailViewController = AgreementDetailViewController(type: type)
+            viewController?.navigationController?.pushViewController(agreementDetailViewController,
+                                                                     animated: true)
+        }
     }
     
     func navigateToJoin() {
