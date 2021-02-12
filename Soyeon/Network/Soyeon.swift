@@ -20,6 +20,16 @@ enum Soyeon {
     case googleLogin(token: String)
     case kakaoLogin(token: String)
     case naverLogin(token: String)
+
+    // Contents Service
+    case privacy
+    case terms
+    case lifeStyleQuestions
+    case lifeStyleAnswers
+    case registLifeStyle(answers: [[String: String]])
+    case mbtiQuestions
+    case mbtiAnswers(results: [[Int: Int]])
+    case mbti(userId: String)
 }
 
 
@@ -43,6 +53,22 @@ extension Soyeon: TargetType {
             return "/oauth/kakao"
         case .naverLogin:
             return "/oauth/naver"
+        case .privacy:
+            return "/terms/privacy"
+        case .terms:
+            return "/terms"
+        case .lifeStyleQuestions:
+            return "/life_style/questions"
+        case .lifeStyleAnswers:
+            return "/life_style/answers"
+        case .registLifeStyle:
+            return "/life_style/answers"
+        case .mbtiQuestions:
+            return "/questions/mbti"
+        case .mbtiAnswers:
+            return "/questions/mbti"
+        case .mbti(let userId):
+            return "/results/mbti/\(userId)"
         }
     }
     public var method: Moya.Method {
@@ -57,6 +83,22 @@ extension Soyeon: TargetType {
             return .post
         case .googleLogin, .kakaoLogin, .naverLogin:
             return .post
+        case .privacy:
+            return .get
+        case .terms:
+            return .get
+        case .lifeStyleQuestions:
+            return .get
+        case .lifeStyleAnswers:
+            return .get
+        case .registLifeStyle:
+            return .post
+        case .mbtiQuestions:
+            return .get
+        case .mbtiAnswers:
+            return .post
+        case .mbti:
+            return .get
         }
     }
     
@@ -75,6 +117,14 @@ extension Soyeon: TargetType {
             var params: [String: Any] = [:]
             params["token"] = token
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .registLifeStyle(let answers):
+            let params: [String: Any] = [:]
+            let jsonBody = try! JSONEncoder().encode(answers)
+            return .requestCompositeData(bodyData: jsonBody, urlParameters: params)
+        case .mbtiAnswers(let results):
+            let params: [String: Any] = [:]
+            let jsonBody = try! JSONEncoder().encode(results)
+            return .requestCompositeData(bodyData: jsonBody, urlParameters: params)
         default:
             return .requestPlain
         }
