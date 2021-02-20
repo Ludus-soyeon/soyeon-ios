@@ -11,12 +11,13 @@ import Foundation
 
 enum Soyeon {
     // Signup Service
-    case removePhoneAuth
     case agreeTerms(ids: [Int])
     case checkDuplicateNickname(nickname: String)
+    case sms(phoneNumber: String)
     case smsAuth(key: String,
                  value: Int)
-    case dryAuth
+    case dryAuth(key: String,
+                 value: Int)
     case googleLogin(token: String)
     case kakaoLogin(token: String)
     case naverLogin(token: String)
@@ -37,12 +38,12 @@ extension Soyeon: TargetType {
     public var baseURL: URL { return URL(string: "")! }
     public var path: String {
         switch self {
-        case .removePhoneAuth:
-            return "/users/phone"
         case .agreeTerms:
             return "/terms"
         case .checkDuplicateNickname(let nickname):
             return "/users/nickname/\(nickname)"
+        case .sms:
+            return "/sms"
         case .smsAuth:
             return "/sms/auth"
         case .dryAuth:
@@ -73,13 +74,11 @@ extension Soyeon: TargetType {
     }
     public var method: Moya.Method {
         switch self {
-        case .removePhoneAuth:
-            return .get
         case .agreeTerms:
             return .post
         case .checkDuplicateNickname:
             return .get
-        case .smsAuth, .dryAuth:
+        case .sms, .smsAuth, .dryAuth:
             return .post
         case .googleLogin, .kakaoLogin, .naverLogin:
             return .post
@@ -108,7 +107,16 @@ extension Soyeon: TargetType {
             var params: [String: Any] = [:]
             params["term_ids"] = ids
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .sms(let phoneNumber):
+            var params: [String: Any] = [:]
+            params["phone_num"] = phoneNumber
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
         case .smsAuth(let key, let value):
+            var params: [String: Any] = [:]
+            params["auth_key"] = key
+            params["auth_value"] = value
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .dryAuth(let key, let value):
             var params: [String: Any] = [:]
             params["auth_key"] = key
             params["auth_value"] = value
