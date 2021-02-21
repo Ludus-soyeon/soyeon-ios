@@ -145,7 +145,7 @@ extension Soyeon: TargetType {
     public var headers: [String: String]? {
         var params = [String: String]()
         params["accept"] = "application/json"
-        params["Authorization"] = "Bearer 0fce78307aaf5c67a4b19f4dd014039a394f067f5bfbad30e8abc61ff1dc9"
+        params["Authorization"] = "Bearer 56dc2feb90b95a5f63a347ed01d938e874832274624abec6ac276abe3bb5732c"
 
         switch self {
         case .agreeTerms, .sms, .smsAuth, .dryAuth:

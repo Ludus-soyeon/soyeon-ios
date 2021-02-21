@@ -30,6 +30,10 @@
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00CF092A25E25C710077700A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092925E25C710077700A /* ServiceError.swift */; };
 		00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092D25E25CA70077700A /* ProviderManager.swift */; };
+		00CF093625E28F4E0077700A /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093525E28F4E0077700A /* Term.swift */; };
+		00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093925E2914C0077700A /* LifeStyleAnswer.swift */; };
+		00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */; };
+		00CF094225E293790077700A /* MbtiQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF094125E293790077700A /* MbtiQuestion.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
@@ -127,6 +131,10 @@
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00CF092925E25C710077700A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		00CF092D25E25CA70077700A /* ProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
+		00CF093525E28F4E0077700A /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		00CF093925E2914C0077700A /* LifeStyleAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleAnswer.swift; sourceTree = "<group>"; };
+		00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleQuestion.swift; sourceTree = "<group>"; };
+		00CF094125E293790077700A /* MbtiQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiQuestion.swift; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
@@ -377,6 +385,17 @@
 				009B02AC25B47E9E00753847 /* LoginRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		00CF094625E294480077700A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CF094125E293790077700A /* MbtiQuestion.swift */,
+				00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */,
+				00CF093925E2914C0077700A /* LifeStyleAnswer.swift */,
+				00CF093525E28F4E0077700A /* Term.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
@@ -773,6 +792,7 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
+				00CF094625E294480077700A /* Model */,
 				1DBA14E125D46C0D00979BB2 /* Main */,
 				1DBA14DD25D46BE000979BB2 /* Signup */,
 				D8569C2725D4700200542872 /* Network */,
@@ -996,14 +1016,17 @@
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
 				1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */,
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
+				00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */,
 				1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */,
 				1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
+				00CF094225E293790077700A /* MbtiQuestion.swift in Sources */,
 				0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				00CF092A25E25C710077700A /* ServiceError.swift in Sources */,
@@ -1015,6 +1038,7 @@
 				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				00CF093625E28F4E0077700A /* Term.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
