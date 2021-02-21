@@ -148,7 +148,7 @@ extension Soyeon: TargetType {
         params["Authorization"] = "Bearer 0fce78307aaf5c67a4b19f4dd014039a394f067f5bfbad30e8abc61ff1dc9"
 
         switch self {
-        case .user:
+        case .agreeTerms, .sms, .smsAuth, .dryAuth:
             return params
         default:
             return nil
