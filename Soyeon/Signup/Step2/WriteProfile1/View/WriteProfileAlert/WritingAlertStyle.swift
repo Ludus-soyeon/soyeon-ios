@@ -11,19 +11,22 @@ import UIKit
  
 struct WritingAlertStyle {
     enum AlertCustomButtonStyle {
-        case birthyear
+        case birthYear
         case education
         case job
+        case height
         case religion
         
         func view(action: @escaping (String?) -> Void) -> WriteProfileAlertCustomButton? {
             switch self {
-            case .birthyear:
+            case .birthYear:
                 return loadViews(action: action, type: BirthYearAlertItem.self)
             case .education:
                 return loadViews(action: action, type: EducationAlertItem.self)
             case .job:
-                return loadViews(action: action, type: JobAlertItem.self) 
+                return loadViews(action: action, type: JobAlertItem.self)
+            case .height:
+                return loadViews(action: action, type: HeightAlertItem.self)
             case .religion:
                 return loadViews(action: action, type: ReligionAlertItem.self)
             }

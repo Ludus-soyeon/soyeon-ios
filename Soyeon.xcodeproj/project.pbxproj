@@ -52,6 +52,7 @@
 		0A4E516725EAB55100616C07 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516525EAB55100616C07 /* ReuseIdentifiable.swift */; };
 		0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516C25EAB58700616C07 /* CaseIterable+.swift */; };
 		0A4E516F25EAB58700616C07 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516D25EAB58700616C07 /* Date+.swift */; };
+		0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
@@ -173,6 +174,7 @@
 		0A4E516525EAB55100616C07 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
 		0A4E516C25EAB58700616C07 /* CaseIterable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CaseIterable+.swift"; sourceTree = "<group>"; };
 		0A4E516D25EAB58700616C07 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightAlertItem.swift; path = Soyeon/Extension/HeightAlertItem.swift; sourceTree = SOURCE_ROOT; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 				0A4E514D25EAB4E400616C07 /* ReligionAlertItem.swift */,
 				0A4E514E25EAB4E400616C07 /* EducationAlertItem.swift */,
 				0A4E514F25EAB4E400616C07 /* BirthYearAlertItem.swift */,
+				0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */,
 			);
 			path = CustomButtons;
 			sourceTree = "<group>";
@@ -1134,6 +1137,7 @@
 				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
 				000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */,
+				0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */,
 				000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */,
 				0A4E516F25EAB58700616C07 /* Date+.swift in Sources */,
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,

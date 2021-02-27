@@ -19,7 +19,7 @@ public class SoyeonAlert<Custom>: UIView, SoyeonAlertable {
     }
      
     func show(to parentView: UIView,
-              completion: (() -> Void)?) {
+              completion: (() -> Void)? = nil) {
         parentView.addSubview(self)
         
         NSLayoutConstraint.activate( [topAnchor.constraint(equalTo: parentView.topAnchor),
