@@ -42,16 +42,16 @@ final class SoyeonBasicAlertView: SoyeonAlert<SoyeonBasicAlertView>, SoyeonAlert
     
     @discardableResult
     func action(style: ActionStyle,
-                completion: @escaping (() -> Void)) -> Self {
+                completion: @escaping ((String?) -> Void)) -> Self {
         let button: SoyeonBasicAlertButton!
         if #available(iOS 14.0, *) {
             button = SoyeonBasicAlertButton(style, action: .init(handler: { _ in
-                completion()
+                completion(nil)
                 super.dismiss()
             }))
         } else {
-            button = SoyeonBasicAlertButton(style, action: {
-                completion()
+            button = SoyeonBasicAlertButton(style, action: { _ in
+                completion(nil)
                 super.dismiss()
             })
         }

@@ -38,5 +38,5 @@ protocol SoyeonAlertActionable {
     associatedtype ActionStyle
     
     func action(style: ActionStyle,
-                completion: @escaping (() -> Void)) -> Self
+                completion: @escaping ((String?) -> Void)) -> Self
 }

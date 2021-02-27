@@ -8,15 +8,14 @@
 
 import UIKit.UIButton
 
-class SoyeonAlertButton<Action>: UIButton {
-    typealias ActionStyle = Action
-    private var actionClosure: (() -> Void)?
-    
+class SoyeonAlertButton: UIButton {
+    private var actionClosure: ((String?) -> Void)?
+     
     @objc private func targetAction() {
-        actionClosure?()
+        actionClosure?(titleLabel?.text)
     }
     
-    convenience init(action: @escaping () -> Void) {
+    convenience init(action: @escaping (String?) -> Void) {
         self.init()
         actionClosure = action
         self.addTarget(self, action: #selector(targetAction), for: .touchDown)

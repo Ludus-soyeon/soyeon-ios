@@ -32,16 +32,16 @@ final class SoyeonRoundAlertView: SoyeonAlert<SoyeonRoundAlertView>, SoyeonAlert
     
     @discardableResult
     func action(style: ActionStyle,
-                completion: @escaping (() -> Void)) -> Self {
+                completion: @escaping ((String?) -> Void)) -> Self {
         let button: SoyeonRoundAlertButton!
         if #available(iOS 14.0, *) {
             button = SoyeonRoundAlertButton(style, action: .init(handler: { _ in
-                completion()
+                completion(nil)
                 super.dismiss()
             }))
         } else {
-            button = SoyeonRoundAlertButton(style, action: {
-                completion()
+            button = SoyeonRoundAlertButton(style, action: { _ in
+                completion(nil)
                 super.dismiss()
             })
         }

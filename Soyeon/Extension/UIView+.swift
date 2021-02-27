@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+extension UIView: ReuseIdentifiable {
     /**
      Set a shadow on a UIView.
      - parameters:
