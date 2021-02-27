@@ -8,8 +8,11 @@
 
 import UIKit.UIButton
 
-final class SoyeonBasicAlertButton: SoyeonAlertButton<SoyeonAlertStyle.ActionBasic> {
-    convenience init(_ style: ActionStyle, action: @escaping () -> Void) {
+final class SoyeonBasicAlertButton: SoyeonAlertButton {
+    
+    typealias ActionStyle = SoyeonAlertStyle.ActionBasic
+    
+    convenience init(_ style: ActionStyle, action: @escaping (String?) -> Void) {
         self.init(action: action)
         setLayout(style: style)
     }
