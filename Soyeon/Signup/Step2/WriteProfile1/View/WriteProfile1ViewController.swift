@@ -51,37 +51,85 @@ final class WriteProfile1ViewController: UIViewController {
     }
  
     // MARK: - View lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        doSomethingOnLoad()
+        doWriteProfileOnLoad()
     }
      
+    // MARK: - Load data
+    private func doWriteProfileOnLoad() {
+        output.doSomething()
+    }
+    
     private func setupLayout() {
         setNavigationTitle("프로필 작성하기")
         nextButton.setRadius(23)
     }
   
-    @IBAction private func profileItemButtonDidTap(sender: UIButton) {
+    private func isEnabledNextButton(_ isEnabled: Bool) {
+        nextButton.isEnabled = isEnabled
         
+        if isEnabled {
+            nextButton.setTitleColor(UIColor.white, for: .normal)
+            nextButton.backgroundColor = Colors.soyeonBlue.color()
+            return
+        }
+        nextButton.setTitleColor(#colorLiteral(red: 0.6, green: 0.6, blue: 0.6, alpha: 1), for: .normal)
+        nextButton.backgroundColor = Colors.buttonDisabled.color()
     }
     
-    // MARK: - Load data
+    @IBAction private func nextButtonDidTap(sender: UIButton) {
+        print("nextButtonDidTap")
+    }
+    
+    @IBAction private func profileItemButtonDidTap(sender: UIButton) {
+        guard let writeProfileItem = WriteProfileAlertViewModel.WriteProfileItem(rawValue: sender.tag) else {
+            return
+        }
+    
+        writeProfileItem
+            .alert(action: { [weak self] in
+                self?.completion(type: writeProfileItem,
+                                 test: $0)
+            })
+            .show(to: view!)
+    }
+    
+    private func completion(type: WriteProfileAlertViewModel.WriteProfileItem,
+                            test: String?) {
 
-    func doSomethingOnLoad() {
-        output.doSomething()
+        // 모델과 입력받은 값을 갖고 interactor로
+        //
+
+        if type != .drink {
+            let button = UIButton()
+            button.tag = type.rawValue + 1
+                
+            profileItemButtonDidTap(sender: button)
+        }
     }
 }
  
 // MARK: - WriteProfile1PresenterOutput
-
 extension WriteProfile1ViewController: WriteProfile1ViewControllerInput {
-  
+    
     // MARK: - Display logic
-
-    func displaySomething(viewModel: WriteProfile1.WriteProfile1ViewModel) {
-        
+    func displayWriteProfileOnLoad(viewModel: WriteProfile1.WriteProfile1ViewModel) {
+        if let profile = viewModel.profile {
+            birthLabel.text      = profile.birthyearPlaceHold
+            educationLabel.text  = profile.educationPlaceHold
+            jobLabel.text        = profile.jobPlaceHold
+            location1Label.text  = profile.location1PlaceHold
+            location2Label.text  = profile.location2PlaceHold
+            heightLabel.text     = profile.heightPlaceHold
+            formLabel.text       = profile.formPlaceHold
+            religionLabel.text   = profile.religionPlaceHold
+            smokedLabel.text     = profile.smokedPlaceHold
+            drinkLabel.text      = profile.drinkPlaceHold
+            
+            isEnabledNextButton(profile.completed)
+        }
     }
 }
   

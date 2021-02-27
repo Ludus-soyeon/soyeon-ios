@@ -1,19 +1,18 @@
 //
-//  BirthYearAlertItem.swift
+//  HeightAlertItem.swift
 //  Soyeon
 //
-//  Created by 박은비 on 2021/02/26.
+//  Created by 박은비 on 2021/02/28.
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
 import UIKit.UIPickerView
 
-final class BirthYearAlertItem: WriteProfileAlertCustomButton {
+final class HeightAlertItem: WriteProfileAlertCustomButton {
     @IBOutlet private weak var inputPickerView: UIPickerView!
-    private var thisYear = Date().year
-    private lazy var years = Array(thisYear - 70...thisYear)
-    private var standardYear: Int {
-        return thisYear - 30
+    private var heights = Array(100...220)
+    private var standardHeight: Int {
+        return heights[Int(heights.count / 2)]
     }
     
     override func setDelegate() {
@@ -22,39 +21,40 @@ final class BirthYearAlertItem: WriteProfileAlertCustomButton {
     }
     
     override func setupLayout() {
-        inputPickerView.selectRow(standardYearRow(),
+        inputPickerView.selectRow(standardHeightRow(),
                                   inComponent: 0,
                                   animated: false)
         
-        inputText = String(standardYear)
+        inputText = String(standardHeight)
     }
     
-    private func standardYearRow() -> Int {
-        return years.firstIndex { standardYear == $0 } ?? years.count - 1
+    private func standardHeightRow() -> Int {
+        return heights.firstIndex { standardHeight == $0 } ?? heights.count - 1
     }
+     
 }
 
-extension BirthYearAlertItem: UIPickerViewDelegate {
+extension HeightAlertItem: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 44
     }
      
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        inputText = String(years[row])
+        inputText = String(heights[row])
     }
 }
 
-extension BirthYearAlertItem: UIPickerViewDataSource {
+extension HeightAlertItem: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return years.count
+        return heights.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(years[row])"
+        return "\(heights[row])"
     }
     
 }

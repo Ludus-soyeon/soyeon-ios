@@ -14,7 +14,7 @@ protocol WriteProfile1PresenterInput: WriteProfile1InteractorOutput {
 
 protocol WriteProfile1PresenterOutput: class {
 
-    func displaySomething(viewModel: WriteProfile1.WriteProfile1ViewModel)
+    func displayWriteProfileOnLoad(viewModel: WriteProfile1.WriteProfile1ViewModel)
 }
 
 final class WriteProfile1Presenter {
@@ -37,6 +37,6 @@ extension WriteProfile1Presenter: WriteProfile1PresenterInput {
 
     func presentSomething() {
         let viewModel = WriteProfile1.WriteProfile1ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        output.displayWriteProfileOnLoad(viewModel: viewModel)
     }
 }

@@ -79,7 +79,7 @@
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-ER-Jcv">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="j44-3A-efT"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="Gan-8A-rft"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -142,7 +142,7 @@
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU8-IG-jAF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="Cvg-Vl-0kC"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="pb6-eB-8fb"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -205,7 +205,7 @@
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fak-rC-QEE">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="e70-84-Ldm"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="tON-Hi-xrG"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -268,7 +268,7 @@
                                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ0-8B-bn7">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="Eki-Pq-CGk"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="Wok-zl-mmY"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -331,7 +331,7 @@
                                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1y-EQ-jul">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="HqQ-cG-eg2"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="lZK-7e-Ng3"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -394,7 +394,7 @@
                                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-gR-qGA">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="PN7-le-wZf"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="zq5-bV-bwL"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -457,7 +457,7 @@
                                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOd-YJ-8HU">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="2yK-xB-TUF"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="y5M-s0-gfA"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -520,7 +520,7 @@
                                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIU-s1-zDb">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="v6l-kp-iC3"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="pJf-2s-Lgc"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -583,7 +583,7 @@
                                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUE-3Y-QHp">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="RFH-VR-EWj"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="9mR-kx-7Mg"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -646,7 +646,7 @@
                                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-gI-imL">
                                                                         <rect key="frame" x="0.0" y="0.0" width="251" height="44"/>
                                                                         <connections>
-                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="MRN-Dc-vFW"/>
+                                                                            <action selector="profileItemButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="ctN-yh-1hw"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -687,9 +687,14 @@
                                             <constraint firstAttribute="height" constant="48" id="sIH-CS-0xq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="다음">
                                             <color key="titleColor" name="153153153"/>
                                         </state>
+                                        <state key="selected" title="다음"/>
+                                        <connections>
+                                            <action selector="nextButtonDidTapWithSender:" destination="CBI-gZ-Cx7" eventType="touchUpInside" id="9BL-oJ-VSJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
