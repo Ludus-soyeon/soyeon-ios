@@ -12,7 +12,12 @@ class WriteProfile1Worker {
 
     // MARK: - Business Logic
 
-    func doSomeWork() {
- 
+    func ageCalculater(birthYear: String) -> Int {
+        if let year = Int(birthYear) {
+            return Date().year - year
+        }
+        
+        return 0
     }
+     
 }

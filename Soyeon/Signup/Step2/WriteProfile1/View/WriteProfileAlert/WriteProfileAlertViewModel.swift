@@ -55,8 +55,7 @@ struct WriteProfileAlertViewModel {
         case none           = "비흡연"
         case smaker          = "흡연"
     }
-    
-    
+     
     enum WriteProfileItem: Int {
         case birthYear = 0
         case education
