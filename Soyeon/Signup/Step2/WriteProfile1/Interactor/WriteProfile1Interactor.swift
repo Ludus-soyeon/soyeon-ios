@@ -13,8 +13,7 @@ protocol WriteProfile1InteractorInput: WriteProfile1ViewControllerOutput {
 }
 
 protocol WriteProfile1InteractorOutput {
-
-    func presentSomething()
+    func presentWriteProfile(response: WriteProfile1Model.ViewModel)
 }
 
 final class WriteProfile1Interactor {
@@ -36,11 +35,27 @@ final class WriteProfile1Interactor {
 extension WriteProfile1Interactor: WriteProfile1ViewControllerOutput {
 
     // MARK: - Business logic
-
-    func doSomething() {
-
-        worker.doSomeWork()
-
-        output.presentSomething()
+    func completedText(_ type: WriteProfileAlertViewModel.WriteProfileItem?,
+                       _ input: String?,
+                       request: WriteProfile1Model.ViewModel?) {
+        var request: WriteProfile1Model.ViewModel! = request ?? .init()
+        
+        guard let type = type,
+              var input = input else {
+            output.presentWriteProfile(response: request)
+            return
+        }
+        
+        // TODO: - UserDefault 저장 필요.
+        switch type {
+        case .birthYear:
+            input = String(worker.ageCalculater(birthYear: input))
+        default:
+            break
+        }
+        
+        request.inputAccordingToType(type, input: input)
+         
+        output.presentWriteProfile(response: request)
     }
 }

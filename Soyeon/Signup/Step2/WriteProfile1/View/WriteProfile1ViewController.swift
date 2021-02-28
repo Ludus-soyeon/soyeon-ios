@@ -13,11 +13,14 @@ protocol WriteProfile1ViewControllerInput: WriteProfile1PresenterOutput {
 }
 
 protocol WriteProfile1ViewControllerOutput {
-    func doSomething()
+    func completedText(_ type: WriteProfileAlertViewModel.WriteProfileItem?,
+                       _ input: String?,
+                       request: WriteProfile1Model.ViewModel?)
 }
 
 final class WriteProfile1ViewController: UIViewController {
-
+    var viewModel: WriteProfile1Model.ViewModel?
+    
     var output: WriteProfile1ViewControllerOutput!
     var router: WriteProfile1RouterProtocol!
    
@@ -58,8 +61,10 @@ final class WriteProfile1ViewController: UIViewController {
     }
      
     // MARK: - Load data
-    private func doWriteProfileOnLoad() {
-        output.doSomething()
+    private func doWriteProfileOnLoad(_ type: WriteProfileAlertViewModel.WriteProfileItem? = nil,
+                                      _ input: String? = nil,
+                                      request: WriteProfile1Model.ViewModel? = nil) {
+        output.completedText(type, input, request: request)
     }
     
     private func setupLayout() {
@@ -77,30 +82,11 @@ final class WriteProfile1ViewController: UIViewController {
         }
         nextButton.setTitleColor(#colorLiteral(red: 0.6, green: 0.6, blue: 0.6, alpha: 1), for: .normal)
         nextButton.backgroundColor = Colors.buttonDisabled.color()
-    }
-    
-    @IBAction private func nextButtonDidTap(sender: UIButton) {
-        print("nextButtonDidTap")
-    }
-    
-    @IBAction private func profileItemButtonDidTap(sender: UIButton) {
-        guard let writeProfileItem = WriteProfileAlertViewModel.WriteProfileItem(rawValue: sender.tag) else {
-            return
-        }
-    
-        writeProfileItem
-            .alert(action: { [weak self] in
-                self?.completion(type: writeProfileItem,
-                                 test: $0)
-            })
-            .show(to: view!)
-    }
-    
+    }     
     private func completion(type: WriteProfileAlertViewModel.WriteProfileItem,
-                            test: String?) {
-
-        // 모델과 입력받은 값을 갖고 interactor로
-        //
+                            input: String) {
+ 
+        doWriteProfileOnLoad(type, input, request: viewModel)
 
         if type != .drink {
             let button = UIButton()
@@ -109,27 +95,46 @@ final class WriteProfile1ViewController: UIViewController {
             profileItemButtonDidTap(sender: button)
         }
     }
+    
+    @IBAction private func nextButtonDidTap(sender: UIButton) {
+        print("nextButtonDidTap \(String(describing: viewModel))")
+    }
+    
+    @IBAction private func profileItemButtonDidTap(sender: UIButton) {
+        guard let writeProfileItem = WriteProfileAlertViewModel.WriteProfileItem(rawValue: sender.tag) else {
+            return
+        }
+    
+        writeProfileItem
+            .alert(action: { [weak self] (result) in
+                guard let self = self,
+                      let result = result else { return }
+                self.completion(type: writeProfileItem,
+                                 input: result)
+            })
+            .show(to: view!)
+    }
 }
  
 // MARK: - WriteProfile1PresenterOutput
-extension WriteProfile1ViewController: WriteProfile1ViewControllerInput {
+extension WriteProfile1ViewController: WriteProfile1ViewControllerInput { 
     
     // MARK: - Display logic
-    func displayWriteProfileOnLoad(viewModel: WriteProfile1.WriteProfile1ViewModel) {
-        if let profile = viewModel.profile {
-            birthLabel.text      = profile.birthyearPlaceHold
-            educationLabel.text  = profile.educationPlaceHold
-            jobLabel.text        = profile.jobPlaceHold
-            location1Label.text  = profile.location1PlaceHold
-            location2Label.text  = profile.location2PlaceHold
-            heightLabel.text     = profile.heightPlaceHold
-            formLabel.text       = profile.formPlaceHold
-            religionLabel.text   = profile.religionPlaceHold
-            smokedLabel.text     = profile.smokedPlaceHold
-            drinkLabel.text      = profile.drinkPlaceHold
-            
-            isEnabledNextButton(profile.completed)
-        }
+    func displayWriteProfileOnLoad(response: WriteProfile1Model.ViewModel) {
+        viewModel = response
+        
+        birthLabel.text      = response.birthyearPlaceHold
+        educationLabel.text  = response.educationPlaceHold
+        jobLabel.text        = response.jobPlaceHold
+        location1Label.text  = response.location1PlaceHold
+        location2Label.text  = response.location2PlaceHold
+        heightLabel.text     = response.heightPlaceHold
+        formLabel.text       = response.formPlaceHold
+        religionLabel.text   = response.religionPlaceHold
+        smokedLabel.text     = response.smokedPlaceHold
+        drinkLabel.text      = response.drinkPlaceHold
+        
+        isEnabledNextButton(response.completed)
     }
 }
   

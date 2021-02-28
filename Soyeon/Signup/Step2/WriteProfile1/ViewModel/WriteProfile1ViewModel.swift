@@ -8,8 +8,14 @@
 
 import UIKit
 
-enum WriteProfile1 {
-    struct WriteProfile1 {
+enum WriteProfile1Model {
+    struct Request {
+    }
+    
+    struct Response {
+    }
+    
+    struct ViewModel {
         var birthYear: String?
         var education: String?
         var job: String?
@@ -21,30 +27,20 @@ enum WriteProfile1 {
         var smoked: String?
         var drink: String?
     }
-    
-    struct Request {
-    }
-    
-    struct Response {
-    }
-    
-    struct WriteProfile1ViewModel {
-        var profile: WriteProfile1?
-    }
 }
 
-extension WriteProfile1.WriteProfile1 {
+extension WriteProfile1Model.ViewModel {
     var completed: Bool {
-        return birthYear?.isEmpty ?? false &&
-            education?.isEmpty ?? false &&
-            job?.isEmpty ?? false &&
-            location1?.isEmpty ?? false &&
-            location2?.isEmpty ?? false &&
-            height?.isEmpty ?? false &&
-            form?.isEmpty ?? false &&
-            religion?.isEmpty ?? false &&
-            smoked?.isEmpty ?? false &&
-            drink?.isEmpty ?? false
+        return !(birthYear?.isEmpty ?? true) &&
+            !(education?.isEmpty ?? true) &&
+            !(job?.isEmpty ?? true) &&
+            !(location1?.isEmpty ?? true) &&
+            !(location2?.isEmpty ?? true) &&
+            !(height?.isEmpty ?? true) &&
+            !(form?.isEmpty ?? true) &&
+            !(religion?.isEmpty ?? true) &&
+            !(smoked?.isEmpty ?? true) &&
+            !(drink?.isEmpty ?? true)
     }
     
     var birthyearPlaceHold: String {
@@ -58,7 +54,7 @@ extension WriteProfile1.WriteProfile1 {
     }
     
     var jobPlaceHold: String {
-        if let job = birthYear { return job }
+        if let job = job { return job }
         return WriteProfileAlertViewModel.WriteProfileItem.job.title
     }
     
@@ -95,5 +91,31 @@ extension WriteProfile1.WriteProfile1 {
     var drinkPlaceHold: String {
         if let drink = drink { return drink }
         return WriteProfileAlertViewModel.WriteProfileItem.drink.title
+    }
+     
+    mutating func inputAccordingToType(_ type: WriteProfileAlertViewModel.WriteProfileItem,
+                                       input: String) {
+        switch type {
+        case .birthYear:
+            birthYear       = input
+        case .education:
+            education       = input
+        case .job:
+            job             = input
+        case .location1:
+            location1       = input
+        case .location2:
+            location2       = input
+        case .height:
+            height          = input
+        case .form:
+            form            = input
+        case .religion:
+            religion        = input
+        case .smoked:
+            smoked          = input
+        case .drink:
+            drink           = input
+        }
     }
 }
