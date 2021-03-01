@@ -38,6 +38,10 @@
 		00B3AF1225BBFB8D00F78D13 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 00B3AF1125BBFB8D00F78D13 /* KakaoSDKCommon */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
+		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
+		0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */; };
+		0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */; };
+		0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
 		1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085525A9F77E008210D1 /* DetailContents.swift */; };
 		1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085725A9F77E008210D1 /* AgreementDetailPresenter.swift */; };
@@ -57,12 +61,41 @@
 		1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087125A9F77E008210D1 /* AgreementInteractor.swift */; };
 		1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087325A9F77E008210D1 /* AgreementRouter.swift */; };
 		1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */; };
+		1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */; };
+		1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908C425AA13DF008210D1 /* PagingView.xib */; };
+		1D1908C925AA1645008210D1 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1908C825AA1645008210D1 /* PagingView.swift */; };
+		1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49609A25CED2630002C961 /* SoyeonRoundAlertButton.swift */; };
+		1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4960A225CEE4CC0002C961 /* SoyeonAlertButton.swift */; };
+		1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */; };
+		1D5B63C325B481BA00A5321C /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C225B481BA00A5321C /* XibView.swift */; };
+		1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */; };
+		1DBA13C425D440E400979BB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBA13C325D440E400979BB2 /* Moya */; };
+		1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4525AAEE7600822E99 /* PageViewType.swift */; };
+		1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */; };
+		1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */; };
+		1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */; };
+		1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */; };
+		1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */; };
+		1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */; };
+		1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */; };
+		1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */; };
+		1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
+		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
+		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
+		D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */; };
+		D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6C25B4346200C9C531 /* NewAccountViewController.swift */; };
+		D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7025B4347000C9C531 /* NewAccountConfigurator.swift */; };
+		D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */; };
+		D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */; };
+		D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */; };
+		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
 		D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Main.storyboard */; };
 		D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8795C48258E6A2500DF4D64 /* Assets.xcassets */; };
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
+		D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,11 +132,12 @@
 		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
-		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
-		00B371AD25973E86003F6C76 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
+		0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlert.swift; sourceTree = "<group>"; };
+		0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonBasicAlertView.xib; sourceTree = "<group>"; };
+		0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertView.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
 		1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailViewModel.swift; sourceTree = "<group>"; };
 		1D19085525A9F77E008210D1 /* DetailContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContents.swift; sourceTree = "<group>"; };
@@ -126,8 +160,35 @@
 		1D19088B25A9F7A8008210D1 /* SoyeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonTests.swift; sourceTree = "<group>"; };
 		1D19088F25A9F7A8008210D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartSplashViewController.xib; sourceTree = "<group>"; };
+		1D1908C425AA13DF008210D1 /* PagingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingView.xib; sourceTree = "<group>"; };
+		1D1908C825AA1645008210D1 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		1D49609A25CED2630002C961 /* SoyeonRoundAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertButton.swift; sourceTree = "<group>"; };
+		1D4960A225CEE4CC0002C961 /* SoyeonAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertButton.swift; sourceTree = "<group>"; };
+		1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageView.swift; sourceTree = "<group>"; };
+		1D5B63C225B481BA00A5321C /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
+		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
+		1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChareactorInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoupleInfoView.xib; sourceTree = "<group>"; };
+		1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
+		1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
+		1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
+		1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertButton.swift; sourceTree = "<group>"; };
+		1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonRoundAlertView.xib; sourceTree = "<group>"; };
+		1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertView.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
+		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
+		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
+		D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountPresenter.swift; sourceTree = "<group>"; };
+		D8354D6C25B4346200C9C531 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		D8354D7025B4347000C9C531 /* NewAccountConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountConfigurator.swift; sourceTree = "<group>"; };
+		D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountWorker.swift; sourceTree = "<group>"; };
+		D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountInteractor.swift; sourceTree = "<group>"; };
+		D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountRouter.swift; sourceTree = "<group>"; };
+		D875578C25C6C20300380F1E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +196,7 @@
 		D8795C48258E6A2500DF4D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +213,7 @@
 			files = (
 				00B3AF1225BBFB8D00F78D13 /* KakaoSDKCommon in Frameworks */,
 				00B3AF0E25BBFB8D00F78D13 /* KakaoSDKUser in Frameworks */,
+				1DBA13C425D440E400979BB2 /* Moya in Frameworks */,
 				5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */,
 				00B3AF1025BBFB8D00F78D13 /* KakaoSDKAuth in Frameworks */,
 			);
@@ -325,6 +388,17 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */,
+				0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */,
+				1DD00B8725CDACDD004DC9AA /* AlertView */,
+				1DD00B8025CDA287004DC9AA /* Button */,
+			);
+			path = SoyeonAlert;
+			sourceTree = "<group>";
+		};
 		1D19085125A9F77E008210D1 /* Agreement */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +561,95 @@
 			path = SoyeonTests;
 			sourceTree = "<group>";
 		};
+		1D1908A625AA120F008210D1 /* StartSplash */ = {
+			isa = PBXGroup;
+			children = (
+				1DC9DF3A25AAEC1300822E99 /* PagingView */,
+				1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */,
+				1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */,
+				1D1908C425AA13DF008210D1 /* PagingView.xib */,
+				1D1908C825AA1645008210D1 /* PagingView.swift */,
+				1DC9DF4525AAEE7600822E99 /* PageViewType.swift */,
+				1D5B63C225B481BA00A5321C /* XibView.swift */,
+			);
+			path = StartSplash;
+			sourceTree = "<group>";
+		};
+		1DBA14DD25D46BE000979BB2 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA14E025D46C0200979BB2 /* Step3 */,
+				1DBA14DF25D46BFE00979BB2 /* Step2 */,
+				1DBA14DE25D46BF900979BB2 /* Step1 */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1DBA14DE25D46BF900979BB2 /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D1908A625AA120F008210D1 /* StartSplash */,
+				D8354D5B25B433F400C9C531 /* NewAccount */,
+				1D19085125A9F77E008210D1 /* Agreement */,
+				009B029E25B47E9E00753847 /* Login */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
+		1DBA14DF25D46BFE00979BB2 /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Step2;
+			sourceTree = "<group>";
+		};
+		1DBA14E025D46C0200979BB2 /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
+		1DBA14E125D46C0D00979BB2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				000CEB3125B484A800F64A28 /* Guidance */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1DC9DF3A25AAEC1300822E99 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */,
+				1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */,
+				1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */,
+				1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */,
+			);
+			path = PagingView;
+			sourceTree = "<group>";
+		};
+		1DD00B8025CDA287004DC9AA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				1D4960A225CEE4CC0002C961 /* SoyeonAlertButton.swift */,
+				1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */,
+				1D49609A25CED2630002C961 /* SoyeonRoundAlertButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		1DD00B8725CDACDD004DC9AA /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */,
+				0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */,
+				1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */,
+				1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		572976794A38FB21146A1A93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +665,87 @@
 				A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D80D664A25BDBA1C002F47B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB70D125CACD7600A10864 /* SoyeonAlert */,
+				D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D8354D5B25B433F400C9C531 /* NewAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D6325B4343000C9C531 /* ViewModel */,
+				D8354D6225B4342A00C9C531 /* Presenter */,
+				D8354D6125B4342600C9C531 /* View */,
+				D8354D6025B4342100C9C531 /* Configurator */,
+				D8354D5F25B4341C00C9C531 /* Worker */,
+				D8354D5E25B4341700C9C531 /* Interactor */,
+				D8354D5D25B4341000C9C531 /* Router */,
+			);
+			path = NewAccount;
+			sourceTree = "<group>";
+		};
+		D8354D5D25B4341000C9C531 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D8354D5E25B4341700C9C531 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D8354D5F25B4341C00C9C531 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D7425B4347B00C9C531 /* NewAccountWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		D8354D6025B4342100C9C531 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D7025B4347000C9C531 /* NewAccountConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D8354D6125B4342600C9C531 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D6C25B4346200C9C531 /* NewAccountViewController.swift */,
+				D875578C25C6C20300380F1E /* RadioButton.swift */,
+				D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8354D6225B4342A00C9C531 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8354D6325B4343000C9C531 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D8795C33258E6A2100DF4D64 = {
@@ -528,10 +772,10 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
-				009B029E25B47E9E00753847 /* Login */,
+				1DBA14E125D46C0D00979BB2 /* Main */,
+				1DBA14DD25D46BE000979BB2 /* Signup */,
 				000CEB4A25B484C800F64A28 /* Extension */,
-				000CEB3125B484A800F64A28 /* Guidance */,
-				1D19085125A9F77E008210D1 /* Agreement */,
+				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
 				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
@@ -542,11 +786,11 @@
 		D8795C55258E819800DF4D64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */,
+				1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */,
+				1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */,
 				0A6DECA92597716500B8713B /* Colors.swift */,
 				0A6DECAA2597716500B8713B /* Fonts.swift */,
-				00B371AD25973E86003F6C76 /* NanumSquareB.ttf */,
-				00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */,
-				00B371AB25973E86003F6C76 /* NanumSquareR.ttf */,
 				D8795C48258E6A2500DF4D64 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -592,6 +836,7 @@
 				00B3AF0D25BBFB8D00F78D13 /* KakaoSDKUser */,
 				00B3AF0F25BBFB8D00F78D13 /* KakaoSDKAuth */,
 				00B3AF1125BBFB8D00F78D13 /* KakaoSDKCommon */,
+				1DBA13C325D440E400979BB2 /* Moya */,
 			);
 			productName = Soyeon;
 			productReference = D8795C3C258E6A2100DF4D64 /* Soyeon.app */;
@@ -627,6 +872,7 @@
 			mainGroup = D8795C33258E6A2100DF4D64;
 			packageReferences = (
 				00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */,
+				1DBA13C225D440E400979BB2 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = D8795C3D258E6A2100DF4D64 /* Products */;
 			projectDirPath = "";
@@ -650,16 +896,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */,
+				1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */,
+				1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */,
+				1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
-				00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
+				1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */,
 				1D19088125A9F77E008210D1 /* AgreementViewController.xib in Resources */,
-				00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
+				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
+				1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */,
+				1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */,
+				1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
+				1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */,
+				0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */,
 				009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */,
 				009B02BB25B47F3B00753847 /* Login.storyboard in Resources */,
 			);
@@ -722,45 +975,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */,
+				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
 				000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */,
 				000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */,
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */,
 				0077DC6925ED11950035BCD3 /* LoginManager.swift in Sources */,
+				D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */,
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
 				000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */,
-				000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */,
 				000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */,
 				1D19088225A9F77E008210D1 /* AgreementConfigurator.swift in Sources */,
 				1D19087B25A9F77E008210D1 /* AgreementDetailInteractor.swift in Sources */,
+				D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */,
 				1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */,
 				009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */,
+				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				1D19087925A9F77E008210D1 /* AgreementDetailConfigurator.swift in Sources */,
 				009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
 				1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */,
+				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
+				1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
+				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
+				0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
+				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
+				1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */,
+				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
+				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
+				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
+				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
+				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
+				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
+				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
+				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
+				D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */,
 				1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */,
 				1D19087E25A9F77E008210D1 /* AgreementPresenter.swift in Sources */,
 				000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */,
+				1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */,
+				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
 				1D19087A25A9F77E008210D1 /* AgreementDetailWorker.swift in Sources */,
 				1D19088025A9F77E008210D1 /* AgreementViewController.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
+				D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,6 +1303,12 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+		1DBA13C225D440E400979BB2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1046,6 +1328,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */;
 			productName = KakaoSDKCommon;
+		1DBA13C325D440E400979BB2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DBA13C225D440E400979BB2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

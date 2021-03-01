@@ -18,6 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         LoginManager.shared.initKakaoSDK()
 
+        let backButtonImage = UIImage(named: "icoBackGnbNormal")?.withRenderingMode(.alwaysOriginal)
+        let barAppearance = UINavigationBar.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
+        barAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1.0),
+            .font: Fonts.nanumSquareB.size(18.0)
+        ]
+        barAppearance.setBackgroundImage(UIImage(), for: .default)
+        barAppearance.shadowImage = UIImage()
+        barAppearance.isTranslucent = true
+        barAppearance.backIndicatorImage = backButtonImage
+        barAppearance.backIndicatorTransitionMaskImage = backButtonImage
+        
         return true
     }
 
