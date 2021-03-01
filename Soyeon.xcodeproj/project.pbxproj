@@ -3,21 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB2C25B47FF400F64A28 /* UIView+.swift */; };
-		009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A025B47E9E00753847 /* LoginViewModel.swift */; };
-		009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A225B47E9E00753847 /* LoginPresenter.swift */; };
-		009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A425B47E9E00753847 /* LoginViewController.swift */; };
-		009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A625B47E9E00753847 /* LoginConfigurator.swift */; };
-		009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A825B47E9E00753847 /* LoginWorker.swift */; };
-		009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AA25B47E9E00753847 /* LoginInteractor.swift */; };
-		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
-		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
-		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
-		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */; };
 		000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3525B484A800F64A28 /* GuidancePresenter.swift */; };
 		000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3725B484A800F64A28 /* GuidanceViewController.swift */; };
@@ -28,10 +18,24 @@
 		000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4025B484A800F64A28 /* GuidanceRouter.swift */; };
 		000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4B25B484C800F64A28 /* UILabel+.swift */; };
 		000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4C25B484C800F64A28 /* UIButton+.swift */; };
+		0077DC6925ED11950035BCD3 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077DC6825ED11940035BCD3 /* LoginManager.swift */; };
+		009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A025B47E9E00753847 /* LoginViewModel.swift */; };
+		009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A225B47E9E00753847 /* LoginPresenter.swift */; };
+		009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A425B47E9E00753847 /* LoginViewController.swift */; };
+		009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A625B47E9E00753847 /* LoginConfigurator.swift */; };
+		009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A825B47E9E00753847 /* LoginWorker.swift */; };
+		009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AA25B47E9E00753847 /* LoginInteractor.swift */; };
+		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
+		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
+		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
+		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00B371AE25973E86003F6C76 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AB25973E86003F6C76 /* NanumSquareR.ttf */; };
 		00B371AF25973E86003F6C76 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */; };
 		00B371B025973E86003F6C76 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00B371AD25973E86003F6C76 /* NanumSquareB.ttf */; };
+		00B3AF0E25BBFB8D00F78D13 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 00B3AF0D25BBFB8D00F78D13 /* KakaoSDKUser */; };
+		00B3AF1025BBFB8D00F78D13 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 00B3AF0F25BBFB8D00F78D13 /* KakaoSDKAuth */; };
+		00B3AF1225BBFB8D00F78D13 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 00B3AF1125BBFB8D00F78D13 /* KakaoSDKCommon */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
@@ -73,16 +77,6 @@
 
 /* Begin PBXFileReference section */
 		000CEB2C25B47FF400F64A28 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		009B02A625B47E9E00753847 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
-		009B02A825B47E9E00753847 /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
-		009B02AA25B47E9E00753847 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
-		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
-		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		000CEB3325B484A800F64A28 /* GuidanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewModel.swift; sourceTree = "<group>"; };
 		000CEB3525B484A800F64A28 /* GuidancePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidancePresenter.swift; sourceTree = "<group>"; };
 		000CEB3725B484A800F64A28 /* GuidanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +87,17 @@
 		000CEB4025B484A800F64A28 /* GuidanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceRouter.swift; sourceTree = "<group>"; };
 		000CEB4B25B484C800F64A28 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		000CEB4C25B484C800F64A28 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		0077DC6825ED11940035BCD3 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		009B02A625B47E9E00753847 /* LoginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		009B02A825B47E9E00753847 /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		009B02AA25B47E9E00753847 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
+		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
+		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00B371AB25973E86003F6C76 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		00B371AC25973E86003F6C76 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
@@ -144,7 +149,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3AF1225BBFB8D00F78D13 /* KakaoSDKCommon in Frameworks */,
+				00B3AF0E25BBFB8D00F78D13 /* KakaoSDKUser in Frameworks */,
 				5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */,
+				00B3AF1025BBFB8D00F78D13 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +235,7 @@
 			children = (
 				000CEB4B25B484C800F64A28 /* UILabel+.swift */,
 				000CEB4C25B484C800F64A28 /* UIButton+.swift */,
-        	000CEB2C25B47FF400F64A28 /* UIView+.swift */,
+				000CEB2C25B47FF400F64A28 /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 		009B02A725B47E9E00753847 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				0077DC6825ED11940035BCD3 /* LoginManager.swift */,
 				009B02A825B47E9E00753847 /* LoginWorker.swift */,
 			);
 			path = Worker;
@@ -579,6 +588,11 @@
 			dependencies = (
 			);
 			name = Soyeon;
+			packageProductDependencies = (
+				00B3AF0D25BBFB8D00F78D13 /* KakaoSDKUser */,
+				00B3AF0F25BBFB8D00F78D13 /* KakaoSDKAuth */,
+				00B3AF1125BBFB8D00F78D13 /* KakaoSDKCommon */,
+			);
 			productName = Soyeon;
 			productReference = D8795C3C258E6A2100DF4D64 /* Soyeon.app */;
 			productType = "com.apple.product-type.application";
@@ -611,6 +625,9 @@
 				Base,
 			);
 			mainGroup = D8795C33258E6A2100DF4D64;
+			packageReferences = (
+				00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */,
+			);
 			productRefGroup = D8795C3D258E6A2100DF4D64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -710,6 +727,7 @@
 				000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */,
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */,
+				0077DC6925ED11950035BCD3 /* LoginManager.swift in Sources */,
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
 				000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */,
 				000CEB4E25B484C800F64A28 /* UIButton+.swift in Sources */,
@@ -938,7 +956,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HC2Z7MJWST;
+				DEVELOPMENT_TEAM = R78643UTJ5;
 				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -957,7 +975,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HC2Z7MJWST;
+				DEVELOPMENT_TEAM = R78643UTJ5;
 				INFOPLIST_FILE = "Soyeon/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1001,6 +1019,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/minsOne/KakaoSDK-SwiftPM.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00B3AF0D25BBFB8D00F78D13 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */;
+			productName = KakaoSDKUser;
+		};
+		00B3AF0F25BBFB8D00F78D13 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */;
+			productName = KakaoSDKAuth;
+		};
+		00B3AF1125BBFB8D00F78D13 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B3AF0C25BBFB8D00F78D13 /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */;
+			productName = KakaoSDKCommon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8795C34258E6A2100DF4D64 /* Project object */;
 }

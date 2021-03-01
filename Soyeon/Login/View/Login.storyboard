@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8iG-Xy-csK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8iG-Xy-csK">
                                 <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="MNI-k9-eXl" userLabel="Header View">
@@ -31,13 +31,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="IRD-TY-SiZ">
-                                            <rect key="frame" x="102.66666666666669" y="68" width="170" height="162"/>
+                                            <rect key="frame" x="102.66666666666669" y="67.333333333333329" width="170" height="162.66666666666669"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAppName" translatesAutoresizingMaskIntoConstraints="NO" id="zoN-Td-eqk">
                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="126"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 인연을 연구합니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3W-YC-Pwv">
-                                                    <rect key="frame" x="0.0" y="144" width="170" height="18"/>
+                                                    <rect key="frame" x="0.0" y="144" width="170" height="18.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
                                                     <color key="textColor" name="102102102"/>
                                                     <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExJ-hV-XaC">
-                                            <rect key="frame" x="134.66666666666666" y="54" width="106" height="29"/>
+                                            <rect key="frame" x="137" y="54" width="101" height="29"/>
                                             <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                             <state key="normal" title="개인정보 처리방침">
                                                 <color key="titleColor" name="102102102"/>
@@ -84,7 +84,7 @@
                                                     <rect key="frame" x="32.333333333333343" y="10" width="310.33333333333326" height="66"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="J3G-LI-X5F">
-                                                            <rect key="frame" x="24.000000000000014" y="9" width="253.33333333333337" height="48"/>
+                                                            <rect key="frame" x="24.000000000000014" y="9" width="245.33333333333337" height="48"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoAppleSignup" translatesAutoresizingMaskIntoConstraints="NO" id="Doa-MI-mOB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -94,7 +94,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네이버 아이디로 시작하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8i-I6-auo">
-                                                                    <rect key="frame" x="63.999999999999986" y="14" width="189.33333333333331" height="20"/>
+                                                                    <rect key="frame" x="63.999999999999986" y="13.666666666666664" width="181.33333333333331" height="21"/>
                                                                     <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="18"/>
                                                                     <color key="textColor" name="515151"/>
                                                                     <nil key="highlightedColor"/>
