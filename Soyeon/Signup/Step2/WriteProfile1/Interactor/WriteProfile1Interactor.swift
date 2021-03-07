@@ -37,8 +37,8 @@ extension WriteProfile1Interactor: WriteProfile1ViewControllerOutput {
     // MARK: - Business logic
     func completedText(_ type: WriteProfileAlertViewModel.WriteProfileItem?,
                        _ input: String?,
-                       request: WriteProfile1Model.ViewModel?) {
-        var request: WriteProfile1Model.ViewModel! = request ?? .init()
+                       request: WriteProfile1Model.ViewModel) {
+        var request = request
         
         guard let type = type,
               var input = input else {

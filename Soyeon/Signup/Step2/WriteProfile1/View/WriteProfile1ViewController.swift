@@ -15,11 +15,11 @@ protocol WriteProfile1ViewControllerInput: WriteProfile1PresenterOutput {
 protocol WriteProfile1ViewControllerOutput {
     func completedText(_ type: WriteProfileAlertViewModel.WriteProfileItem?,
                        _ input: String?,
-                       request: WriteProfile1Model.ViewModel?)
+                       request: WriteProfile1Model.ViewModel)
 }
 
 final class WriteProfile1ViewController: UIViewController {
-    var viewModel: WriteProfile1Model.ViewModel?
+    var viewModel: WriteProfile1Model.ViewModel = WriteProfile1Model.ViewModel()
     
     var output: WriteProfile1ViewControllerOutput!
     var router: WriteProfile1RouterProtocol!
@@ -57,13 +57,13 @@ final class WriteProfile1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        doWriteProfileOnLoad()
+        doWriteProfileOnLoad(request: viewModel)
     }
      
     // MARK: - Load data
     private func doWriteProfileOnLoad(_ type: WriteProfileAlertViewModel.WriteProfileItem? = nil,
                                       _ input: String? = nil,
-                                      request: WriteProfile1Model.ViewModel? = nil) {
+                                      request: WriteProfile1Model.ViewModel) {
         output.completedText(type, input, request: request)
     }
     
