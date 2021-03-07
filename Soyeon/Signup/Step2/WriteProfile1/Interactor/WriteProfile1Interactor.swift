@@ -49,7 +49,7 @@ extension WriteProfile1Interactor: WriteProfile1ViewControllerOutput {
         // TODO: - UserDefault 저장 필요.
         switch type {
         case .birthYear:
-            input = String(worker.ageCalculater(birthYear: input))
+            input = String(worker.calculateAge(birthYear: input))
         default:
             break
         }

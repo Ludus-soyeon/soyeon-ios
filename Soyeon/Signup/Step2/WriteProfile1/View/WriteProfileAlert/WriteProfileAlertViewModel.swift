@@ -53,7 +53,7 @@ struct WriteProfileAlertViewModel {
     
     enum Smoking: String, CaseIterable {
         case none           = "비흡연"
-        case smaker          = "흡연"
+        case smaker         = "흡연"
     }
      
     enum WriteProfileItem: Int {
@@ -80,9 +80,9 @@ extension WriteProfileAlertViewModel.WriteProfileItem {
         case .job:
             return "직업/직장을 입력해주세요"
         case .location1:
-            return "직업/직장을 입력해주세요"
+            return "선호지역1을 선택해주세요"
         case .location2:
-            return "직업/직장을 입력해주세요"
+            return "선호지역2를 선택해주세요"
         case .height:
             return "키를 선택해주세요"
         case .form:
