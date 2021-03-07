@@ -31,6 +31,12 @@ enum Soyeon {
     case mbtiQuestions
     case mbtiAnswers(results: [[Int: Int]])
     case mbti(userId: String)
+    
+    // User Service
+    case modifyUser(user: [String: String])
+    case withdrawUser
+    case user
+
 }
 
 
@@ -70,6 +76,8 @@ extension Soyeon: TargetType {
             return "/questions/mbti"
         case .mbti(let userId):
             return "/results/mbti/\(userId)"
+        case .modifyUser, .withdrawUser, .user:
+            return "/users/me"
         }
     }
     public var method: Moya.Method {
@@ -97,6 +105,12 @@ extension Soyeon: TargetType {
         case .mbtiAnswers:
             return .post
         case .mbti:
+            return .get
+        case .modifyUser:
+            return .put
+        case .withdrawUser:
+            return .delete
+        case .user:
             return .get
         }
     }

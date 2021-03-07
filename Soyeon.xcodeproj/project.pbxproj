@@ -67,6 +67,7 @@
 		1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */; };
 		1D5B63C325B481BA00A5321C /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C225B481BA00A5321C /* XibView.swift */; };
 		1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */; };
+		1D64300525F4CBCE00A84D45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64300425F4CBCE00A84D45 /* User.swift */; };
 		1DBA13C425D440E400979BB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBA13C325D440E400979BB2 /* Moya */; };
 		1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4525AAEE7600822E99 /* PageViewType.swift */; };
 		1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */; };
@@ -171,6 +172,7 @@
 		1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageView.swift; sourceTree = "<group>"; };
 		1D5B63C225B481BA00A5321C /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
+		1D64300425F4CBCE00A84D45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
 		1DC9DF4925AAF43D00822E99 /* FindInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindInfoView.xib; sourceTree = "<group>"; };
 		1DC9DF5725AAF51600822E99 /* MyChareactorInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChareactorInfoView.xib; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */,
 				00CF093925E2914C0077700A /* LifeStyleAnswer.swift */,
 				00CF093525E28F4E0077700A /* Term.swift */,
+				1D64300425F4CBCE00A84D45 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1061,6 +1064,7 @@
 				1D19088025A9F77E008210D1 /* AgreementViewController.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
 				D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */,
+				1D64300525F4CBCE00A84D45 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
