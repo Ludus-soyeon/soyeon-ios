@@ -101,16 +101,21 @@ final class WriteProfile1ViewController: UIViewController {
     }
     
     @IBAction private func profileItemButtonDidTap(sender: UIButton) {
-        guard let writeProfileItem = WriteProfileAlertViewModel.WriteProfileItem(rawValue: sender.tag) else {
+        guard let item = WriteProfileAlertViewModel.WriteProfileItem(rawValue: sender.tag) else {
             return
         }
+        
+        showWriteProfile(item)
     
-        writeProfileItem
+    }
+    
+    private func showWriteProfile(_ writeProfile: WriteProfileAlertViewModel.WriteProfileItem) {
+        writeProfile
             .alert(action: { [weak self] (result) in
                 guard let self = self,
                       let result = result else { return }
-                self.completion(type: writeProfileItem,
-                                 input: result)
+                self.completion(type: writeProfile,
+                                input: result)
             })
             .show(to: view!)
     }
