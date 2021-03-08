@@ -13,7 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         let backButtonImage = UIImage(named: "icoBackGnbNormal")?.withRenderingMode(.alwaysOriginal)
         let barAppearance = UINavigationBar.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
         barAppearance.titleTextAttributes = [
@@ -25,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         barAppearance.isTranslucent = true
         barAppearance.backIndicatorImage = backButtonImage
         barAppearance.backIndicatorTransitionMaskImage = backButtonImage
+
+        LoginManager.shared.initKakaoSDK()
+
         return true
     }
 
