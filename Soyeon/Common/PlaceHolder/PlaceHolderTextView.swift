@@ -7,18 +7,19 @@
 //
 
 import UIKit.UITextView
+import UIKit.UILabel
 
 protocol PlaceHolderTextViewDelegate: class {
     func placeHolderTextViewDidChange(_ textView: UITextView)
 }
 
-final class PlaceHolderTextView: UITextView {
+class PlaceHolderTextView: UITextView {
     weak var placeHolderDelegate: PlaceHolderTextViewDelegate?
     
     private var placeHolder: String = ""
     private var placeHoldColor: UIColor?
-    private var originTextColor: UIColor?
-    
+    internal var originTextColor: UIColor?
+     
     func setPlaceHolderTextView(placeHolder: String = "",
                                 placeHoldColor: UIColor? = nil) {
         self.delegate = self
@@ -27,29 +28,36 @@ final class PlaceHolderTextView: UITextView {
         text = placeHolder
     }
     
-    private func isShowPlaceHolder(_ isShow: Bool) {
+    func setOriginText(_ text: String?,
+                       color: UIColor?) {
+        originTextColor = textColor
+        self.text = text
+        textColor = color
+    }
+    
+    func setTextColorToOrigin() {
+        textColor = originTextColor
+    }
+     
+    private func showPlaceHolder(_ isShow: Bool) {
         if isShow {
-            originTextColor = textColor
-            textColor = placeHoldColor
-            text = placeHolder
+            setOriginText(placeHolder,
+                          color: placeHoldColor)
             return
         }
-         
-        textColor = originTextColor
+        
+        setTextColorToOrigin()
     }
 }
 
 extension PlaceHolderTextView: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.text = nil
-        isShowPlaceHolder(false)
+        showPlaceHolder(false)
     }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        isShowPlaceHolder(textView.text.isEmpty)
-    }
-    
+     
     func textViewDidChange(_ textView: UITextView) {
+        setTextColorToOrigin()
         placeHolderDelegate?.placeHolderTextViewDidChange(textView)
     }
 }

@@ -97,6 +97,7 @@
 		1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */; };
 		1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */; };
 		1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */; };
+		1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC17625D5016B0053C31A /* PhaseViewController.swift */; };
@@ -221,6 +222,7 @@
 		1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertButton.swift; sourceTree = "<group>"; };
 		1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonRoundAlertView.xib; sourceTree = "<group>"; };
 		1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertView.swift; sourceTree = "<group>"; };
+		1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderWarningTextView.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
@@ -795,6 +797,15 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		1DD9CA3825F47FA100290014 /* PlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E516425EAB55100616C07 /* PlaceHolderTextView.swift */,
+				1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */,
+			);
+			path = PlaceHolder;
+			sourceTree = "<group>";
+		};
 		572976794A38FB21146A1A93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,9 +827,9 @@
 			isa = PBXGroup;
 			children = (
 				D8487C6825ED64BE00F52B48 /* GIF */,
+				1DD9CA3825F47FA100290014 /* PlaceHolder */,
 				0ADB70D125CACD7600A10864 /* SoyeonAlert */,
 				D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */,
-				0A4E516425EAB55100616C07 /* PlaceHolderTextView.swift */,
 				0A4E516525EAB55100616C07 /* ReuseIdentifiable.swift */,
 			);
 			path = Common;
@@ -1185,6 +1196,7 @@
 				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
+				1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */,
 				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
