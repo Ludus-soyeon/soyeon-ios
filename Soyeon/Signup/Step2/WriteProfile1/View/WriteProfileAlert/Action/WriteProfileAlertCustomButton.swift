@@ -12,8 +12,13 @@ protocol WriteProfileAlertCustomButtonMakable: class {
     func setDelegate()
     func setupLayout()
 }
- 
+
+protocol WriteProfileAlertCompleteButtonDelegate: class {
+    func completeButtonDidTap()
+}
+
 class WriteProfileAlertCustomButton: UIView, WriteProfileAlertCustomButtonMakable {
+    weak var customButtonDelegate: WriteProfileAlertCompleteButtonDelegate?
     
     private var actionClosure: ((String?) -> Void)?
     internal var inputText: String = ""
@@ -23,6 +28,9 @@ class WriteProfileAlertCustomButton: UIView, WriteProfileAlertCustomButtonMakabl
     }
      
     @IBAction private func completeButtonDidTap(_ sender: Any) {
+        customButtonDelegate?.completeButtonDidTap()
+        
+        if inputText.isEmpty { return }
         actionClosure?(inputText)
     }
     

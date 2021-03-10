@@ -9,15 +9,18 @@
 import UIKit.UITextView
 
 final class EducationAlertItem: WriteProfileAlertCustomButton {
-    @IBOutlet private weak var inputTextView: PlaceHolderTextView!
+    @IBOutlet private weak var inputTextView: PlaceHolderWarningTextView!
     
     override func setDelegate() {
         inputTextView.placeHolderDelegate = self
+        customButtonDelegate = self
     }
     
-    override func setupLayout() {
+    override func setupLayout() { 
         inputTextView.setPlaceHolderTextView(placeHolder: "직접 입력해주세요",
-                                             placeHoldColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+                                             placeHoldColor: UIColor.black,
+                                             warningString: "내용을 입력하세요!",
+                                             warningColor: UIColor.red)
         
         inputTextView.textColor = Colors.black.color()
         inputTextView.textContainerInset = .init(top: 8, left: 12.4,
@@ -33,5 +36,11 @@ final class EducationAlertItem: WriteProfileAlertCustomButton {
 extension EducationAlertItem: PlaceHolderTextViewDelegate {
     func placeHolderTextViewDidChange(_ textView: UITextView) {
         inputText = textView.text
+    }
+}
+
+extension EducationAlertItem: WriteProfileAlertCompleteButtonDelegate {
+    func completeButtonDidTap() {
+        inputTextView.endEditing(finalText: inputText)
     }
 }

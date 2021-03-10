@@ -129,7 +129,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-uM-kvL">
                             <rect key="frame" x="0.0" y="42.5" width="268" height="73"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8G-D9-h4X" customClass="PlaceHolderTextView" customModule="Soyeon" customModuleProvider="target">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8G-D9-h4X" customClass="PlaceHolderWarningTextView" customModule="Soyeon" customModuleProvider="target">
                                     <rect key="frame" x="20" y="0.0" width="228" height="61"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <attributedString key="attributedText">
@@ -192,7 +192,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZA6-pA-iby">
                             <rect key="frame" x="0.0" y="0.0" width="268" height="78"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFO-CP-pTo" customClass="PlaceHolderTextView" customModule="Soyeon" customModuleProvider="target">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFO-CP-pTo" customClass="PlaceHolderWarningTextView" customModule="Soyeon" customModuleProvider="target">
                                     <rect key="frame" x="20" y="12" width="228" height="54"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <attributedString key="attributedText">
@@ -304,7 +304,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V40-8u-KV1">
                             <rect key="frame" x="0.0" y="42.5" width="268" height="68"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AnF-7R-3Fl" customClass="PlaceHolderTextView" customModule="Soyeon" customModuleProvider="target">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AnF-7R-3Fl" customClass="PlaceHolderWarningTextView" customModule="Soyeon" customModuleProvider="target">
                                     <rect key="frame" x="20" y="0.0" width="228" height="56"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <attributedString key="attributedText">
