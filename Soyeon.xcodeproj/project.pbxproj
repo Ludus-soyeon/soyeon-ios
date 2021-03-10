@@ -28,6 +28,14 @@
 		009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B725B47F3B00753847 /* LoginPlatformCel.xib */; };
 		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
+		0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */; };
+		0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */; };
+		0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */; };
+		0A4E513025EA8E8B00616C07 /* WriteProfile1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E512425EA8E8B00616C07 /* WriteProfile1.storyboard */; };
+		0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512625EA8E8B00616C07 /* WriteProfile1Configurator.swift */; };
+		0A4E513225EA8E8B00616C07 /* WriteProfile1Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512825EA8E8B00616C07 /* WriteProfile1Worker.swift */; };
+		0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512A25EA8E8B00616C07 /* WriteProfile1Interactor.swift */; };
+		0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512C25EA8E8B00616C07 /* WriteProfile1Router.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
@@ -125,6 +133,14 @@
 		009B02B725B47F3B00753847 /* LoginPlatformCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPlatformCel.xib; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewModel.swift; sourceTree = "<group>"; };
+		0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Presenter.swift; sourceTree = "<group>"; };
+		0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewController.swift; sourceTree = "<group>"; };
+		0A4E512425EA8E8B00616C07 /* WriteProfile1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WriteProfile1.storyboard; sourceTree = "<group>"; };
+		0A4E512625EA8E8B00616C07 /* WriteProfile1Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Configurator.swift; sourceTree = "<group>"; };
+		0A4E512825EA8E8B00616C07 /* WriteProfile1Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Worker.swift; sourceTree = "<group>"; };
+		0A4E512A25EA8E8B00616C07 /* WriteProfile1Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Interactor.swift; sourceTree = "<group>"; };
+		0A4E512C25EA8E8B00616C07 /* WriteProfile1Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Router.swift; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
@@ -379,6 +395,77 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		0A4E511D25EA8E8B00616C07 /* WriteProfile1 */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E511E25EA8E8B00616C07 /* ViewModel */,
+				0A4E512025EA8E8B00616C07 /* Presenter */,
+				0A4E512225EA8E8B00616C07 /* View */,
+				0A4E512525EA8E8B00616C07 /* Configurator */,
+				0A4E512725EA8E8B00616C07 /* Worker */,
+				0A4E512925EA8E8B00616C07 /* Interactor */,
+				0A4E512B25EA8E8B00616C07 /* Router */,
+			);
+			path = WriteProfile1;
+			sourceTree = "<group>";
+		};
+		0A4E511E25EA8E8B00616C07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A4E512025EA8E8B00616C07 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0A4E512225EA8E8B00616C07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */,
+				0A4E512425EA8E8B00616C07 /* WriteProfile1.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A4E512525EA8E8B00616C07 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512625EA8E8B00616C07 /* WriteProfile1Configurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		0A4E512725EA8E8B00616C07 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512825EA8E8B00616C07 /* WriteProfile1Worker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		0A4E512925EA8E8B00616C07 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512A25EA8E8B00616C07 /* WriteProfile1Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0A4E512B25EA8E8B00616C07 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E512C25EA8E8B00616C07 /* WriteProfile1Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,7 +656,6 @@
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				1DBA14E025D46C0200979BB2 /* Step3 */,
 				1DBA14DF25D46BFE00979BB2 /* Step2 */,
 				1DBA14DE25D46BF900979BB2 /* Step1 */,
 			);
@@ -591,15 +677,9 @@
 		1DBA14DF25D46BFE00979BB2 /* Step2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A4E511D25EA8E8B00616C07 /* WriteProfile1 */,
 			);
 			path = Step2;
-			sourceTree = "<group>";
-		};
-		1DBA14E025D46C0200979BB2 /* Step3 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Step3;
 			sourceTree = "<group>";
 		};
 		1DBA14E125D46C0D00979BB2 /* Main */ = {
@@ -912,6 +992,7 @@
 				1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
 				1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */,
+				0A4E513025EA8E8B00616C07 /* WriteProfile1.storyboard in Resources */,
 				0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */,
 				009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */,
 				009B02BB25B47F3B00753847 /* Login.storyboard in Resources */,
@@ -999,6 +1080,7 @@
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
+				0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
@@ -1014,15 +1096,18 @@
 				1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */,
 				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
+				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
+				0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */,
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
+				0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
 				D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */,
 				1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */,
@@ -1033,9 +1118,12 @@
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
 				1D19087A25A9F77E008210D1 /* AgreementDetailWorker.swift in Sources */,
+				0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */,
+				0A4E513225EA8E8B00616C07 /* WriteProfile1Worker.swift in Sources */,
 				1D19088025A9F77E008210D1 /* AgreementViewController.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
 				D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */,
+				0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */,
 				D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
