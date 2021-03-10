@@ -34,6 +34,10 @@ final class EducationAlertItem: WriteProfileAlertCustomButton {
 }
 
 extension EducationAlertItem: PlaceHolderTextViewDelegate {
+    var limitedTextCount: Int {
+        return 40
+    }
+    
     func placeHolderTextViewDidChange(_ textView: UITextView) {
         inputText = textView.text
     }

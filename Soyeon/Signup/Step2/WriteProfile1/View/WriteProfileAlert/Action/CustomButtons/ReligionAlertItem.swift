@@ -33,7 +33,11 @@ final class ReligionAlertItem: WriteProfileAlertCustomButton {
     }
 }
 
-extension ReligionAlertItem: PlaceHolderTextViewDelegate {
+extension ReligionAlertItem: PlaceHolderTextViewDelegate { 
+    var limitedTextCount: Int {
+        return 40
+    }
+    
     func placeHolderTextViewDidChange(_ textView: UITextView) {
         inputText = textView.text
     }
