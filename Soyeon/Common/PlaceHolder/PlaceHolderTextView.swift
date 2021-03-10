@@ -10,7 +10,24 @@ import UIKit.UITextView
 import UIKit.UILabel
 
 protocol PlaceHolderTextViewDelegate: class {
+    var limitedTextCount: Int { get }
     func placeHolderTextViewDidChange(_ textView: UITextView)
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool
+}
+
+extension PlaceHolderTextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        guard 0 < text.count else { return true }
+        
+        if let text = textView.text,
+           limitedTextCount <= text.count {
+            let endIndex = text.index(text.startIndex,
+                                      offsetBy: (limitedTextCount - 1))
+            textView.text = String(textView.text[..<endIndex])
+        }
+
+        return true
+    }
 }
 
 class PlaceHolderTextView: UITextView {
@@ -56,8 +73,14 @@ extension PlaceHolderTextView: UITextViewDelegate {
         showPlaceHolder(false)
     }
      
-    func textViewDidChange(_ textView: UITextView) {
-        setTextColorToOrigin()
+    func textViewDidChange(_ textView: UITextView) { 
         placeHolderDelegate?.placeHolderTextViewDidChange(textView)
     }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        return placeHolderDelegate?.textView(textView,
+                                             shouldChangeTextIn: range,
+                                             replacementText: text) ?? true
+    }
+    
 }

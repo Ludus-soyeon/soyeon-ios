@@ -34,6 +34,10 @@ final class JobAlertItem: WriteProfileAlertCustomButton {
 }
 
 extension JobAlertItem: PlaceHolderTextViewDelegate {
+    var limitedTextCount: Int {
+        return 40
+    }
+     
     func placeHolderTextViewDidChange(_ textView: UITextView) {
         inputText = textView.text
     }
