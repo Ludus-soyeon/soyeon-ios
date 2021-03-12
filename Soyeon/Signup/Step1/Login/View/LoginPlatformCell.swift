@@ -17,6 +17,7 @@ class LoginPlatformCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        selectionStyle = .none
         shadowView.setShadowWithColor(color: .black,
                                       opacity: 0.12,
                                       offset: CGSize(width: -3, height: 1),
