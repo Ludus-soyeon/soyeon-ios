@@ -72,6 +72,16 @@
 		1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */; };
 		1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */; };
 		1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */; };
+		40EBC67825F5DE7B00216474 /* AdditionalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC66B25F5DE7B00216474 /* AdditionalWorker.swift */; };
+		40EBC67925F5DE7B00216474 /* AdditionalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC66D25F5DE7B00216474 /* AdditionalPresenter.swift */; };
+		40EBC67A25F5DE7B00216474 /* AdditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC66F25F5DE7B00216474 /* AdditionalViewController.swift */; };
+		40EBC67B25F5DE7B00216474 /* AdditionalConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC67125F5DE7B00216474 /* AdditionalConfigurator.swift */; };
+		40EBC67C25F5DE7B00216474 /* AdditionalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC67325F5DE7B00216474 /* AdditionalRouter.swift */; };
+		40EBC67D25F5DE7B00216474 /* AdditionalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC67525F5DE7B00216474 /* AdditionalInteractor.swift */; };
+		40EBC67E25F5DE7B00216474 /* AdditionalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC67725F5DE7B00216474 /* AdditionalViewModel.swift */; };
+		40EBC68325F5DE8A00216474 /* AdditionalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBC68125F5DE8A00216474 /* AdditionalCell.swift */; };
+		40EBC68425F5DE8A00216474 /* AdditionalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EBC68225F5DE8A00216474 /* AdditionalCell.xib */; };
+		40EBC68825F5DFED00216474 /* Additional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EBC68725F5DFED00216474 /* Additional.storyboard */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
 		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
@@ -168,6 +178,16 @@
 		1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertButton.swift; sourceTree = "<group>"; };
 		1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonRoundAlertView.xib; sourceTree = "<group>"; };
 		1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertView.swift; sourceTree = "<group>"; };
+		40EBC66B25F5DE7B00216474 /* AdditionalWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalWorker.swift; sourceTree = "<group>"; };
+		40EBC66D25F5DE7B00216474 /* AdditionalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalPresenter.swift; sourceTree = "<group>"; };
+		40EBC66F25F5DE7B00216474 /* AdditionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalViewController.swift; sourceTree = "<group>"; };
+		40EBC67125F5DE7B00216474 /* AdditionalConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalConfigurator.swift; sourceTree = "<group>"; };
+		40EBC67325F5DE7B00216474 /* AdditionalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalRouter.swift; sourceTree = "<group>"; };
+		40EBC67525F5DE7B00216474 /* AdditionalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalInteractor.swift; sourceTree = "<group>"; };
+		40EBC67725F5DE7B00216474 /* AdditionalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalViewModel.swift; sourceTree = "<group>"; };
+		40EBC68125F5DE8A00216474 /* AdditionalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalCell.swift; sourceTree = "<group>"; };
+		40EBC68225F5DE8A00216474 /* AdditionalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalCell.xib; sourceTree = "<group>"; };
+		40EBC68725F5DFED00216474 /* Additional.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Additional.storyboard; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
 		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
@@ -635,6 +655,86 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		40EBC65F25F5DE2300216474 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC67025F5DE7B00216474 /* Configurator */,
+				40EBC67425F5DE7B00216474 /* Interactor */,
+				40EBC66C25F5DE7B00216474 /* Presenter */,
+				40EBC67225F5DE7B00216474 /* Router */,
+				40EBC66E25F5DE7B00216474 /* View */,
+				40EBC67625F5DE7B00216474 /* ViewModel */,
+				40EBC66A25F5DE7B00216474 /* Worker */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		40EBC66A25F5DE7B00216474 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC66B25F5DE7B00216474 /* AdditionalWorker.swift */,
+			);
+			name = Worker;
+			path = Additional/Worker;
+			sourceTree = "<group>";
+		};
+		40EBC66C25F5DE7B00216474 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC66D25F5DE7B00216474 /* AdditionalPresenter.swift */,
+			);
+			name = Presenter;
+			path = Additional/Presenter;
+			sourceTree = "<group>";
+		};
+		40EBC66E25F5DE7B00216474 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC66F25F5DE7B00216474 /* AdditionalViewController.swift */,
+				40EBC68725F5DFED00216474 /* Additional.storyboard */,
+				40EBC68125F5DE8A00216474 /* AdditionalCell.swift */,
+				40EBC68225F5DE8A00216474 /* AdditionalCell.xib */,
+			);
+			name = View;
+			path = Additional/View;
+			sourceTree = "<group>";
+		};
+		40EBC67025F5DE7B00216474 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC67125F5DE7B00216474 /* AdditionalConfigurator.swift */,
+			);
+			name = Configurator;
+			path = Additional/Configurator;
+			sourceTree = "<group>";
+		};
+		40EBC67225F5DE7B00216474 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC67325F5DE7B00216474 /* AdditionalRouter.swift */,
+			);
+			name = Router;
+			path = Additional/Router;
+			sourceTree = "<group>";
+		};
+		40EBC67425F5DE7B00216474 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC67525F5DE7B00216474 /* AdditionalInteractor.swift */,
+			);
+			name = Interactor;
+			path = Additional/Interactor;
+			sourceTree = "<group>";
+		};
+		40EBC67625F5DE7B00216474 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40EBC67725F5DE7B00216474 /* AdditionalViewModel.swift */,
+			);
+			name = ViewModel;
+			path = Additional/ViewModel;
+			sourceTree = "<group>";
+		};
 		572976794A38FB21146A1A93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +857,7 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
+				40EBC65F25F5DE2300216474 /* Additional */,
 				1DBA14E125D46C0D00979BB2 /* Main */,
 				1DBA14DD25D46BE000979BB2 /* Signup */,
 				000CEB4A25B484C800F64A28 /* Extension */,
@@ -877,7 +978,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EBC68425F5DE8A00216474 /* AdditionalCell.xib in Resources */,
 				1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */,
+				40EBC68825F5DFED00216474 /* Additional.storyboard in Resources */,
 				1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */,
 				1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
@@ -956,6 +1059,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EBC67925F5DE7B00216474 /* AdditionalPresenter.swift in Sources */,
+				40EBC67825F5DE7B00216474 /* AdditionalWorker.swift in Sources */,
 				0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */,
 				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
@@ -966,6 +1071,7 @@
 				D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */,
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
 				000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */,
+				40EBC68325F5DE8A00216474 /* AdditionalCell.swift in Sources */,
 				000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */,
 				1D19088225A9F77E008210D1 /* AgreementConfigurator.swift in Sources */,
 				1D19087B25A9F77E008210D1 /* AgreementDetailInteractor.swift in Sources */,
@@ -987,8 +1093,12 @@
 				1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */,
+				40EBC67C25F5DE7B00216474 /* AdditionalRouter.swift in Sources */,
+				40EBC67B25F5DE7B00216474 /* AdditionalConfigurator.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
+				40EBC67E25F5DE7B00216474 /* AdditionalViewModel.swift in Sources */,
+				40EBC67D25F5DE7B00216474 /* AdditionalInteractor.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
@@ -1003,6 +1113,7 @@
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
+				40EBC67A25F5DE7B00216474 /* AdditionalViewController.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
 				D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */,

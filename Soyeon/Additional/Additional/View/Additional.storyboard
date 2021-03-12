@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTm-2b-Ktv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--추가매칭하기-->
+        <scene sceneID="1V0-HF-rZp">
+            <objects>
+                <viewController storyboardIdentifier="AdditionalViewController" title="추가매칭하기" id="zq2-PT-hS6" customClass="AdditionalViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CEW-mb-Vh1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2rh-Ko-7am">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="y8V-jr-X7t">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="zq2-PT-hS6" id="f8Q-CB-Bfj"/>
+                                    <outlet property="delegate" destination="zq2-PT-hS6" id="7fE-iJ-qrY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fVR-W4-60B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2rh-Ko-7am" firstAttribute="leading" secondItem="fVR-W4-60B" secondAttribute="leading" id="P5a-Ph-QdK"/>
+                            <constraint firstItem="2rh-Ko-7am" firstAttribute="top" secondItem="fVR-W4-60B" secondAttribute="top" id="dUz-ZK-xNg"/>
+                            <constraint firstItem="2rh-Ko-7am" firstAttribute="trailing" secondItem="fVR-W4-60B" secondAttribute="trailing" id="iFQ-Ne-QHp"/>
+                            <constraint firstItem="fVR-W4-60B" firstAttribute="bottom" secondItem="2rh-Ko-7am" secondAttribute="bottom" id="qqS-tR-v0b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="추가매칭하기" id="zPE-vH-KAg"/>
+                    <connections>
+                        <outlet property="additionalTableView" destination="2rh-Ko-7am" id="PfS-9d-yWG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AG-0T-Egj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542.02898550724638" y="151.33928571428569"/>
+        </scene>
+        <!--Custom Back Button Nav Controller-->
+        <scene sceneID="4WX-ge-7We">
+            <objects>
+                <navigationController storyboardIdentifier="CustomBackButtonNavController" automaticallyAdjustsScrollViewInsets="NO" id="XTm-2b-Ktv" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jZI-e1-M3D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zq2-PT-hS6" kind="relationship" relationship="rootViewController" id="ytW-Te-Id4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEZ-Gm-6Zf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="151.33928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
