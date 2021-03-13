@@ -148,6 +148,7 @@
 		D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Main.storyboard */; };
 		D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8795C48258E6A2500DF4D64 /* Assets.xcassets */; };
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
+		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
 		D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */; };
 /* End PBXBuildFile section */
 
@@ -304,6 +305,7 @@
 		D8795C48258E6A2500DF4D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
 		D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -902,6 +904,7 @@
 				1DA32032262C757900ED564A /* LoadSignupView.swift */,
 				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
 				0AF58E892611EA46008F3E56 /* Signup.swift */,
+				D881723D25FC6B7500D5FC0C /* IdealTypeInfo */,
 				1DBA14DF25D46BFE00979BB2 /* Step2 */,
 				1DBA14DE25D46BF900979BB2 /* Step1 */,
 			);
@@ -1170,6 +1173,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D881723D25FC6B7500D5FC0C /* IdealTypeInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */,
+			);
+			path = IdealTypeInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1414,6 +1425,7 @@
 				0A4E516625EAB55100616C07 /* PlaceHolderTextView.swift in Sources */,
 				00CF092A25E25C710077700A /* ServiceError.swift in Sources */,
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
+				D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
