@@ -59,7 +59,7 @@ final class LoginViewController: UIViewController {
     }
 
     private func didTappedKakao() {
-
+        LoginManager.shared.connect(.kakao)
     }
 
     private func didTappedGoggle() {
