@@ -58,6 +58,8 @@
 		0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
+		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
+		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
 		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
 		0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */; };
 		0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */; };
@@ -181,6 +183,8 @@
 		0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightAlertItem.swift; path = Soyeon/Extension/HeightAlertItem.swift; sourceTree = SOURCE_ROOT; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
+		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
 		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
 		0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlert.swift; sourceTree = "<group>"; };
 		0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonBasicAlertView.xib; sourceTree = "<group>"; };
@@ -547,6 +551,15 @@
 			path = CustomButtons;
 			sourceTree = "<group>";
 		};
+		0A83E4232602549D001823C0 /* SoyeonToast */ = {
+			isa = PBXGroup;
+			children = (
+				0A83E41F26025495001823C0 /* SoyeonToast.swift */,
+				0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */,
+			);
+			path = SoyeonToast;
+			sourceTree = "<group>";
+		};
 		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,6 +845,7 @@
 		D80D664A25BDBA1C002F47B9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0A83E4232602549D001823C0 /* SoyeonToast */,
 				D8487C6825ED64BE00F52B48 /* GIF */,
 				1DD9CA3825F47FA100290014 /* PlaceHolder */,
 				0ADB70D125CACD7600A10864 /* SoyeonAlert */,
@@ -1079,6 +1093,7 @@
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
 				1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */,
+				0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */,
 				1D19088125A9F77E008210D1 /* AgreementViewController.xib in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
@@ -1168,6 +1183,7 @@
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
 				000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */,
 				000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */,
+				0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */,
 				1D19088225A9F77E008210D1 /* AgreementConfigurator.swift in Sources */,
 				1D19087B25A9F77E008210D1 /* AgreementDetailInteractor.swift in Sources */,
 				D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */,
