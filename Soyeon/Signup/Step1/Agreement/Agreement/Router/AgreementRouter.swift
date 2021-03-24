@@ -46,4 +46,4 @@ extension AgreementRouter: AgreementRouterProtocol {
     func navigateToJoin() {
         print("navigationToJoin")
     }
-}
+} 

@@ -29,7 +29,7 @@
 		009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AA25B47E9E00753847 /* LoginInteractor.swift */; };
 		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
 		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
-		009B02BB25B47F3B00753847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Login.storyboard */; };
+		009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Step1.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */; };
 		0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */; };
@@ -77,7 +77,6 @@
 		1D19087E25A9F77E008210D1 /* AgreementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19086725A9F77E008210D1 /* AgreementPresenter.swift */; };
 		1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19086925A9F77E008210D1 /* AgreementCustomButtons.swift */; };
 		1D19088025A9F77E008210D1 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19086A25A9F77E008210D1 /* AgreementViewController.swift */; };
-		1D19088125A9F77E008210D1 /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D19086B25A9F77E008210D1 /* AgreementViewController.xib */; };
 		1D19088225A9F77E008210D1 /* AgreementConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19086D25A9F77E008210D1 /* AgreementConfigurator.swift */; };
 		1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19086F25A9F77E008210D1 /* AgreementWorker.swift */; };
 		1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087125A9F77E008210D1 /* AgreementInteractor.swift */; };
@@ -99,6 +98,7 @@
 		1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */; };
 		1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */; };
 		1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */; };
+		1DCC5C8F260B808700B0736F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC5C8E260B808700B0736F /* IntroViewController.swift */; };
 		1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */; };
 		1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */; };
 		1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */; };
@@ -154,7 +154,7 @@
 		009B02AA25B47E9E00753847 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
-		009B02B825B47F3B00753847 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		009B02B825B47F3B00753847 /* Step1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Step1.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewModel.swift; sourceTree = "<group>"; };
 		0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Presenter.swift; sourceTree = "<group>"; };
@@ -203,7 +203,6 @@
 		1D19086725A9F77E008210D1 /* AgreementPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementPresenter.swift; sourceTree = "<group>"; };
 		1D19086925A9F77E008210D1 /* AgreementCustomButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementCustomButtons.swift; sourceTree = "<group>"; };
 		1D19086A25A9F77E008210D1 /* AgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
-		1D19086B25A9F77E008210D1 /* AgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgreementViewController.xib; sourceTree = "<group>"; };
 		1D19086D25A9F77E008210D1 /* AgreementConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementConfigurator.swift; sourceTree = "<group>"; };
 		1D19086F25A9F77E008210D1 /* AgreementWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementWorker.swift; sourceTree = "<group>"; };
 		1D19087125A9F77E008210D1 /* AgreementInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementInteractor.swift; sourceTree = "<group>"; };
@@ -226,6 +225,7 @@
 		1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
 		1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
 		1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
+		1DCC5C8E260B808700B0736F /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		1DD00B8125CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertButton.swift; sourceTree = "<group>"; };
 		1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonRoundAlertView.xib; sourceTree = "<group>"; };
 		1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertView.swift; sourceTree = "<group>"; };
@@ -403,7 +403,6 @@
 		009B02A325B47E9E00753847 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				009B02B825B47F3B00753847 /* Login.storyboard */,
 				009B02B625B47F3B00753847 /* LoginPlatformCell.swift */,
 				009B02A425B47E9E00753847 /* LoginViewController.swift */,
 			);
@@ -687,7 +686,6 @@
 			children = (
 				1D19086925A9F77E008210D1 /* AgreementCustomButtons.swift */,
 				1D19086A25A9F77E008210D1 /* AgreementViewController.swift */,
-				1D19086B25A9F77E008210D1 /* AgreementViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -759,7 +757,7 @@
 		1DBA14DE25D46BF900979BB2 /* Step1 */ = {
 			isa = PBXGroup;
 			children = (
-				1D1908A625AA120F008210D1 /* StartSplash */,
+				009B02B825B47F3B00753847 /* Step1.storyboard */,
 				D8354D5B25B433F400C9C531 /* NewAccount */,
 				1D19085125A9F77E008210D1 /* Agreement */,
 				009B029E25B47E9E00753847 /* Login */,
@@ -793,6 +791,16 @@
 				1DC9DF5B25AAF52C00822E99 /* CoupleInfoView.xib */,
 			);
 			path = PagingView;
+			sourceTree = "<group>";
+		};
+		1DCC5C8D260B806A00B0736F /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
+				1DCC5C8E260B808700B0736F /* IntroViewController.swift */,
+				1D1908A625AA120F008210D1 /* StartSplash */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		1DD00B8025CDA287004DC9AA /* Button */ = {
@@ -959,12 +967,12 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
+				1DCC5C8D260B806A00B0736F /* Intro */,
 				1DBA14E125D46C0D00979BB2 /* Main */,
 				1DBA14DD25D46BE000979BB2 /* Signup */,
 				000CEB4A25B484C800F64A28 /* Extension */,
 				D80D664A25BDBA1C002F47B9 /* Common */,
 				0067AC21259632900005AD86 /* Supporting Files */,
-				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
 				D8795C55258E819800DF4D64 /* Resources */,
 			);
 			path = Soyeon;
@@ -1094,7 +1102,6 @@
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
 				1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */,
 				0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */,
-				1D19088125A9F77E008210D1 /* AgreementViewController.xib in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
 				D8487C6A25ED64CA00F52B48 /* phase_first.gif in Resources */,
@@ -1107,8 +1114,7 @@
 				0A4E513025EA8E8B00616C07 /* WriteProfile1.storyboard in Resources */,
 				0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */,
 				0A4E515E25EAB4E400616C07 /* WriteProfileAlertCustomButton.xib in Resources */,
-				009B02BA25B47F3B00753847 /* LoginPlatformCel.xib in Resources */,
-				009B02BB25B47F3B00753847 /* Login.storyboard in Resources */,
+				009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1253,6 +1259,7 @@
 				0A4E515725EAB4E400616C07 /* WritingAlertStyle.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
 				D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */,
+				1DCC5C8F260B808700B0736F /* IntroViewController.swift in Sources */,
 				0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */,
 				D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */,
 				0A4E516125EAB4E400616C07 /* WriteProfileAlertView.swift in Sources */,
