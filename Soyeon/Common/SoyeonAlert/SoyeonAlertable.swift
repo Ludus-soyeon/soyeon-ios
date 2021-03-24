@@ -40,3 +40,15 @@ protocol SoyeonAlertActionable {
     func action(style: ActionStyle,
                 completion: @escaping ((String?) -> Void)) -> Self
 }
+
+
+enum ActionBasic {
+    case basic(String)
+    case cancel(String)
+}
+
+enum ActionRound {
+    case basic(ActionBasic)
+    case other(ActionBasic)
+}
+ 

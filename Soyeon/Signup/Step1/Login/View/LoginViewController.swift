@@ -43,8 +43,7 @@ final class LoginViewController: UIViewController {
 
     // MARK: - View lifecycle
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad() 
         doLoginOnLoad()
     }
 
@@ -69,6 +68,7 @@ final class LoginViewController: UIViewController {
     private func didTappedApple() {
 
     }
+    
 }
 
 // MARK: - LoginPresenterOutput
@@ -107,8 +107,7 @@ extension LoginViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension LoginViewController: UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView,
+func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         switch Login.Platform(rawValue: indexPath.row) {
         case .naver:

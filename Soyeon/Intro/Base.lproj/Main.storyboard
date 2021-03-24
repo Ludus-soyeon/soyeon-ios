@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3K3-d1-UX0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="T7J-j2-D2W">
+            <objects>
+                <viewController id="tvN-f8-RIh" customClass="IntroViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P28-bT-d6h" customClass="Test">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gFp-4h-KPy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="feE-1l-Ehu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSw-Dm-9P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.04347826086962" y="76.339285714285708"/>
+        </scene>
+        <!--Start Splash View Controller-->
+        <scene sceneID="sBH-hj-bZo">
+            <objects>
+                <viewController id="Dkn-aO-zPx" customClass="StartSplashViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4mI-jt-lWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vM-mR-98e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxu-Oi-Vqz">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="FyF-0K-5Ou">
+                                                <rect key="frame" x="0.0" y="48" width="414" height="602"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="37Y-sB-tDD" userLabel="Contents View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="544"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f69-8Z-k2e" userLabel="PagingView" customClass="PagingView" customModule="Soyeon" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" priority="999" constant="474" id="LlL-Lb-Iyx"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-qH-pM9">
+                                                                <rect key="frame" x="88" y="496" width="238" height="48"/>
+                                                                <color key="backgroundColor" name="soyeonBlue"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="238" id="5U6-co-rJ5"/>
+                                                                    <constraint firstAttribute="height" constant="48" id="UjC-6P-yH9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
+                                                                <state key="normal" title="시작하기">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="24"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="startButtonDidTap:" destination="Dkn-aO-zPx" eventType="touchUpInside" id="VXJ-p1-xQx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="37Y-sB-tDD" secondAttribute="trailing" id="7Rv-oG-jwB"/>
+                                                    <constraint firstItem="37Y-sB-tDD" firstAttribute="leading" secondItem="FyF-0K-5Ou" secondAttribute="leading" id="EQg-f1-i4g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="37Y-sB-tDD" secondAttribute="bottom" constant="58" id="SNK-T4-3Ly"/>
+                                                    <constraint firstItem="37Y-sB-tDD" firstAttribute="top" secondItem="FyF-0K-5Ou" secondAttribute="top" id="d0m-7V-2x4"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="f69-8Z-k2e" firstAttribute="width" secondItem="wxu-Oi-Vqz" secondAttribute="width" id="9eh-Pb-ily"/>
+                                            <constraint firstItem="FyF-0K-5Ou" firstAttribute="bottom" secondItem="EhQ-qJ-SFC" secondAttribute="bottom" id="EeG-I5-6rs"/>
+                                            <constraint firstItem="FyF-0K-5Ou" firstAttribute="leading" secondItem="EhQ-qJ-SFC" secondAttribute="leading" id="UyG-qq-zSp"/>
+                                            <constraint firstItem="FyF-0K-5Ou" firstAttribute="trailing" secondItem="EhQ-qJ-SFC" secondAttribute="trailing" id="Vym-xy-zc3"/>
+                                            <constraint firstItem="yjR-HN-xeu" firstAttribute="trailing" secondItem="FyF-0K-5Ou" secondAttribute="trailing" id="bYn-h3-qgz"/>
+                                            <constraint firstItem="FyF-0K-5Ou" firstAttribute="top" secondItem="EhQ-qJ-SFC" secondAttribute="top" constant="48" id="wQA-Jf-t74"/>
+                                            <constraint firstItem="FyF-0K-5Ou" firstAttribute="leading" secondItem="yjR-HN-xeu" secondAttribute="leading" id="wff-xM-A9L"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="EhQ-qJ-SFC"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="yjR-HN-xeu"/>
+                                    </scrollView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="ve1-qu-14P"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ve1-qu-14P" firstAttribute="top" secondItem="wxu-Oi-Vqz" secondAttribute="top" id="7J3-kC-hlo"/>
+                                    <constraint firstItem="wxu-Oi-Vqz" firstAttribute="trailing" secondItem="ve1-qu-14P" secondAttribute="trailing" id="B9O-9I-34A"/>
+                                    <constraint firstItem="wxu-Oi-Vqz" firstAttribute="width" secondItem="0vM-mR-98e" secondAttribute="width" id="KHu-J1-Ex0"/>
+                                    <constraint firstItem="ve1-qu-14P" firstAttribute="bottom" secondItem="wxu-Oi-Vqz" secondAttribute="bottom" id="lNA-br-08M"/>
+                                    <constraint firstItem="wxu-Oi-Vqz" firstAttribute="leading" secondItem="ve1-qu-14P" secondAttribute="leading" id="ybi-LC-G4W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QZy-yj-gGH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0vM-mR-98e" secondAttribute="bottom" id="j3p-lr-DiN"/>
+                            <constraint firstItem="0vM-mR-98e" firstAttribute="leading" secondItem="QZy-yj-gGH" secondAttribute="leading" id="quD-Lm-gA7"/>
+                            <constraint firstAttribute="trailing" secondItem="0vM-mR-98e" secondAttribute="trailing" id="wyn-uE-R3V"/>
+                            <constraint firstItem="0vM-mR-98e" firstAttribute="top" secondItem="4mI-jt-lWa" secondAttribute="top" id="yVh-pc-FAq"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="pageView" destination="f69-8Z-k2e" id="Rmh-Iz-aWc"/>
+                        <outlet property="startButton" destination="X0y-qH-pM9" id="OkZ-Ce-vYj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNx-p5-Db2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="76"/>
+        </scene>
+        <!--Custom Back Button Nav Controller-->
+        <scene sceneID="Ltx-PQ-qR0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3K3-d1-UX0" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZh-Ht-riZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tvN-f8-RIh" kind="relationship" relationship="rootViewController" id="E74-Xd-ScF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DON-Vo-XHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="soyeonBlue">
+            <color red="0.41200000047683716" green="0.46700000762939453" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
