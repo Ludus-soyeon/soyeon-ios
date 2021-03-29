@@ -80,6 +80,9 @@
 		0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */; };
 		0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */; };
 		0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */; };
+		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
+		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
+		0AF58E9C2611F889008F3E56 /* SignupLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E9B2611F889008F3E56 /* SignupLoadable.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
 		1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085525A9F77E008210D1 /* DetailContents.swift */; };
 		1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085725A9F77E008210D1 /* AgreementDetailPresenter.swift */; };
@@ -223,6 +226,9 @@
 		0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlert.swift; sourceTree = "<group>"; };
 		0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonBasicAlertView.xib; sourceTree = "<group>"; };
 		0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertView.swift; sourceTree = "<group>"; };
+		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
+		0AF58E9B2611F889008F3E56 /* SignupLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoadable.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
 		1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailViewModel.swift; sourceTree = "<group>"; };
 		1D19085525A9F77E008210D1 /* DetailContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContents.swift; sourceTree = "<group>"; };
@@ -878,6 +884,8 @@
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				0AF58E9B2611F889008F3E56 /* SignupLoadable.swift */,
+				0AF58E892611EA46008F3E56 /* Signup.swift */,
 				1DBA14DF25D46BFE00979BB2 /* Step2 */,
 				1DBA14DE25D46BF900979BB2 /* Step1 */,
 			);
@@ -888,6 +896,7 @@
 			isa = PBXGroup;
 			children = (
 				009B02B825B47F3B00753847 /* Step1.storyboard */,
+				0AF58E952611F7FB008F3E56 /* Step1.swift */,
 				D8354D5B25B433F400C9C531 /* NewAccount */,
 				1D19085125A9F77E008210D1 /* Agreement */,
 				009B029E25B47E9E00753847 /* Login */,
@@ -1390,6 +1399,7 @@
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
 				0A4E515925EAB4E400616C07 /* ReligionAlertItem.swift in Sources */,
+				0AF58E9C2611F889008F3E56 /* SignupLoadable.swift in Sources */,
 				0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */,
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
@@ -1412,6 +1422,8 @@
 				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
 				00929C8425F68A4E0037D77A /* LoginManager.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
+				0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */,
+				0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */,
 				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
 				1D19087A25A9F77E008210D1 /* AgreementDetailWorker.swift in Sources */,
 				0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */,
