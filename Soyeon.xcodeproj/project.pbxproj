@@ -83,6 +83,7 @@
 		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
 		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
 		0AF58E9C2611F889008F3E56 /* SignupLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E9B2611F889008F3E56 /* SignupLoadable.swift */; };
+		0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
 		1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085525A9F77E008210D1 /* DetailContents.swift */; };
 		1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085725A9F77E008210D1 /* AgreementDetailPresenter.swift */; };
@@ -229,6 +230,7 @@
 		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
 		0AF58E9B2611F889008F3E56 /* SignupLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoadable.swift; sourceTree = "<group>"; };
+		0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLoadedNavigation.swift; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
 		1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailViewModel.swift; sourceTree = "<group>"; };
 		1D19085525A9F77E008210D1 /* DetailContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContents.swift; sourceTree = "<group>"; };
@@ -861,6 +863,7 @@
 		1D19088C25A9F7A8008210D1 /* SoyeonTests */ = {
 			isa = PBXGroup;
 			children = (
+				0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */,
 				1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */,
 				1D19088F25A9F7A8008210D1 /* Info.plist */,
 			);
@@ -1322,6 +1325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */,
 				1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
