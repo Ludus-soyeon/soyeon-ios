@@ -37,9 +37,7 @@ final class AdditionalInteractor {
 extension AdditionalInteractor: AdditionalViewControllerOutput {
     // MARK: - Business logic
     func doAdditionalMatchListOnLoad() {
-        let matchType: [AdditionalMatch.AdditionalMatchingType] = [.top10, .personality, .physical,
-                                                                   .lately, .neighborhood, .job,
-                                                                   .recommend, .religion, .interest, .random]
+        let matchType = AdditionalMatch.AdditionalMatchingType.allCases
         output.presentAdditionalList(list: matchType)
     }
 }

@@ -64,8 +64,8 @@ final class AdditionalViewController: UIViewController {
     
     // MARK: - Load data
     private func registerXib() {
-        let nibName = UINib(nibName: "AdditionalCell", bundle: .main)
-        additionalTableView.register(nibName, forCellReuseIdentifier: "AdditionalCell")
+        let nibName = UINib(nibName: AdditionalCell.reuseIdentifier, bundle: .main)
+        additionalTableView.register(nibName, forCellReuseIdentifier: AdditionalCell.reuseIdentifier)
     }
     
     private func doAdditionalMatchListOnLoad() {
@@ -99,7 +99,7 @@ extension AdditionalViewController: UITableViewDataSource {
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let additionalCell = tableView
-                .dequeueReusableCell(withIdentifier: "AdditionalCell",
+                .dequeueReusableCell(withIdentifier: AdditionalCell.reuseIdentifier,
                                      for: indexPath) as? AdditionalCell else {
             return UITableViewCell()
         }
@@ -109,14 +109,5 @@ extension AdditionalViewController: UITableViewDataSource {
         }
         
         return additionalCell
-    }
-}
-
-// MARK: - UITableViewDelegate
-extension AdditionalViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView,
-                   heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 57
     }
 }
