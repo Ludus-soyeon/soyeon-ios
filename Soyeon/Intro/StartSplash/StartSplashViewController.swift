@@ -33,11 +33,11 @@ final class StartSplashViewController: UIViewController {
     }
  
     @IBAction private func startButtonDidTap(_ sender: Any?) {
-        if UserDefaults.init().object(forKey: "TEST") != nil {
-            continueSignupAlert()
+        if let location = UserDefaults.object(forKey: .saveSignUpLocation) as? String {
+            continueSignupAlert(location)
             return
         }
-        
+          
         startSignupAlert()
     }
     
@@ -50,28 +50,35 @@ final class StartSplashViewController: UIViewController {
             .show(to: self.view!, completion: nil)
     }
     
-    private func continueSignupAlert() {
+    private func continueSignupAlert(_ location: String) {
         SoyeonRoundAlertView
             .alert(message: "이전에 진행 중인 회원가입 기록이 있습니다. 이어서 계속 하시겠습니까?")?
             .action(style: .other("처음부터 다시하기"), completion: { [weak self] _ in
+                UserDefaults.remove(forKey: .saveSignUpLocation)
                 self?.startSignupAlert()
             })
             .action(style: .basic("이어서 계속하기"), completion: { [weak self] _ in
-                self?.continueSignup()
+                self?.continueSignup(location)
             })
             .show(to: self.view!, completion: nil)
     }
     
     private func startSignup() {
-        
+        let navigation = Signup.step1(.login).loaded 
+        setViewControllers(navigation.viewControllers)
     }
     
-    private func continueSignup() {
-            /* todo: - 화면 전환 작업
-              - 알럿노출
-                1. 당신은 법적 싱글이십니까?
-                2. 이어서 회원가입 하시겠습니까?
-            */
+    private func continueSignup(_ location: String) {
+        if let saveSignupLocation: Signup = Signup.stringToInit(value: location) {
+            let navigation = saveSignupLocation.loaded
+            setViewControllers(navigation.viewControllers)
+            return
+        }
+        startSignup()
+    }
+    
+    private func setViewControllers(_ viewContrllers: [UIViewController]) {
+        navigationController?.setViewControllers(viewContrllers, animated: true)
     }
 }
   

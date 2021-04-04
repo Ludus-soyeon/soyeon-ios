@@ -30,8 +30,10 @@ extension SignupLoadable {
         var viewControllers: [UIViewController] = []
         
         names.forEach { (name) in
-            let loadedViewController = loadedStoryboard.instantiateViewController(identifier: name)
-            viewControllers.append(loadedViewController)
+            if !name.isEmpty {
+                let loadedViewController = loadedStoryboard.instantiateViewController(identifier: name)
+                viewControllers.append(loadedViewController)
+            }
         }
         
         let navigationViewController = UINavigationController()
