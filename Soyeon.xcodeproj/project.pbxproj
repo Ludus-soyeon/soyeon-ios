@@ -149,6 +149,7 @@
 		D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8795C48258E6A2500DF4D64 /* Assets.xcassets */; };
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
+		D8B5C487261A32AF0064CF27 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5C486261A32AF0064CF27 /* RangeSlider.swift */; };
 		D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */; };
 /* End PBXBuildFile section */
 
@@ -306,6 +307,7 @@
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
+		D8B5C486261A32AF0064CF27 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1146,7 +1148,6 @@
 		D8795C3E258E6A2100DF4D64 /* Soyeon */ = {
 			isa = PBXGroup;
 			children = (
-				40EBC65F25F5DE2300216474 /* Additional */,
 				1DCC5C8D260B806A00B0736F /* Intro */,
 				00CF094625E294480077700A /* Model */,
 				1DBA14E125D46C0D00979BB2 /* Main */,
@@ -1177,6 +1178,7 @@
 			isa = PBXGroup;
 			children = (
 				D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */,
+				D8B5C486261A32AF0064CF27 /* RangeSlider.swift */,
 			);
 			path = IdealTypeInfo;
 			sourceTree = "<group>";
@@ -1447,6 +1449,7 @@
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0AC21E112613FDE400AD0635 /* AdditionalCell.swift in Sources */,
+				D8B5C487261A32AF0064CF27 /* RangeSlider.swift in Sources */,
 				0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
