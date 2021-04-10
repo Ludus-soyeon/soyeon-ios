@@ -48,6 +48,6 @@ enum Step1: SignupStepProtocol {
     
 }
 
-extension Step1: SignupLoadable {
+extension Step1: SignupViewLoadable {
     var storyboardName: String { return "Step1" }
 }

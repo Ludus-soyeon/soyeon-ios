@@ -50,4 +50,3 @@ enum Signup {
         return nil
     }
 }
-
