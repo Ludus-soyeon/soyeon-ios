@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad() 
         doLoginOnLoad()
     }
-
+     
     // MARK: - Load data
     func doLoginOnLoad() {
         output.displayLoginOnLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class AgreementConfigurator {
+final class AgreementConfigurator: LoadedSignupStep {
 
     // MARK: - Singleton
 
@@ -24,5 +24,7 @@ final class AgreementConfigurator {
 
         viewController.output = interactor
         viewController.router = router
+        
+        self.step = .step1(.agreement)
     }
 }
