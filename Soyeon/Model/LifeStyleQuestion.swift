@@ -11,12 +11,12 @@ import Foundation
 // MARK: - LifeStyleQuestion
 
 struct LifeStyleQuestion: Codable {
-    let questions: [Question]
+    let questions: [LQuestion]
 }
 
 // MARK: - Question
 
-struct Question: Codable {
+struct LQuestion: Codable {
     let id: Int
     let options: [Option]?
     let shot: Int

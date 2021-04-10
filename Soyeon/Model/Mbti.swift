@@ -1,5 +1,5 @@
 //
-//  MbtiQuestion.swift
+//  Mbti.swift
 //  Soyeon
 //
 //  Created by 이재은 on 2021/02/21.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-// MARK: - MbtiQuestion
+// MARK: - Mbti
 
-struct MbtiQuestion: Codable {
-    let questions: [Question]
+struct Mbti: Codable {
+    let questions: [MQuestion]
 }
 
 // MARK: - Question
 
-struct Question: Codable {
+struct MQuestion: Codable {
     let id: Int
     let question, trait: String
 }
