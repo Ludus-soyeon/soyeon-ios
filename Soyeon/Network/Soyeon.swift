@@ -141,12 +141,12 @@ extension Soyeon: TargetType {
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         case .registLifeStyle(let answers):
             let params: [String: Any] = [:]
-            let jsonBody = try! JSONEncoder().encode(answers)
-            return .requestCompositeData(bodyData: jsonBody, urlParameters: params)
+            let jsonBody = try? JSONEncoder().encode(answers)
+            return .requestCompositeData(bodyData: jsonBody ?? Data(), urlParameters: params)
         case .mbtiAnswers(let results):
             let params: [String: Any] = [:]
-            let jsonBody = try! JSONEncoder().encode(results)
-            return .requestCompositeData(bodyData: jsonBody, urlParameters: params)
+            let jsonBody = try? JSONEncoder().encode(results)
+            return .requestCompositeData(bodyData: jsonBody ?? Data(), urlParameters: params)
         default:
             return .requestPlain
         }
