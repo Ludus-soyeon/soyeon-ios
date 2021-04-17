@@ -12,6 +12,11 @@ class IdealTypeInfoViewController: UIViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
+    private enum ViewMetrics {
+        static let cellHeight: CGFloat = 28.0
+        static let cellSpacing: CGFloat = 4.0
+    }
+    
     private let personalityList = [
         "밝고 명량한 타입", "난스러운 츤데레 타입",
         "리더십 있고 화통한 타입", "시크한 귀염둥이",
@@ -21,11 +26,11 @@ class IdealTypeInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationTitle("이상형 정보 수정하기")
+        setupLayout()
     }
         
     private func setupLayout() {
-        
+        setNavigationTitle("이상형 정보 수정하기")
     }
 }
 
@@ -35,12 +40,21 @@ extension IdealTypeInfoViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonalityInfoCell.reuseIdentifier, for: indexPath) as? PersonalityInfoCell else {
-            fatalError()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonalityInfoCell.reuseIdentifier,
+                                                            for: indexPath) as? PersonalityInfoCell else {
+            return UICollectionViewCell()
         }
-        
         let personality = personalityList[indexPath.row]
         cell.configure(title: personality)
         return cell
+    }
+}
+
+extension IdealTypeInfoViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = collectionView.bounds.size
+        let cellWidth = floor((collectionViewSize.width - ViewMetrics.cellSpacing) / 2.0)
+        let cellSize = CGSize(width: cellWidth, height: ViewMetrics.cellHeight)
+        return cellSize
     }
 }
