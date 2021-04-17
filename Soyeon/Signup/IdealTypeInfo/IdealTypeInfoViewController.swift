@@ -10,9 +10,15 @@ import UIKit
 
 class IdealTypeInfoViewController: UIViewController {
     
+    @IBOutlet private weak var ageDescriptionLabel: UILabel!
+    @IBOutlet private weak var ageRangeSlider: RangeSlider!
+    @IBOutlet private weak var heightDescriptionLabel: UILabel!
+    @IBOutlet private weak var heightRangeSlider: RangeSlider!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     private enum ViewMetrics {
+        static let ageRange: ClosedRange<CGFloat> = 20...49
+        static let heightRange: ClosedRange<CGFloat> = 140...200
         static let cellHeight: CGFloat = 28.0
         static let cellSpacing: CGFloat = 4.0
     }
@@ -29,13 +35,32 @@ class IdealTypeInfoViewController: UIViewController {
         configureCollectionView()
         setupLayout()
     }
-        
-    private func setupLayout() {
-        setNavigationTitle("이상형 정보 수정하기")
-    }
-    
+     
     private func configureCollectionView() {
         collectionView.allowsMultipleSelection = true
+    }
+    
+    private func setupLayout() {
+        setNavigationTitle("이상형 정보 수정하기")
+        updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
+        updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+    }
+    
+    private func updateRangeLabel(_ label: UILabel, rangeSlider: RangeSlider, baseRange: ClosedRange<CGFloat>) {
+        let sliderRange = rangeSlider.minimumValue...rangeSlider.maximumValue
+        let minValue = Int(rangeSlider.lowerValue.convert(from: sliderRange,
+                                                          to: baseRange))
+        let maxValue = Int(rangeSlider.upperValue.convert(from: sliderRange,
+                                                          to: baseRange))
+        label.text = "\(minValue)~\(maxValue)"
+    }
+    
+    @IBAction private func ageSliderValueDidChange(_ sender: RangeSlider) {
+        updateRangeLabel(ageDescriptionLabel, rangeSlider: sender, baseRange: ViewMetrics.ageRange)
+    }
+    
+    @IBAction private func heightSliderValueDidChange(_ sender: RangeSlider) {
+        updateRangeLabel(heightDescriptionLabel, rangeSlider: sender, baseRange: ViewMetrics.heightRange)
     }
 }
 
@@ -61,5 +86,13 @@ extension IdealTypeInfoViewController: UICollectionViewDelegateFlowLayout {
         let cellWidth = floor((collectionViewSize.width - ViewMetrics.cellSpacing) / 2.0)
         let cellSize = CGSize(width: cellWidth, height: ViewMetrics.cellHeight)
         return cellSize
+    }
+}
+
+private extension FloatingPoint {
+    func convert(from input: ClosedRange<Self>, to output: ClosedRange<Self>) -> Self {
+        let x = (output.upperBound - output.lowerBound) * (self - input.lowerBound)
+        let y = (input.upperBound - input.lowerBound)
+        return x / y + output.lowerBound
     }
 }
