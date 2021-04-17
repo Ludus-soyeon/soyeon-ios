@@ -26,11 +26,16 @@ class IdealTypeInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureCollectionView()
         setupLayout()
     }
         
     private func setupLayout() {
         setNavigationTitle("이상형 정보 수정하기")
+    }
+    
+    private func configureCollectionView() {
+        collectionView.allowsMultipleSelection = true
     }
 }
 

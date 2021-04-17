@@ -954,14 +954,13 @@
                                                 <color key="textColor" name="153153153"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of4-pK-bR7">
-                                                <rect key="frame" x="277" y="21.999999999999972" width="24" height="16"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_arrow2_signup" translatesAutoresizingMaskIntoConstraints="NO" id="Q44-Qx-Zwr">
+                                                <rect key="frame" x="277" y="18" width="24" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="PU1-3X-mz2"/>
-                                                    <constraint firstAttribute="height" constant="16" id="RPG-FP-dSg"/>
+                                                    <constraint firstAttribute="height" constant="24" id="FfX-Qy-Vkb"/>
+                                                    <constraint firstAttribute="width" constant="24" id="m4r-G3-lHx"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                            </button>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfl-xE-aTv" userLabel="Separator">
@@ -1080,6 +1079,7 @@
     <resources>
         <image name="btn_agreement_off" width="22" height="22"/>
         <image name="btn_agreement_on" width="22" height="22"/>
+        <image name="ico_arrow2_signup" width="24" height="24"/>
         <image name="imageView:wUB-Jt-Xxc:image" width="109" height="20">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
