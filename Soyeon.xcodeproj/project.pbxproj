@@ -150,7 +150,8 @@
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
 		D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */; };
-		D8B5C487261A32AF0064CF27 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5C486261A32AF0064CF27 /* RangeSlider.swift */; };
+		D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */; };
+		D8A3CFB8262AC60200E3D201 /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CFB7262AC60200E3D201 /* RangeSliderTrackLayer.swift */; };
 		D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */; };
 /* End PBXBuildFile section */
 
@@ -309,7 +310,8 @@
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
 		D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityInfoCell.swift; sourceTree = "<group>"; };
-		D8B5C486261A32AF0064CF27 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		D8A3CFB7262AC60200E3D201 /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
 		D8D9C0E625D2366700AB3BDA /* RadioGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1179,11 +1181,20 @@
 		D881723D25FC6B7500D5FC0C /* IdealTypeInfo */ = {
 			isa = PBXGroup;
 			children = (
+				D8A3CFB0262AC54200E3D201 /* RangeSlider */,
 				D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */,
-				D8B5C486261A32AF0064CF27 /* RangeSlider.swift */,
 				D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */,
 			);
 			path = IdealTypeInfo;
+			sourceTree = "<group>";
+		};
+		D8A3CFB0262AC54200E3D201 /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */,
+				D8A3CFB7262AC60200E3D201 /* RangeSliderTrackLayer.swift */,
+			);
+			path = RangeSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1391,6 +1402,7 @@
 				000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */,
 				0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */,
 				0AC21E0D2613FDE400AD0635 /* AdditionalViewModel.swift in Sources */,
+				D8A3CFB8262AC60200E3D201 /* RangeSliderTrackLayer.swift in Sources */,
 				1D19088225A9F77E008210D1 /* AgreementConfigurator.swift in Sources */,
 				1D19087B25A9F77E008210D1 /* AgreementDetailInteractor.swift in Sources */,
 				D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */,
@@ -1432,6 +1444,7 @@
 				00CF092A25E25C710077700A /* ServiceError.swift in Sources */,
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
 				D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */,
+				D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
@@ -1453,7 +1466,6 @@
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0AC21E112613FDE400AD0635 /* AdditionalCell.swift in Sources */,
-				D8B5C487261A32AF0064CF27 /* RangeSlider.swift in Sources */,
 				0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
