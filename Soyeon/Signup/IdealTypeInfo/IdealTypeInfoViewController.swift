@@ -15,12 +15,19 @@ class IdealTypeInfoViewController: UIViewController {
     @IBOutlet private weak var heightDescriptionLabel: UILabel!
     @IBOutlet private weak var heightRangeSlider: RangeSlider!
     @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
     private enum ViewMetrics {
         static let ageRange: ClosedRange<CGFloat> = 20...49
         static let heightRange: ClosedRange<CGFloat> = 140...200
         static let cellHeight: CGFloat = 28.0
-        static let cellSpacing: CGFloat = 4.0
+        static let cellSpacingForLine: CGFloat = 8.0
+        static let cellSpacingForItem: CGFloat = 4.0
+        static let cellTitlePadding: CGFloat = 4.0
+    }
+    
+    private enum Theme {
+        static let cellTitleFont = Fonts.nanumSquareR.size(13.0)
     }
     
     private let personalityList = [
@@ -30,6 +37,11 @@ class IdealTypeInfoViewController: UIViewController {
         "주변을 챙기는 분위기 메이커", "한결같은 스타일"
     ]
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionViewHeightConstraint.constant = collectionView.contentSize.height
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
@@ -38,6 +50,9 @@ class IdealTypeInfoViewController: UIViewController {
      
     private func configureCollectionView() {
         collectionView.allowsMultipleSelection = true
+        if let layout = collectionView.collectionViewLayout as? TagListLayout {
+            layout.delegate = self
+        }
     }
     
     private func setupLayout() {
@@ -80,11 +95,23 @@ extension IdealTypeInfoViewController: UICollectionViewDataSource {
     }
 }
 
-extension IdealTypeInfoViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewSize = collectionView.bounds.size
-        let cellWidth = floor((collectionViewSize.width - ViewMetrics.cellSpacing) / 2.0)
-        let cellSize = CGSize(width: cellWidth, height: ViewMetrics.cellHeight)
+extension IdealTypeInfoViewController: TagListLayoutDelegate {
+    func spacingForLine() -> CGFloat {
+        return ViewMetrics.cellSpacingForLine
+    }
+    
+    func spacingForItem() -> CGFloat {
+        return ViewMetrics.cellSpacingForItem
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        sizeForTagAtIndexPath indexPath: IndexPath) -> CGSize {
+        let personalityInfo = personalityList[indexPath.row]
+        let stringSize = (personalityInfo as NSString).size(withAttributes: [
+            NSAttributedString.Key.font: Theme.cellTitleFont
+        ])
+        let cellSize = CGSize(width: stringSize.width + ViewMetrics.cellTitlePadding,
+                              height: ViewMetrics.cellHeight)
         return cellSize
     }
 }
