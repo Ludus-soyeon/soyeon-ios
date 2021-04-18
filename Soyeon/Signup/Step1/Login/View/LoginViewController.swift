@@ -68,6 +68,9 @@ final class LoginViewController: UIViewController {
     private func didTappedApple() {
 
     }
+    @IBAction func didTap(_ sender: Any) {
+        router.routeToPrivatePolicy()
+    }
     
 }
 

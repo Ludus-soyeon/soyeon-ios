@@ -27,8 +27,8 @@ final class NewAccountPresenter {
 // MARK: - NewAccountPresenterPresenterInput
 extension NewAccountPresenter: NewAccountPresenterInput {
     // MARK: - Presentation logic
-    func presentNewAccount() {
-        let viewModel = NewAccount.NewAccountViewModel(genderType: .male)
+    func presentNewAccount(gender: NewAccount.GenderType) {
+        let viewModel = NewAccount.NewAccountViewModel(genderType: gender)
         output.displayNewAccountView(viewModel: viewModel)
     }
 }

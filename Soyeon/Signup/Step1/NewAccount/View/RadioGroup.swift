@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol RadioGroupDelegate: class {
+    func radioButtonDidTap(_ sender: RadioButton)
+}
+
 class RadioGroup: UIControl {
+    weak var delegate: RadioGroupDelegate?
+    
     private let radioButtons: [RadioButton]
     private(set) var selectedIndex = 0 {
         willSet {
@@ -68,5 +74,6 @@ class RadioGroup: UIControl {
     @objc
     private func radioButtonTapped(button: RadioButton) {
         selectedIndex = button.tag
+        delegate?.radioButtonDidTap(button)
     }
 }

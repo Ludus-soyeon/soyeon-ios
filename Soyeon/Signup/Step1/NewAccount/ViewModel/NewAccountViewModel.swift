@@ -26,4 +26,17 @@ enum NewAccount {
     struct NewAccountViewModel {
         let genderType: NewAccount.GenderType
     }
+    
+}
+
+// MARK: - UserDefault ViewData
+extension NewAccount.GenderType: Codable { }
+
+extension NewAccount {
+    struct ViewData: Codable {
+        var name: String?
+        var nickName: String?
+        var gender: NewAccount.GenderType?
+        var phoneNumber: String? 
+    }
 }

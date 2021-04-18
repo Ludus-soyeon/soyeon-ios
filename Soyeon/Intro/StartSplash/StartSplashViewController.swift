@@ -54,7 +54,7 @@ final class StartSplashViewController: UIViewController {
         SoyeonRoundAlertView
             .alert(message: "이전에 진행 중인 회원가입 기록이 있습니다. 이어서 계속 하시겠습니까?")?
             .action(style: .other("처음부터 다시하기"), completion: { [weak self] _ in
-                UserDefaults.remove(forKey: .saveSignUpLocation)
+                self?.removeViewData() 
                 self?.startSignupAlert()
             })
             .action(style: .basic("이어서 계속하기"), completion: { [weak self] _ in
@@ -79,6 +79,16 @@ final class StartSplashViewController: UIViewController {
     
     private func setViewControllers(_ viewContrllers: [UIViewController]) {
         navigationController?.setViewControllers(viewContrllers, animated: true)
+    }
+    
+    private func removeViewData() {
+        UserDefaults.remove(forKey: .saveSignUpLocation)
+        
+        let dictionary = UserDefaults.standard.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+        
     }
 }
   

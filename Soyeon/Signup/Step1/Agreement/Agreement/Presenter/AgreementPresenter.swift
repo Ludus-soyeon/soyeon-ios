@@ -44,4 +44,8 @@ extension AgreementPresenter: AgreementPresenterInput {
         output.display(viewModel: viewModel)
     }
      
+    
+    func loadViewData(_ data: Agreement.Agreements) {
+        output.display(viewModel: .init(agreements: data))
+    }
 }

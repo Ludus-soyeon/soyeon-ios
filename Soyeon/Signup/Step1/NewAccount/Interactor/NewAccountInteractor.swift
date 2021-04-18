@@ -13,7 +13,7 @@ protocol NewAccountInteractorInput: NewAccountInteractorOutput {
 }
 
 protocol NewAccountInteractorOutput {
-    func presentNewAccount()
+    func presentNewAccount(gender: NewAccount.GenderType)
 }
 
 final class NewAccountInteractor {
@@ -30,7 +30,7 @@ final class NewAccountInteractor {
 // MARK: - NewAccountInteractorInteractorInput
 extension NewAccountInteractor: NewAccountViewControllerOutput {
     // MARK: - Business logic
-    func displayNewAccount() {
-        output.presentNewAccount()
+    func displayNewAccount(gender: NewAccount.GenderType) {
+        output.presentNewAccount(gender: gender)
     }
 }

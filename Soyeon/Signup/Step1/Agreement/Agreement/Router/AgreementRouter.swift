@@ -13,7 +13,7 @@ protocol AgreementRouterProtocol {
     var viewController: AgreementViewController? { get }
 
     func navigateToAgreementDetail(type: Agreement.AgreementButtonTag)
-    func navigateToJoin()
+    func navigateToNewAccount()
 }
 
 final class AgreementRouter {
@@ -43,7 +43,12 @@ extension AgreementRouter: AgreementRouterProtocol {
         }
     }
     
-    func navigateToJoin() {
-        print("navigationToJoin")
+    func navigateToNewAccount() {
+        let storyboard = UIStoryboard(name: "Step1", bundle: .main)
+        if let destinationVC = storyboard
+            .instantiateViewController(withIdentifier: "NewAccountViewController") as? NewAccountViewController {
+            viewController?.navigationController?.pushViewController(destinationVC,
+                                                                     animated: true)
+        }
     }
 } 

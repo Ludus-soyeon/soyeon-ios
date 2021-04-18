@@ -13,8 +13,8 @@ protocol AgreementInteractorInput: AgreementViewControllerOutput {
 }
 
 protocol AgreementInteractorOutput {
-
     func present(response: Agreement.Response)
+    func loadViewData(_ data: Agreement.Agreements)
 }
 
 final class AgreementInteractor {
@@ -32,7 +32,11 @@ final class AgreementInteractor {
 }
 
 // MARK: - AgreementInteractorInput
-extension AgreementInteractor: AgreementViewControllerOutput { 
+extension AgreementInteractor: AgreementViewControllerOutput {
+    func loadViewData(_ data: Agreement.Agreements) {
+        output.loadViewData(data)
+    }
+    
     
     // MARK: - Business logic
     func updateAgreements(_ item: Agreement.Request) {
