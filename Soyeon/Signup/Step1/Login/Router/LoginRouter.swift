@@ -24,9 +24,9 @@ final class LoginRouter {
     }
 
     // MARK: - Navigation
-    private func navigateToPrivacyPolicy(source: LoginViewController,
-                                         destination: LoginViewController) {
-        source.navigationController?.pushViewController(destination, animated: true)
+    private func navigateToPrivacyPolicy(destination: UIViewController) {
+        viewController?.navigationController?
+            .pushViewController(destination, animated: true)
     }
 }
 
@@ -34,10 +34,10 @@ final class LoginRouter {
 extension LoginRouter: LoginRouterProtocol {
 
     func routeToPrivatePolicy() { // destination 추후 변경
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let storyboard = UIStoryboard(name: "Step1", bundle: .main)
         if let destinationVC = storyboard
-            .instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
-            navigateToPrivacyPolicy(source: viewController!, destination: destinationVC)
+            .instantiateViewController(withIdentifier: "AgreementViewController") as? AgreementViewController {
+            navigateToPrivacyPolicy(destination: destinationVC)
         }
     }
 }

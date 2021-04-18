@@ -13,9 +13,18 @@ protocol AgreementViewControllerInput: AgreementPresenterOutput {
 
 protocol AgreementViewControllerOutput {
     func updateAgreements(_ request: Agreement.Request)
+    func loadViewData(_ data: Agreement.Agreements)
 }
  
-final class AgreementViewController: UIViewController {
+final class AgreementViewController: UIViewController, LoadSignupViewData {
+    typealias ViewDataType = Agreement.Agreements
+    var step: Signup = .step1(.agreement)
+    
+    fileprivate var viewData: ViewDataType = .init() {
+        willSet {
+            setViewData(newValue)
+        }
+    }
      
     @IBOutlet private weak var allAgreeLabel: UILabel!
     @IBOutlet private weak var allAgreeButton: UIButton!
@@ -24,7 +33,9 @@ final class AgreementViewController: UIViewController {
     @IBOutlet private weak var marketingAgreeButton: UIButton!
     @IBOutlet private weak var joinButton: UIButton!
      
-    fileprivate var viewModel: Agreement.AgreementViewModel = Agreement.AgreementViewModel()
+    fileprivate var viewModel: Agreement.AgreementViewModel = Agreement.AgreementViewModel() {
+        willSet {  viewData = newValue.agreements }
+    }
     
     var output: AgreementViewControllerOutput!
     var router: AgreementRouterProtocol!
@@ -55,13 +66,25 @@ final class AgreementViewController: UIViewController {
     // MARK: - View lifecycle
 
     override func viewDidLoad() {
-
         super.viewDidLoad()
         setupLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         
+        if let viewData = loadViewData() {
+            self.viewData = viewData
+            fillViewData(viewData)
+        }
+    }
+    
     private func setupLayout() {
         setNavigationTitle("이용 약관 동의")
+    }
+    
+    private func fillViewData(_ data: ViewDataType) {
+        output.loadViewData(viewData)
     }
     
     @IBAction func agreeButtonDidTap(_ sender: UIButton) {
@@ -83,7 +106,7 @@ final class AgreementViewController: UIViewController {
     
     @IBAction func joinButtonDidTap(_ sender: UIButton) {
         if sender.isSelected {
-            router.navigateToJoin()
+            router.navigateToNewAccount()
         }
     }
     

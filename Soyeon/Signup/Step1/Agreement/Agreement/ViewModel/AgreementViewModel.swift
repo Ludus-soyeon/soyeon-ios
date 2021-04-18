@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 enum Agreement {
      
     enum AgreementButtonTag: Int {
@@ -78,3 +77,7 @@ enum Agreement {
     }
     
 }
+
+// MARK: - UserDefault ViewData
+extension Agreement.Agreements: Codable { }
+ 

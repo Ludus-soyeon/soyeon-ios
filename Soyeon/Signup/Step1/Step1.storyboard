@@ -65,6 +65,9 @@
                                             <state key="normal" title="개인정보 처리방침">
                                                 <color key="titleColor" name="102102102"/>
                                             </state>
+                                            <connections>
+                                                <action selector="didTap:" destination="3Xk-zo-3qm" eventType="touchUpInside" id="BVa-zB-nkM"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -492,6 +495,9 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0x7-CY-L3m" id="5JW-9y-awu"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -519,6 +525,9 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0x7-CY-L3m" id="7jg-oe-1Dp"/>
+                                                </connections>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_agreement_off" highlightedImage="btn_agreement_on" translatesAutoresizingMaskIntoConstraints="NO" id="glv-95-LFS">
                                                 <rect key="frame" x="277" y="11" width="22" height="22"/>
@@ -584,6 +593,9 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0x7-CY-L3m" id="IRz-kV-HyF"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrE-oV-rW2">
                                                 <rect key="frame" x="218" y="9" width="81" height="26"/>
@@ -727,6 +739,9 @@
                         <outlet property="authNumberInputSeparatorView" destination="OM2-Rz-BYO" id="Hdr-0n-dfA"/>
                         <outlet property="authNumberInputStackView" destination="C1F-Gu-tLd" id="cfk-X9-y3C"/>
                         <outlet property="genderInputStackView" destination="mrU-qm-qoW" id="afY-Tw-v7H"/>
+                        <outlet property="nameTextField" destination="Bh9-Pc-vjI" id="QMa-dH-q05"/>
+                        <outlet property="nickNameTextField" destination="bNU-1K-baK" id="Suj-xM-2mF"/>
+                        <outlet property="phoneNumberTextField" destination="xG3-hS-uyA" id="xSY-aJ-nTC"/>
                         <outlet property="sendAuthNumberButton" destination="rrE-oV-rW2" id="LAF-qT-87L"/>
                     </connections>
                 </viewController>
