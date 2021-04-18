@@ -14,6 +14,7 @@ class IdealTypeInfoViewController: UIViewController {
     @IBOutlet private weak var ageRangeSlider: RangeSlider!
     @IBOutlet private weak var heightDescriptionLabel: UILabel!
     @IBOutlet private weak var heightRangeSlider: RangeSlider!
+    @IBOutlet private weak var formLabel: UILabel!
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
@@ -68,6 +69,22 @@ class IdealTypeInfoViewController: UIViewController {
         let maxValue = Int(rangeSlider.upperValue.convert(from: sliderRange,
                                                           to: baseRange))
         label.text = "\(minValue)~\(maxValue)"
+    }
+    
+    private func presentWriteProfile(_ writeProfile: WriteProfileAlertViewModel.WriteProfileItem,
+                                     completion: @escaping (String?) -> Void) {
+        writeProfile
+            .alert(action: { (selection) in
+                completion(selection)
+            })
+            .show(to: view)
+    }
+    
+    @IBAction private func handleTap(_ sender: UITapGestureRecognizer) {
+        let item = WriteProfileAlertViewModel.WriteProfileItem.form
+        presentWriteProfile(item) { [weak self] selection in
+            self?.formLabel.text = selection
+        }
     }
     
     @IBAction private func ageSliderValueDidChange(_ sender: RangeSlider) {
