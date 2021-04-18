@@ -1,5 +1,5 @@
 //
-//  SignupViewLoadable.swift
+//  LoadSignupView.swift
 //  Soyeon
 //
 //  Created by 박은비 on 2021/03/29.
@@ -12,13 +12,13 @@ protocol SignupStepProtocol: CaseIterable, Equatable {
     var viewControllerName: String { get }
 }
 
-protocol SignupViewLoadable {
+protocol LoadSignupView {
     associatedtype EnumType: SignupStepProtocol
     var storyboardName: String { get }
     func navigationTo(until: EnumType) -> UINavigationController
 }
 
-extension SignupViewLoadable {
+extension LoadSignupView {
     private var loadedStoryboard: UIStoryboard {
         let storyboard = UIStoryboard(name: storyboardName,
                                       bundle: Bundle.main)
