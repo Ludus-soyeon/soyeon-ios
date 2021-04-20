@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginConfigurator: LoadedSignupStep {
+final class LoginConfigurator: SignupStepSavable {
     // MARK: - Singleton
     static let shared: LoginConfigurator = LoginConfigurator()
 

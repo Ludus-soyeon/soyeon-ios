@@ -7,6 +7,10 @@
 //
 
 import Foundation
+ 
+protocol SignupStepProtocol: CaseIterable, Equatable {
+    var viewControllerName: String { get }
+}
 
 enum Step1: SignupStepProtocol {
     typealias EnumType = Self

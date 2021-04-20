@@ -1,5 +1,5 @@
 //
-//  LoadedSignupStep.swift
+//  SignupStepSavable.swift
 //  Soyeon
 //
 //  Created by 박은비 on 2021/04/10.
@@ -8,11 +8,11 @@
 
 import UIKit
  
-protocol LoadedSignupStep: class {
+protocol SignupStepSavable: class {
     var step: Signup? { get set }
 }
 
-extension LoadedSignupStep {
+extension SignupStepSavable {
     var step: Signup? {
         get { return nil }
         set {
