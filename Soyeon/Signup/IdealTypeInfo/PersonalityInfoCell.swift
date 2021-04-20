@@ -40,7 +40,7 @@ final class PersonalityInfoCell: UICollectionViewCell {
         self.layer.borderWidth = ViewMetrics.borderWidth
     }
     
-    func configure(title: String) {
+    func configure(_ title: String) {
         self.titleLabel.text = title
     }
 }

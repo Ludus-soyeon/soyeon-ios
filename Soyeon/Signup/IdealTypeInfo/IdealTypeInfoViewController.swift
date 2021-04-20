@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IdealTypeInfoViewController: UIViewController {
+final class IdealTypeInfoViewController: UIViewController {
     
     @IBOutlet private weak var ageDescriptionLabel: UILabel!
     @IBOutlet private weak var ageRangeSlider: RangeSlider!
@@ -31,13 +31,6 @@ class IdealTypeInfoViewController: UIViewController {
         static let cellTitleFont = Fonts.nanumSquareR.size(13.0)
     }
     
-    private let personalityList = [
-        "밝고 명량한 타입", "난스러운 츤데레 타입",
-        "리더십 있고 화통한 타입", "시크한 귀염둥이",
-        "내 사람에게만 따뜻", "둥글둥글 평화주의",
-        "주변을 챙기는 분위기 메이커", "한결같은 스타일"
-    ]
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionViewHeightConstraint.constant = collectionView.contentSize.height
@@ -58,6 +51,7 @@ class IdealTypeInfoViewController: UIViewController {
     
     private func setupLayout() {
         setNavigationTitle("이상형 정보 수정하기")
+        formLabel.text = WriteProfileAlertViewModel.Form.slimHard.rawValue
         updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
         updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
     }
@@ -98,7 +92,7 @@ class IdealTypeInfoViewController: UIViewController {
 
 extension IdealTypeInfoViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return personalityList.count
+        return PersonalityType.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -106,8 +100,10 @@ extension IdealTypeInfoViewController: UICollectionViewDataSource {
                                                             for: indexPath) as? PersonalityInfoCell else {
             return UICollectionViewCell()
         }
-        let personality = personalityList[indexPath.row]
-        cell.configure(title: personality)
+        if let personalityType = PersonalityType(rawValue: indexPath.row) {
+            let personalityInfo = String(describing: personalityType)
+            cell.configure(personalityInfo)
+        }
         return cell
     }
 }
@@ -123,7 +119,10 @@ extension IdealTypeInfoViewController: TagListLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView,
                         sizeForTagAtIndexPath indexPath: IndexPath) -> CGSize {
-        let personalityInfo = personalityList[indexPath.row]
+        guard let personalityType = PersonalityType(rawValue: indexPath.row) else {
+            return .zero
+        }
+        let personalityInfo = String(describing: personalityType)
         let stringSize = (personalityInfo as NSString).size(withAttributes: [
             NSAttributedString.Key.font: Theme.cellTitleFont
         ])
