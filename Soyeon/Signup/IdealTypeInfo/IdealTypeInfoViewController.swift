@@ -117,8 +117,7 @@ extension IdealTypeInfoViewController: TagListLayoutDelegate {
         return ViewMetrics.cellSpacingForItem
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        sizeForTagAtIndexPath indexPath: IndexPath) -> CGSize {
+    func sizeForTag(at indexPath: IndexPath) -> CGSize {
         guard let personalityType = PersonalityType(rawValue: indexPath.row) else {
             return .zero
         }

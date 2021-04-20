@@ -11,16 +11,13 @@ import UIKit
 protocol TagListLayoutDelegate: class {
     func spacingForLine() -> CGFloat
     func spacingForItem() -> CGFloat
-    func collectionView(_ collectionView: UICollectionView,
-                        sizeForTagAtIndexPath indexPath: IndexPath) -> CGSize
+    func sizeForTag(at indexPath: IndexPath) -> CGSize
 }
 
 final class TagListLayout: UICollectionViewLayout {
     
     weak var delegate: TagListLayoutDelegate?
-//
-//    private let spacingForLine: CGFloat = 8.0
-//    private let spacingForItem: CGFloat = 4.0
+
     private var contentWidth: CGFloat {
         guard let collectionView = collectionView else {
             return 0
@@ -50,8 +47,7 @@ final class TagListLayout: UICollectionViewLayout {
         var offset: CGPoint = .zero
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
-            let cellSize = delegate?.collectionView(collectionView,
-                                                    sizeForTagAtIndexPath: indexPath) ?? .zero
+            let cellSize = delegate?.sizeForTag(at: indexPath) ?? .zero
             if offset.x + cellSize.width > contentWidth {
                 offset.x = .zero
                 offset.y += spacingForLine + cellSize.height
