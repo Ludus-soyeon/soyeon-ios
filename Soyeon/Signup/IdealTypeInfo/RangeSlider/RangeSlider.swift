@@ -146,30 +146,24 @@ class RangeSlider: UIControl {
 
 extension RangeSlider {
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-        // 1
         previousLocation = touch.location(in: self)
         
-        // 2
         if lowerThumbImageView.frame.contains(previousLocation) {
             lowerThumbImageView.isHighlighted = true
         } else if upperThumbImageView.frame.contains(previousLocation) {
             upperThumbImageView.isHighlighted = true
         }
         
-        // 3
         return lowerThumbImageView.isHighlighted || upperThumbImageView.isHighlighted
     }
     
     override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let location = touch.location(in: self)
-        
-        // 1
         let deltaLocation = location.x - previousLocation.x
         let deltaValue = (maximumValue - minimumValue) * deltaLocation / bounds.width
         
         previousLocation = location
         
-        // 2
         if lowerThumbImageView.isHighlighted {
             lowerValue += deltaValue
             lowerValue = boundValue(lowerValue, toLowerValue: minimumValue,
