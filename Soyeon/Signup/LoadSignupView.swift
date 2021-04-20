@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol SignupStepProtocol: CaseIterable, Equatable {
-    var viewControllerName: String { get }
-}
-
 protocol LoadSignupView {
     associatedtype EnumType: SignupStepProtocol
     var storyboardName: String { get }
