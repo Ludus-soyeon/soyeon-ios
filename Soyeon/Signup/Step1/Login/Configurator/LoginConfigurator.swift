@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginConfigurator: SignupStepSavable {
+final class LoginConfigurator {
     // MARK: - Singleton
     static let shared: LoginConfigurator = LoginConfigurator()
 
@@ -21,7 +21,5 @@ final class LoginConfigurator: SignupStepSavable {
 
         viewController.output = interactor
         viewController.router = router
-        
-        self.step = .step1(.login)
     }
 }

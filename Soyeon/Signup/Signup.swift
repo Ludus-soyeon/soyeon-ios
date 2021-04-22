@@ -17,6 +17,7 @@ enum Signup {
             return step.navigationTo(until: step)
         }
     }
+    
     var rawValue: String {
         switch self {
         case .step1:
@@ -45,6 +46,14 @@ enum Signup {
             }
         default:
             break
+        }
+        
+        return nil
+    }
+    
+    static func findStringToSignup(className: String) -> Signup? {
+        if let step1 = Step1.stringInit(value: className) {
+            return Signup.step1(step1)
         }
         
         return nil

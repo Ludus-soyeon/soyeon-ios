@@ -16,9 +16,8 @@ protocol AgreementViewControllerOutput {
     func loadViewData(_ data: Agreement.Agreements)
 }
  
-final class AgreementViewController: UIViewController, LoadSignupViewData {
-    typealias ViewDataType = Agreement.Agreements
-    var step: Signup = .step1(.agreement)
+final class AgreementViewController: SignupStepViewController<Agreement.Agreements> {
+
     
     fileprivate var viewData: ViewDataType = .init() {
         willSet {

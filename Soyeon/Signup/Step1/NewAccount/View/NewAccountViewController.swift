@@ -16,10 +16,7 @@ protocol NewAccountViewControllerOutput {
     func displayNewAccount(gender: NewAccount.GenderType)
 }
 
-final class NewAccountViewController: UIViewController, LoadSignupViewData {
-    typealias ViewDataType = NewAccount.ViewData
-    var step: Signup = .step1(.newAccount)
-    
+final class NewAccountViewController: SignupStepViewController<NewAccount.ViewData> {
     fileprivate var viewData: ViewDataType = .init() {
         willSet {
             setViewData(newValue)

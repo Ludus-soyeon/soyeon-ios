@@ -11,7 +11,7 @@ import Foundation
 /// 회원가입의 데이터를 수정 및 조회합니다.
 protocol LoadSignupViewData: class {
     associatedtype ViewDataType: Codable
-    var step: Signup { get set }
+    var step: Signup? { get set }
     var viewData: ViewDataType? { get set }
     
     func loadViewData() -> ViewDataType?
@@ -29,7 +29,7 @@ extension LoadSignupViewData {
     }
     
     private var defaultKey: String {
-        return step.path
+        return step?.path ?? ""
     }
     
     private func modifyDefaultViewData(_ viewModel: ViewDataType) {
