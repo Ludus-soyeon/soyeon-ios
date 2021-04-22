@@ -43,8 +43,8 @@ extension LoadSignupView {
         let allCases = EnumType.allCases
          
         if let firstIndex = allCases.firstIndex(of: until) {
-            let untilViewCntorllerNames = allCases[...firstIndex].map { $0.viewControllerName }
-            return loadedViewConroller(names: untilViewCntorllerNames)
+            let untilViewControllerNames = allCases[...firstIndex].map { $0.viewControllerName }
+            return loadedViewConroller(names: untilViewControllerNames)
         }
         
         return UINavigationController()

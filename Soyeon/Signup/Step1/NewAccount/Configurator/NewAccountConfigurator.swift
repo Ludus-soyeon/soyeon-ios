@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class NewAccountConfigurator: SignupStepSavable {
+final class NewAccountConfigurator {
     // MARK: - Singleton
     static let shared: NewAccountConfigurator = NewAccountConfigurator()
 
@@ -19,7 +19,5 @@ final class NewAccountConfigurator: SignupStepSavable {
         let interactor = NewAccountInteractor(output: presenter)
         viewController.output = interactor
         viewController.router = router
-        
-        self.step = .step1(.newAccount)
     }
 }

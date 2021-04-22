@@ -899,6 +899,7 @@
 			isa = PBXGroup;
 			children = (
 				1DA32031262C757900ED564A /* SignupStepSavable.swift */,
+				1D47F47A263178C900E85B94 /* SignupStepViewController.swift */,
 				1DA32032262C757900ED564A /* LoadSignupView.swift */,
 				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
 				0AF58E892611EA46008F3E56 /* Signup.swift */,
@@ -1384,6 +1385,7 @@
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
 				0AC21E0F2613FDE400AD0635 /* AdditionalViewController.swift in Sources */,
+				1D47F47B263178C900E85B94 /* SignupStepViewController.swift in Sources */,
 				1D19087925A9F77E008210D1 /* AgreementDetailConfigurator.swift in Sources */,
 				009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,

@@ -37,7 +37,6 @@ extension AgreementInteractor: AgreementViewControllerOutput {
         output.loadViewData(data)
     }
     
-    
     // MARK: - Business logic
     func updateAgreements(_ item: Agreement.Request) {
         var item = item

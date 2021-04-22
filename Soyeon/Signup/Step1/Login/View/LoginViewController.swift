@@ -16,8 +16,7 @@ protocol LoginViewControllerOutput {
     func displayLoginOnLoad()
 }
 
-final class LoginViewController: UIViewController {
-
+final class LoginViewController: SignupStepViewController<Login.ViewData> {
     var output: LoginViewControllerOutput!
     var router: LoginRouterProtocol!
 
