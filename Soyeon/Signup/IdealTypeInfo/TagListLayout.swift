@@ -36,30 +36,8 @@ final class TagListLayout: UICollectionViewLayout {
     override func prepare() {
         super.prepare()
         
-        guard let collectionView = collectionView else { return }
-        
-        let spacingForLine = delegate?.spacingForLine() ?? .zero
-        let spacingForItem = delegate?.spacingForItem() ?? .zero
-        
-        cachedAttributes.removeAll()
-        contentHeight = 0
-        
-        var offset: CGPoint = .zero
-        for item in 0..<collectionView.numberOfItems(inSection: 0) {
-            let indexPath = IndexPath(item: item, section: 0)
-            let cellSize = delegate?.sizeForTag(at: indexPath) ?? .zero
-            if offset.x + cellSize.width > contentWidth {
-                offset.x = .zero
-                offset.y += spacingForLine + cellSize.height
-            }
-            let frame = CGRect(origin: offset,
-                               size: cellSize)
-            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-            attributes.frame = frame
-            cachedAttributes.append(attributes)
-            contentHeight = max(contentHeight, frame.maxY)
-            offset.x += cellSize.width + spacingForItem
-        }
+        resetLayoutAttributes()
+        buildLayoutAttributes()
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -76,5 +54,33 @@ final class TagListLayout: UICollectionViewLayout {
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cachedAttributes[indexPath.item]
+    }
+    
+    func resetLayoutAttributes() {
+        cachedAttributes.removeAll()
+    }
+    
+    private func buildLayoutAttributes() {
+        guard let collectionView = collectionView else { return }
+        
+        var offset: CGPoint = .zero
+        let spacingForLine = delegate?.spacingForLine() ?? .zero
+        let spacingForItem = delegate?.spacingForItem() ?? .zero
+        for item in 0..<collectionView.numberOfItems(inSection: 0) {
+            let indexPath = IndexPath(item: item, section: 0)
+            let cellSize = delegate?.sizeForTag(at: indexPath) ?? .zero
+            if offset.x + cellSize.width > contentWidth {
+                offset.x = .zero
+                offset.y += spacingForLine + cellSize.height
+            }
+            
+            let frame = CGRect(origin: offset, size: cellSize)
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            attributes.frame = frame
+            cachedAttributes.append(attributes)
+
+            contentHeight = max(contentHeight, frame.maxY)
+            offset.x += cellSize.width + spacingForItem
+        }
     }
 }
