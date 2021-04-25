@@ -17,8 +17,7 @@ protocol AgreementViewControllerOutput {
 }
  
 final class AgreementViewController: SignupStepViewController<Agreement.Agreements> {
-
-    
+ 
     fileprivate var viewData: ViewDataType = .init() {
         willSet {
             setViewData(newValue)

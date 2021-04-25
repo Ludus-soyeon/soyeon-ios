@@ -8,17 +8,20 @@
 
 import UIKit
 
-class SignupStepViewController<T: Codable>: UIViewController, SignupStepSavable, LoadSignupViewData {
+class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData {
     typealias ViewDataType = T
     var step: Signup?
      
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setStep()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setStep()
     }
     
@@ -27,6 +30,12 @@ class SignupStepViewController<T: Codable>: UIViewController, SignupStepSavable,
         
         if let signup = Signup.findStringToSignup(className: name) {
             self.step = signup
+            saveSignupLocation(signup.path)
         }
+    }
+    
+    private func saveSignupLocation(_ path: String) {
+        UserDefaults.setValue(path,
+                              forKey: .saveSignUpLocation)
     }
 }

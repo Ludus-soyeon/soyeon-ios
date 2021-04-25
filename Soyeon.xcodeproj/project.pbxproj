@@ -104,13 +104,13 @@
 		1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */; };
 		1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908C425AA13DF008210D1 /* PagingView.xib */; };
 		1D1908C925AA1645008210D1 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1908C825AA1645008210D1 /* PagingView.swift */; };
+		1D47F47B263178C900E85B94 /* SignupStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47F47A263178C900E85B94 /* SignupStepViewController.swift */; };
 		1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D49609A25CED2630002C961 /* SoyeonRoundAlertButton.swift */; };
 		1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4960A225CEE4CC0002C961 /* SoyeonAlertButton.swift */; };
 		1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */; };
 		1D5B63C325B481BA00A5321C /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C225B481BA00A5321C /* XibView.swift */; };
 		1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */; };
 		1D64300525F4CBCE00A84D45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64300425F4CBCE00A84D45 /* User.swift */; };
-		1DA32033262C757900ED564A /* SignupStepSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32031262C757900ED564A /* SignupStepSavable.swift */; };
 		1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32032262C757900ED564A /* LoadSignupView.swift */; };
 		1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32045262C75D900ED564A /* LoadSignupViewData.swift */; };
 		1DBA13C425D440E400979BB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBA13C325D440E400979BB2 /* Moya */; };
@@ -259,13 +259,13 @@
 		1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartSplashViewController.xib; sourceTree = "<group>"; };
 		1D1908C425AA13DF008210D1 /* PagingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingView.xib; sourceTree = "<group>"; };
 		1D1908C825AA1645008210D1 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		1D47F47A263178C900E85B94 /* SignupStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupStepViewController.swift; sourceTree = "<group>"; };
 		1D49609A25CED2630002C961 /* SoyeonRoundAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRoundAlertButton.swift; sourceTree = "<group>"; };
 		1D4960A225CEE4CC0002C961 /* SoyeonAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertButton.swift; sourceTree = "<group>"; };
 		1D5B63B225B43FFB00A5321C /* MarqueeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeImageView.swift; sourceTree = "<group>"; };
 		1D5B63C225B481BA00A5321C /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
 		1D64300425F4CBCE00A84D45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1DA32031262C757900ED564A /* SignupStepSavable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupStepSavable.swift; sourceTree = "<group>"; };
 		1DA32032262C757900ED564A /* LoadSignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSignupView.swift; sourceTree = "<group>"; };
 		1DA32045262C75D900ED564A /* LoadSignupViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSignupViewData.swift; sourceTree = "<group>"; };
 		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
@@ -898,7 +898,6 @@
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				1DA32031262C757900ED564A /* SignupStepSavable.swift */,
 				1D47F47A263178C900E85B94 /* SignupStepViewController.swift */,
 				1DA32032262C757900ED564A /* LoadSignupView.swift */,
 				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
@@ -1424,7 +1423,6 @@
 				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
 				0AC21E142613FDE400AD0635 /* AdditionalWorker.swift in Sources */,
 				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
-				1DA32033262C757900ED564A /* SignupStepSavable.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				00CF093625E28F4E0077700A /* Term.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
