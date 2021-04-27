@@ -19,22 +19,39 @@
         <scene sceneID="T7J-j2-D2W">
             <objects>
                 <viewController id="tvN-f8-RIh" customClass="IntroViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P28-bT-d6h" customClass="Test">
+                    <view key="view" contentMode="scaleToFill" id="P28-bT-d6h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lg5-SN-iFM">
+                                <rect key="frame" x="-20.5" y="-67" width="455" height="1040"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lg5-SN-iFM" secondAttribute="height" multiplier="375:856" id="jsl-4L-qxa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gFp-4h-KPy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="soyeonBlue"/>
+                        <constraints>
+                            <constraint firstItem="lg5-SN-iFM" firstAttribute="width" secondItem="P28-bT-d6h" secondAttribute="width" multiplier="1.1" id="5fs-5v-2sf"/>
+                            <constraint firstItem="lg5-SN-iFM" firstAttribute="centerY" secondItem="gFp-4h-KPy" secondAttribute="centerY" id="KWn-8x-NHp"/>
+                            <constraint firstItem="lg5-SN-iFM" firstAttribute="centerX" secondItem="gFp-4h-KPy" secondAttribute="centerX" id="NKD-4L-qk8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="feE-1l-Ehu"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="introImageView" destination="lg5-SN-iFM" id="hhO-Ip-9W8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSw-Dm-9P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="76.339285714285708"/>
         </scene>
-        <!--Start Splash View Controller-->
+        <!--StartSplashViewController-->
         <scene sceneID="sBH-hj-bZo">
             <objects>
-                <viewController id="Dkn-aO-zPx" customClass="StartSplashViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartSplashViewController" title="StartSplashViewController" id="Dkn-aO-zPx" customClass="StartSplashViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4mI-jt-lWa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +141,7 @@
                             <constraint firstItem="0vM-mR-98e" firstAttribute="top" secondItem="4mI-jt-lWa" secondAttribute="top" id="yVh-pc-FAq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Oe3-h7-fEy"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="pageView" destination="f69-8Z-k2e" id="Rmh-Iz-aWc"/>
@@ -132,15 +150,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNx-p5-Db2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="76"/>
+            <point key="canvasLocation" x="713" y="830"/>
         </scene>
         <!--Custom Back Button Nav Controller-->
         <scene sceneID="Ltx-PQ-qR0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3K3-d1-UX0" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3K3-d1-UX0" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZh-Ht-riZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
