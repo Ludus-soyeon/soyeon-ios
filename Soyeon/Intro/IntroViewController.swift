@@ -40,7 +40,7 @@ final class IntroViewController: UIViewController {
     }
     
     private func goStartSplash() {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Intro", bundle: Bundle.main)
         let viewController = storyboard.instantiateViewController(identifier: "StartSplashViewController") as
             StartSplashViewController
         
