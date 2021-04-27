@@ -103,7 +103,6 @@
 		1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087125A9F77E008210D1 /* AgreementInteractor.swift */; };
 		1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19087325A9F77E008210D1 /* AgreementRouter.swift */; };
 		1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */; };
-		1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */; };
 		1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1908C425AA13DF008210D1 /* PagingView.xib */; };
 		1D1908C925AA1645008210D1 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1908C825AA1645008210D1 /* PagingView.swift */; };
 		1D47F47B263178C900E85B94 /* SignupStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47F47A263178C900E85B94 /* SignupStepViewController.swift */; };
@@ -148,7 +147,7 @@
 		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
-		D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Main.storyboard */; };
+		D8795C47258E6A2100DF4D64 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Intro.storyboard */; };
 		D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8795C48258E6A2500DF4D64 /* Assets.xcassets */; };
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
@@ -266,7 +265,6 @@
 		1D19088B25A9F7A8008210D1 /* SoyeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyeonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonTests.swift; sourceTree = "<group>"; };
 		1D19088F25A9F7A8008210D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartSplashViewController.xib; sourceTree = "<group>"; };
 		1D1908C425AA13DF008210D1 /* PagingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingView.xib; sourceTree = "<group>"; };
 		1D1908C825AA1645008210D1 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
 		1D47F47A263178C900E85B94 /* SignupStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupStepViewController.swift; sourceTree = "<group>"; };
@@ -311,7 +309,7 @@
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8795C46258E6A2100DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8795C46258E6A2100DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Intro.storyboard; sourceTree = "<group>"; };
 		D8795C48258E6A2500DF4D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -902,7 +900,6 @@
 			isa = PBXGroup;
 			children = (
 				1DC9DF3A25AAEC1300822E99 /* PagingView */,
-				1D1908BE25AA122A008210D1 /* StartSplashViewController.xib */,
 				1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */,
 				1D1908C425AA13DF008210D1 /* PagingView.xib */,
 				1D1908C825AA1645008210D1 /* PagingView.swift */,
@@ -970,7 +967,7 @@
 		1DCC5C8D260B806A00B0736F /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				D8795C45258E6A2100DF4D64 /* Main.storyboard */,
+				D8795C45258E6A2100DF4D64 /* Intro.storyboard */,
 				1DCC5C8E260B808700B0736F /* IntroViewController.swift */,
 				1D1908A625AA120F008210D1 /* StartSplash */,
 			);
@@ -1320,7 +1317,6 @@
 				000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
-				1D1908BF25AA122A008210D1 /* StartSplashViewController.xib in Resources */,
 				0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
@@ -1328,7 +1324,7 @@
 				1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */,
 				1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */,
 				1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */,
-				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
+				D8795C47258E6A2100DF4D64 /* Intro.storyboard in Resources */,
 				0AFFB5A926379AAC00CA6FCE /* soyeon-intro.gif in Resources */,
 				1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */,
 				0A4E515625EAB4E400616C07 /* WriteProfileAlertView.xib in Resources */,
@@ -1530,12 +1526,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8795C45258E6A2100DF4D64 /* Main.storyboard */ = {
+		D8795C45258E6A2100DF4D64 /* Intro.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8795C46258E6A2100DF4D64 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Intro.storyboard;
 			sourceTree = "<group>";
 		};
 		D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */ = {
