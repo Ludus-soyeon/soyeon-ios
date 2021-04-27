@@ -11,7 +11,7 @@ import UIKit
 protocol LoadSignupView {
     associatedtype EnumType: SignupStepProtocol
     var storyboardName: String { get }
-    func navigationTo(until: EnumType) -> UINavigationController
+    func navigationTo(until: EnumType) -> CustomBackButtonNavController
 }
 
 extension LoadSignupView {
@@ -22,7 +22,7 @@ extension LoadSignupView {
         return storyboard
     }
     
-    private func loadedViewConroller(names: [String]) -> UINavigationController {
+    private func loadedViewConroller(names: [String]) -> CustomBackButtonNavController {
         var viewControllers: [UIViewController] = []
         
         names.forEach { (name) in
@@ -32,13 +32,15 @@ extension LoadSignupView {
             }
         }
         
-        let navigationViewController = UINavigationController()
+        guard let rootViewController = viewControllers.first else { return .init() }
+        
+        let navigationViewController = CustomBackButtonNavController(rootViewController: rootViewController)
         navigationViewController.viewControllers = viewControllers
         
         return navigationViewController
     }
     
-    func navigationTo(until: EnumType) -> UINavigationController {
+    func navigationTo(until: EnumType) -> CustomBackButtonNavController {
         
         let allCases = EnumType.allCases
          
@@ -47,6 +49,6 @@ extension LoadSignupView {
             return loadedViewConroller(names: untilViewControllerNames)
         }
         
-        return UINavigationController()
+        return CustomBackButtonNavController()
     }
 }

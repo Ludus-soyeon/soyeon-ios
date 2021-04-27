@@ -11,7 +11,7 @@ import UIKit
 enum Signup {
     case step1(Step1)
     
-    var loaded: UINavigationController {
+    var loaded: CustomBackButtonNavController {
         switch self {
         case .step1(let step):
             return step.navigationTo(until: step)
