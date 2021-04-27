@@ -83,6 +83,8 @@
 		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
 		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
 		0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */; };
+		0AFFB5A926379AAC00CA6FCE /* soyeon-intro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFB5A826379AAC00CA6FCE /* soyeon-intro.gif */; };
+		0AFFB5F52637CABE00CA6FCE /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFB5F42637CABE00CA6FCE /* UIApplication+.swift */; };
 		1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */; };
 		1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085525A9F77E008210D1 /* DetailContents.swift */; };
 		1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19085725A9F77E008210D1 /* AgreementDetailPresenter.swift */; };
@@ -241,6 +243,8 @@
 		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
 		0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLoadedNavigation.swift; sourceTree = "<group>"; };
+		0AFFB5A826379AAC00CA6FCE /* soyeon-intro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "soyeon-intro.gif"; sourceTree = "<group>"; };
+		0AFFB5F42637CABE00CA6FCE /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		0B3E021C3C5203175F442983 /* Pods-Soyeon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.release.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.release.xcconfig"; sourceTree = "<group>"; };
 		1D19085425A9F77E008210D1 /* AgreementDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreementDetailViewModel.swift; sourceTree = "<group>"; };
 		1D19085525A9F77E008210D1 /* DetailContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContents.swift; sourceTree = "<group>"; };
@@ -421,6 +425,7 @@
 				0A4E516D25EAB58700616C07 /* Date+.swift */,
 				000CEB4B25B484C800F64A28 /* UILabel+.swift */,
 				000CEB2C25B47FF400F64A28 /* UIView+.swift */,
+				0AFFB5F42637CABE00CA6FCE /* UIApplication+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1172,6 +1177,7 @@
 		D8795C55258E819800DF4D64 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AFFB5A826379AAC00CA6FCE /* soyeon-intro.gif */,
 				1DC9DF7125AB4F3B00822E99 /* NanumSquareB.ttf */,
 				1DC9DF7225AB4F3B00822E99 /* NanumSquareEB.ttf */,
 				1DC9DF7325AB4F3B00822E99 /* NanumSquareR.ttf */,
@@ -1323,6 +1329,7 @@
 				1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */,
 				1DC9DF7625AB4F3B00822E99 /* NanumSquareR.ttf in Resources */,
 				D8795C47258E6A2100DF4D64 /* Main.storyboard in Resources */,
+				0AFFB5A926379AAC00CA6FCE /* soyeon-intro.gif in Resources */,
 				1DD00B8B25CDAD11004DC9AA /* SoyeonRoundAlertView.xib in Resources */,
 				0A4E515625EAB4E400616C07 /* WriteProfileAlertView.xib in Resources */,
 				0A4E513025EA8E8B00616C07 /* WriteProfile1.storyboard in Resources */,
@@ -1453,6 +1460,7 @@
 				D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */,
 				D8F11805262B3ABF00E34C97 /* TagListLayout.swift in Sources */,
 				D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */,
+				0AFFB5F52637CABE00CA6FCE /* UIApplication+.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
