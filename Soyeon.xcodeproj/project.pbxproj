@@ -131,6 +131,8 @@
 		1DD0CCBC261A11F1003E6347 /* SoyeonUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CCBB261A11F1003E6347 /* SoyeonUserDefault.swift */; };
 		1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */; };
 		5BDC807628B81E4DE303170F /* Pods_Soyeon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */; };
+		D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804DCA82635CD820073104B /* WriteIntroductionViewController.swift */; };
+		D804DCBF2635CE2F0073104B /* WriteIntroduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D804DCBE2635CE2F0073104B /* WriteIntroduction.storyboard */; };
 		D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */; };
 		D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC17625D5016B0053C31A /* PhaseViewController.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
@@ -293,6 +295,8 @@
 		1DD9CA3225F47F9B00290014 /* PlaceHolderWarningTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderWarningTextView.swift; sourceTree = "<group>"; };
 		A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soyeon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B339458DFF7FFACB2386F24D /* Pods-Soyeon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soyeon.debug.xcconfig"; path = "Target Support Files/Pods-Soyeon/Pods-Soyeon.debug.xcconfig"; sourceTree = "<group>"; };
+		D804DCA82635CD820073104B /* WriteIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteIntroductionViewController.swift; sourceTree = "<group>"; };
+		D804DCBE2635CE2F0073104B /* WriteIntroduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteIntroduction.storyboard; sourceTree = "<group>"; };
 		D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
 		D80DC17625D5016B0053C31A /* PhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseViewController.swift; sourceTree = "<group>"; };
 		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
@@ -941,6 +945,7 @@
 			children = (
 				0AC21DFA2613FDE400AD0635 /* Additional */,
 				0A4E511D25EA8E8B00616C07 /* WriteProfile1 */,
+				D804DCA52635CD0D0073104B /* WriteIntroduction */,
 			);
 			path = Step2;
 			sourceTree = "<group>";
@@ -1028,6 +1033,15 @@
 				A04D176EE25C0C949E125001 /* Pods_Soyeon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D804DCA52635CD0D0073104B /* WriteIntroduction */ = {
+			isa = PBXGroup;
+			children = (
+				D804DCA82635CD820073104B /* WriteIntroductionViewController.swift */,
+				D804DCBE2635CE2F0073104B /* WriteIntroduction.storyboard */,
+			);
+			path = WriteIntroduction;
 			sourceTree = "<group>";
 		};
 		D80D664A25BDBA1C002F47B9 /* Common */ = {
@@ -1314,6 +1328,7 @@
 				1DC9DF4A25AAF43D00822E99 /* FindInfoView.xib in Resources */,
 				00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */,
 				0AC21E122613FDE400AD0635 /* Additional.storyboard in Resources */,
+				D804DCBF2635CE2F0073104B /* WriteIntroduction.storyboard in Resources */,
 				000CEB4425B484A800F64A28 /* Guidance.storyboard in Resources */,
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
@@ -1483,6 +1498,7 @@
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
 				0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */,
 				0AC21E152613FDE400AD0635 /* AdditionalInteractor.swift in Sources */,
+				D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */,
 				0A4E515B25EAB4E400616C07 /* BirthYearAlertItem.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
 				0A4E515825EAB4E400616C07 /* JobAlertItem.swift in Sources */,
