@@ -14,22 +14,36 @@ final class PhaseViewController: UIViewController {
     enum Phase {
         case first(nickname: String)
         
-        var gifName: String {
+        var imageName: String {
             switch self {
             case .first:
-                return "phase_first.gif"
+                return "phase_first"
             }
+        }
+        
+        var gif: String {
+            return "\(imageName).gif"
+        }
+        
+        var png: String {
+            return "\(imageName).png"
         }
     }
     
+    @IBOutlet private weak var phaseImageView: UIImageView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
     
-    var phase: Phase?
+    private var phase: Phase
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        animateGIF()
+    init(phase: Phase) {
+        self.phase = phase
+        super.init(nibName: "PhaseViewController", bundle: Bundle.main)
+    }
+    
+    required init?(coder: NSCoder) {
+        phase = .first(nickname: "")
+        super.init(coder: coder)
     }
     
     override func viewDidLoad() {
@@ -37,16 +51,25 @@ final class PhaseViewController: UIViewController {
         setupLayout()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animateGIF()
+    }
+    
     private func setupLayout() {
-        headerLabel.attributedText = phase?.attributedString
+        phaseImageView.image = UIImage(named: phase.png)
+        headerLabel.attributedText = phase.attributedString
     }
     
     private func animateGIF() {
-        if let gifName = phase?.gifName,
-           let gif = try? UIImage(gifName: gifName) {
+        if let gif = try? UIImage(gifName: phase.gif) {
             imageView.setGifImage(gif, loopCount: 1)
             imageView.startAnimatingGif()
         }
+    }
+    
+    @IBAction func didTapNextPhaseButton(_ sender: Any) {
+
     }
 }
 
