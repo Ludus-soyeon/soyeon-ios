@@ -99,6 +99,13 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
             }
         }
     }
+     
+    @IBAction func didTapRegisterAccountButton(_ sender: Any) {
+        if let viewData = loadViewData() {
+            router.navigateToPhase(with: viewData.nickName ?? "")
+            return
+        }
+    }
 }
 
 // MARK: - ViewData

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhaseViewController" customModule="Soyeon" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="P29-cr-cZY" id="22i-YH-bwf"/>
+                <outlet property="imageView" destination="WeS-o1-HYX" id="4Mp-gX-6Io"/>
+                <outlet property="phaseImageView" destination="7yu-8a-Vgu" id="S0h-1N-eNf"/>
+                <outlet property="view" destination="Bsz-Qp-NcO" id="WwH-Eg-S5S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bsz-Qp-NcO">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phase_first" translatesAutoresizingMaskIntoConstraints="NO" id="7yu-8a-Vgu">
+                    <rect key="frame" x="152.5" y="104" width="109" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P29-cr-cZY">
+                    <rect key="frame" x="0.0" y="158" width="414" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleAspectFit" image="phase_first_gif" translatesAutoresizingMaskIntoConstraints="NO" id="WeS-o1-HYX">
+                    <rect key="frame" x="0.0" y="236" width="414" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WeS-o1-HYX" secondAttribute="height" multiplier="1:1" id="XXW-cr-lv5"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W1-qv-mQW">
+                    <rect key="frame" x="30" y="668" width="353" height="48"/>
+                    <color key="backgroundColor" name="soyeonBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="OKJ-Pd-fgh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
+                    <state key="normal" title="프로필 작성하기"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="23"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapNextPhaseButton:" destination="-1" eventType="touchUpInside" id="YxX-8A-mhu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wdf-M7-zAX"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" name="bgNormal"/>
+            <constraints>
+                <constraint firstItem="WeS-o1-HYX" firstAttribute="width" secondItem="Bsz-Qp-NcO" secondAttribute="width" id="0tF-gu-tiK"/>
+                <constraint firstItem="P29-cr-cZY" firstAttribute="centerX" secondItem="7yu-8a-Vgu" secondAttribute="centerX" id="1rk-qk-sxk"/>
+                <constraint firstItem="7yu-8a-Vgu" firstAttribute="top" secondItem="wdf-M7-zAX" secondAttribute="top" constant="60" id="5E7-TN-L6h"/>
+                <constraint firstItem="3W1-qv-mQW" firstAttribute="leading" secondItem="wdf-M7-zAX" secondAttribute="leading" constant="30" id="Isv-Xw-1Oy"/>
+                <constraint firstItem="P29-cr-cZY" firstAttribute="width" secondItem="Bsz-Qp-NcO" secondAttribute="width" id="MnC-dV-gfc"/>
+                <constraint firstItem="wdf-M7-zAX" firstAttribute="trailing" secondItem="3W1-qv-mQW" secondAttribute="trailing" constant="31" id="Qxb-l5-mKM"/>
+                <constraint firstItem="WeS-o1-HYX" firstAttribute="centerY" secondItem="wdf-M7-zAX" secondAttribute="centerY" constant="-10" id="UKL-Ct-w6e"/>
+                <constraint firstItem="7yu-8a-Vgu" firstAttribute="centerX" secondItem="wdf-M7-zAX" secondAttribute="centerX" id="nkY-Zh-LlU"/>
+                <constraint firstItem="3W1-qv-mQW" firstAttribute="top" secondItem="WeS-o1-HYX" secondAttribute="bottom" constant="18" id="tIo-x5-tQa"/>
+                <constraint firstItem="WeS-o1-HYX" firstAttribute="centerX" secondItem="wdf-M7-zAX" secondAttribute="centerX" id="u7R-B9-85i"/>
+                <constraint firstItem="P29-cr-cZY" firstAttribute="top" secondItem="7yu-8a-Vgu" secondAttribute="bottom" constant="34" id="yLI-cZ-XeA"/>
+            </constraints>
+            <point key="canvasLocation" x="-874" y="-595"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="phase_first" width="109" height="20"/>
+        <image name="phase_first_gif" width="112.66666412353516" height="112.66666412353516"/>
+        <namedColor name="bgNormal">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="soyeonBlue">
+            <color red="0.41200000047683716" green="0.46700000762939453" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
