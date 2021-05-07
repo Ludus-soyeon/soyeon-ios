@@ -10,6 +10,8 @@ import Foundation
 
 /// Soyeon 서비스에서 사용될 UserDefualt Key 모음.
 enum SoyeonUserDefaultKey: String {
+    // 최종적으로 가입될 User 정보
+    case user
     
     // 회원가입
     case saveSignUpLocation

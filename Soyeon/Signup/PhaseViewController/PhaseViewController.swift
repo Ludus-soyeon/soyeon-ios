@@ -40,6 +40,7 @@ final class PhaseViewController: SignupStepViewController<User> {
     private var phase: Phase
     
     private var nickname: String {
+        return getUserData().nickname ?? ""
     }
     
     init(phase: Phase) {

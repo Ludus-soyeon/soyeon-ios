@@ -21,6 +21,15 @@ enum NewAccount {
                 return "여자"
             }
         }
+        
+        var boolValue: Bool {
+            switch self {
+            case .male:
+                return true
+            case .female:
+                return false
+            }
+        }
     }
     
     struct NewAccountViewModel {
