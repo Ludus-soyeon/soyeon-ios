@@ -11,7 +11,7 @@ import UIKit
 protocol NewAccountRouterProtocol {
     var viewController: NewAccountViewController? { get }
     
-    func navigateToPhase(with nickName: String)
+    func navigateToPhase()
 }
 
 final class NewAccountRouter {
@@ -26,10 +26,15 @@ final class NewAccountRouter {
 // MARK: - NewAccountRouterRouterProtocol
 extension NewAccountRouter: NewAccountRouterProtocol {
     // MARK: - Navigation
-    func navigateToPhase(with nickName: String) { 
-        let phaseVC = PhaseViewController(phase: .first(nickname: nickName))
-        phaseVC.modalPresentationStyle = .fullScreen
-        viewController?.navigationController?
-            .present(phaseVC, animated: true, completion: nil)
+    func navigateToPhase() {
+         
+        self.viewController?.dismiss(animated: true, completion: {
+            let phaseVC = PhaseViewController(phase: .first)
+            phaseVC.modalPresentationStyle = .fullScreen
+            
+            let rootNavigation = UIApplication.shared.soyeonWindow?.rootViewController as? UINavigationController
+            
+            rootNavigation?.present(phaseVC, animated: true, completion: nil)
+        })
     }
 }

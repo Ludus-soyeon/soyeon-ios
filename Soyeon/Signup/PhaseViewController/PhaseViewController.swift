@@ -8,16 +8,19 @@
 
 import SwiftyGif
 import UIKit
-
-final class PhaseViewController: UIViewController {
+ 
+final class PhaseViewController: SignupStepViewController<User> {
     
-    enum Phase {
-        case first(nickname: String)
-        
+    enum Phase: String {
+        case first
+        case second
+         
         var imageName: String {
             switch self {
             case .first:
                 return "phase_first"
+            default:
+                return ""
             }
         }
         
@@ -36,29 +39,33 @@ final class PhaseViewController: UIViewController {
     
     private var phase: Phase
     
+    private var nickname: String {
+    }
+    
     init(phase: Phase) {
         self.phase = phase
         super.init(nibName: "PhaseViewController", bundle: Bundle.main)
     }
     
     required init?(coder: NSCoder) {
-        phase = .first(nickname: "")
+        self.phase = .first
         super.init(coder: coder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         animateGIF()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+     
     private func setupLayout() {
         phaseImageView.image = UIImage(named: phase.png)
-        headerLabel.attributedText = phase.attributedString
+        headerLabel.attributedText = attributedString
+    
     }
     
     private func animateGIF() {
@@ -67,16 +74,16 @@ final class PhaseViewController: UIViewController {
             imageView.startAnimatingGif()
         }
     }
-    
+      
     @IBAction func didTapNextPhaseButton(_ sender: Any) {
-
+        dismiss(animated: true, completion: nil)
     }
 }
 
-private extension PhaseViewController.Phase {
-    var attributedString: NSAttributedString {
-        switch self {
-        case .first(let nickname):
+private extension PhaseViewController {
+    var attributedString: NSAttributedString? {
+        switch self.phase {
+        case .first:
             let title = "\(nickname)님\n환영합니다!"
             let attributedString = NSMutableAttributedString(
                 string: title,
@@ -93,6 +100,8 @@ private extension PhaseViewController.Phase {
                 range: range
             )
             return attributedString
+        default:
+            return nil
         }
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData {
     typealias ViewDataType = T
     var step: Signup?
@@ -21,14 +21,14 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
     }
      
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        super.viewWillAppear(animated)
         setStep()
     }
     
     private func setStep() {
         let name = String(describing: type(of: self))
-        
-        if let signup = Signup.findStringToSignup(className: name) {
+         
+        if let signup = Signup.initTo(classNamed: name) {
             self.step = signup
             saveSignupLocation(signup.path)
         }

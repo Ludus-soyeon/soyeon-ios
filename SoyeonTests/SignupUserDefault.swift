@@ -22,7 +22,7 @@ class SignupUserDefault: XCTestCase {
         if let result = UserDefaults.object(forKey: .saveSignUpLocation) as? String,
            let saveSignupLocation: Signup = Signup.stringToInit(value: result) {
             
-            let navigation = saveSignupLocation.loaded
+            let navigation = saveSignupLocation.loadedStep
             
             let testResult = navigation.viewControllers[0] is LoginViewController &&
                              navigation.viewControllers[1] is AgreementViewController
