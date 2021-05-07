@@ -102,7 +102,16 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
      
     @IBAction func didTapRegisterAccountButton(_ sender: Any) {
         if let viewData = loadViewData() {
-            router.navigateToPhase(with: viewData.nickName ?? "")
+            
+            let user = getUserData()
+             
+            user.name = viewData.name
+            user.nickname = viewData.nickName
+            user.sex = viewData.gender?.boolValue
+            user.phone = viewData.phoneNumber
+            saveUserData(user)
+            
+            router.navigateToPhase()
             return
         }
     }
