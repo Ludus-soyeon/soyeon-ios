@@ -37,7 +37,7 @@ enum Step1: SignupStepProtocol {
         return viewControllerName
     }
     
-    static func stringInit(value: String) -> Step1? {
+    static func initRawValue(_ value: String) -> Step1? {
         switch value {
         case Step1.login.rawValue:
             return Step1.login

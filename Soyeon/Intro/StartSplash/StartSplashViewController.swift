@@ -64,17 +64,29 @@ final class StartSplashViewController: UIViewController {
     }
     
     private func startSignup() {
-        let navigation = Signup.step1(.login).loaded 
+        let navigation = Signup.step1(.login).loadedStep
         presentNavigation(navigation)
     }
     
     private func continueSignup(_ location: String) {
-        if let saveSignupLocation: Signup = Signup.stringToInit(value: location) {
-            let navigation = saveSignupLocation.loaded
-            presentNavigation(navigation)
-            return
+        if let saveSignupLocation: Signup = Signup.initTo(path: location) {
+            switch saveSignupLocation {
+            case .phaseFirst:
+                let viewController = saveSignupLocation.loadedPhase
+                presentViewController(viewController)
+            default:
+                let navigation = saveSignupLocation.loadedStep
+                presentNavigation(navigation)
+                return
+            }
         }
         startSignup()
+    }
+    
+    private func presentViewController(_ viewController: UIViewController) {
+        viewController.modalPresentationStyle = .fullScreen
+        navigationController?.present(viewController, animated: true,
+                                      completion: nil)
     }
     
     private func presentNavigation(_ navigation: CustomBackButtonNavController) {

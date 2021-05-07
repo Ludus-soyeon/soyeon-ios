@@ -7,14 +7,26 @@
 //
 
 import UIKit
-
+  
 enum Signup {
     case step1(Step1)
+    case phaseFirst
     
-    var loaded: CustomBackButtonNavController {
+    var loadedStep: CustomBackButtonNavController {
         switch self {
         case .step1(let step):
             return step.navigationTo(until: step)
+        default:
+            return .init()
+        }
+    }
+    
+    var loadedPhase: UIViewController {
+        switch self {
+        case .phaseFirst:
+            return PhaseViewController(phase: .first)
+        default:
+            return .init()
         }
     }
     
@@ -22,6 +34,8 @@ enum Signup {
         switch self {
         case .step1:
             return "step1"
+        case .phaseFirst:
+            return "PhaseViewController"
         }
     }
     
@@ -29,21 +43,27 @@ enum Signup {
         switch self {
         case .step1(let step):
             return "step1.\(step.viewControllerName)"
+        case .phaseFirst:
+            return "PhaseViewController"
         }
     }
     
-    static func stringToInit(value: String) -> Signup? {
-        let path = value.split(separator: ".").map { String($0) }
-        guard path.count == 2 else { return nil }
+    // path를 Signup 객체로 바꾸어준다.
+    static func initTo(path: String) -> Signup? {
+        let path = path.split(separator: ".").map { String($0) }
+        guard 0 < path.count else { return nil }
         
-        let signupPhase  = path[0]
-        let location     = path[1]
+        let signupPhase  = path.first!
+        let location     = path.last ?? signupPhase
           
         switch signupPhase {
         case Signup.step1(.none).rawValue:
-            if let step1: Step1 = Step1.stringInit(value: location) {
+            if let step1: Step1 = Step1.initRawValue(location) {
                 return Signup.step1(step1)
             }
+        case Signup.phaseFirst.rawValue:
+            return Signup.phaseFirst
+            
         default:
             break
         }
@@ -51,8 +71,11 @@ enum Signup {
         return nil
     }
     
-    static func findStringToSignup(className: String) -> Signup? {
-        if let step1 = Step1.stringInit(value: className) {
+    // className을 Signup 객체로 바꾸어준다
+    static func initTo(classNamed name: String) -> Signup? {
+        if let phase = Signup.initTo(path: name) {
+            return phase
+        } else if let step1 = Step1.initRawValue(name) {
             return Signup.step1(step1)
         }
         

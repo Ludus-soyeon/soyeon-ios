@@ -31,6 +31,12 @@
 		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
 		009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Step1.storyboard */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
+		00CF092A25E25C710077700A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092925E25C710077700A /* ServiceError.swift */; };
+		00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092D25E25CA70077700A /* ProviderManager.swift */; };
+		00CF093625E28F4E0077700A /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093525E28F4E0077700A /* Term.swift */; };
+		00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093925E2914C0077700A /* LifeStyleAnswer.swift */; };
+		00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */; };
+		00CF094225E293790077700A /* Mbti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF094125E293790077700A /* Mbti.swift */; };
 		0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */; };
 		0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */; };
 		0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */; };
@@ -56,12 +62,6 @@
 		0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516C25EAB58700616C07 /* CaseIterable+.swift */; };
 		0A4E516F25EAB58700616C07 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516D25EAB58700616C07 /* Date+.swift */; };
 		0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */; };
-		00CF092A25E25C710077700A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092925E25C710077700A /* ServiceError.swift */; };
-		00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092D25E25CA70077700A /* ProviderManager.swift */; };
-		00CF093625E28F4E0077700A /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093525E28F4E0077700A /* Term.swift */; };
-		00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093925E2914C0077700A /* LifeStyleAnswer.swift */; };
-		00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */; };
-		00CF094225E293790077700A /* Mbti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF094125E293790077700A /* Mbti.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
@@ -193,6 +193,12 @@
 		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Step1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Step1.storyboard; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		00CF092925E25C710077700A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		00CF092D25E25CA70077700A /* ProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
+		00CF093525E28F4E0077700A /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		00CF093925E2914C0077700A /* LifeStyleAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleAnswer.swift; sourceTree = "<group>"; };
+		00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleQuestion.swift; sourceTree = "<group>"; };
+		00CF094125E293790077700A /* Mbti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti.swift; sourceTree = "<group>"; };
 		0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewModel.swift; sourceTree = "<group>"; };
 		0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Presenter.swift; sourceTree = "<group>"; };
 		0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewController.swift; sourceTree = "<group>"; };
@@ -218,12 +224,6 @@
 		0A4E516C25EAB58700616C07 /* CaseIterable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CaseIterable+.swift"; sourceTree = "<group>"; };
 		0A4E516D25EAB58700616C07 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightAlertItem.swift; path = Soyeon/Extension/HeightAlertItem.swift; sourceTree = SOURCE_ROOT; };
-		00CF092925E25C710077700A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
-		00CF092D25E25CA70077700A /* ProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
-		00CF093525E28F4E0077700A /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
-		00CF093925E2914C0077700A /* LifeStyleAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleAnswer.swift; sourceTree = "<group>"; };
-		00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleQuestion.swift; sourceTree = "<group>"; };
-		00CF094125E293790077700A /* Mbti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti.swift; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
@@ -517,6 +517,18 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		00CF094625E294480077700A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00CF094125E293790077700A /* Mbti.swift */,
+				00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */,
+				00CF093925E2914C0077700A /* LifeStyleAnswer.swift */,
+				00CF093525E28F4E0077700A /* Term.swift */,
+				1D64300425F4CBCE00A84D45 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0A4E511D25EA8E8B00616C07 /* WriteProfile1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,19 +734,6 @@
 				0AC21E0C2613FDE400AD0635 /* AdditionalRouter.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-
-		00CF094625E294480077700A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				00CF094125E293790077700A /* Mbti.swift */,
-				00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */,
-				00CF093925E2914C0077700A /* LifeStyleAnswer.swift */,
-				00CF093525E28F4E0077700A /* Term.swift */,
-				1D64300425F4CBCE00A84D45 /* User.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
