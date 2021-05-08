@@ -12,7 +12,7 @@ import XCTest
 class SignupLoadedNavigation: XCTestCase {
     
     func testSignup1ToLogin() {
-        let navigation = Signup.step1(.login).loaded
+        let navigation = Signup.step1(.login).loadedStep
 
         let testResult = navigation.viewControllers[0] is LoginViewController
          
@@ -20,7 +20,7 @@ class SignupLoadedNavigation: XCTestCase {
     }
     
     func testSignup1ToAgreement() {
-       let navigation = Signup.step1(.agreement).loaded
+       let navigation = Signup.step1(.agreement).loadedStep
 
        let testResult = navigation.viewControllers[0] is LoginViewController &&
                         navigation.viewControllers[1] is AgreementViewController
@@ -29,7 +29,7 @@ class SignupLoadedNavigation: XCTestCase {
     }
     
     func testSignup1ToAccount() {
-        let navigation = Signup.step1(.newAccount).loaded
+        let navigation = Signup.step1(.newAccount).loadedStep
 
         let testResult = navigation.viewControllers[0] is LoginViewController &&
             navigation.viewControllers[1] is AgreementViewController &&
@@ -37,4 +37,13 @@ class SignupLoadedNavigation: XCTestCase {
          
          XCTAssertTrue(testResult)
     }
+    
+    func testSignup2ToWriteProfile1() {
+        let navigation = Signup.step2(.writeProfile1).loadedStep
+
+        let testResult = navigation.viewControllers[0] is WriteProfile1ViewController
+         
+         XCTAssertTrue(testResult)
+    }
+    
 }
