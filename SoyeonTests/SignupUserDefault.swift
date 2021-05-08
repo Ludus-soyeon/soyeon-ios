@@ -20,7 +20,7 @@ class SignupUserDefault: XCTestCase {
   
     func testsUserDefulat() {
         if let result = UserDefaults.object(forKey: .saveSignUpLocation) as? String,
-           let saveSignupLocation: Signup = Signup.stringToInit(value: result) {
+           let saveSignupLocation: Signup = Signup.initTo(path: result) {
             
             let navigation = saveSignupLocation.loadedStep
             
