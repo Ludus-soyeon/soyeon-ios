@@ -8,13 +8,20 @@
 
 import UIKit
   
+protocol SignupStepProtocol: CaseIterable, Equatable {
+   var viewControllerName: String { get }
+}
+
 enum Signup {
     case step1(Step1)
     case phaseFirst
+    case step2(Step2)
     
     var loadedStep: CustomBackButtonNavController {
         switch self {
         case .step1(let step):
+            return step.navigationTo(until: step)
+        case .step2(let step):
             return step.navigationTo(until: step)
         default:
             return .init()
@@ -36,6 +43,8 @@ enum Signup {
             return "step1"
         case .phaseFirst:
             return "PhaseViewController"
+        case .step2:
+            return "step2"
         }
     }
     
@@ -45,10 +54,12 @@ enum Signup {
             return "step1.\(step.viewControllerName)"
         case .phaseFirst:
             return "PhaseViewController"
+        case .step2(let step):
+            return "step2.\(step.viewControllerName)"
         }
     }
     
-    // path를 Signup 객체로 바꾸어준다.
+    /// path를 Signup 객체로 반환합니다.
     static func initTo(path: String) -> Signup? {
         let path = path.split(separator: ".").map { String($0) }
         guard 0 < path.count else { return nil }
@@ -71,7 +82,7 @@ enum Signup {
         return nil
     }
     
-    // className을 Signup 객체로 바꾸어준다
+    /// className을 Signup 객체로 반환합니다.
     static func initTo(classNamed name: String) -> Signup? {
         if let phase = Signup.initTo(path: name) {
             return phase
