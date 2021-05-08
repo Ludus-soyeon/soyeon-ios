@@ -75,9 +75,30 @@ final class PhaseViewController: SignupStepViewController<User> {
             imageView.startAnimatingGif()
         }
     }
+    
+    private func moveToStep2() {
+        dismiss(animated: true, completion: {
+            let rootNavigation = UIApplication.shared.soyeonWindow?.rootViewController as? UINavigationController
+            let navigation = Signup.step2(.writeProfile1).loadedStep
+            navigation.modalPresentationStyle = .fullScreen
+            
+            rootNavigation?.present(navigation,
+                                    animated: true, completion: nil) 
+        })
+        
+    }
+    
+    private func moveToStep3() {
+        
+    }
       
     @IBAction func didTapNextPhaseButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        switch phase {
+        case .first:
+            moveToStep2()
+        case .second:
+            moveToStep3()
+        }
     }
 }
 

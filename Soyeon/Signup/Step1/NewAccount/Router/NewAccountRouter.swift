@@ -27,14 +27,9 @@ final class NewAccountRouter {
 extension NewAccountRouter: NewAccountRouterProtocol {
     // MARK: - Navigation
     func navigateToPhase() {
-         
-        self.viewController?.dismiss(animated: true, completion: {
-            let phaseVC = PhaseViewController(phase: .first)
-            phaseVC.modalPresentationStyle = .fullScreen
-            
-            let rootNavigation = UIApplication.shared.soyeonWindow?.rootViewController as? UINavigationController
-            
-            rootNavigation?.present(phaseVC, animated: true, completion: nil)
-        })
+        let phaseVC = PhaseViewController(phase: .first)
+        viewController?.navigationController?.isNavigationBarHidden = true
+        viewController?.navigationController?.pushViewController(phaseVC,
+                                                                 animated: true)
     }
 }
