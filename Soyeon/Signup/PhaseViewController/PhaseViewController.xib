@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhaseViewController" customModule="Soyeon" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="3W1-qv-mQW" id="Ohc-ww-Jkd"/>
                 <outlet property="headerLabel" destination="P29-cr-cZY" id="22i-YH-bwf"/>
                 <outlet property="imageView" destination="WeS-o1-HYX" id="4Mp-gX-6Io"/>
                 <outlet property="phaseImageView" destination="7yu-8a-Vgu" id="S0h-1N-eNf"/>

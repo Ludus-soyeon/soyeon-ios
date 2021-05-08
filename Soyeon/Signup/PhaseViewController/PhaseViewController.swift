@@ -10,32 +10,35 @@ import SwiftyGif
 import UIKit
  
 final class PhaseViewController: SignupStepViewController<User> {
+    override var className: String {
+        "\(self.phase.rawValue).\(super.className)"
+    }
     
     enum Phase: String {
         case first
         case second
-         
-        var imageName: String {
+        
+        var buttonTitle: String {
             switch self {
             case .first:
-                return "phase_first"
-            default:
-                return ""
+                return "프로필 작성하기"
+            case .second:
+                return "캐릭터 검사하고 소연 시작하기"
             }
         }
         
-        var gif: String {
-            return "\(imageName).gif"
+        var imageName: String {
+            return "phase_first"
         }
         
-        var png: String {
-            return "\(imageName).png"
-        }
+        var gif: String { "\(imageName).gif" }
+        var png: String { "\(imageName).png" }
     }
-    
+     
     @IBOutlet private weak var phaseImageView: UIImageView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var button: UIButton!
     
     private var phase: Phase
     
@@ -58,15 +61,11 @@ final class PhaseViewController: SignupStepViewController<User> {
         setupLayout()
         animateGIF()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
      
     private func setupLayout() {
         phaseImageView.image = UIImage(named: phase.png)
         headerLabel.attributedText = attributedString
-    
+        button.setTitle(phase.buttonTitle, for: .normal)
     }
     
     private func animateGIF() {
@@ -89,7 +88,7 @@ final class PhaseViewController: SignupStepViewController<User> {
     }
     
     private func moveToStep3() {
-        
+        dismiss(animated: true, completion: nil)
     }
       
     @IBAction func didTapNextPhaseButton(_ sender: Any) {
@@ -106,24 +105,31 @@ private extension PhaseViewController {
     var attributedString: NSAttributedString? {
         switch self.phase {
         case .first:
-            let title = "\(nickname)님\n환영합니다!"
-            let attributedString = NSMutableAttributedString(
-                string: title,
-                attributes: [
-                    .font: Fonts.nanumSquareR.size(20.0),
-                    .foregroundColor: Colors.strongBlack.color()
-                ]
-            )
-            let range = (title as NSString).range(of: nickname)
-            attributedString.setAttributes(
-                [
-                    .font: Fonts.nanumSquareB.size(20.0)
-                ],
-                range: range
-            )
-            return attributedString
-        default:
-            return nil
+            return makeAttributedString(content: "\(nickname)님\n환영합니다!",
+                                        bold: nickname)
+        case .second:
+            return makeAttributedString(content: "프로필 작성 완료! \n나의 캐릭터는 무엇일까요?",
+                                        bold: "프로필 작성 완료!")
         }
+    }
+    
+    private func makeAttributedString(content: String,
+                                      bold: String) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(
+            string: content,
+            attributes: [
+                .font: Fonts.nanumSquareR.size(20.0),
+                .foregroundColor: Colors.strongBlack.color()
+            ]
+        )
+        let range = (content as NSString).range(of: bold)
+        attributedString.setAttributes(
+            [
+                .font: Fonts.nanumSquareB.size(20.0)
+            ],
+            range: range
+        )
+        
+        return attributedString
     }
 }

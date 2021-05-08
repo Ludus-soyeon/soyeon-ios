@@ -12,7 +12,7 @@ import XCTest
 class SignupUserDefault: XCTestCase {
     
     override func setUpWithError() throws {
-        let saveTarget = Signup.step1(.agreement).path
+        let saveTarget = Signup.step1(.agreement).resource
         
         UserDefaults.setValue(saveTarget, forKey: .saveSignUpLocation)
         

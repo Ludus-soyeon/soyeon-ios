@@ -18,8 +18,16 @@ protocol WriteProfile1ViewControllerOutput {
                        request: WriteProfile1Model.ViewModel)
 }
 
-final class WriteProfile1ViewController: UIViewController {
-    var viewModel: WriteProfile1Model.ViewModel = WriteProfile1Model.ViewModel()
+final class WriteProfile1ViewController: SignupStepViewController<WriteProfile1Model.ViewModel> {
+    fileprivate var viewData: ViewDataType = .init() {
+        willSet {
+            setViewData(newValue)
+        }
+    }
+
+    var viewModel: WriteProfile1Model.ViewModel = WriteProfile1Model.ViewModel() {
+        willSet {  viewData = newValue }
+    }
     
     var output: WriteProfile1ViewControllerOutput!
     var router: WriteProfile1RouterProtocol!
@@ -57,7 +65,22 @@ final class WriteProfile1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let viewData = loadViewData() {
+            self.viewData = viewData
+            fillViewData(viewData)
+            return
+        }
+        
         doWriteProfileOnLoad(request: viewModel)
+    }
+    
+    private func fillViewData(_ data: ViewDataType) {
+        doWriteProfileOnLoad(request: data)
     }
      
     // MARK: - Load data
@@ -97,7 +120,7 @@ final class WriteProfile1ViewController: UIViewController {
     }
     
     @IBAction private func nextButtonDidTap(sender: UIButton) {
-        print("nextButtonDidTap \(String(describing: viewModel))")
+        router.navigationToWriteIntroduction()
     }
     
     @IBAction private func profileItemButtonDidTap(sender: UIButton) {

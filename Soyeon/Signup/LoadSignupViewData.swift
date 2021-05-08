@@ -29,7 +29,7 @@ extension LoadSignupViewData {
     }
     
     private var defaultKey: String {
-        return step?.path ?? ""
+        return step?.resource ?? ""
     }
     
     private func modifyDefaultViewData(_ viewModel: ViewDataType) {

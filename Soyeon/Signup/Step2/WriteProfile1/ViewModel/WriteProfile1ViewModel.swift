@@ -119,3 +119,6 @@ extension WriteProfile1Model.ViewModel {
         }
     }
 }
+ 
+// MARK: - UserDefault ViewData
+extension WriteProfile1Model.ViewModel: Codable { }

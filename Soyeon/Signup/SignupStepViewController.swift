@@ -11,6 +11,10 @@ import UIKit
 class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData {
     typealias ViewDataType = T
     var step: Signup?
+    
+    var className: String {
+        String(describing: type(of: self))
+    }
      
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -26,11 +30,11 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
     }
     
     private func setStep() {
-        let name = String(describing: type(of: self))
+        let name = className
          
         if let signup = Signup.initTo(classNamed: name) {
             self.step = signup
-            saveSignupLocation(signup.path)
+            saveSignupLocation(signup.resource)
         }
     }
     
@@ -38,6 +42,7 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
         UserDefaults.setValue(path,
                               forKey: .saveSignUpLocation)
     }
+    
 }
 
 extension SignupStepViewController: CustomClassObjectHandleable { 

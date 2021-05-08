@@ -8,9 +8,18 @@
 
 import UIKit
 
-final class WriteIntroductionViewController: UIViewController {
+struct Introduction: Codable {
+    var content: String?
+}
+
+final class WriteIntroductionViewController: SignupStepViewController<Introduction> {
+    fileprivate var viewData: ViewDataType = .init() {
+        willSet {
+            setViewData(newValue)
+        }
+    }
     
-    @IBOutlet private weak var textView: UITextView!
+    @IBOutlet private weak var textView: PlaceHolderTextView!
     @IBOutlet private weak var nextButton: UIButton!
     
     private(set) var buttonObserver: NSKeyValueObservation?
@@ -37,23 +46,62 @@ final class WriteIntroductionViewController: UIViewController {
         setupLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let viewData = loadViewData() {
+            self.viewData = viewData
+            fillViewData(viewData)
+            return
+        }
+        
+    }
+    
+    private func fillViewData(_ data: ViewDataType) {
+        textView.setOriginText(data.content,
+                               color: Theme.disabledTitleTintColor)
+        placeHolderTextViewDidChange(textView)
+    }
+    
     private func setupLayout() {
         setNavigationTitle("프로필 작성하기")
         textView.layer.borderColor = Theme.textViewBorderColor.cgColor
+        
+        textView.setPlaceHolderTextView(placeHolder: "10자 이상 입력해주세요",
+                                        placeHoldColor: Theme.disabledTitleTintColor)
+        textView.placeHolderDelegate = self
+        
         bindButtonLayout()
     }
     
     private func bindButtonLayout() {
-        buttonObserver = nextButton.observe(\.isEnabled, options: .new) { [weak nextButton] button, change in
-            nextButton?.tintColor = button.isEnabled ? Theme.enabledTitleTintColor : Theme.disabledTitleTintColor
-            nextButton?.backgroundColor = button.isEnabled ? Theme.enabledBackgroundColor : Theme.disabledBackgroundColor
+        buttonObserver = nextButton.observe(\.isEnabled, options: .new) { [weak nextButton] button, _ in
+            if button.isEnabled {
+                nextButton?.tintColor = Theme.enabledTitleTintColor
+                nextButton?.backgroundColor = Theme.enabledBackgroundColor
+            } else {
+                nextButton?.tintColor = Theme.disabledTitleTintColor
+                nextButton?.backgroundColor = Theme.disabledBackgroundColor
+            }
         }
     }
     
+    @IBAction private func didTapNextButton(_ sender: Any) {
+        let vc = Step2.idealTyeInfo.loadedViewController
+        
+        self.navigationController?.pushViewController(vc,
+                                animated: true)
+    }
 }
 
-extension WriteIntroductionViewController: UITextViewDelegate {
+extension WriteIntroductionViewController: PlaceHolderTextViewDelegate {
+    func placeHolderTextViewDidChange(_ textView: UITextView) {
+        textViewDidChange(textView)
+    }
+    
     func textViewDidChange(_ textView: UITextView) {
         nextButton.isEnabled = textView.text.count >= 10
+        viewData = .init(content: textView.text)
     }
+    
 }

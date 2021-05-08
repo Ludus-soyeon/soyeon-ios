@@ -8,7 +8,15 @@
 
 import UIKit
 
-final class IdealTypeInfoViewController: UIViewController {
+struct IdealType: Codable {
+    let startAge: Int
+    let endAge: Int
+    let startHeight: Int
+    let endHeight: Int
+    let form: String?
+}
+
+final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     
     @IBOutlet private weak var ageDescriptionLabel: UILabel!
     @IBOutlet private weak var ageRangeSlider: RangeSlider!
@@ -88,6 +96,13 @@ final class IdealTypeInfoViewController: UIViewController {
     @IBAction private func heightSliderValueDidChange(_ sender: RangeSlider) {
         updateRangeLabel(heightDescriptionLabel, rangeSlider: sender, baseRange: ViewMetrics.heightRange)
     }
+    
+    @IBAction private func didTapCompleteButton(_ sender: UIButton) {
+        let phaseVC = PhaseViewController(phase: .second)
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(phaseVC,
+                                                 animated: true)
+    }
 }
 
 extension IdealTypeInfoViewController: UICollectionViewDataSource {
@@ -95,7 +110,8 @@ extension IdealTypeInfoViewController: UICollectionViewDataSource {
         return PersonalityType.allCases.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PersonalityInfoCell.reuseIdentifier,
                                                             for: indexPath) as? PersonalityInfoCell else {
             return UICollectionViewCell()
@@ -106,6 +122,7 @@ extension IdealTypeInfoViewController: UICollectionViewDataSource {
         }
         return cell
     }
+    
 }
 
 extension IdealTypeInfoViewController: TagListLayoutDelegate {
