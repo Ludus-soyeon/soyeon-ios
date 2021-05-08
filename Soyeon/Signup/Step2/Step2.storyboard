@@ -19,10 +19,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--WriteProfile1ViewController-->
+        <!--프로필 작성하기-->
         <scene sceneID="BP2-EY-hAR">
             <objects>
-                <viewController restorationIdentifier="WriteProfile1ViewController" storyboardIdentifier="WriteProfile1ViewController" title="WriteProfile1ViewController" id="CBI-gZ-Cx7" customClass="WriteProfile1ViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="WriteProfile1ViewController" storyboardIdentifier="WriteProfile1ViewController" title="프로필 작성하기" id="CBI-gZ-Cx7" customClass="WriteProfile1ViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1T-kE-fqi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -740,10 +740,10 @@
             </objects>
             <point key="canvasLocation" x="73.913043478260875" y="72.991071428571431"/>
         </scene>
-        <!--Calculator View Controller-->
+        <!--이상형 정보 입력-->
         <scene sceneID="lpU-3C-7Wz">
             <objects>
-                <viewController id="8A1-WT-8Qh" customClass="CalculatorViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="IdealTypeInfoViewController" storyboardIdentifier="IdealTypeInfoViewController" title="이상형 정보 입력" id="8A1-WT-8Qh" customClass="IdealTypeInfoViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fdo-Yg-V9g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -984,6 +984,9 @@
                                                 <integer key="value" value="23"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapCompleteButton:" destination="8A1-WT-8Qh" eventType="touchUpInside" id="7Xd-PK-KX1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1041,10 +1044,10 @@
             </objects>
             <point key="canvasLocation" x="1674" y="73"/>
         </scene>
-        <!--Write Introduction View Controller-->
+        <!--WriteIntroductionViewController-->
         <scene sceneID="9tM-bJ-7aO">
             <objects>
-                <viewController id="qT6-Sp-84j" customClass="WriteIntroductionViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteIntroductionViewController" title="WriteIntroductionViewController" id="qT6-Sp-84j" customClass="WriteIntroductionViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNq-my-b8m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1055,7 +1058,7 @@
                                 <color key="textColor" name="102102102"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e23-Xb-Bg2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e23-Xb-Bg2" customClass="PlaceHolderTextView" customModule="Soyeon" customModuleProvider="target">
                                 <rect key="frame" x="38" y="141" width="338" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -1090,6 +1093,9 @@
                                         <integer key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapNextButton:" destination="qT6-Sp-84j" eventType="touchUpInside" id="1xp-bR-W1t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KxA-Ny-qdP"/>

@@ -8,14 +8,11 @@
 
 import UIKit
   
-protocol SignupStepProtocol: CaseIterable, Equatable {
-   var viewControllerName: String { get }
-}
-
 enum Signup {
     case step1(Step1)
     case phaseFirst
     case step2(Step2)
+    case phaseSecond
     
     var loadedStep: CustomBackButtonNavController {
         switch self {
@@ -32,30 +29,36 @@ enum Signup {
         switch self {
         case .phaseFirst:
             return PhaseViewController(phase: .first)
+        case .phaseSecond:
+            return PhaseViewController(phase: .second)
         default:
             return .init()
         }
     }
     
-    var rawValue: String {
+    var path: String {
         switch self {
         case .step1:
             return "step1"
         case .phaseFirst:
-            return "PhaseViewController"
+            return "first"
         case .step2:
             return "step2"
+        case .phaseSecond:
+            return "second"
         }
     }
     
-    var path: String {
+    var resource: String {
         switch self {
         case .step1(let step):
             return "step1.\(step.viewControllerName)"
         case .phaseFirst:
-            return "PhaseViewController"
+            return "first.PhaseViewController"
         case .step2(let step):
             return "step2.\(step.viewControllerName)"
+        case .phaseSecond:
+            return "second.PhaseViewController"
         }
     }
     
@@ -68,13 +71,18 @@ enum Signup {
         let location     = path.last ?? signupPhase
           
         switch signupPhase {
-        case Signup.step1(.none).rawValue:
+        case Signup.step1(.none).path:
             if let step1: Step1 = Step1.initRawValue(location) {
                 return Signup.step1(step1)
             }
-        case Signup.phaseFirst.rawValue:
+        case Signup.phaseFirst.path:
             return Signup.phaseFirst
-            
+        case Signup.phaseSecond.path:
+            return Signup.phaseSecond
+        case Signup.step2(.none).path:
+            if let step2: Step2 = Step2.initRawValue(location) {
+                return Signup.step2(step2)
+            }
         default:
             break
         }
@@ -88,6 +96,8 @@ enum Signup {
             return phase
         } else if let step1 = Step1.initRawValue(name) {
             return Signup.step1(step1)
+        } else if let step2 = Step2.initRawValue(name) {
+            return Signup.step2(step2)
         }
         
         return nil

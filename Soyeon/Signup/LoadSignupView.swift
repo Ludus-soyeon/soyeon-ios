@@ -8,13 +8,21 @@
 
 import UIKit
 
-protocol LoadSignupView {
+protocol SignupStepProtocol: CaseIterable, Equatable {
+    var viewControllerName: String { get }
+}
+
+protocol LoadSignupView: SignupStepProtocol {
     associatedtype EnumType: SignupStepProtocol
     var storyboardName: String { get }
     func navigationTo(until: EnumType) -> CustomBackButtonNavController
 }
 
 extension LoadSignupView {
+    var loadedViewController: UIViewController {
+        return loadedStoryboard.instantiateViewController(identifier: viewControllerName)
+    }
+    
     private var loadedStoryboard: UIStoryboard {
         let storyboard = UIStoryboard(name: storyboardName,
                                       bundle: Bundle.main)
@@ -22,7 +30,7 @@ extension LoadSignupView {
         return storyboard
     }
     
-    private func loadedViewConroller(names: [String]) -> CustomBackButtonNavController {
+    private func loadedViewConrollers(names: [String]) -> CustomBackButtonNavController {
         var viewControllers: [UIViewController] = []
         
         names.forEach { (name) in
@@ -46,7 +54,7 @@ extension LoadSignupView {
          
         if let firstIndex = allCases.firstIndex(of: until) {
             let untilViewControllerNames = allCases[...firstIndex].map { $0.viewControllerName }
-            return loadedViewConroller(names: untilViewControllerNames)
+            return loadedViewConrollers(names: untilViewControllerNames)
         }
         
         return CustomBackButtonNavController()

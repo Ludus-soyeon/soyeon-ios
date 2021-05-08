@@ -12,7 +12,7 @@ protocol WriteProfile1RouterProtocol {
 
     var viewController: WriteProfile1ViewController? { get }
 
-    func navigateToSomewhere()
+    func navigationToWriteIntroduction()
 }
 
 final class WriteProfile1Router {
@@ -32,8 +32,13 @@ final class WriteProfile1Router {
 extension WriteProfile1Router: WriteProfile1RouterProtocol {
 
     // MARK: - Navigation
-
-    func navigateToSomewhere() {
-
+    
+    func navigationToWriteIntroduction() {
+        
+        let vc = Step2.writeIntroduction.loadedViewController
+        
+        self.viewController?.navigationController?
+            .pushViewController(vc,
+                                animated: true)
     }
 }

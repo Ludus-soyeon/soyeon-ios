@@ -16,8 +16,15 @@ protocol PlaceHolderTextViewDelegate: class {
 }
 
 extension PlaceHolderTextViewDelegate {
+    
+    var limitedTextCount: Int { -1 }
+    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         guard 0 < text.count else { return true }
+        
+        if limitedTextCount < 0 {
+            return true
+        }
         
         if let text = textView.text,
            limitedTextCount <= text.count {

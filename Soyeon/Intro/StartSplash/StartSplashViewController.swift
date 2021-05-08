@@ -71,9 +71,9 @@ final class StartSplashViewController: UIViewController {
     private func continueSignup(_ location: String) {
         if let saveSignupLocation: Signup = Signup.initTo(path: location) {
             switch saveSignupLocation {
-            case .phaseFirst:
+            case .phaseFirst, .phaseSecond:
                 let viewController = saveSignupLocation.loadedPhase
-                presentViewController(viewController)
+                presentViewController(viewController) 
             default:
                 let navigation = saveSignupLocation.loadedStep
                 presentNavigation(navigation)
@@ -103,9 +103,10 @@ final class StartSplashViewController: UIViewController {
         let signupDictionary = dictionary.filter { (item) -> Bool in
             let key = item.key
             
-            let step1 = Signup.step1(.none).rawValue
+            let step1 = Signup.step1(.none).path
+            let step2 = Signup.step2(.none).path
             
-            return key.contains(step1) // || key.contains("step1") || key.contains("step1")
+            return key.contains(step1) || key.contains(step2) // || key.contains("step1")
         }
          
         signupDictionary.keys.forEach { key in

@@ -6,7 +6,7 @@
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Step2: SignupStepProtocol {
    typealias EnumType = Self
@@ -26,7 +26,6 @@ enum Step2: SignupStepProtocol {
        case .none:
            return ""
        }
-       
    }
    
    var rawValue: String {
@@ -49,5 +48,6 @@ enum Step2: SignupStepProtocol {
 }
 
 extension Step2: LoadSignupView {
-   var storyboardName: String { return "Step2" }
+    var storyboardName: String { return "Step2" } 
 }
+ 
