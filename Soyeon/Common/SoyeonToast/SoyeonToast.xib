@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-lV-BJH" customClass="SoyeonToast" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="36"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Toast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZg-Wf-uKM">
+                    <rect key="frame" x="35" y="8.5" width="37" height="20"/>
+                    <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="soyeonBlue"/>
+            <constraints>
+                <constraint firstItem="lZg-Wf-uKM" firstAttribute="top" secondItem="y3B-lV-BJH" secondAttribute="top" constant="8.5" id="OMz-PB-jQz"/>
+                <constraint firstAttribute="bottom" secondItem="lZg-Wf-uKM" secondAttribute="bottom" constant="7.5" id="Y5t-IS-T38"/>
+                <constraint firstAttribute="trailing" secondItem="lZg-Wf-uKM" secondAttribute="trailing" constant="35" id="eVw-f4-1q4"/>
+                <constraint firstItem="lZg-Wf-uKM" firstAttribute="leading" secondItem="y3B-lV-BJH" secondAttribute="leading" constant="35" id="tqG-8F-PDu"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textLabel" destination="lZg-Wf-uKM" id="a6d-ba-fnW"/>
+            </connections>
+            <point key="canvasLocation" x="-231.15942028985509" y="-492.1875"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="soyeonBlue">
+            <color red="0.41200000047683716" green="0.46700000762939453" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

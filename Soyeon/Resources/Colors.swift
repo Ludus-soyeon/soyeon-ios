@@ -9,6 +9,7 @@
 import UIKit.UIColor
 
 enum Colors: String {
+    case black
     case bgNormal
     case buttonDisabled
     case darkGray
