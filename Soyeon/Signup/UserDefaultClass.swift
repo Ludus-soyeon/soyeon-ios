@@ -9,7 +9,7 @@
 import Foundation
 
 /// UserDefault에 저장할 커스텀 클래스  
-class UserClass: NSObject, NSCoding {
+class UserModel: NSObject, NSCoding {
     
     var name: String?
     var nickname: String?
