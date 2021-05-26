@@ -66,6 +66,15 @@
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
 		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
+		0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */; };
+		0A89E62C265DDCD70048A3BC /* CheckMyCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */; };
+		0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */; };
+		0A89E62E265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E624265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift */; };
+		0A89E62F265DDCD70048A3BC /* CheckMyCharacterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E626265DDCD70048A3BC /* CheckMyCharacterWorker.swift */; };
+		0A89E630265DDCD70048A3BC /* CheckMyCharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E628265DDCD70048A3BC /* CheckMyCharacterInteractor.swift */; };
+		0A89E631265DDCD70048A3BC /* CheckMyCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E62A265DDCD70048A3BC /* CheckMyCharacterRouter.swift */; };
+		0A89E635265DDD090048A3BC /* Step3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A89E634265DDD090048A3BC /* Step3.storyboard */; };
+		0A89E639265DDD410048A3BC /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E638265DDD410048A3BC /* Step3.swift */; };
 		0AAF78FA26455B5D00812603 /* PhaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF78F926455B5D00812603 /* PhaseViewController.xib */; };
 		0AC21E0D2613FDE400AD0635 /* AdditionalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC21DFD2613FDE400AD0635 /* AdditionalViewModel.swift */; };
 		0AC21E0E2613FDE400AD0635 /* AdditionalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC21DFF2613FDE400AD0635 /* AdditionalPresenter.swift */; };
@@ -234,6 +243,15 @@
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
 		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
+		0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewModel.swift; sourceTree = "<group>"; };
+		0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterPresenter.swift; sourceTree = "<group>"; };
+		0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewController.swift; sourceTree = "<group>"; };
+		0A89E624265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterConfigurator.swift; sourceTree = "<group>"; };
+		0A89E626265DDCD70048A3BC /* CheckMyCharacterWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterWorker.swift; sourceTree = "<group>"; };
+		0A89E628265DDCD70048A3BC /* CheckMyCharacterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterInteractor.swift; sourceTree = "<group>"; };
+		0A89E62A265DDCD70048A3BC /* CheckMyCharacterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterRouter.swift; sourceTree = "<group>"; };
+		0A89E634265DDD090048A3BC /* Step3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Step3.storyboard; sourceTree = "<group>"; };
+		0A89E638265DDD410048A3BC /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		0AAF78F926455B5D00812603 /* PhaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhaseViewController.xib; sourceTree = "<group>"; };
 		0AC21DFD2613FDE400AD0635 /* AdditionalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalViewModel.swift; sourceTree = "<group>"; };
 		0AC21DFF2613FDE400AD0635 /* AdditionalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalPresenter.swift; sourceTree = "<group>"; };
@@ -657,6 +675,86 @@
 			path = SoyeonToast;
 			sourceTree = "<group>";
 		};
+		0A89E615265DDCB30048A3BC /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E634265DDD090048A3BC /* Step3.storyboard */,
+				0A89E638265DDD410048A3BC /* Step3.swift */,
+				0A89E61C265DDCD70048A3BC /* CheckMyCharacter */,
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
+		0A89E61C265DDCD70048A3BC /* CheckMyCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E61D265DDCD70048A3BC /* ViewModel */,
+				0A89E61F265DDCD70048A3BC /* Presenter */,
+				0A89E621265DDCD70048A3BC /* View */,
+				0A89E623265DDCD70048A3BC /* Configurator */,
+				0A89E625265DDCD70048A3BC /* Worker */,
+				0A89E627265DDCD70048A3BC /* Interactor */,
+				0A89E629265DDCD70048A3BC /* Router */,
+			);
+			path = CheckMyCharacter;
+			sourceTree = "<group>";
+		};
+		0A89E61D265DDCD70048A3BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A89E61F265DDCD70048A3BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0A89E621265DDCD70048A3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A89E623265DDCD70048A3BC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E624265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		0A89E625265DDCD70048A3BC /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E626265DDCD70048A3BC /* CheckMyCharacterWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		0A89E627265DDCD70048A3BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E628265DDCD70048A3BC /* CheckMyCharacterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0A89E629265DDCD70048A3BC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A89E62A265DDCD70048A3BC /* CheckMyCharacterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		0AAF78F426455A6400812603 /* PhaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -943,6 +1041,7 @@
 				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
 				0AF58E892611EA46008F3E56 /* Signup.swift */,
 				1D7A12D72645B2FB004D2C0C /* UserDefaultClass.swift */,
+				0A89E615265DDCB30048A3BC /* Step3 */,
 				1DBA14DF25D46BFE00979BB2 /* Step2 */,
 				1DBA14DE25D46BF900979BB2 /* Step1 */,
 			);
@@ -1398,6 +1497,7 @@
 				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
 				D8A7222126568B80008C388D /* Match.storyboard in Resources */,
 				D8487C6A25ED64CA00F52B48 /* phase_first.gif in Resources */,
+				0A89E635265DDD090048A3BC /* Step3.storyboard in Resources */,
 				D8A7220F2653E07C008C388D /* Home.storyboard in Resources */,
 				1DC9DF7425AB4F3B00822E99 /* NanumSquareB.ttf in Resources */,
 				1DC9DF7525AB4F3B00822E99 /* NanumSquareEB.ttf in Resources */,
@@ -1482,6 +1582,7 @@
 				D83760DF262F0CE6002FA23B /* PersonalityType.swift in Sources */,
 				0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */,
 				000CEB4125B484A800F64A28 /* GuidanceViewModel.swift in Sources */,
+				0A89E62C265DDCD70048A3BC /* CheckMyCharacterPresenter.swift in Sources */,
 				0A4E516F25EAB58700616C07 /* Date+.swift in Sources */,
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				0A4E516725EAB55100616C07 /* ReuseIdentifiable.swift in Sources */,
@@ -1514,10 +1615,13 @@
 				0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */,
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */,
+				0A89E631265DDCD70048A3BC /* CheckMyCharacterRouter.swift in Sources */,
+				0A89E62E265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift in Sources */,
 				1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
 				0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
+				0A89E62F265DDCD70048A3BC /* CheckMyCharacterWorker.swift in Sources */,
 				1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
@@ -1539,6 +1643,7 @@
 				D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */,
 				0AFFB5F52637CABE00CA6FCE /* UIApplication+.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
+				0A89E630265DDCD70048A3BC /* CheckMyCharacterInteractor.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
@@ -1557,8 +1662,11 @@
 				0A4E515925EAB4E400616C07 /* ReligionAlertItem.swift in Sources */,
 				0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */,
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
+				0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				1D7A12D82645B2FB004D2C0C /* UserDefaultClass.swift in Sources */,
+				0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */,
+				0A89E639265DDD410048A3BC /* Step3.swift in Sources */,
 				0AC21E112613FDE400AD0635 /* AdditionalCell.swift in Sources */,
 				0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */,
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
