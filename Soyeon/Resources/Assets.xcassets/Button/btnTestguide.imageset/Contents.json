@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "butTestguideTest.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icoBackGnbNormal@2x.png",
+      "filename" : "butTestguideTest@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icoBackGnbNormal@3x.png",
+      "filename" : "butTestguideTest@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
