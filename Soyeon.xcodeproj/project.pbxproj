@@ -41,6 +41,8 @@
 		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
 		009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Step1.storyboard */; };
 		00ACB656266BDD5400256951 /* ImagePickerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB655266BDD5400256951 /* ImagePickerSelectViewController.swift */; };
+		00ACB659266D437300256951 /* PhotoGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ACB658266D437300256951 /* PhotoGuide.storyboard */; };
+		00ACB65B266D438100256951 /* PhotoGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB65A266D438100256951 /* PhotoGuideViewController.swift */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
 		00CF092A25E25C710077700A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092925E25C710077700A /* ServiceError.swift */; };
 		00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF092D25E25CA70077700A /* ProviderManager.swift */; };
@@ -218,6 +220,8 @@
 		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Step1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Step1.storyboard; sourceTree = "<group>"; };
 		00ACB655266BDD5400256951 /* ImagePickerSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerSelectViewController.swift; sourceTree = "<group>"; };
+		00ACB658266D437300256951 /* PhotoGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoGuide.storyboard; sourceTree = "<group>"; };
+		00ACB65A266D438100256951 /* PhotoGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGuideViewController.swift; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00CF092925E25C710077700A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		00CF092D25E25CA70077700A /* ProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderManager.swift; sourceTree = "<group>"; };
@@ -470,6 +474,7 @@
 		000CEF7B2624B98000FD97B9 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				00ACB657266D435E00256951 /* PhotoGuide */,
 				000CEF7C2624B98000FD97B9 /* PhotoRegistration */,
 			);
 			path = Photo;
@@ -630,6 +635,15 @@
 				009B02AC25B47E9E00753847 /* LoginRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		00ACB657266D435E00256951 /* PhotoGuide */ = {
+			isa = PBXGroup;
+			children = (
+				00ACB658266D437300256951 /* PhotoGuide.storyboard */,
+				00ACB65A266D438100256951 /* PhotoGuideViewController.swift */,
+			);
+			path = PhotoGuide;
 			sourceTree = "<group>";
 		};
 		00CF094625E294480077700A /* Model */ = {
@@ -1449,6 +1463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00ACB659266D437300256951 /* PhotoGuide.storyboard in Resources */,
 				1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */,
 				0AC21E102613FDE400AD0635 /* AdditionalCell.xib in Resources */,
 				003D1150264E589100C8EBFE /* ProfileCollectionViewCell.xib in Resources */,
@@ -1590,6 +1605,7 @@
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
 				00ACB656266BDD5400256951 /* ImagePickerSelectViewController.swift in Sources */,
+				00ACB65B266D438100256951 /* PhotoGuideViewController.swift in Sources */,
 				000CEF962624B98000FD97B9 /* PhotoRegistrationViewModel.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0AC21E132613FDE400AD0635 /* AdditionalConfigurator.swift in Sources */,

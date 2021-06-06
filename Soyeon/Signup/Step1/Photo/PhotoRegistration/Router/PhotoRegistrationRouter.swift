@@ -12,7 +12,7 @@ protocol PhotoRegistrationRouterProtocol {
     
     var viewController: PhotoRegistrationViewController? { get }
     
-    func navigationToGuidance() 
+    func navigationToPhotoGuide() 
     func navigationToIdealType()
 }
 
@@ -32,10 +32,10 @@ final class PhotoRegistrationRouter {
 extension PhotoRegistrationRouter: PhotoRegistrationRouterProtocol {
     
     // MARK: - Navigation
-    func navigationToGuidance() {
-        let storyboard = UIStoryboard(name: "Guidance", bundle: .main)
+    func navigationToPhotoGuide() {
+        let storyboard = UIStoryboard(name: "PhotoGuide", bundle: .main)
         if let destinationVC = storyboard
-            .instantiateViewController(withIdentifier: "GuidanceViewController") as? GuidanceViewController {
+            .instantiateViewController(withIdentifier: "PhotoGuideViewController") as? PhotoGuideViewController {
             viewController?.navigationController?.pushViewController(destinationVC, animated: true)
         }
     }

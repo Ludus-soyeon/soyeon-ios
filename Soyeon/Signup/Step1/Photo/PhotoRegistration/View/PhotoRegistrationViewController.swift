@@ -85,7 +85,7 @@ final class PhotoRegistrationViewController: UIViewController {
     // MARK: - IBAction
 
     @IBAction private func guidanceButtonDidTap(_ sender: UIButton) {
-        router.navigationToGuidance()
+        router.navigationToPhotoGuide()
     }
 
     @IBAction private func completeButtonDidTap(_ sender: UIButton) {
@@ -106,6 +106,7 @@ final class PhotoRegistrationViewController: UIViewController {
     //    }
 
     private func setupLayout() {
+        setNavigationTitle("프로필 작성하기")
         mainProfileView.layer.borderWidth = ViewMetrics.cellBorderWidth
         mainProfileView.layer.borderColor = Colors.soyeonBlue.cgColor()
         mainProfileView.setRadius(ViewMetrics.cellCornerRadius)
