@@ -26,6 +26,7 @@ final class PhotoRegistrationViewController: UIViewController {
     @IBOutlet private weak var mainProfileView: UIView!
     @IBOutlet private weak var mainProfileImageView: UIImageView!
     @IBOutlet private weak var completeButton: UIButton!
+    @IBOutlet private weak var mainProfileMarkLabel: UILabel!
 
     private enum ViewMetrics {
         static let cellCornerRadius: CGFloat = 4
@@ -38,17 +39,14 @@ final class PhotoRegistrationViewController: UIViewController {
     //    var output: PhotoRegistrationViewControllerOutput!
     var router: PhotoRegistrationRouterProtocol!
 
-    let imagePickerController = UIImagePickerController()
-    var userImages = [UIImage]() {
+    private let imagePickerController = UIImagePickerController()
+    private var maxImageCount: Int = 10
+    private var selectedIndex: Int?
+    private var userImages = [UIImage]() {
         didSet {
-            //            collectionView.reloadData()
-            if userImages.count == 1 {
-                mainProfileImageView.image = userImages.first
-                mainProfileView.isHidden = false
-            }
+            mainProfileImageView.image = userImages.first
         }
     }
-    var maxImageCount: Int = 10
 
     // MARK: - Initializers
 
@@ -96,6 +94,7 @@ final class PhotoRegistrationViewController: UIViewController {
     }
 
     @IBAction private func mainProfileImageDidTap(_ sender: UIControl) {
+        selectedIndex = -1
         presentSelectView()
     }
 
@@ -110,6 +109,8 @@ final class PhotoRegistrationViewController: UIViewController {
         mainProfileView.layer.borderWidth = ViewMetrics.cellBorderWidth
         mainProfileView.layer.borderColor = Colors.soyeonBlue.cgColor()
         mainProfileView.setRadius(ViewMetrics.cellCornerRadius)
+        mainProfileMarkLabel.setRadius(ViewMetrics.cellCornerRadius)
+        mainProfileMarkLabel.clipsToBounds = true
         completeButton.setRadius(ViewMetrics.buttonCornerRadius)
         completeButton.clipsToBounds = true
         completeButton.setTitleColor(.white, for: .normal)
@@ -193,6 +194,18 @@ final class PhotoRegistrationViewController: UIViewController {
         // 에러 팝업?
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
+
+    /// 이미지 넣기
+    private func set(_ image: UIImage) {
+        if var selectedIndex = selectedIndex {
+            selectedIndex += 1
+            if userImages.count > selectedIndex {
+                userImages[selectedIndex] = image
+                return
+            }
+        }
+        userImages.append(image.resize(targetWidth: UIScreen.main.bounds.width))
+    }
 }
 
 // MARK: - PhotoRegistrationPresenterOutput
@@ -256,6 +269,7 @@ extension PhotoRegistrationViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
+        selectedIndex = indexPath.item
         presentSelectView()
     }
 }
@@ -276,27 +290,12 @@ extension PhotoRegistrationViewController: UIImagePickerControllerDelegate, UINa
 
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        if let image = info[.originalImage] as? UIImage {
-            userImages.append(image.resize(targetWidth: UIScreen.main.bounds.width))
-        } else if let image = info[.editedImage] as? UIImage {
-            userImages.append(image.resize(targetWidth: UIScreen.main.bounds.width))
+        if let editedImage = info[.editedImage] as? UIImage {
+            set(editedImage)
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            set(originalImage)
         }
         collectionView.reloadData()
         dismiss(animated: true, completion: nil)
     }
 }
-
-// 뷰 애드타겟 -> 갤러리/카메라 알럿 -> 사진 가져오기 -> 크롭 -> 이미지 뿌리기
-// 셀디드셀렉트 -> 같음
-// 필수 체크 -> 필수 두개 넣으면 완료 버튼 enabled
-// 3번째 셀까지 들어가면 셀하나씩 늘리기
-// 9개까지만 제한
-// 이미지 저장
-
-// cell count
-// 3 3 3 3 3 4 5 6 7 8 9
-// images
-// 0 1 2 3 4 5 6 7 8 9 10
-
-// 셀 크기
-// 사진등록 가이드보기 버튼 오토레이아웃

@@ -9,6 +9,7 @@
 import UIKit
 
 final class ProfileCollectionViewCell: UICollectionViewCell {
+
     // MARK: - IBOutlet
     @IBOutlet private weak var borderView: UIView!
     @IBOutlet private weak var registerLabel: UILabel!
@@ -36,6 +37,7 @@ final class ProfileCollectionViewCell: UICollectionViewCell {
     // MARK: - Function
     func setProperties(index: Int, profileImage: UIImage?) {
         guard let pImage = profileImage else {
+            photoImageView.isHidden = true
             if index == 0 {
                 borderView.layer.borderColor = Theme.cellHightlitedColor
                 registerLabel.isHidden = false
