@@ -39,8 +39,7 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
     }
     
     private func saveSignupLocation(_ path: String) {
-        UserDefaults.setValue(path,
-                              forKey: .saveSignUpLocation)
+        SoyeonDefinedDefault.saveSignUpLocation = path
     }
     
 }

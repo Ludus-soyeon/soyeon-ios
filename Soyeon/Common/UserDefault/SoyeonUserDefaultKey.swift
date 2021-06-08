@@ -7,6 +7,28 @@
 //
 
 import Foundation
+ 
+@propertyWrapper
+struct UserDefaultWrapper<T> {
+    let key: SoyeonUserDefaultKey
+    let defaultValue: T
+    
+    var wrappedValue: T? {
+        get {
+            return UserDefaults.object(forKey: key) as? T
+        }
+        set {
+            guard let newValue = newValue else {
+                UserDefaults.remove(forKey: key)
+                
+                return
+            }
+            
+            UserDefaults.setValue(newValue, forKey: key)
+        }
+        
+    }
+}
 
 /// Soyeon 서비스에서 사용될 UserDefualt Key 모음.
 enum SoyeonUserDefaultKey: String {
@@ -15,4 +37,9 @@ enum SoyeonUserDefaultKey: String {
     
     // 회원가입
     case saveSignUpLocation
+     
+}
+
+enum SoyeonDefinedDefault {
+    @UserDefaultWrapper(key: .saveSignUpLocation, defaultValue: "") static var saveSignUpLocation
 }
