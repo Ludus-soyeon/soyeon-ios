@@ -39,12 +39,13 @@
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WgG-lM-Dqf">
                                 <rect key="frame" x="4" y="4" width="88" height="88"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="3hP-F1-QWc"/>
+                                    <constraint firstAttribute="height" constant="88" id="5dw-aD-Xwh"/>
                                     <constraint firstAttribute="width" secondItem="WgG-lM-Dqf" secondAttribute="height" multiplier="1:1" id="nga-wM-f4u"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="centerY" secondItem="LhC-P5-hXc" secondAttribute="centerY" id="1dM-lo-PwV"/>
                             <constraint firstItem="WgG-lM-Dqf" firstAttribute="top" secondItem="LhC-P5-hXc" secondAttribute="top" constant="4" id="3rh-9L-7AI"/>
                             <constraint firstItem="kaH-E9-FOT" firstAttribute="centerY" secondItem="LhC-P5-hXc" secondAttribute="centerY" id="7ae-nk-HgF"/>
                             <constraint firstItem="WgG-lM-Dqf" firstAttribute="leading" secondItem="LhC-P5-hXc" secondAttribute="leading" constant="4" id="8sS-T0-Q3n"/>
@@ -52,9 +53,6 @@
                             <constraint firstItem="Nva-Uy-d52" firstAttribute="centerX" secondItem="LhC-P5-hXc" secondAttribute="centerX" id="OvJ-Mk-tjf"/>
                             <constraint firstAttribute="bottom" secondItem="WgG-lM-Dqf" secondAttribute="bottom" constant="4" id="Xdb-A0-r3L"/>
                             <constraint firstItem="kaH-E9-FOT" firstAttribute="centerX" secondItem="LhC-P5-hXc" secondAttribute="centerX" id="ezm-jW-Na4"/>
-                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="centerX" secondItem="LhC-P5-hXc" secondAttribute="centerX" id="f62-QI-zQN"/>
-                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="width" secondItem="LhC-P5-hXc" secondAttribute="width" multiplier="0.916667" id="g6p-Od-axl"/>
-                            <constraint firstItem="WgG-lM-Dqf" firstAttribute="height" secondItem="LhC-P5-hXc" secondAttribute="height" multiplier="0.916667" id="hGN-Qh-N2b"/>
                             <constraint firstItem="Nva-Uy-d52" firstAttribute="centerY" secondItem="LhC-P5-hXc" secondAttribute="centerY" id="pZU-eE-c7a"/>
                         </constraints>
                     </view>

@@ -23,6 +23,9 @@ final class PhotoRegistrationViewController: UIViewController {
         static let cellCornerRadius: CGFloat = 4
         static let buttonCornerRadius: CGFloat = 23
         static let cellBorderWidth: CGFloat = 1
+        static let collectionViewMargin: CGFloat = 86
+        static let oneLineCellCount: CGFloat = 3
+        static let cellSize: CGFloat = (UIScreen.main.bounds.width - collectionViewMargin) / oneLineCellCount
     }
 
     // MARK: - Property
@@ -31,6 +34,7 @@ final class PhotoRegistrationViewController: UIViewController {
 
     private let imagePickerController = UIImagePickerController()
     private var maxImageCount: Int = 10
+    private var defaultImageCount: Int = 4
     private var selectedIndex: Int?
     private var userImages = [UIImage]() {
         didSet {
@@ -99,7 +103,7 @@ final class PhotoRegistrationViewController: UIViewController {
         completeButton.setRadius(ViewMetrics.buttonCornerRadius)
         completeButton.clipsToBounds = true
         completeButton.setTitleColor(.white, for: .normal)
-        completeButton.setTitleColor(UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0), for: .disabled)
+        completeButton.setTitleColor(UIColor(named: "153153153"), for: .disabled)
         completeButton.setBackgroundColor(UIColor(named: "soyeonBlue")!, for: .normal)
         completeButton.setBackgroundColor(UIColor(named: "buttonDisabled")!, for: .disabled)
     }
@@ -197,8 +201,8 @@ final class PhotoRegistrationViewController: UIViewController {
 extension PhotoRegistrationViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        if userImages.count < 4 {
-            return 3
+        if userImages.count < defaultImageCount {
+            return defaultImageCount - 1
         } else if userImages.count == maxImageCount {
             return maxImageCount - 1
         } else {
@@ -233,8 +237,8 @@ extension PhotoRegistrationViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let cellSize = (view.bounds.width - 86) / 3
-        return CGSize(width: cellSize, height: cellSize)
+        return CGSize(width: ViewMetrics.cellSize,
+                      height: ViewMetrics.cellSize)
     }
 }
 
