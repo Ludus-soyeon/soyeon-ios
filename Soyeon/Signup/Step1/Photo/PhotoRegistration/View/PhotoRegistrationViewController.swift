@@ -9,15 +9,6 @@
 import UIKit
 import Photos
 
-//protocol PhotoRegistrationViewControllerInput: PhotoRegistrationPresenterOutput {
-//
-//}
-//
-//protocol PhotoRegistrationViewControllerOutput {
-//
-//    func doSomething()
-//}
-
 final class PhotoRegistrationViewController: UIViewController {
 
     // MARK: - IBOutlet
@@ -36,7 +27,6 @@ final class PhotoRegistrationViewController: UIViewController {
 
     // MARK: - Property
 
-    //    var output: PhotoRegistrationViewControllerOutput!
     var router: PhotoRegistrationRouterProtocol!
 
     private let imagePickerController = UIImagePickerController()
@@ -77,7 +67,6 @@ final class PhotoRegistrationViewController: UIViewController {
         collectionView.register(UINib(nibName: String(describing: ProfileCollectionViewCell.self), bundle: .main),
                                 forCellWithReuseIdentifier: String(describing: ProfileCollectionViewCell.self))
 
-        //        doSomethingOnLoad()
         setupLayout()
         imagePickerController.delegate = self
     }
@@ -98,12 +87,7 @@ final class PhotoRegistrationViewController: UIViewController {
         presentSelectView()
     }
 
-    // MARK: - Load data
-
-    //    func doSomethingOnLoad() {
-    //
-    //        output.doSomething()
-    //    }
+    // MARK: - Function
 
     private func setupLayout() {
         setNavigationTitle("프로필 작성하기")
@@ -208,17 +192,6 @@ final class PhotoRegistrationViewController: UIViewController {
         userImages.append(image.resize(targetWidth: UIScreen.main.bounds.width))
     }
 }
-
-// MARK: - PhotoRegistrationPresenterOutput
-
-//extension PhotoRegistrationViewController: PhotoRegistrationViewControllerInput {
-//
-//    // MARK: - Display logic
-//
-//    func displaySomething(response viewModel: PhotoRegistrationViewModel) {
-//
-//    }
-//}
 
 // MARK: - UICollectionViewDataSource
 extension PhotoRegistrationViewController: UICollectionViewDataSource {

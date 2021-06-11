@@ -19,10 +19,6 @@ final class PhotoRegistrationConfigurator {
     func configure(viewController: PhotoRegistrationViewController) {
 
         let router = PhotoRegistrationRouter(viewController: viewController)
-        //        let presenter = PhotoRegistrationPresenter(output: viewController)
-        //        let interactor = PhotoRegistrationInteractor(output: presenter)
-
-        //        viewController.output = interactor
         viewController.router = router
     }
 }
