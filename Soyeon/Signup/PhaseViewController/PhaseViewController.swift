@@ -105,31 +105,11 @@ private extension PhaseViewController {
     var attributedString: NSAttributedString? {
         switch self.phase {
         case .first:
-            return makeAttributedString(content: "\(nickname)님\n환영합니다!",
-                                        bold: nickname)
+            return NSAttributedString.make(content: "\(nickname)님\n환영합니다!",
+                                           bold: nickname)
         case .second:
-            return makeAttributedString(content: "프로필 작성 완료! \n나의 캐릭터는 무엇일까요?",
-                                        bold: "프로필 작성 완료!")
+            return NSAttributedString.make(content: "프로필 작성 완료! \n나의 캐릭터는 무엇일까요?",
+                                           bold: "프로필 작성 완료!")
         }
-    }
-    
-    private func makeAttributedString(content: String,
-                                      bold: String) -> NSMutableAttributedString {
-        let attributedString = NSMutableAttributedString(
-            string: content,
-            attributes: [
-                .font: Fonts.nanumSquareR.size(20.0),
-                .foregroundColor: Colors.strongBlack.color()
-            ]
-        )
-        let range = (content as NSString).range(of: bold)
-        attributedString.setAttributes(
-            [
-                .font: Fonts.nanumSquareB.size(20.0)
-            ],
-            range: range
-        )
-        
-        return attributedString
     }
 }
