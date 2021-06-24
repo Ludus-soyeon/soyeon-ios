@@ -10,4 +10,12 @@ import UIKit
 
 struct CheckMyCharacterViewModel: Codable {
     var mbti: Mbti?
+    
+    enum MbtiItem: Int {
+        case veryAgree      = 4
+        case agree          = 3
+        case disagree       = 2
+        case veryDisagree   = 1
+    }
+
 }
