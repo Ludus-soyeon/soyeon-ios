@@ -14,7 +14,7 @@ protocol CheckMyCharacterPresenterInput: CheckMyCharacterInteractorOutput {
 
 protocol CheckMyCharacterPresenterOutput: class {
 
-    func displayQuestions(_ questions: [MQuestion])
+    func displaySomething(viewModel: CheckMyCharacterViewModel)
 }
 
 final class CheckMyCharacterPresenter {
@@ -35,7 +35,7 @@ extension CheckMyCharacterPresenter: CheckMyCharacterPresenterInput {
  
     // MARK: - Presentation logic
 
-    func presentMbti(_ mbti: Mbti) {
-        output.displayQuestions(mbti.questions)
+    func presentSomething(questions: Mbti) {
+        output.displaySomething(viewModel: .init(mbti: questions))
     }
 }

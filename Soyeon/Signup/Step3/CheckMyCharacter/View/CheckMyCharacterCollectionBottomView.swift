@@ -9,12 +9,5 @@
 import UIKit
 
 class CheckMyCharacterCollectionBottomView: UICollectionReusableView {
-    @IBOutlet private weak var completedButton: UIButton!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        completedButton.setRadius(completedButton.frame.height / 2)
-    }
     
 }

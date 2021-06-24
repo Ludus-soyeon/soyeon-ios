@@ -7,8 +7,9 @@
 //
 
 import UIKit
- 
+
 class CheckMyCharacterWorker {
+
     // MARK: - Business Logic
 
     func doSomeWork() {

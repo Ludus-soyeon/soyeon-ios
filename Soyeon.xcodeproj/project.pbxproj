@@ -37,7 +37,6 @@
 		00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093925E2914C0077700A /* LifeStyleAnswer.swift */; };
 		00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */; };
 		00CF094225E293790077700A /* Mbti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF094125E293790077700A /* Mbti.swift */; };
-		0A1D6197266FB94000C8674A /* CheckMyCharacterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D6196266FB94000C8674A /* CheckMyCharacterButton.swift */; };
 		0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */; };
 		0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */; };
 		0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */; };
@@ -219,7 +218,6 @@
 		00CF093925E2914C0077700A /* LifeStyleAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleAnswer.swift; sourceTree = "<group>"; };
 		00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleQuestion.swift; sourceTree = "<group>"; };
 		00CF094125E293790077700A /* Mbti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti.swift; sourceTree = "<group>"; };
-		0A1D6196266FB94000C8674A /* CheckMyCharacterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterButton.swift; sourceTree = "<group>"; };
 		0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewModel.swift; sourceTree = "<group>"; };
 		0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Presenter.swift; sourceTree = "<group>"; };
 		0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewController.swift; sourceTree = "<group>"; };
@@ -732,7 +730,6 @@
 				0A89E640265DEE990048A3BC /* CheckMyCharacterCollectionHeaderView.swift */,
 				0A89E644265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift */,
 				0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */,
-				0A1D6196266FB94000C8674A /* CheckMyCharacterButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1691,7 +1688,6 @@
 				0A6DECAB2597716500B8713B /* Colors.swift in Sources */,
 				1D19088525A9F77E008210D1 /* AgreementRouter.swift in Sources */,
 				0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */,
-				0A1D6197266FB94000C8674A /* CheckMyCharacterButton.swift in Sources */,
 				0AC21E152613FDE400AD0635 /* AdditionalInteractor.swift in Sources */,
 				D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */,
 				0A4E515B25EAB4E400616C07 /* BirthYearAlertItem.swift in Sources */,

@@ -27,11 +27,9 @@ final class CheckMyCharacterViewController: SignupStepViewController<CheckMyChar
     var output: CheckMyCharacterViewControllerOutput!
     var router: CheckMyCharacterRouterProtocol!
     
-    var viewModel: CheckMyCharacterViewModel = CheckMyCharacterViewModel(mbti: nil) {
+    var viewModel: CheckMyCharacterViewModel = CheckMyCharacterViewModel.init(mbti: nil) {
         willSet {  viewData = newValue }
     }
-    
-    private var questions: [MQuestion] = []
     
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
@@ -77,7 +75,7 @@ final class CheckMyCharacterViewController: SignupStepViewController<CheckMyChar
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        loadQuesions()
+//        loadQuesions()
     }
     
     // MARK: - Load data
@@ -121,7 +119,8 @@ extension CheckMyCharacterViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return questions.count
+//        return viewModel.mbti?.questions.count ?? 0
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -132,31 +131,15 @@ extension CheckMyCharacterViewController: UICollectionViewDataSource {
         else {
             return UICollectionViewCell()
         }
-         
-        cell.numberLabel.text = "\(indexPath.item + 1)"
         
-        cell.cellData = questions[indexPath.item]
-        
-        cell.selectedItemButton = { (item) in
-            // TODO: viewData 적재 작업 시 진행.
-            
-           // reload 필요 없음.
-            
-            /* Put Data of output.viewModel
-             "mbti_id": 1,
-             "point": 4
-             */
-            
-            // selectedItemButton 선택 여부는 mbti_id, point로 지정됨.
-            
-            
-            print(item.rawValue)
+        if indexPath.row == 3 {
+            cell.titleLabel.text = "asdfasdfasdfasdfa"
         }
 
         return cell
     }
  
-} 
+}
 
 // MARK: - CheckMyCharacterPresenterOutput
 
@@ -164,8 +147,8 @@ extension CheckMyCharacterViewController: CheckMyCharacterViewControllerInput {
     
     // MARK: - Display logic
     
-    func displayQuestions(_ questions: [MQuestion]) {
-        self.questions = questions
+    func displaySomething(viewModel: CheckMyCharacterViewModel) {
+        self.viewModel = viewModel
         collectionView.reloadData()
     }
 }
