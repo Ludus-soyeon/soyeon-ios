@@ -34,3 +34,4 @@ public class SoyeonAlert<Custom>: UIView, SoyeonAlertable {
         removeFromSuperview() 
     }
 }
+ 

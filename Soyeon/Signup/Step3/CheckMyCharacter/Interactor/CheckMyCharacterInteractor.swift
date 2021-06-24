@@ -14,7 +14,7 @@ protocol CheckMyCharacterInteractorInput: CheckMyCharacterViewControllerOutput {
 
 protocol CheckMyCharacterInteractorOutput {
 
-    func presentSomething()
+    func presentSomething(questions: Mbti)
 }
 
 final class CheckMyCharacterInteractor {
@@ -37,10 +37,15 @@ extension CheckMyCharacterInteractor: CheckMyCharacterViewControllerOutput {
 
     // MARK: - Business logic
 
-    func doSomething() {
-
-        worker.doSomeWork()
-
-        output.presentSomething()
+    func loadQuesions() {
+        ProviderManager.reqeust(.mbtiQuestions,
+                                Mbti.self) { (response) in
+            print(response)
+            
+            self.output.presentSomething(questions: response)
+            
+        } failer: { (error) in
+            assert(error != nil)
+        }
     }
 }
