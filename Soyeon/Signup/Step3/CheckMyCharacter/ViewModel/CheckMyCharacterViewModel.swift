@@ -8,6 +8,6 @@
 
 import UIKit
 
-struct CheckMyCharacterViewModel {
-
+struct CheckMyCharacterViewModel: Codable {
+    var mbti: Mbti?
 }
