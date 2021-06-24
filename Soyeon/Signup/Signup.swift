@@ -13,15 +13,12 @@ enum Signup {
     case phaseFirst
     case step2(Step2)
     case phaseSecond
-    case step3(Step3)
     
     var loadedStep: CustomBackButtonNavController {
         switch self {
         case .step1(let step):
             return step.navigationTo(until: step)
         case .step2(let step):
-            return step.navigationTo(until: step)
-        case .step3(let step):
             return step.navigationTo(until: step)
         default:
             return .init()
@@ -49,8 +46,6 @@ enum Signup {
             return "step2"
         case .phaseSecond:
             return "second"
-        case .step3:
-            return "step3"
         }
     }
     
@@ -64,8 +59,6 @@ enum Signup {
             return "step2.\(step.viewControllerName)"
         case .phaseSecond:
             return "second.PhaseViewController"
-        case .step3(let step):
-            return "step3.\(step.viewControllerName)"
         }
     }
     
@@ -84,19 +77,12 @@ enum Signup {
             }
         case Signup.phaseFirst.path:
             return Signup.phaseFirst
-            
+        case Signup.phaseSecond.path:
+            return Signup.phaseSecond
         case Signup.step2(.none).path:
             if let step2: Step2 = Step2.initRawValue(location) {
                 return Signup.step2(step2)
             }
-        case Signup.phaseSecond.path:
-            return Signup.phaseSecond
-            
-        case Signup.step3(.none).path:
-            if let step3: Step3 = Step3.initRawValue(location) {
-                return Signup.step3(step3)
-            }
-            
         default:
             break
         }
@@ -112,8 +98,6 @@ enum Signup {
             return Signup.step1(step1)
         } else if let step2 = Step2.initRawValue(name) {
             return Signup.step2(step2)
-        } else if let step3 = Step3.initRawValue(name) {
-            return Signup.step3(step3)
         }
         
         return nil
