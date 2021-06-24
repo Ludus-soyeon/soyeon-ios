@@ -93,8 +93,6 @@
 		0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */; };
 		0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */; };
 		0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */; };
-		0AE9480826644BE4008DA501 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9480726644BE4008DA501 /* APITests.swift */; };
-		0AE9481226644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */; };
 		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
 		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
 		0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */; };
@@ -274,8 +272,6 @@
 		0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlert.swift; sourceTree = "<group>"; };
 		0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonBasicAlertView.xib; sourceTree = "<group>"; };
 		0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertView.swift; sourceTree = "<group>"; };
-		0AE9480726644BE4008DA501 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
-		0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
 		0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLoadedNavigation.swift; sourceTree = "<group>"; };
@@ -729,7 +725,6 @@
 				0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */,
 				0A89E640265DEE990048A3BC /* CheckMyCharacterCollectionHeaderView.swift */,
 				0A89E644265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift */,
-				0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1022,7 +1017,6 @@
 		1D19088C25A9F7A8008210D1 /* SoyeonTests */ = {
 			isa = PBXGroup;
 			children = (
-				0AE9480726644BE4008DA501 /* APITests.swift */,
 				1DD0CCAC261A0A0E003E6347 /* SignupUserDefault.swift */,
 				0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */,
 				1D19088D25A9F7A8008210D1 /* SoyeonTests.swift */,
@@ -1577,7 +1571,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD0CCAD261A0A0E003E6347 /* SignupUserDefault.swift in Sources */,
-				0AE9480826644BE4008DA501 /* APITests.swift in Sources */,
 				0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */,
 				1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */,
 			);
@@ -1599,7 +1592,6 @@
 				0A4E516F25EAB58700616C07 /* Date+.swift in Sources */,
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				0A4E516725EAB55100616C07 /* ReuseIdentifiable.swift in Sources */,
-				0AE9481226644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift in Sources */,
 				000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */,
 				D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */,
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,

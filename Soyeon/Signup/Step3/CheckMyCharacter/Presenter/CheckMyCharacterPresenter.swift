@@ -35,7 +35,8 @@ extension CheckMyCharacterPresenter: CheckMyCharacterPresenterInput {
  
     // MARK: - Presentation logic
 
-    func presentSomething(questions: Mbti) {
-        output.displaySomething(viewModel: .init(mbti: questions))
+    func presentSomething() {
+        let viewModel = CheckMyCharacterViewModel()
+        output.displaySomething(viewModel: viewModel)
     }
 }

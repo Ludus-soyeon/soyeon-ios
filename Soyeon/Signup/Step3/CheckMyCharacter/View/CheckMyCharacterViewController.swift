@@ -13,34 +13,15 @@ protocol CheckMyCharacterViewControllerInput: CheckMyCharacterPresenterOutput {
 }
 
 protocol CheckMyCharacterViewControllerOutput {
-    
-    func loadQuesions()
+
+    func doSomething()
 }
 
-final class CheckMyCharacterViewController: SignupStepViewController<CheckMyCharacterViewModel> { 
-    fileprivate var viewData: ViewDataType = .init() {
-        willSet {
-            setViewData(newValue)
-        }
-    }
-    
+final class CheckMyCharacterViewController: UIViewController {
+
     var output: CheckMyCharacterViewControllerOutput!
     var router: CheckMyCharacterRouterProtocol!
-    
-    var viewModel: CheckMyCharacterViewModel = CheckMyCharacterViewModel.init(mbti: nil) {
-        willSet {  viewData = newValue }
-    }
-    
-    @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
-    
-    private enum ViewMetrics {
-        static let leftSpacing: CGFloat = 18
-        static let rightSpacing: CGFloat = 18
-        static let cellWidth: CGFloat = UIScreen.main.bounds.width
-        static let cellHeight: CGFloat = 100
-    }
-     
+ 
     // MARK: - Initializers
 
     init(configurator: CheckMyCharacterConfigurator = CheckMyCharacterConfigurator.shared) {
@@ -65,90 +46,28 @@ final class CheckMyCharacterViewController: SignupStepViewController<CheckMyChar
     }
  
     // MARK: - View lifecycle
-    
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        setupLayout()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-//        loadQuesions()
-    }
-    
-    // MARK: - Load data
-    private func loadQuesions() {
-        output.loadQuesions()
-    }
-    
-    private func setupLayout() {
-         
-        collectionViewFlowLayout.estimatedItemSize = CGSize(width: ViewMetrics.cellWidth,
-                                                            height: ViewMetrics.cellHeight)
-        
-        collectionView.reloadData()
-    }
-}
-extension CheckMyCharacterViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView,
-                        viewForSupplementaryElementOfKind kind: String,
-                        at indexPath: IndexPath) -> UICollectionReusableView {
-        switch kind {
-        case UICollectionView.elementKindSectionHeader:
-            let headerView = collectionView
-                .dequeueReusableSupplementaryView(ofKind: kind,
-                                                  withReuseIdentifier: "CheckMyCharacterCollectionHeaderView",
-                                                  for: indexPath)
-            return headerView
-             
-        case UICollectionView.elementKindSectionFooter:
-            let footerView = collectionView
-                .dequeueReusableSupplementaryView(ofKind: kind,
-                                                  withReuseIdentifier: "CheckMyCharacterCollectionBottomView",
-                                                  for: indexPath)
-            return footerView
-        default:
-            return .init()
-        }
-    }
-}
 
-extension CheckMyCharacterViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-//        return viewModel.mbti?.questions.count ?? 0
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView
-                .dequeueReusableCell(withReuseIdentifier: CheckMyCharacterCollectionViewCell.reuseIdentifier,
-                                     for: indexPath) as? CheckMyCharacterCollectionViewCell
-        else {
-            return UICollectionViewCell()
-        }
-        
-        if indexPath.row == 3 {
-            cell.titleLabel.text = "asdfasdfasdfasdfa"
-        }
-
-        return cell
+        doSomethingOnLoad()
     }
  
-}
+    // MARK: - Load data
 
+    func doSomethingOnLoad() {
+        output.doSomething()
+    }
+}
+ 
 // MARK: - CheckMyCharacterPresenterOutput
 
 extension CheckMyCharacterViewController: CheckMyCharacterViewControllerInput {
-    
+ 
     // MARK: - Display logic
-    
+
     func displaySomething(viewModel: CheckMyCharacterViewModel) {
-        self.viewModel = viewModel
-        collectionView.reloadData()
+        
     }
 }

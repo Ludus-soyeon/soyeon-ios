@@ -41,6 +41,7 @@ protocol SoyeonAlertActionable {
                 completion: @escaping ((String?) -> Void)) -> Self
 }
 
+
 enum ActionBasic {
     case basic(String)
     case cancel(String)
