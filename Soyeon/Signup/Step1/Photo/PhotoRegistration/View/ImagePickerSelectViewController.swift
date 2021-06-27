@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ImagePickerSelectDelegate: AnyObject {
+protocol ImagePickerSelectVCDelegate: AnyObject {
     func selectSourceType(_ sourceType: UIImagePickerController.SourceType)
 }
 
@@ -20,7 +20,7 @@ final class ImagePickerSelectViewController: UIViewController {
     @IBOutlet private weak var albumButton: UIButton!
 
     // MARK: - Property
-    weak var delegate: ImagePickerSelectDelegate?
+    weak var delegate: ImagePickerSelectVCDelegate?
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -32,13 +32,15 @@ final class ImagePickerSelectViewController: UIViewController {
 
     // MARK: - IBAction
     @IBAction private func cameraButtonDidTap(_ sender: UIButton) {
-        delegate?.selectSourceType(.camera)
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: false) {
+            self.delegate?.selectSourceType(.camera)
+        }
     }
 
     @IBAction private func albumButtonDidTap(_ sender: UIButton) {
-        delegate?.selectSourceType(.photoLibrary)
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: false) {
+            self.delegate?.selectSourceType(.photoLibrary)
+        }
     }
 
     // MARK: - Function

@@ -32,7 +32,7 @@ final class PhotoRegistrationViewController: UIViewController {
 
     var router: PhotoRegistrationRouterProtocol!
 
-    private let imagePickerController = UIImagePickerController()
+    private let imagePickerManager = ImagePickerManager()
     private var maxImageCount: Int = 10
     private var defaultImageCount: Int = 4
     private var selectedIndex: Int?
@@ -72,7 +72,6 @@ final class PhotoRegistrationViewController: UIViewController {
                                 forCellWithReuseIdentifier: String(describing: ProfileCollectionViewCell.self))
 
         setupLayout()
-        imagePickerController.delegate = self
     }
 
     // MARK: - IBAction
@@ -111,81 +110,15 @@ final class PhotoRegistrationViewController: UIViewController {
     /// 카메라/앨범 선택 뷰 띄움
     private func presentSelectView() {
         if let selectView = storyboard?
-            .instantiateViewController(withIdentifier: "ImagePickerSelectViewController") as? ImagePickerSelectViewController {
+            .instantiateViewController(withIdentifier: String(describing: ImagePickerSelectViewController.self)) as? ImagePickerSelectViewController {
             selectView.modalPresentationStyle = .overCurrentContext
             selectView.delegate = self
             present(selectView, animated: false, completion: nil)
         }
     }
 
-    /// PHPhotoLibrary 접근 권한 상태 확인
-    private func checkPHPhotoLibraryAuthorization(_ sourceType: UIImagePickerController.SourceType) {
-        if #available(iOS 14.0, *) {
-            let status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
-            processAuthorization(status, sourceType)
-        } else {
-            let status = PHPhotoLibrary.authorizationStatus()
-            processAuthorization(status, sourceType)
-        }
-    }
-
-    /// PHPhotoLibrary 접근 권한별 처리
-    private func processAuthorization(_ status: PHAuthorizationStatus,
-                                      _ sourceType: UIImagePickerController.SourceType) {
-        switch status {
-        case .notDetermined:
-            requestPHPhotoLibraryAuthorization(sourceType) {
-                self.presentImagePicker(sourceType)
-            }
-        case .restricted, .denied:
-            handleDeniedAlbumsAuthorization()
-        case .authorized, .limited:
-            presentImagePicker(sourceType)
-        @unknown default:
-            break
-        }
-    }
-
-    /// PHPhotoLibrary 접근 권한 요청
-    private func requestPHPhotoLibraryAuthorization(_ sourceType: UIImagePickerController.SourceType,
-                                                    completion: @escaping () -> Void) {
-        if #available(iOS 14.0, *) {
-            PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
-                switch status {
-                case .limited:
-                    completion()
-                default:
-                    self.processAuthorization(status, sourceType)
-                }
-            }
-        } else {
-            PHPhotoLibrary.requestAuthorization { [weak self] status in
-                self?.processAuthorization(status, sourceType)
-            }
-        }
-    }
-
-    // 카메라나 사진 선택 화면을 띄움
-    private func presentImagePicker(_ sourceType: UIImagePickerController.SourceType) {
-        imagePickerController.allowsEditing = true
-        DispatchQueue.main.async {
-            if sourceType == .camera {
-                self.imagePickerController.sourceType = .camera
-            } else if sourceType == .photoLibrary {
-                self.imagePickerController.sourceType = .savedPhotosAlbum
-            }
-            self.present(self.imagePickerController, animated: true, completion: nil)
-        }
-    }
-
-    /// 앨범 접근 권한 거부 상태시 처리
-    private func handleDeniedAlbumsAuthorization() {
-        // 에러 팝업?
-        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-    }
-
     /// 이미지 넣기
-    private func set(_ image: UIImage) {
+    private func setImageView(to image: UIImage) {
         if var selectedIndex = selectedIndex {
             selectedIndex += 1
             if userImages.count > selectedIndex {
@@ -253,27 +186,18 @@ extension PhotoRegistrationViewController: UICollectionViewDelegate {
 }
 
 // MARK: - UIImagePickerControllerDelegate
-extension PhotoRegistrationViewController: ImagePickerSelectDelegate {
+extension PhotoRegistrationViewController: ImagePickerSelectVCDelegate {
+
     func selectSourceType(_ sourceType: UIImagePickerController.SourceType) {
-        checkPHPhotoLibraryAuthorization(sourceType)
+        presentImagePickerController(imagePickerManager, sourceType, true)
     }
 }
 
-// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
-extension PhotoRegistrationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+// MARK: - ImagePickerPresentable
+extension PhotoRegistrationViewController: ImagePickerPresentable {
 
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
-
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        if let editedImage = info[.editedImage] as? UIImage {
-            set(editedImage)
-        } else if let originalImage = info[.originalImage] as? UIImage {
-            set(originalImage)
-        }
+    func getSelected(_ image: UIImage) {
+        setImageView(to: image)
         collectionView.reloadData()
-        dismiss(animated: true, completion: nil)
     }
 }
