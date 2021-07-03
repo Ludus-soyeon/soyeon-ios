@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppAuth
 
 protocol LoginViewControllerInput: LoginPresenterOutput {
 
@@ -50,23 +51,7 @@ final class LoginViewController: SignupStepViewController<Login.ViewData> {
     func doLoginOnLoad() {
         output.displayLoginOnLoad()
     }
-
-    // MARK: - Function
-    private func didTappedNaver() {
-
-    }
-
-    private func didTappedKakao() {
-        LoginManager.shared.connect(.kakao)
-    }
-
-    private func didTappedGoggle() {
-
-    }
-
-    private func didTappedApple() {
-
-    }
+ 
     @IBAction func didTap(_ sender: Any) {
         router.routeToPrivatePolicy()
     }
@@ -109,20 +94,29 @@ extension LoginViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension LoginViewController: UITableViewDelegate {
-func tableView(_ tableView: UITableView,
+    func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        switch Login.Platform(rawValue: indexPath.row) {
-        case .naver:
-            didTappedNaver()
-            router.routeToPrivatePolicy()
-        case .kakao:
-            didTappedKakao()
-        case .google:
-            didTappedGoggle()
-        case .apple:
-            didTappedApple()
-        default:
-            break
+        guard let platform = Login.Platform(rawValue: indexPath.row) else {
+            return
         }
+        
+        var auth: AuthInfo
+        
+        switch platform {
+        case .naver:
+            auth = NIDAuth(presenter: self)
+        case .kakao:
+            auth = KKOIDAuth()
+        case .google:
+            auth = GIDAuth(presenter: self)
+        case .apple:
+            auth = APIDAuth()
+        }
+        
+        auth.authorization(success: { token in
+            print(.success, token)
+        })
+        
     }
 }
+ 
