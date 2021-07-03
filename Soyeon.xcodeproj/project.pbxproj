@@ -17,7 +17,6 @@
 		000CEB4725B484A800F64A28 /* GuidanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB3E25B484A800F64A28 /* GuidanceInteractor.swift */; };
 		000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4025B484A800F64A28 /* GuidanceRouter.swift */; };
 		000CEB4D25B484C800F64A28 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CEB4B25B484C800F64A28 /* UILabel+.swift */; };
-		00929C8425F68A4E0037D77A /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929C8325F68A4E0037D77A /* LoginManager.swift */; };
 		00929C9725F6926C0037D77A /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9625F6926C0037D77A /* KakaoSDKUser */; };
 		00929C9925F6926C0037D77A /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9825F6926C0037D77A /* KakaoSDKAuth */; };
 		00929C9B25F6926C0037D77A /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9A25F6926C0037D77A /* KakaoSDKCommon */; };
@@ -38,6 +37,8 @@
 		00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */; };
 		00CF094225E293790077700A /* Mbti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF094125E293790077700A /* Mbti.swift */; };
 		0A1D6197266FB94000C8674A /* CheckMyCharacterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D6196266FB94000C8674A /* CheckMyCharacterButton.swift */; };
+		0A47BAD72694ADAB0052B491 /* GIDAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47BAD62694ADAB0052B491 /* GIDAuth.swift */; };
+		0A47BADB269538E20052B491 /* AuthErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47BADA269538E20052B491 /* AuthErrorHandler.swift */; };
 		0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */; };
 		0A4E512E25EA8E8B00616C07 /* WriteProfile1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */; };
 		0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */; };
@@ -80,6 +81,13 @@
 		0A89E645265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E644265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift */; };
 		0A9C2A63269A0C3E0042692D /* SYDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A62269A0C3E0042692D /* SYDefault.swift */; };
 		0A9C2A65269A0C620042692D /* ObjectUserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A64269A0C620042692D /* ObjectUserDefaultWrapper.swift */; };
+		0A9C2A532699D5BF0042692D /* SoyeonPrivateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A522699D5BF0042692D /* SoyeonPrivateInfo.swift */; };
+		0A9C2A552699D6340042692D /* KKOIDAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A542699D6340042692D /* KKOIDAuth.swift */; };
+		0A9C2A582699DD490042692D /* AppAuthorizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A572699DD490042692D /* AppAuthorizable.swift */; };
+		0A9C2A5A2699DFFE0042692D /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A592699DFFE0042692D /* DebugHelper.swift */; };
+		0A9C2A5C2699EA630042692D /* AppSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A5B2699EA630042692D /* AppSDKManager.swift */; };
+		0A9C2A5E2699F7D70042692D /* APIDAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A5D2699F7D70042692D /* APIDAuth.swift */; };
+		0A9C2A612699FD9C0042692D /* NIDAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C2A602699FD9C0042692D /* NIDAuth.swift */; };
 		0AAF78FA26455B5D00812603 /* PhaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF78F926455B5D00812603 /* PhaseViewController.xib */; };
 		0AC21E0D2613FDE400AD0635 /* AdditionalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC21DFD2613FDE400AD0635 /* AdditionalViewModel.swift */; };
 		0AC21E0E2613FDE400AD0635 /* AdditionalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC21DFF2613FDE400AD0635 /* AdditionalPresenter.swift */; };
@@ -130,6 +138,10 @@
 		1D5B63C325B481BA00A5321C /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C225B481BA00A5321C /* XibView.swift */; };
 		1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */; };
 		1D64300525F4CBCE00A84D45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64300425F4CBCE00A84D45 /* User.swift */; };
+		1D7A12D82645B2FB004D2C0C /* UserDefaultClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A12D72645B2FB004D2C0C /* UserDefaultClass.swift */; };
+		1D7C3243268767E100D7F2C9 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7C3242268767E100D7F2C9 /* AppAuth */; };
+		1D7C3245268767E100D7F2C9 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7C3244268767E100D7F2C9 /* AppAuthCore */; };
+		1D7C32582687680100D7F2C9 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C324F2687680100D7F2C9 /* AuthInfo.swift */; };
 		1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32032262C757900ED564A /* LoadSignupView.swift */; };
 		1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32045262C75D900ED564A /* LoadSignupViewData.swift */; };
 		1DBA13C425D440E400979BB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBA13C325D440E400979BB2 /* Moya */; };
@@ -203,7 +215,6 @@
 		000CEB3E25B484A800F64A28 /* GuidanceInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceInteractor.swift; sourceTree = "<group>"; };
 		000CEB4025B484A800F64A28 /* GuidanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidanceRouter.swift; sourceTree = "<group>"; };
 		000CEB4B25B484C800F64A28 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
-		00929C8325F68A4E0037D77A /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +232,8 @@
 		00CF093D25E291EF0077700A /* LifeStyleQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeStyleQuestion.swift; sourceTree = "<group>"; };
 		00CF094125E293790077700A /* Mbti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbti.swift; sourceTree = "<group>"; };
 		0A1D6196266FB94000C8674A /* CheckMyCharacterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterButton.swift; sourceTree = "<group>"; };
+		0A47BAD62694ADAB0052B491 /* GIDAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIDAuth.swift; sourceTree = "<group>"; };
+		0A47BADA269538E20052B491 /* AuthErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorHandler.swift; sourceTree = "<group>"; };
 		0A4E511F25EA8E8B00616C07 /* WriteProfile1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewModel.swift; sourceTree = "<group>"; };
 		0A4E512125EA8E8B00616C07 /* WriteProfile1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Presenter.swift; sourceTree = "<group>"; };
 		0A4E512325EA8E8B00616C07 /* WriteProfile1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1ViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +276,13 @@
 		0A89E644265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterCollectionBottomView.swift; sourceTree = "<group>"; };
 		0A9C2A62269A0C3E0042692D /* SYDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYDefault.swift; sourceTree = "<group>"; };
 		0A9C2A64269A0C620042692D /* ObjectUserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUserDefaultWrapper.swift; sourceTree = "<group>"; };
+		0A9C2A522699D5BF0042692D /* SoyeonPrivateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonPrivateInfo.swift; sourceTree = "<group>"; };
+		0A9C2A542699D6340042692D /* KKOIDAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKOIDAuth.swift; sourceTree = "<group>"; };
+		0A9C2A572699DD490042692D /* AppAuthorizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuthorizable.swift; sourceTree = "<group>"; };
+		0A9C2A592699DFFE0042692D /* DebugHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugHelper.swift; sourceTree = "<group>"; };
+		0A9C2A5B2699EA630042692D /* AppSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSDKManager.swift; sourceTree = "<group>"; };
+		0A9C2A5D2699F7D70042692D /* APIDAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDAuth.swift; sourceTree = "<group>"; };
+		0A9C2A602699FD9C0042692D /* NIDAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIDAuth.swift; sourceTree = "<group>"; };
 		0AAF78F926455B5D00812603 /* PhaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhaseViewController.xib; sourceTree = "<group>"; };
 		0AC21DFD2613FDE400AD0635 /* AdditionalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalViewModel.swift; sourceTree = "<group>"; };
 		0AC21DFF2613FDE400AD0635 /* AdditionalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalPresenter.swift; sourceTree = "<group>"; };
@@ -316,6 +336,8 @@
 		1D5B63C225B481BA00A5321C /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
 		1D64300425F4CBCE00A84D45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1D7A12D72645B2FB004D2C0C /* UserDefaultClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultClass.swift; sourceTree = "<group>"; };
+		1D7C324F2687680100D7F2C9 /* AuthInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
 		1DA32032262C757900ED564A /* LoadSignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSignupView.swift; sourceTree = "<group>"; };
 		1DA32045262C75D900ED564A /* LoadSignupViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSignupViewData.swift; sourceTree = "<group>"; };
 		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
@@ -386,7 +408,9 @@
 				D8487C6225ED615D00F52B48 /* SwiftyGif in Frameworks */,
 				00929C9725F6926C0037D77A /* KakaoSDKUser in Frameworks */,
 				00929C9B25F6926C0037D77A /* KakaoSDKCommon in Frameworks */,
+				1D7C3243268767E100D7F2C9 /* AppAuth in Frameworks */,
 				00929C9925F6926C0037D77A /* KakaoSDKAuth in Frameworks */,
+				1D7C3245268767E100D7F2C9 /* AppAuthCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +561,8 @@
 		009B02A725B47E9E00753847 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				1D7C32482687680100D7F2C9 /* AppAuth */,
 				009B02A825B47E9E00753847 /* LoginWorker.swift */,
-				00929C8325F68A4E0037D77A /* LoginManager.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -1049,6 +1073,20 @@
 			path = StartSplash;
 			sourceTree = "<group>";
 		};
+		1D7C32482687680100D7F2C9 /* AppAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1D7C324F2687680100D7F2C9 /* AuthInfo.swift */,
+				0A9C2A572699DD490042692D /* AppAuthorizable.swift */,
+				0A47BADA269538E20052B491 /* AuthErrorHandler.swift */,
+				0A47BAD62694ADAB0052B491 /* GIDAuth.swift */,
+				0A9C2A542699D6340042692D /* KKOIDAuth.swift */,
+				0A9C2A5D2699F7D70042692D /* APIDAuth.swift */,
+				0A9C2A602699FD9C0042692D /* NIDAuth.swift */,
+			);
+			path = AppAuth;
+			sourceTree = "<group>";
+		};
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -1195,6 +1233,9 @@
 				0ADB70D125CACD7600A10864 /* SoyeonAlert */,
 				D80D664B25BDBA35002F47B9 /* CustomBackButtonNavController.swift */,
 				0A4E516525EAB55100616C07 /* ReuseIdentifiable.swift */,
+				0A9C2A522699D5BF0042692D /* SoyeonPrivateInfo.swift */,
+				0A9C2A592699DFFE0042692D /* DebugHelper.swift */,
+				0A9C2A5B2699EA630042692D /* AppSDKManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1439,6 +1480,8 @@
 				00929C9625F6926C0037D77A /* KakaoSDKUser */,
 				00929C9825F6926C0037D77A /* KakaoSDKAuth */,
 				00929C9A25F6926C0037D77A /* KakaoSDKCommon */,
+				1D7C3242268767E100D7F2C9 /* AppAuth */,
+				1D7C3244268767E100D7F2C9 /* AppAuthCore */,
 			);
 			productName = Soyeon;
 			productReference = D8795C3C258E6A2100DF4D64 /* Soyeon.app */;
@@ -1476,6 +1519,7 @@
 				1DBA13C225D440E400979BB2 /* XCRemoteSwiftPackageReference "Moya" */,
 				D8487C6025ED615D00F52B48 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 				00929C9525F6926C0037D77A /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */,
+				1D7C3241268767E100D7F2C9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
 			);
 			productRefGroup = D8795C3D258E6A2100DF4D64 /* Products */;
 			projectDirPath = "";
@@ -1649,35 +1693,42 @@
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0AC21E132613FDE400AD0635 /* AdditionalConfigurator.swift in Sources */,
+				0A9C2A5A2699DFFE0042692D /* DebugHelper.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */,
 				1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */,
 				0A4E515A25EAB4E400616C07 /* EducationAlertItem.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				00CF094225E293790077700A /* Mbti.swift in Sources */,
+				0A9C2A5E2699F7D70042692D /* APIDAuth.swift in Sources */,
 				0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				0A4E516625EAB55100616C07 /* PlaceHolderTextView.swift in Sources */,
 				00CF092A25E25C710077700A /* ServiceError.swift in Sources */,
+				0A9C2A582699DD490042692D /* AppAuthorizable.swift in Sources */,
 				009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */,
 				D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */,
 				D8F11805262B3ABF00E34C97 /* TagListLayout.swift in Sources */,
 				D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */,
 				0AFFB5F52637CABE00CA6FCE /* UIApplication+.swift in Sources */,
+				0A47BAD72694ADAB0052B491 /* GIDAuth.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0A89E630265DDCD70048A3BC /* CheckMyCharacterInteractor.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
+				0A9C2A5C2699EA630042692D /* AppSDKManager.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
 				1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */,
 				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
+				1D7C32582687680100D7F2C9 /* AuthInfo.swift in Sources */,
 				0AC21E142613FDE400AD0635 /* AdditionalWorker.swift in Sources */,
 				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				00CF093625E28F4E0077700A /* Term.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				1DD9CA3325F47F9B00290014 /* PlaceHolderWarningTextView.swift in Sources */,
+				0A9C2A532699D5BF0042692D /* SoyeonPrivateInfo.swift in Sources */,
 				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
@@ -1686,6 +1737,7 @@
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
+				0A9C2A612699FD9C0042692D /* NIDAuth.swift in Sources */,
 				0A89E641265DEE990048A3BC /* CheckMyCharacterCollectionHeaderView.swift in Sources */,
 				0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */,
 				0A89E639265DDD410048A3BC /* Step3.swift in Sources */,
@@ -1699,6 +1751,7 @@
 				D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */,
 				0A4E515B25EAB4E400616C07 /* BirthYearAlertItem.swift in Sources */,
 				1D19088325A9F77E008210D1 /* AgreementWorker.swift in Sources */,
+				0A9C2A552699D6340042692D /* KKOIDAuth.swift in Sources */,
 				0A4E515825EAB4E400616C07 /* JobAlertItem.swift in Sources */,
 				0AC21E162613FDE400AD0635 /* AdditionalRouter.swift in Sources */,
 				D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */,
@@ -1715,6 +1768,7 @@
 				0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */,
 				0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */,
 				000CEB4625B484A800F64A28 /* GuidanceWorker.swift in Sources */,
+				0A47BADB269538E20052B491 /* AuthErrorHandler.swift in Sources */,
 				1D19087A25A9F77E008210D1 /* AgreementDetailWorker.swift in Sources */,
 				0A4E512D25EA8E8B00616C07 /* WriteProfile1ViewModel.swift in Sources */,
 				0A4E513225EA8E8B00616C07 /* WriteProfile1Worker.swift in Sources */,
@@ -1995,6 +2049,14 @@
 				kind = branch;
 			};
 		};
+		1D7C3241268767E100D7F2C9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
 		1DBA13C225D440E400979BB2 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -2028,6 +2090,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00929C9525F6926C0037D77A /* XCRemoteSwiftPackageReference "KakaoSDK-SwiftPM" */;
 			productName = KakaoSDKCommon;
+		};
+		1D7C3242268767E100D7F2C9 /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D7C3241268767E100D7F2C9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		1D7C3244268767E100D7F2C9 /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D7C3241268767E100D7F2C9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
 		};
 		1DBA13C325D440E400979BB2 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;

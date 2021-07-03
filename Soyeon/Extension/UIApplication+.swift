@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIApplication {
-    var soyeonWindow: UIWindow? {
+    var soyeonWindow: UIWindow! {
         return UIApplication.shared.windows.filter {$0.isKeyWindow}.first
     }
 }
