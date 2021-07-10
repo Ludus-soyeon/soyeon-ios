@@ -100,20 +100,22 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
         }
     }
      
-    @IBAction func didTapRegisterAccountButton(_ sender: Any) {
+    @IBAction func didTapRegisterAccountButton(_ sender: Any) { 
         if let viewData = loadViewData() {
             
-            let user = getUserData()
-             
+            var user = SYDefaultObject.user ?? User()
+            
             user.name = viewData.name
-            user.nickname = viewData.nickName
+            user.nickName = viewData.nickName
             user.sex = viewData.gender?.boolValue
             user.phone = viewData.phoneNumber
-            saveUserData(user)
+            
+            SYDefaultObject.user = user
             
             router.navigateToPhase()
             return
         }
+        
     }
 }
 

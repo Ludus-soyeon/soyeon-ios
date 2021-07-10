@@ -114,6 +114,7 @@ func tableView(_ tableView: UITableView,
         switch Login.Platform(rawValue: indexPath.row) {
         case .naver:
             didTappedNaver()
+            router.routeToPrivatePolicy()
         case .kakao:
             didTappedKakao()
         case .google:
