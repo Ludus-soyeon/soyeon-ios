@@ -10,34 +10,34 @@ import Foundation
  
 // MARK: - User
 struct User: Codable {
-    let acquaintance: Acquaintance
-    let acquaintanceShy: Bool
-    let age: Int
-    let animal: Acquaintance
-    let animalID: Int
-    let bio, bodyShape, cigarette, company: String
-    let dormantAt, drink, education, elTime: String
-    let email, fcmToken, frozenAt, frozenUntil: String
-    let height: Int
-    let hobby: String
-    let id, idealAgeEnd, idealAgeStart: Int
-    let idealBodyShape: String
-    let idealHeightEnd, idealHeightStart: Int
-    let idealTypeGroups, interest, lastAccess, location1: String
-    let location2, name, nickName: String
-    let oauthGoogleID, oauthKakaoID, oauthNaverID: Int
-    let occupation: String
-    let occupationConfirmed: Bool
-    let occupationConfirmedAt, phone: String
-    let phoneRegistered: Bool
-    let pictures: String
-    let rate: Int
-    let ratingRequired: Bool
-    let registeredAt: String
-    let registrationConfirmed: Bool
-    let registrationConfirmedAt, registrationPhase, religion: String
-    let sex: Bool
-    let speciality: String
+    var acquaintance: Acquaintance?
+    var acquaintanceShy: Bool?
+    var age: Int?
+    var animal: Acquaintance?
+    var animalID: Int?
+    var bio, bodyShape, cigarette, company: String?
+    var dormantAt, drink, education, elTime: String?
+    var email, fcmToken, frozenAt, frozenUntil: String?
+    var height: Int?
+    var hobby: String?
+    var id, idealAgeEnd, idealAgeStart: Int?
+    var idealBodyShape: String?
+    var idealHeightEnd, idealHeightStart: Int?
+    var idealTypeGroups, interest, lastAccess, location1: String?
+    var location2, name, nickName: String?
+    var oauthGoogleID, oauthKakaoID, oauthNaverID: Int?
+    var occupation: String?
+    var occupationConfirmed: Bool?
+    var occupationConfirmedAt, phone: String?
+    var phoneRegistered: Bool?
+    var pictures: String?
+    var rate: Int?
+    var ratingRequired: Bool?
+    var registeredAt: String?
+    var registrationConfirmed: Bool?
+    var registrationConfirmedAt, registrationPhase, religion: String?
+    var sex: Bool?
+    var speciality: String?
 
     enum CodingKeys: String, CodingKey {
         case acquaintance

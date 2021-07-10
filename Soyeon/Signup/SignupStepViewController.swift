@@ -39,20 +39,7 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
     }
     
     private func saveSignupLocation(_ path: String) {
-        UserDefaults.setValue(path,
-                              forKey: .saveSignUpLocation)
+        SYDefault.saveSignUpLocation = path
     }
     
-}
-
-extension SignupStepViewController: CustomClassObjectHandleable { 
-    typealias TargetClass = UserModel
-    
-    func getUserData() -> TargetClass {
-        return getUserDefaultData(defaultKey: .user)
-    }
-    
-    func saveUserData(_ object: UserModel) {
-        saveUserDefaultData(object, defaultKey: .user)
-    }
 }

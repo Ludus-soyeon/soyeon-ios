@@ -43,7 +43,7 @@ final class PhaseViewController: SignupStepViewController<User> {
     private var phase: Phase
     
     private var nickname: String {
-        return getUserData().nickname ?? ""
+        return SYDefaultObject.user?.nickName ?? ""
     }
     
     init(phase: Phase) {

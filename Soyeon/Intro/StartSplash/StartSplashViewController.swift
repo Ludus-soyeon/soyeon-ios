@@ -33,7 +33,7 @@ final class StartSplashViewController: UIViewController {
     }
  
     @IBAction private func startButtonDidTap(_ sender: Any?) {
-        if let location = UserDefaults.object(forKey: .saveSignUpLocation) as? String {
+        if let location = SYDefault.saveSignUpLocation {
             continueSignupAlert(location)
             return
         }
@@ -96,7 +96,7 @@ final class StartSplashViewController: UIViewController {
     }
     
     private func removeSignupData() {
-        UserDefaults.remove(forKey: .saveSignUpLocation)
+        SYDefault.saveSignUpLocation = nil
         
         let dictionary = UserDefaults.standard.dictionaryRepresentation()
         
