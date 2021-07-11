@@ -43,7 +43,7 @@ extension AppAuthorizable {
         }
     }
     
-    func request(success: @escaping Success, failer: Fail?) {
+    func request(_ completion: @escaping Completion) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
         configure { result in
@@ -52,20 +52,15 @@ extension AppAuthorizable {
                 OIDAuthState.authState(byPresenting: result,
                                        presenting: presenter) { authState, error in
                     if let error = error {
-                        failer?(.thirdParty(error))
+                        completion(.failure(.thirdParty(error)))
                         return
                     }
-                    
-                    guard let token = authState?.lastTokenResponse?.accessToken else {
-                        failer?(.notToken)
-                        return
-                    }
-                    
-                    success(token)
+                     
+                    completion(.success(authState?.lastTokenResponse?.accessToken))
                 }
             
         } failer: { error in
-            failer?(.thirdParty(error))
+            completion(.failure(.thirdParty(error)))
         }
 
     }

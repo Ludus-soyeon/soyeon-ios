@@ -8,20 +8,27 @@
 import Foundation
   
 protocol AuthInfo: AuthErrorHandler {
-    typealias Success = ((_ authToken: String) -> Void)
-    typealias Fail = ((AuthError?) -> Void)
+    typealias Completion = (Result<String?, AuthError>)->Void
     
-    typealias Completion = (success: Success, failer: Fail?)
-    
-    func request(success: @escaping Success, failer: Fail?)
-    func authorization(success: @escaping Success)
+    func request(_ completion: @escaping Completion)
+    func authorization(success: @escaping (_ token: String?) -> Void)
 }
   
 extension AuthInfo {
-    func authorization(success: @escaping Success) {
-        request(success: success,
-                failer: errorHandler)
-        
+    func authorization(success: @escaping (_ token: String?) -> Void) {
+        request { (result) in
+            switch result {
+            case .success(let token):
+                guard let token = token else {
+                    errorHandler(.notToken)
+                    return
+                }
+                
+                success(token)
+            case .failure(let error):
+                errorHandler(error)
+            }
+        }
     }
-     
 }
+ 
