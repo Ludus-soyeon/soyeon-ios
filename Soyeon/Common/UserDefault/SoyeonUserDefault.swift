@@ -10,7 +10,7 @@ import Foundation
 
 protocol SoyeonUserDefault {
     static func remove(forKey: SoyeonUserDefaultKey) 
-    static func setValue(_ value: Any, forKey: SoyeonUserDefaultKey)
+    static func setValue(_ value: Any?, forKey: SoyeonUserDefaultKey)
     static func object(forKey: SoyeonUserDefaultKey) -> Any?
 }
 
@@ -19,7 +19,7 @@ extension SoyeonUserDefault {
         UserDefaults.standard.removeObject(forKey: forKey.rawValue)
     }
     
-    static func setValue(_ value: Any, forKey: SoyeonUserDefaultKey) {
+    static func setValue(_ value: Any?, forKey: SoyeonUserDefaultKey) {
         UserDefaults.standard.setValue(value, forKey: forKey.rawValue)
     }
      

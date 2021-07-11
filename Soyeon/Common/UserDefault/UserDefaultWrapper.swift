@@ -15,15 +15,9 @@ struct UserDefaultWrapper<T> {
     
     var wrappedValue: T? {
         get {
-            return UserDefaults.object(forKey: key) as? T
+            return UserDefaults.object(forKey: key) as? T ?? defaultValue
         }
         set {
-            guard let newValue = newValue else {
-                UserDefaults.remove(forKey: key)
-                
-                return
-            }
-            
             UserDefaults.setValue(newValue, forKey: key)
         }
         
