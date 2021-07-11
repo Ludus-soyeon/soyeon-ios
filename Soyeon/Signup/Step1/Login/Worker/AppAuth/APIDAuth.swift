@@ -24,8 +24,9 @@ final class APIDAuth: NSObject, AuthInfo {
         controller.presentationContextProvider = self
     }
        
-    func request(success: @escaping Success, failer: Fail?) {
-        completion = (success, failer)
+    func request(_ completion: @escaping Completion) {
+        self.completion = completion
+        controller.performRequests()
     }
      
 }
@@ -41,22 +42,24 @@ extension APIDAuth: ASAuthorizationControllerPresentationContextProviding {
     func authorizationController(controller: ASAuthorizationController,
                                  didCompleteWithAuthorization authorization: ASAuthorization) {
         guard let credenticate = authorization.credential as? ASAuthorizationAppleIDCredential else {
-            completion?.failer?(.thirdParty(nil))
+            completion?(.failure(.failLogin))
             return
         }
         
-        guard let token = credenticate.identityToken,
-              let tokenString = String(data: token, encoding: .ascii) else {
-            completion?.failer?(.notToken)
+        guard let identityToken = credenticate.identityToken else {
+            completion?(.failure(.failLogin))
             return
         }
+        
+        let tokenString = String(data: identityToken,
+                                 encoding: .ascii)
           
-        completion?.success(tokenString)
+        completion?(.success(tokenString))
          
     }
     
     func authorizationController(controller: ASAuthorizationController,
                                  didCompleteWithError error: Error) {
-        completion?.failer?(.thirdParty(error))
+        completion?(.failure(.thirdParty(error)))
     }
 }

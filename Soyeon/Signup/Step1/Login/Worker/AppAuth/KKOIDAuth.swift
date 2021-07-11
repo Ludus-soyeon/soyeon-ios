@@ -13,24 +13,19 @@ import KakaoSDKUser
 struct KKOIDAuth: AuthInfo {
     var clientID = SoyeonPrivateInfo.kakaoClientKey
     
-    func request(success: @escaping Success, failer: Fail?) {
-        connectKakao((success, failer))
+    func request(_ completion: @escaping Completion) {
+        connectKakao(completion)
     }
      
-    private func connectKakao(_ completion: Completion) {  
+    private func connectKakao(_ completion: @escaping Completion) {
         typealias KKOCompletionType = (OAuthToken?, Error?) -> Void
         let excute: KKOCompletionType = { (token, error) in
             if let error = error {
-                completion.failer?(.thirdParty(error))
+                completion(.failure(.thirdParty(error)))
                 return
             }
             
-            guard let token = token?.accessToken else {
-                completion.failer?(.notToken)
-                return
-            }
-             
-            completion.success(token)
+            completion(.success(token?.accessToken))
         }
     
         if UserApi.isKakaoTalkLoginAvailable() {
