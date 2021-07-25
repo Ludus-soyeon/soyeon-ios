@@ -116,6 +116,9 @@
                                                         </connections>
                                                     </collectionView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vu5-Ma-dEl" firstAttribute="width" secondItem="6qv-D8-UTb" secondAttribute="width" id="zxe-UV-ygI"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
