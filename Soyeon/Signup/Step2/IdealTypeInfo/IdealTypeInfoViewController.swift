@@ -27,12 +27,14 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
     private enum ViewMetrics {
+        static let ageInitalRange: ClosedRange<CGFloat> = 20...30
         static let ageRange: ClosedRange<CGFloat> = 20...49
+        static let heightInitalRange: ClosedRange<CGFloat> = 170...200
         static let heightRange: ClosedRange<CGFloat> = 140...200
         static let cellHeight: CGFloat = 28.0
         static let cellSpacingForLine: CGFloat = 8.0
         static let cellSpacingForItem: CGFloat = 4.0
-        static let cellTitlePadding: CGFloat = 4.0
+        static let cellTitlePadding: CGFloat = 8.0
     }
     
     private enum Theme {
@@ -42,12 +44,22 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionViewHeightConstraint.constant = collectionView.contentSize.height
+        
+        // frame 초기화
+        ageRangeSlider.minimumValue = 0
+        heightRangeSlider.minimumValue = 0
+         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
         setupLayout()
+        initalSliderValue()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
      
     private func configureCollectionView() {
@@ -57,9 +69,30 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
         }
     }
     
+    private func initalSliderValue() {
+        changeRange(ageRangeSlider,
+                    from: ViewMetrics.ageRange,
+                    in: ViewMetrics.ageInitalRange)
+        
+        changeRange(heightRangeSlider,
+                    from: ViewMetrics.heightRange,
+                    in: ViewMetrics.heightInitalRange)
+ 
+        updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
+        updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+    }
+    
+    private func changeRange(_ slider: RangeSlider,
+                             from base: ClosedRange<CGFloat>,
+                             in target: ClosedRange<CGFloat>) {
+        slider.lowerValue = base.convertPercent(to: target.lowerBound)
+        slider.upperValue = base.convertPercent(to: target.upperBound)
+    }
+    
     private func setupLayout() {
         setNavigationTitle("이상형 정보 수정하기")
         formLabel.text = WriteProfileAlertViewModel.Form.slimHard.rawValue
+   
         updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
         updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
     }
@@ -142,7 +175,7 @@ extension IdealTypeInfoViewController: TagListLayoutDelegate {
         let stringSize = (personalityInfo as NSString).size(withAttributes: [
             NSAttributedString.Key.font: Theme.cellTitleFont
         ])
-        let cellSize = CGSize(width: stringSize.width + ViewMetrics.cellTitlePadding,
+        let cellSize = CGSize(width: stringSize.width + (ViewMetrics.cellTitlePadding * 2) ,
                               height: ViewMetrics.cellHeight)
         return cellSize
     }
@@ -153,5 +186,12 @@ private extension FloatingPoint {
         let x = (output.upperBound - output.lowerBound) * (self - input.lowerBound)
         let y = (input.upperBound - input.lowerBound)
         return x / y + output.lowerBound
+    }
+     
+}
+
+private extension ClosedRange where Bound == CGFloat {
+    func convertPercent(to value: CGFloat) -> CGFloat {
+        return (CGFloat(value) - lowerBound) / (upperBound - lowerBound)
     }
 }
