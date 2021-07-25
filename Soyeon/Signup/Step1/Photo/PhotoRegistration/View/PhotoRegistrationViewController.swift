@@ -186,15 +186,15 @@ extension PhotoRegistrationViewController: UICollectionViewDelegate {
 }
 
 // MARK: - UIImagePickerControllerDelegate
-extension PhotoRegistrationViewController: ImagePickerSelectVCDelegate {
+extension PhotoRegistrationViewController: SourceTypeSelectVCDelegate {
 
-    func selectSourceType(_ sourceType: UIImagePickerController.SourceType) {
+    func select(_ sourceType: UIImagePickerController.SourceType) {
         presentImagePickerController(imagePickerManager, sourceType, true)
     }
 }
 
 // MARK: - ImagePickerPresentable
-extension PhotoRegistrationViewController: ImagePickerPresentable {
+extension PhotoRegistrationViewController: ImagePickerManagerDelegate {
 
     func getSelected(_ image: UIImage) {
         setImageView(to: image)

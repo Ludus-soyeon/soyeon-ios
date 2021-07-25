@@ -6,15 +6,14 @@
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // MARK: - ImagePickerPresentable
-protocol ImagePickerPresentable: AnyObject {
+protocol ImagePickerManagerDelegate: AnyObject {
     func getSelected(_ image: UIImage)
 }
 
-extension ImagePickerPresentable where Self: UIViewController {
+extension ImagePickerManagerDelegate where Self: UIViewController {
 
     /// 이미지 피커 표시
     func presentImagePickerController(_ imagePickerManager: ImagePickerManager,
@@ -35,7 +34,7 @@ extension ImagePickerPresentable where Self: UIViewController {
 final class ImagePickerManager: NSObject {
 
     // MARK: - Property
-    weak var delegate: ImagePickerPresentable?
+    weak var delegate: ImagePickerManagerDelegate?
     
     // MARK: - Function
     private func dispose(_ imagePicker: UIImagePickerController) {

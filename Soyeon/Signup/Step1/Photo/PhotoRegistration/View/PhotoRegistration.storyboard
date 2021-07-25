@@ -252,10 +252,10 @@
             </objects>
             <point key="canvasLocation" x="-1010.4" y="-149.26108374384236"/>
         </scene>
-        <!--Image Picker Select View Controller-->
+        <!--Source Type SelectVC-->
         <scene sceneID="eo6-wN-aAB">
             <objects>
-                <viewController storyboardIdentifier="ImagePickerSelectViewController" id="0S7-a1-mMN" customClass="ImagePickerSelectViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SourceTypeSelectVC" id="0S7-a1-mMN" customClass="SourceTypeSelectVC" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7g-du-X5b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

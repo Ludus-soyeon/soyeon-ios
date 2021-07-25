@@ -1,5 +1,5 @@
 //
-//  ImagePickerSelectViewController.swift
+//  SourceTypeSelectVC.swift
 //  Soyeon
 //
 //  Created by 이재은 on 2021/06/06.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ImagePickerSelectVCDelegate: AnyObject {
-    func selectSourceType(_ sourceType: UIImagePickerController.SourceType)
+protocol SourceTypeSelectVCDelegate: AnyObject {
+    func select(_ sourceType: UIImagePickerController.SourceType)
 }
 
-final class ImagePickerSelectViewController: UIViewController {
+final class SourceTypeSelectVC: UIViewController {
     
     // MARK: - IBOutlet
     @IBOutlet private weak var selectView: UIView!
@@ -20,7 +20,7 @@ final class ImagePickerSelectViewController: UIViewController {
     @IBOutlet private weak var albumButton: UIButton!
 
     // MARK: - Property
-    weak var delegate: ImagePickerSelectVCDelegate?
+    weak var delegate: SourceTypeSelectVCDelegate?
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -33,13 +33,13 @@ final class ImagePickerSelectViewController: UIViewController {
     // MARK: - IBAction
     @IBAction private func cameraButtonDidTap(_ sender: UIButton) {
         dismiss(animated: false) {
-            self.delegate?.selectSourceType(.camera)
+            self.delegate?.select(.camera)
         }
     }
 
     @IBAction private func albumButtonDidTap(_ sender: UIButton) {
         dismiss(animated: false) {
-            self.delegate?.selectSourceType(.photoLibrary)
+            self.delegate?.select(.photoLibrary)
         }
     }
 
