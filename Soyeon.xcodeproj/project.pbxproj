@@ -28,6 +28,7 @@
 		00929C9725F6926C0037D77A /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9625F6926C0037D77A /* KakaoSDKUser */; };
 		00929C9925F6926C0037D77A /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9825F6926C0037D77A /* KakaoSDKAuth */; };
 		00929C9B25F6926C0037D77A /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 00929C9A25F6926C0037D77A /* KakaoSDKCommon */; };
+		0096756526ADACFF00BF71D7 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0096756426ADACFF00BF71D7 /* NSObject+.swift */; };
 		009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A025B47E9E00753847 /* LoginViewModel.swift */; };
 		009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A225B47E9E00753847 /* LoginPresenter.swift */; };
 		009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02A425B47E9E00753847 /* LoginViewController.swift */; };
@@ -37,7 +38,7 @@
 		009B02B325B47E9E00753847 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02AC25B47E9E00753847 /* LoginRouter.swift */; };
 		009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B02B625B47F3B00753847 /* LoginPlatformCell.swift */; };
 		009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B02B825B47F3B00753847 /* Step1.storyboard */; };
-		00ACB656266BDD5400256951 /* ImagePickerSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB655266BDD5400256951 /* ImagePickerSelectViewController.swift */; };
+		00ACB656266BDD5400256951 /* SourceTypeSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB655266BDD5400256951 /* SourceTypeSelectVC.swift */; };
 		00ACB659266D437300256951 /* PhotoGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ACB658266D437300256951 /* PhotoGuide.storyboard */; };
 		00ACB65B266D438100256951 /* PhotoGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB65A266D438100256951 /* PhotoGuideViewController.swift */; };
 		00B3719F25973A65003F6C76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 00B3719E25973A65003F6C76 /* .swiftlint.yml */; };
@@ -204,6 +205,7 @@
 		003D114E264E589100C8EBFE /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		008FB5B326871F5200F4EF54 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		00929C8325F68A4E0037D77A /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		0096756426ADACFF00BF71D7 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		009B02A025B47E9E00753847 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		009B02A225B47E9E00753847 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		009B02A425B47E9E00753847 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -213,7 +215,7 @@
 		009B02AC25B47E9E00753847 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		009B02B625B47F3B00753847 /* LoginPlatformCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPlatformCell.swift; sourceTree = "<group>"; };
 		009B02B825B47F3B00753847 /* Step1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Step1.storyboard; sourceTree = "<group>"; };
-		00ACB655266BDD5400256951 /* ImagePickerSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerSelectViewController.swift; sourceTree = "<group>"; };
+		00ACB655266BDD5400256951 /* SourceTypeSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTypeSelectVC.swift; sourceTree = "<group>"; };
 		00ACB658266D437300256951 /* PhotoGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoGuide.storyboard; sourceTree = "<group>"; };
 		00ACB65A266D438100256951 /* PhotoGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGuideViewController.swift; sourceTree = "<group>"; };
 		00B3719E25973A65003F6C76 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 				00E295E1266AA05700DB69CE /* Array+.swift */,
 				00E295E6266AB4DD00DB69CE /* UIImage+.swift */,
 				00E295E8266AC19B00DB69CE /* UIButton+.swift */,
+				0096756426ADACFF00BF71D7 /* NSObject+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -491,7 +494,7 @@
 				003D114D264E589100C8EBFE /* ProfileCollectionViewCell.swift */,
 				003D114E264E589100C8EBFE /* ProfileCollectionViewCell.xib */,
 				000CEF832624B98000FD97B9 /* PhotoRegistration.storyboard */,
-				00ACB655266BDD5400256951 /* ImagePickerSelectViewController.swift */,
+				00ACB655266BDD5400256951 /* SourceTypeSelectVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1569,7 +1572,7 @@
 				1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
-				00ACB656266BDD5400256951 /* ImagePickerSelectViewController.swift in Sources */,
+				00ACB656266BDD5400256951 /* SourceTypeSelectVC.swift in Sources */,
 				00ACB65B266D438100256951 /* PhotoGuideViewController.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0AC21E132613FDE400AD0635 /* AdditionalConfigurator.swift in Sources */,
@@ -1593,6 +1596,7 @@
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
 				1D49609B25CED2630002C961 /* SoyeonRoundAlertButton.swift in Sources */,
+				0096756526ADACFF00BF71D7 /* NSObject+.swift in Sources */,
 				D80D664C25BDBA35002F47B9 /* CustomBackButtonNavController.swift in Sources */,
 				D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */,
 				0AC21E142613FDE400AD0635 /* AdditionalWorker.swift in Sources */,

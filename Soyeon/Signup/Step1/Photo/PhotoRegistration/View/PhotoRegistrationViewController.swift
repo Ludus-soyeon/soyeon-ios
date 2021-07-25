@@ -110,7 +110,7 @@ final class PhotoRegistrationViewController: UIViewController {
     /// 카메라/앨범 선택 뷰 띄움
     private func presentSelectView() {
         if let selectView = storyboard?
-            .instantiateViewController(withIdentifier: String(describing: ImagePickerSelectViewController.self)) as? ImagePickerSelectViewController {
+            .instantiateViewController(withIdentifier: SourceTypeSelectVC.classname) as? SourceTypeSelectVC {
             selectView.modalPresentationStyle = .overCurrentContext
             selectView.delegate = self
             present(selectView, animated: false, completion: nil)
