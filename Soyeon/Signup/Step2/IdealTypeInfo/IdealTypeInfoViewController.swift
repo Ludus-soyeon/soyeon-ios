@@ -9,23 +9,8 @@
 import UIKit
 
 final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
-    
-    var viewData: ViewDataType? = nil {
-        willSet {
-            guard let newValue = newValue else { return }
-            setViewData(newValue)
-        }
-    }
-    
-    private var _viewData: IdealType {
-        get {
-            if self.viewData == nil {
-                self.viewData = .init()
-            }
-            
-            return self.viewData!
-        }
-        set { viewData = newValue }
+    private lazy var _viewData: IdealType = loadViewData() ?? .init() {
+        willSet { setViewData(newValue) }
     }
     
     private var selectedPersonalities: [PersonalityType] = []
@@ -64,10 +49,6 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
-        
-        if let viewData = loadViewData() {
-            _viewData = viewData
-        }
         setupLayout()
         initalSliderValue(ageRange: _viewData.ageRange,
                           heightRange: _viewData.heightRange)

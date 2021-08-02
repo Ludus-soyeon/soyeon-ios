@@ -17,11 +17,8 @@ protocol AgreementViewControllerOutput {
 }
  
 final class AgreementViewController: SignupStepViewController<Agreement.Agreements> {
- 
-    fileprivate var viewData: ViewDataType = .init() {
-        willSet {
-            setViewData(newValue)
-        }
+    private lazy var _viewData: Agreement.Agreements = loadViewData() ?? .init() {
+        willSet { setViewData(newValue) }
     }
      
     @IBOutlet private weak var allAgreeLabel: UILabel!
@@ -32,7 +29,7 @@ final class AgreementViewController: SignupStepViewController<Agreement.Agreemen
     @IBOutlet private weak var joinButton: UIButton!
      
     fileprivate var viewModel: Agreement.AgreementViewModel = Agreement.AgreementViewModel() {
-        willSet {  viewData = newValue.agreements }
+        willSet { _viewData = newValue.agreements }
     }
     
     var output: AgreementViewControllerOutput!
@@ -70,19 +67,15 @@ final class AgreementViewController: SignupStepViewController<Agreement.Agreemen
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         
-        if let viewData = loadViewData() {
-            self.viewData = viewData
-            fillViewData(viewData)
-        }
+        fillViewData(_viewData)
     }
     
     private func setupLayout() {
         setNavigationTitle("이용 약관 동의")
     }
     
-    private func fillViewData(_ data: ViewDataType) {
-        output.loadViewData(viewData)
+    private func fillViewData(_ data: Agreement.Agreements) {
+        output.loadViewData(data)
     }
     
     @IBAction func agreeButtonDidTap(_ sender: UIButton) {
