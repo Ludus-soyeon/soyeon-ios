@@ -82,6 +82,7 @@
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
 		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
+		0A86794626B6C170005D1F7E /* IdealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86794526B6C170005D1F7E /* IdealType.swift */; };
 		0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */; };
 		0A89E62C265DDCD70048A3BC /* CheckMyCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */; };
 		0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */; };
@@ -290,6 +291,7 @@
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
 		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
+		0A86794526B6C170005D1F7E /* IdealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealType.swift; sourceTree = "<group>"; };
 		0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewModel.swift; sourceTree = "<group>"; };
 		0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterPresenter.swift; sourceTree = "<group>"; };
 		0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewController.swift; sourceTree = "<group>"; };
@@ -1497,6 +1499,7 @@
 				D83760DE262F0CE6002FA23B /* PersonalityType.swift */,
 				D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */,
 				D8F11804262B3ABF00E34C97 /* TagListLayout.swift */,
+				0A86794526B6C170005D1F7E /* IdealType.swift */,
 			);
 			path = IdealTypeInfo;
 			sourceTree = "<group>";
@@ -1823,6 +1826,7 @@
 				D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */,
 				0AFFB5F52637CABE00CA6FCE /* UIApplication+.swift in Sources */,
 				0A47BAD72694ADAB0052B491 /* GIDAuth.swift in Sources */,
+				0A86794626B6C170005D1F7E /* IdealType.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0A89E630265DDCD70048A3BC /* CheckMyCharacterInteractor.swift in Sources */,
 				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
@@ -1876,8 +1880,8 @@
 				00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */,
 				000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */,
 				1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */,
-				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
-				00E295E7266AB4DD00DB69CE /* UIImage+.swift in Sources */,
+				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */, 
+				00E295E7266AB4DD00DB69CE /* UIImage+.swift in Sources */, 
 				0A9C2A63269A0C3E0042692D /* SYDefault.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				1DD0CCBC261A11F1003E6347 /* SoyeonUserDefault.swift in Sources */,

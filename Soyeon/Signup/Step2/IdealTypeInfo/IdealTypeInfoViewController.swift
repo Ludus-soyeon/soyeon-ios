@@ -8,15 +8,27 @@
 
 import UIKit
 
-struct IdealType: Codable {
-    let startAge: Int
-    let endAge: Int
-    let startHeight: Int
-    let endHeight: Int
-    let form: String?
-}
-
 final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
+    
+    var viewData: ViewDataType? = nil {
+        willSet {
+            guard let newValue = newValue else { return }
+            setViewData(newValue)
+        }
+    }
+    
+    private var _viewData: IdealType {
+        get {
+            if self.viewData == nil {
+                self.viewData = .init()
+            }
+            
+            return self.viewData!
+        }
+        set { viewData = newValue }
+    }
+    
+    private var selectedPersonalities: [PersonalityType] = []
     
     @IBOutlet private weak var ageDescriptionLabel: UILabel!
     @IBOutlet private weak var ageRangeSlider: RangeSlider!
@@ -27,9 +39,7 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
     private enum ViewMetrics {
-        static let ageInitalRange: ClosedRange<CGFloat> = 20...30
         static let ageRange: ClosedRange<CGFloat> = 20...49
-        static let heightInitalRange: ClosedRange<CGFloat> = 170...200
         static let heightRange: ClosedRange<CGFloat> = 140...200
         static let cellHeight: CGFloat = 28.0
         static let cellSpacingForLine: CGFloat = 8.0
@@ -48,20 +58,67 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
         // frame 초기화
         ageRangeSlider.minimumValue = 0
         heightRangeSlider.minimumValue = 0
-         
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        
+        if let viewData = loadViewData() {
+            _viewData = viewData
+        }
         setupLayout()
-        initalSliderValue()
+        initalSliderValue(ageRange: _viewData.ageRange,
+                          heightRange: _viewData.heightRange)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        selectedPersonalities = _viewData.personality ?? []
+        
+        selectedPersonalities.forEach {
+            let indexPath = IndexPath(row: $0.rawValue, section: 0)
+            
+            collectionView.selectItem(at: indexPath,
+                                      animated: false,
+                                      scrollPosition: .top)
+        }
     }
-     
+    
+    private func updateViewData(to viewData: IdealType) {
+        
+        var existingData = _viewData
+        
+        if let lowerAge = viewData.lowerAge {
+            existingData.lowerAge = lowerAge
+        }
+        
+        if let upperAge = viewData.upperAge {
+            existingData.upperAge = upperAge
+        }
+        
+        if let lowerHeight = viewData.lowerHeight {
+            existingData.lowerHeight = lowerHeight
+        }
+        
+        if let upperHeight = viewData.upperHeight {
+            existingData.upperHeight = upperHeight
+        }
+        
+        if let form = viewData.form {
+            existingData.form = form
+        }
+        
+        if let personality = viewData.personality {
+            existingData.personality = personality
+        }
+        
+        _viewData = existingData
+    }
+    
     private func configureCollectionView() {
         collectionView.allowsMultipleSelection = true
         if let layout = collectionView.collectionViewLayout as? TagListLayout {
@@ -69,17 +126,21 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
         }
     }
     
-    private func initalSliderValue() {
+    private func initalSliderValue(ageRange: ClosedRange<CGFloat>,
+                                   heightRange: ClosedRange<CGFloat>) {
         changeRange(ageRangeSlider,
                     from: ViewMetrics.ageRange,
-                    in: ViewMetrics.ageInitalRange)
+                    in: ageRange)
         
         changeRange(heightRangeSlider,
                     from: ViewMetrics.heightRange,
-                    in: ViewMetrics.heightInitalRange)
- 
-        updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
-        updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+                    in: heightRange)
+        
+        let ageRange = rangeValue(in: ageRangeSlider, baseRange: ViewMetrics.ageRange)
+        let heightRange = rangeValue(in: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+        
+        updateRangeLabel(ageDescriptionLabel, to: ageRange)
+        updateRangeLabel(heightDescriptionLabel, to: heightRange)
     }
     
     private func changeRange(_ slider: RangeSlider,
@@ -91,19 +152,28 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     
     private func setupLayout() {
         setNavigationTitle("이상형 정보 수정하기")
-        formLabel.text = WriteProfileAlertViewModel.Form.slimHard.rawValue
-   
-        updateRangeLabel(ageDescriptionLabel, rangeSlider: ageRangeSlider, baseRange: ViewMetrics.ageRange)
-        updateRangeLabel(heightDescriptionLabel, rangeSlider: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+        formLabel.text = _viewData.formValue
+        
+        let ageRange = rangeValue(in: ageRangeSlider, baseRange: ViewMetrics.ageRange)
+        let heightRange = rangeValue(in: heightRangeSlider, baseRange: ViewMetrics.heightRange)
+        
+        updateRangeLabel(ageDescriptionLabel, to: ageRange)
+        updateRangeLabel(heightDescriptionLabel, to: heightRange)
     }
     
-    private func updateRangeLabel(_ label: UILabel, rangeSlider: RangeSlider, baseRange: ClosedRange<CGFloat>) {
-        let sliderRange = rangeSlider.minimumValue...rangeSlider.maximumValue
-        let minValue = Int(rangeSlider.lowerValue.convert(from: sliderRange,
-                                                          to: baseRange))
-        let maxValue = Int(rangeSlider.upperValue.convert(from: sliderRange,
-                                                          to: baseRange))
-        label.text = "\(minValue)~\(maxValue)"
+    private func rangeValue(in slider: RangeSlider,
+                            baseRange: ClosedRange<CGFloat>) -> ClosedRange<Int> {
+        let range = slider.minimumValue...slider.maximumValue
+        
+        let minValue = Int(slider.lowerValue.convert(from: range,
+                                                     to: baseRange))
+        let maxValue = Int(slider.upperValue.convert(from: range,
+                                                     to: baseRange))
+        return minValue...maxValue
+    }
+    
+    private func updateRangeLabel(_ label: UILabel, to range: ClosedRange<Int> ) {
+        label.text = "\(range.lowerBound)~\(range.upperBound)"
     }
     
     private func presentWriteProfile(_ writeProfile: WriteProfileAlertViewModel.WriteProfileItem,
@@ -118,16 +188,27 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     @IBAction private func handleTap(_ sender: UITapGestureRecognizer) {
         let item = WriteProfileAlertViewModel.WriteProfileItem.form
         presentWriteProfile(item) { [weak self] selection in
+            self?.updateViewData(to: IdealType(form: selection))
             self?.formLabel.text = selection
         }
     }
     
     @IBAction private func ageSliderValueDidChange(_ sender: RangeSlider) {
-        updateRangeLabel(ageDescriptionLabel, rangeSlider: sender, baseRange: ViewMetrics.ageRange)
+        let ageRange = rangeValue(in: sender, baseRange: ViewMetrics.ageRange)
+        
+        updateViewData(to: IdealType(lowerAge: ageRange.lowerBound,
+                                     upperAge: ageRange.upperBound))
+        
+        updateRangeLabel(ageDescriptionLabel, to: ageRange)
     }
     
     @IBAction private func heightSliderValueDidChange(_ sender: RangeSlider) {
-        updateRangeLabel(heightDescriptionLabel, rangeSlider: sender, baseRange: ViewMetrics.heightRange)
+        let heightRange = rangeValue(in: sender, baseRange: ViewMetrics.heightRange)
+        
+        updateViewData(to: IdealType(lowerHeight: heightRange.lowerBound,
+                                     upperHeight: heightRange.upperBound))
+        
+        updateRangeLabel(heightDescriptionLabel, to: heightRange)
     }
     
     @IBAction private func didTapCompleteButton(_ sender: UIButton) {
@@ -136,6 +217,20 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
         navigationController?.pushViewController(phaseVC,
                                                  animated: true)
     }
+}
+
+extension IdealTypeInfoViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedPersonalities.append(PersonalityType.allCases[indexPath.row])
+        updateViewData(to: IdealType(personality: selectedPersonalities))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        selectedPersonalities.removeAll { $0 == PersonalityType.allCases[indexPath.row] }
+        updateViewData(to: IdealType(personality: selectedPersonalities))
+
+    }
+     
 }
 
 extension IdealTypeInfoViewController: UICollectionViewDataSource {
