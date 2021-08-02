@@ -8,9 +8,16 @@
 
 import UIKit
  
-class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData {
+class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData { 
     typealias ViewDataType = T
     var step: Signup?
+      
+    lazy var viewData: ViewDataType? = loadViewData() {
+        willSet {
+            guard let newValue = newValue else { return }
+            setViewData(newValue)
+        }
+    }
     
     var className: String {
         String(describing: type(of: self))

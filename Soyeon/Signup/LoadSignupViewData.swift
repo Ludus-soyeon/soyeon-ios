@@ -12,14 +12,13 @@ import Foundation
 protocol LoadSignupViewData: AnyObject {
     associatedtype ViewDataType: Codable
     var step: Signup? { get set }
-    var viewData: ViewDataType? { get set }
     
     func loadViewData() -> ViewDataType?
     func setViewData(_ data: ViewDataType)
 }
 
-extension LoadSignupViewData {
-    var viewData: ViewDataType? {
+extension LoadSignupViewData { 
+    private var _storeData: ViewDataType? {
         get { return self.defaultViewData() }
         set {
             if let newValue = newValue {
@@ -50,11 +49,11 @@ extension LoadSignupViewData {
 }
  
 extension LoadSignupViewData {
-    internal func loadViewData() -> ViewDataType? {
-        return viewData
+    func loadViewData() -> ViewDataType? {
+        return _storeData
     }
     
-    internal func setViewData(_ data: ViewDataType) {
-        viewData = data
+    func setViewData(_ data: ViewDataType) {
+        _storeData = data
     }
 }
