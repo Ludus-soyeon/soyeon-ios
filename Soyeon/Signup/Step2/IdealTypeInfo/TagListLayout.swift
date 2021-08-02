@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TagListLayoutDelegate: class {
+protocol TagListLayoutDelegate: AnyObject {
     func spacingForLine() -> CGFloat
     func spacingForItem() -> CGFloat
     func sizeForTag(at indexPath: IndexPath) -> CGSize
