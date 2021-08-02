@@ -12,7 +12,7 @@ protocol GuidancePresenterInput: GuidanceInteractorOutput {
 
 }
 
-protocol GuidancePresenterOutput: class {
+protocol GuidancePresenterOutput: AnyObject {
 
     func displayGuidance(viewModel: Guidance.GuidanceViewModel)
 }

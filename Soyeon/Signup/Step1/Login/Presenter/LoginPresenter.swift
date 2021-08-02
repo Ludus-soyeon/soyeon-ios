@@ -12,7 +12,7 @@ protocol LoginPresenterInput: LoginInteractorOutput {
 
 }
 
-protocol LoginPresenterOutput: class {
+protocol LoginPresenterOutput: AnyObject {
     func displayLoginTableView(viewModel: Login.LoginViewModel)
 }
 
