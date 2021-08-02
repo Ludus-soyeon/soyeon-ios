@@ -9,18 +9,17 @@
 import Foundation
 
 /// 회원가입의 데이터를 수정 및 조회합니다.
-protocol LoadSignupViewData: class {
+protocol LoadSignupViewData: AnyObject {
     associatedtype ViewDataType: Codable
     var step: Signup? { get set }
-    var viewData: ViewDataType? { get set }
     
     func loadViewData() -> ViewDataType?
     func setViewData(_ data: ViewDataType)
 }
 
 extension LoadSignupViewData {
-    var viewData: ViewDataType? {
-        get { return self.defaultViewData() }
+    private var storeData: ViewDataType? {
+        get { return defaultViewData() }
         set {
             if let newValue = newValue {
                 modifyDefaultViewData(newValue)
@@ -50,11 +49,11 @@ extension LoadSignupViewData {
 }
  
 extension LoadSignupViewData {
-    internal func loadViewData() -> ViewDataType? {
-        return viewData
+    func loadViewData() -> ViewDataType? {
+        return storeData
     }
     
-    internal func setViewData(_ data: ViewDataType) {
-        viewData = data
+    func setViewData(_ data: ViewDataType) {
+        storeData = data
     }
 }

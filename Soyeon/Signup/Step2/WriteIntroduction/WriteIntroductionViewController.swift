@@ -13,10 +13,8 @@ struct Introduction: Codable {
 }
 
 final class WriteIntroductionViewController: SignupStepViewController<Introduction> {
-    fileprivate var viewData: ViewDataType = .init() {
-        willSet {
-            setViewData(newValue)
-        }
+    private lazy var _viewData: Introduction = loadViewData() ?? .init() {
+        willSet { setViewData(newValue) }
     }
     
     @IBOutlet private weak var textView: PlaceHolderTextView!
@@ -42,23 +40,17 @@ final class WriteIntroductionViewController: SignupStepViewController<Introducti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if let viewData = loadViewData() {
-            self.viewData = viewData
-            fillViewData(viewData)
-            return
-        }
-        
+        fillViewData(_viewData)
     }
     
-    private func fillViewData(_ data: ViewDataType) {
-        textView.setOriginText(data.content,
+    private func fillViewData(_ data: Introduction) {
+        guard let content = data.content else { return }
+        textView.setOriginText(content,
                                color: Theme.disabledTitleTintColor)
         placeHolderTextViewDidChange(textView)
     }
@@ -101,7 +93,7 @@ extension WriteIntroductionViewController: PlaceHolderTextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         nextButton.isEnabled = textView.text.count >= 10
-        viewData = .init(content: textView.text)
+        _viewData = .init(content: textView.text)
     }
     
 }

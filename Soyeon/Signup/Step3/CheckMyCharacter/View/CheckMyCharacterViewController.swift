@@ -18,17 +18,15 @@ protocol CheckMyCharacterViewControllerOutput {
 }
 
 final class CheckMyCharacterViewController: SignupStepViewController<CheckMyCharacterViewModel> { 
-    fileprivate var viewData: ViewDataType = .init() {
-        willSet {
-            setViewData(newValue)
-        }
+    private lazy var _viewData: CheckMyCharacterViewModel = loadViewData() ?? .init() {
+        willSet { setViewData(newValue) }
     }
     
     var output: CheckMyCharacterViewControllerOutput!
     var router: CheckMyCharacterRouterProtocol!
     
     var viewModel: CheckMyCharacterViewModel = CheckMyCharacterViewModel(mbti: nil) {
-        willSet {  viewData = newValue }
+        willSet { _viewData = newValue }
     }
     
     private var questions: [MQuestion] = []

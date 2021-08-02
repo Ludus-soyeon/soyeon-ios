@@ -17,10 +17,8 @@ protocol NewAccountViewControllerOutput {
 }
 
 final class NewAccountViewController: SignupStepViewController<NewAccount.ViewData> {
-    fileprivate var viewData: ViewDataType = .init() {
-        willSet {
-            setViewData(newValue)
-        }
+    private lazy var _viewData: NewAccount.ViewData = loadViewData() ?? .init() {
+        willSet { setViewData(newValue) }
     }
      
     @IBOutlet private weak var genderInputStackView: UIStackView!
@@ -58,19 +56,11 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if let viewData = loadViewData() {
-            self.viewData = viewData
-             fillViewData(viewData)
-            return
-        }
-        
-        output.displayNewAccount(gender: .male)
+         fillViewData(_viewData)
     }
     
     private func setupLayout() {
@@ -79,7 +69,7 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
         authButton.layer.borderColor = Colors.soyeonBlue.color().cgColor
     }
     
-    private func fillViewData(_ data: ViewDataType) {
+    private func fillViewData(_ data: NewAccount.ViewData) {
         nameTextField.text = data.name
         nickNameTextField.text = data.nickName
         phoneNumberTextField.text = data.phoneNumber
@@ -99,22 +89,19 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
             }
         }
     }
-     
-    @IBAction func didTapRegisterAccountButton(_ sender: Any) { 
-        if let viewData = loadViewData() {
-            
-            var user = SYDefaultObject.user ?? User()
-            
-            user.name = viewData.name
-            user.nickName = viewData.nickName
-            user.sex = viewData.gender?.boolValue
-            user.phone = viewData.phoneNumber
-            
-            SYDefaultObject.user = user
-            
-            router.navigateToPhase()
-            return
-        }
+    
+    @IBAction func didTapRegisterAccountButton(_ sender: Any) {  
+        var user = SYDefaultObject.user ?? User()
+        
+        user.name = _viewData.name
+        user.nickName = _viewData.nickName
+        user.sex = _viewData.gender?.boolValue
+        user.phone = _viewData.phoneNumber
+        
+        SYDefaultObject.user = user
+        
+        router.navigateToPhase()
+        return
         
     }
 }
@@ -125,11 +112,11 @@ extension NewAccountViewController: UITextFieldDelegate, RadioGroupDelegate {
         let text = textField.text
         switch textField {
         case nameTextField:
-            viewData.name = text
+            _viewData.name = text
         case nickNameTextField:
-            viewData.nickName = text
+            _viewData.nickName = text
         case phoneNumberTextField:
-            viewData.phoneNumber = text
+            _viewData.phoneNumber = text
         default:
             break
         }
@@ -137,7 +124,7 @@ extension NewAccountViewController: UITextFieldDelegate, RadioGroupDelegate {
      
     func radioButtonDidTap(_ sender: RadioButton) {
         if let gender = NewAccount.GenderType(rawValue: sender.tag) {
-            viewData.gender = gender
+            _viewData.gender = gender
         }
     }
 }
