@@ -31,7 +31,7 @@ enum Login {
     struct LoginViewModel {
         var platforms: [Login.Platform]
     }
-     
+
     struct ViewData: Codable {
         
     }
