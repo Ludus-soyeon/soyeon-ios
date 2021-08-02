@@ -18,14 +18,11 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
      
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setStep()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-    }
-     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         setStep()
     }
     

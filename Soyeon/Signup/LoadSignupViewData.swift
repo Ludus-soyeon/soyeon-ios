@@ -9,7 +9,7 @@
 import Foundation
 
 /// 회원가입의 데이터를 수정 및 조회합니다.
-protocol LoadSignupViewData: class {
+protocol LoadSignupViewData: AnyObject {
     associatedtype ViewDataType: Codable
     var step: Signup? { get set }
     var viewData: ViewDataType? { get set }
