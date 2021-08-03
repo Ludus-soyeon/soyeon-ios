@@ -42,7 +42,7 @@ enum NewAccount {
 extension NewAccount.GenderType: Codable { }
 
 extension NewAccount {
-    struct ViewData: Codable {
+    struct ViewData: SignupDataStorable {
         var name: String?
         var nickName: String?
         var gender: NewAccount.GenderType?

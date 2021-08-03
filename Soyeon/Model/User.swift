@@ -9,7 +9,7 @@
 import Foundation
  
 // MARK: - User
-struct User: Codable {
+struct User: SignupDataStorable {
     var acquaintance: Acquaintance?
     var acquaintanceShy: Bool?
     var age: Int?

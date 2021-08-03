@@ -32,7 +32,4 @@ enum Login {
         var platforms: [Login.Platform]
     }
 
-    struct ViewData: Codable {
-        
-    }
 }

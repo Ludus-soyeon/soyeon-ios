@@ -80,6 +80,7 @@
 		0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
+		0A71E4EA26B8FBE500C6DBCF /* SignupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A71E4E926B8FBE500C6DBCF /* SignupDataModel.swift */; };
 		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
 		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
 		0A86794626B6C170005D1F7E /* IdealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86794526B6C170005D1F7E /* IdealType.swift */; };
@@ -289,6 +290,7 @@
 		0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightAlertItem.swift; path = Soyeon/Extension/HeightAlertItem.swift; sourceTree = SOURCE_ROOT; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0A71E4E926B8FBE500C6DBCF /* SignupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataModel.swift; sourceTree = "<group>"; };
 		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
 		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
 		0A86794526B6C170005D1F7E /* IdealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealType.swift; sourceTree = "<group>"; };
@@ -805,6 +807,18 @@
 			path = CustomButtons;
 			sourceTree = "<group>";
 		};
+		0A71E4E726B8FAF400C6DBCF /* SignupDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1D47F47A263178C900E85B94 /* SignupStepViewController.swift */,
+				1DA32032262C757900ED564A /* LoadSignupView.swift */,
+				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
+				0AF58E892611EA46008F3E56 /* Signup.swift */,
+				0A71E4E926B8FBE500C6DBCF /* SignupDataModel.swift */,
+			);
+			path = SignupDataStorage;
+			sourceTree = "<group>";
+		};
 		0A83E4232602549D001823C0 /* SoyeonToast */ = {
 			isa = PBXGroup;
 			children = (
@@ -1193,11 +1207,8 @@
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				0A71E4E726B8FAF400C6DBCF /* SignupDataStorage */,
 				0AAF78F426455A6400812603 /* PhaseViewController */,
-				1D47F47A263178C900E85B94 /* SignupStepViewController.swift */,
-				1DA32032262C757900ED564A /* LoadSignupView.swift */,
-				1DA32045262C75D900ED564A /* LoadSignupViewData.swift */,
-				0AF58E892611EA46008F3E56 /* Signup.swift */,
 				0A89E615265DDCB30048A3BC /* Step3 */,
 				1DBA14DF25D46BFE00979BB2 /* Step2 */,
 				1DBA14DE25D46BF900979BB2 /* Step1 */,
@@ -1856,6 +1867,7 @@
 				1DC9DF4625AAEE7600822E99 /* PageViewType.swift in Sources */,
 				0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
+				0A71E4EA26B8FBE500C6DBCF /* SignupDataModel.swift in Sources */,
 				0A9C2A612699FD9C0042692D /* NIDAuth.swift in Sources */,
 				0A89E641265DEE990048A3BC /* CheckMyCharacterCollectionHeaderView.swift in Sources */,
 				0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */,

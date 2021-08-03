@@ -7,14 +7,13 @@
 //
 
 import UIKit
- 
-class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData { 
+
+class SignupStepViewController<T: SignupDataStorable>: UIViewController, LoadSignupViewData {
     typealias ViewDataType = T
     var step: Signup?
       
-    lazy var viewData: ViewDataType? = loadViewData() {
+    lazy var viewData: ViewDataType = loadViewData() ?? .init() {
         willSet {
-            guard let newValue = newValue else { return }
             setViewData(newValue)
         }
     }
@@ -37,7 +36,7 @@ class SignupStepViewController<T: Codable>: UIViewController, LoadSignupViewData
         let name = className
          
         if let signup = Signup.initTo(classNamed: name) {
-            self.step = signup
+            step = signup
             saveSignupLocation(signup.resource)
         }
     }

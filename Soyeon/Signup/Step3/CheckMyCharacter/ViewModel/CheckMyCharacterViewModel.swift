@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CheckMyCharacterViewModel: Codable {
+struct CheckMyCharacterViewModel: SignupDataStorable {
     var mbti: Mbti?
     
     enum MbtiItem: Int {

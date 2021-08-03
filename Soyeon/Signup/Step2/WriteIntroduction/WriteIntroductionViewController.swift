@@ -8,15 +8,11 @@
 
 import UIKit
 
-struct Introduction: Codable {
+struct Introduction: SignupDataStorable {
     var content: String?
 }
 
 final class WriteIntroductionViewController: SignupStepViewController<Introduction> {
-    private lazy var _viewData: Introduction = loadViewData() ?? .init() {
-        willSet { setViewData(newValue) }
-    }
-     
     @IBOutlet private weak var textView: PlaceHolderTextView!
     @IBOutlet private weak var nextButton: UIButton!
     
@@ -45,7 +41,7 @@ final class WriteIntroductionViewController: SignupStepViewController<Introducti
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fillViewData(_viewData)
+        fillViewData(viewData)
     }
     
     private func fillViewData(_ data: Introduction) {
@@ -93,7 +89,7 @@ extension WriteIntroductionViewController: PlaceHolderTextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         nextButton.isEnabled = textView.text.count >= 10
-        _viewData = .init(content: textView.text)
+        viewData = .init(content: textView.text)
     }
     
 }

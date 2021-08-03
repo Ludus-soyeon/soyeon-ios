@@ -77,7 +77,6 @@ enum Agreement {
     }
     
 }
-
-// MARK: - UserDefault ViewData
-extension Agreement.Agreements: Codable { }
+ 
+extension Agreement.Agreements: SignupDataStorable { }
  

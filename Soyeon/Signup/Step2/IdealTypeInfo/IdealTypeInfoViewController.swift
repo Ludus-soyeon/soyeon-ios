@@ -9,10 +9,6 @@
 import UIKit
 
 final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
-    private lazy var _viewData: IdealType = loadViewData() ?? .init() {
-        willSet { setViewData(newValue) }
-    }
-    
     private var selectedPersonalities: [PersonalityType] = []
     
     @IBOutlet private weak var ageDescriptionLabel: UILabel!
@@ -50,15 +46,15 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
         super.viewDidLoad()
         configureCollectionView()
         setupLayout()
-        initalSliderValue(ageRange: _viewData.ageRange,
-                          heightRange: _viewData.heightRange)
+        initalSliderValue(ageRange: viewData.ageRange,
+                          heightRange: viewData.heightRange)
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        selectedPersonalities = _viewData.personality ?? []
+        selectedPersonalities = viewData.personality ?? []
         
         selectedPersonalities.forEach {
             let indexPath = IndexPath(row: $0.rawValue, section: 0)
@@ -71,7 +67,7 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     
     private func updateViewData(to viewData: IdealType) {
         
-        var existingData = _viewData
+        var existingData = self.viewData
         
         if let lowerAge = viewData.lowerAge {
             existingData.lowerAge = lowerAge
@@ -97,7 +93,7 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
             existingData.personality = personality
         }
         
-        _viewData = existingData
+        self.viewData = existingData
     }
     
     private func configureCollectionView() {
@@ -133,7 +129,7 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     
     private func setupLayout() {
         setNavigationTitle("이상형 정보 수정하기")
-        formLabel.text = _viewData.formValue
+        formLabel.text = viewData.formValue
         
         let ageRange = rangeValue(in: ageRangeSlider, baseRange: ViewMetrics.ageRange)
         let heightRange = rangeValue(in: heightRangeSlider, baseRange: ViewMetrics.heightRange)

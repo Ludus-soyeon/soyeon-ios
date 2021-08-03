@@ -17,10 +17,7 @@ protocol AgreementViewControllerOutput {
 }
  
 final class AgreementViewController: SignupStepViewController<Agreement.Agreements> {
-    private lazy var _viewData: Agreement.Agreements = loadViewData() ?? .init() {
-        willSet { setViewData(newValue) }
-    }
-     
+    
     @IBOutlet private weak var allAgreeLabel: UILabel!
     @IBOutlet private weak var allAgreeButton: UIButton!
     @IBOutlet private weak var privacyAgreeButton: UIButton!
@@ -29,7 +26,7 @@ final class AgreementViewController: SignupStepViewController<Agreement.Agreemen
     @IBOutlet private weak var joinButton: UIButton!
      
     fileprivate var viewModel: Agreement.AgreementViewModel = Agreement.AgreementViewModel() {
-        willSet { _viewData = newValue.agreements }
+        willSet { viewData = newValue.agreements }
     }
     
     var output: AgreementViewControllerOutput!
@@ -67,7 +64,7 @@ final class AgreementViewController: SignupStepViewController<Agreement.Agreemen
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fillViewData(_viewData)
+        fillViewData(viewData)
     }
     
     private func setupLayout() {

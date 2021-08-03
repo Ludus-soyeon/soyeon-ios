@@ -10,12 +10,12 @@ import CoreGraphics
 
 extension PersonalityType: Codable { }
 
-struct IdealType: Codable {
-    var lowerAge: Int? = DefaultRange.lowerAge
-    var upperAge: Int? = DefaultRange.upperAge
-    var lowerHeight: Int? = DefaultRange.lowerHeight
-    var upperHeight: Int? = DefaultRange.upperHeight
-    var form: String? = WriteProfileAlertViewModel.Form.slimHard.rawValue
+struct IdealType: SignupDataStorable {
+    var lowerAge: Int?
+    var upperAge: Int?
+    var lowerHeight: Int?
+    var upperHeight: Int?
+    var form: String?
     var personality: [PersonalityType]?
     
     init(lowerAge: Int? = nil,
@@ -31,9 +31,12 @@ struct IdealType: Codable {
         self.upperHeight = upperHeight
         self.form = form
         self.personality = personality
-        
     }
-    
+     
+    init() {
+        self.init(lowerAge: nil, upperAge: nil, lowerHeight: nil, upperHeight: nil, form: nil, personality: nil)
+    }
+     
     private enum DefaultRange {
         static let ageInitalRange: ClosedRange<CGFloat> = 20...30
         static let heightInitalRange: ClosedRange<CGFloat> = 170...200
