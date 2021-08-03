@@ -19,12 +19,9 @@ protocol WriteProfile1ViewControllerOutput {
 }
 
 final class WriteProfile1ViewController: SignupStepViewController<WriteProfile1Model.ViewModel> {
-    private lazy var _viewData: WriteProfile1Model.ViewModel = loadViewData() ?? .init() {
-        willSet { setViewData(newValue) }
-    }
-
-    var viewModel: WriteProfile1Model.ViewModel = WriteProfile1Model.ViewModel() {
-        willSet { _viewData = newValue }
+    
+    private var viewModel: WriteProfile1Model.ViewModel = WriteProfile1Model.ViewModel() {
+        willSet { viewData = newValue }
     }
     
     var output: WriteProfile1ViewControllerOutput!
@@ -68,7 +65,7 @@ final class WriteProfile1ViewController: SignupStepViewController<WriteProfile1M
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
          
-        doWriteProfileOnLoad(request: _viewData)
+        doWriteProfileOnLoad(request: viewData)
     }
      
     // MARK: - Load data

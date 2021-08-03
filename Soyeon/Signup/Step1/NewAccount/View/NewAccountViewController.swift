@@ -17,10 +17,6 @@ protocol NewAccountViewControllerOutput {
 }
 
 final class NewAccountViewController: SignupStepViewController<NewAccount.ViewData> {
-    private lazy var _viewData: NewAccount.ViewData = loadViewData() ?? .init() {
-        willSet { setViewData(newValue) }
-    }
-     
     @IBOutlet private weak var genderInputStackView: UIStackView!
     @IBOutlet private weak var authNumberInputStackView: UIStackView!
     @IBOutlet private weak var authNumberInputSeparatorView: UIView!
@@ -60,7 +56,7 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         fillViewData(_viewData)
+         fillViewData(viewData)
     }
     
     private func setupLayout() {
@@ -93,10 +89,10 @@ final class NewAccountViewController: SignupStepViewController<NewAccount.ViewDa
     @IBAction func didTapRegisterAccountButton(_ sender: Any) {  
         var user = SYDefaultObject.user ?? User()
         
-        user.name = _viewData.name
-        user.nickName = _viewData.nickName
-        user.sex = _viewData.gender?.boolValue
-        user.phone = _viewData.phoneNumber
+        user.name = viewData.name
+        user.nickName = viewData.nickName
+        user.sex = viewData.gender?.boolValue
+        user.phone = viewData.phoneNumber
         
         SYDefaultObject.user = user
         
@@ -112,11 +108,11 @@ extension NewAccountViewController: UITextFieldDelegate, RadioGroupDelegate {
         let text = textField.text
         switch textField {
         case nameTextField:
-            _viewData.name = text
+            viewData.name = text
         case nickNameTextField:
-            _viewData.nickName = text
+            viewData.nickName = text
         case phoneNumberTextField:
-            _viewData.phoneNumber = text
+            viewData.phoneNumber = text
         default:
             break
         }
@@ -124,7 +120,7 @@ extension NewAccountViewController: UITextFieldDelegate, RadioGroupDelegate {
      
     func radioButtonDidTap(_ sender: RadioButton) {
         if let gender = NewAccount.GenderType(rawValue: sender.tag) {
-            _viewData.gender = gender
+            viewData.gender = gender
         }
     }
 }

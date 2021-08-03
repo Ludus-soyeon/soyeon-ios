@@ -15,7 +15,7 @@ enum WriteProfile1Model {
     struct Response {
     }
     
-    struct ViewModel {
+    public struct ViewModel: SignupDataStorable {
         var birthYear: String?
         var education: String?
         var job: String?
@@ -118,7 +118,4 @@ extension WriteProfile1Model.ViewModel {
             drink           = input
         }
     }
-}
- 
-// MARK: - UserDefault ViewData
-extension WriteProfile1Model.ViewModel: Codable { }
+} 
