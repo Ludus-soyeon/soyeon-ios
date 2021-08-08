@@ -9,7 +9,21 @@
 import UIKit
 import Photos
 
-final class PhotoRegistrationViewController: UIViewController {
+struct PhotoRegistrationData: SignupDataStorable {
+    var profileImagePaths: [URL]?
+}
+
+private struct PhotoImage {
+    let image: UIImage
+    let url: URL?
+    
+    init(_ image: UIImage, _ url: URL?) {
+        self.image = image.resize(targetWidth: UIScreen.main.bounds.width)
+        self.url = url
+    }
+}
+
+final class PhotoRegistrationViewController: SignupStepViewController<PhotoRegistrationData> {
 
     // MARK: - IBOutlet
     @IBOutlet private weak var guidanceButton: UIButton!
@@ -36,9 +50,9 @@ final class PhotoRegistrationViewController: UIViewController {
     private var maxImageCount: Int = 10
     private var defaultImageCount: Int = 4
     private var selectedIndex: Int?
-    private var userImages = [UIImage]() {
+    private var userImages = [PhotoImage]() {
         didSet {
-            mainProfileImageView.image = userImages.first
+            mainProfileImageView.image = userImages.first?.image
         }
     }
 
@@ -67,13 +81,16 @@ final class PhotoRegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         collectionView.register(UINib(nibName: String(describing: ProfileCollectionViewCell.self), bundle: .main),
                                 forCellWithReuseIdentifier: String(describing: ProfileCollectionViewCell.self))
 
         setupLayout()
+        
+        setupImages()
+        
     }
-
+     
     // MARK: - IBAction
 
     @IBAction private func guidanceButtonDidTap(_ sender: UIButton) {
@@ -106,6 +123,24 @@ final class PhotoRegistrationViewController: UIViewController {
         completeButton.setBackgroundColor(UIColor(named: "soyeonBlue")!, for: .normal)
         completeButton.setBackgroundColor(UIColor(named: "buttonDisabled")!, for: .disabled)
     }
+    
+    private func setupImages() {
+        guard let photoimage = viewData.profileImagePaths?.photoImage else {
+            return
+        }
+         
+        switch photoimage.count {
+        case 1:
+            setImageView(to: photoimage.first!)
+        case 2...maxImageCount:
+            setImageView(to: photoimage.first!)
+            setImageViews(to: photoimage[1..<photoimage.count].map { $0 })
+            collectionView.reloadData()
+        default:
+            break
+        }
+         
+    }
 
     /// 카메라/앨범 선택 뷰 띄움
     private func presentSelectView() {
@@ -118,15 +153,25 @@ final class PhotoRegistrationViewController: UIViewController {
     }
 
     /// 이미지 넣기
-    private func setImageView(to image: UIImage) {
+    private func setImageView(to photoImage: PhotoImage) {
         if var selectedIndex = selectedIndex {
             selectedIndex += 1
             if userImages.count > selectedIndex {
-                userImages[selectedIndex] = image
+                userImages[selectedIndex] = photoImage
                 return
             }
         }
-        userImages.append(image.resize(targetWidth: UIScreen.main.bounds.width))
+        userImages.append(photoImage)
+    }
+    
+    private func setImageViews(to images: [PhotoImage]) {
+        images.forEach {
+            setImageView(to: $0)
+        }
+    }
+    
+    private func storeImages(to photoImage: [PhotoImage]) {
+        super.setViewData(PhotoRegistrationData(profileImagePaths: photoImage.urls))
     }
 }
 
@@ -156,7 +201,7 @@ extension PhotoRegistrationViewController: UICollectionViewDataSource {
         }
 
         let index = indexPath.row
-        let image = userImages[safe: index + 1]
+        let image = userImages[safe: index + 1]?.image
         profileCell.setProperties(index: index, profileImage: image)
 
         return profileCell
@@ -196,8 +241,29 @@ extension PhotoRegistrationViewController: SourceTypeSelectVCDelegate {
 // MARK: - ImagePickerPresentable
 extension PhotoRegistrationViewController: ImagePickerManagerDelegate {
 
-    func getSelected(_ image: UIImage) {
-        setImageView(to: image)
+    func getSelected(_ image: UIImage, imagePath: URL?) {
+        setImageView(to: PhotoImage(image, imagePath))
         collectionView.reloadData()
+        
+        storeImages(to: userImages)
     }
 }
+ 
+fileprivate extension Array where Element == URL {
+    var photoImage: [PhotoImage] {
+        let photoImages: [PhotoImage] = compactMap { url in
+            if let image = UIImage(contentsOfFile: url.path) {
+                return PhotoImage(image, url)
+            }
+            return nil
+        }
+        
+        return photoImages
+    }
+}
+
+fileprivate extension Array where Element == PhotoImage {
+    var urls: [URL] {
+        compactMap { $0.url }
+    }
+} 
