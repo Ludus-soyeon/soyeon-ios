@@ -18,7 +18,7 @@ protocol LoadSignupViewData: AnyObject {
 }
 
 extension LoadSignupViewData { 
-    private var _storeData: ViewDataType? {
+    private var privateStoreData: ViewDataType? {
         get { return self.defaultViewData() }
         set {
             if let newValue = newValue {
@@ -50,10 +50,10 @@ extension LoadSignupViewData {
  
 extension LoadSignupViewData {
     func loadViewData() -> ViewDataType? {
-        return _storeData
+        return privateStoreData
     }
     
     func setViewData(_ data: ViewDataType) {
-        _storeData = data
+        privateStoreData = data
     }
 }

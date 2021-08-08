@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - ImagePickerPresentable
 protocol ImagePickerManagerDelegate: AnyObject {
-    func getSelected(_ image: UIImage)
+    func getSelected(_ image: UIImage, imagePath: URL?)
 }
 
 extension ImagePickerManagerDelegate where Self: UIViewController {
@@ -62,7 +62,10 @@ extension ImagePickerManager: UIImagePickerControllerDelegate, UINavigationContr
         } else if let originalImage = info[.originalImage] as? UIImage {
             image = originalImage
         }
-        self.delegate?.getSelected(image)
+        
+        let url = info[.imageURL] as? URL
+        
+        self.delegate?.getSelected(image, imagePath: url)
         dispose(picker)
     }
 }
