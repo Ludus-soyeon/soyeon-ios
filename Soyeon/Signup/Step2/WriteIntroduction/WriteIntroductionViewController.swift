@@ -75,10 +75,10 @@ final class WriteIntroductionViewController: SignupStepViewController<Introducti
     }
     
     @IBAction private func didTapNextButton(_ sender: Any) {
-        let vc = Step2.idealTyeInfo.loadedViewController
+        let photoRegistrationViewController = Step2.photoRegistration.loadedViewController
         
-        self.navigationController?.pushViewController(vc,
-                                animated: true)
+        self.navigationController?.pushViewController(photoRegistrationViewController,
+                                                      animated: true)
     }
 }
 
