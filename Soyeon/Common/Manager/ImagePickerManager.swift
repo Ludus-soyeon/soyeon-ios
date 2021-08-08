@@ -19,6 +19,10 @@ extension ImagePickerManagerDelegate where Self: UIViewController {
     func presentImagePickerController(_ imagePickerManager: ImagePickerManager,
                                       _ sourceType: UIImagePickerController.SourceType,
                                       _ allowsEditing: Bool) {
+        guard UIImagePickerController.isSourceTypeAvailable(sourceType) else {
+            return
+        }
+        
         imagePickerManager.delegate = self
         DispatchQueue.main.async {
             let imagePicker = UIImagePickerController()

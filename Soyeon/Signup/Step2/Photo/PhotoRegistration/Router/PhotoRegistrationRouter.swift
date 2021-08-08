@@ -33,18 +33,15 @@ extension PhotoRegistrationRouter: PhotoRegistrationRouterProtocol {
     
     // MARK: - Navigation
     func navigationToPhotoGuide() {
-        let storyboard = UIStoryboard(name: "PhotoGuide", bundle: .main)
-        if let destinationVC = storyboard
-            .instantiateViewController(withIdentifier: "PhotoGuideViewController") as? PhotoGuideViewController {
+        if let destinationVC = Bundle.main.loadNibNamed("PhotoGuideViewController",
+                                                                owner: nil,
+                                                                options: nil)?.first as? PhotoGuideViewController {
             viewController?.navigationController?.pushViewController(destinationVC, animated: true)
         }
     }
     
     func navigationToIdealType() {
-        let storyboard = UIStoryboard(name: "Step2", bundle: .main)
-        if let destinationVC = storyboard
-            .instantiateViewController(withIdentifier: "IdealTypeInfoViewController") as? IdealTypeInfoViewController {
-            viewController?.navigationController?.pushViewController(destinationVC, animated: true)
-        }
+        let destinationVC = Step2.idealTyeInfo.loadedViewController
+        viewController?.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
