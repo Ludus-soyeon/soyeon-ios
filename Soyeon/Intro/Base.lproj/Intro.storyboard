@@ -68,7 +68,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="37Y-sB-tDD" userLabel="Contents View">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="544"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f69-8Z-k2e" userLabel="PagingView" customClass="PagingView" customModule="Soyeon" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f69-8Z-k2e" customClass="PagingView" customModule="Soyeon" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>

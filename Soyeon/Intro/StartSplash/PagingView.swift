@@ -5,8 +5,7 @@
 //  Created by 박은비 on 2021/01/10.
 //  Copyright © 2021 ludus. All rights reserved.
 //
-
-import Foundation
+ 
 import UIKit
 
 final class PagingView: XibView {
@@ -16,17 +15,11 @@ final class PagingView: XibView {
       
     private var items: [UIView] = [] {
         willSet {
-            DispatchQueue.main.async { [weak self] in
-                self?.setStackView(newValue)
-                self?.setPageConrol(newValue.count)
-            }
+            setStackView(newValue)
+            setPageConrol(newValue.count)
         }
     }
 
-    func setItems(_ items: [UIView]) {
-        self.items = items
-    }
-    
     private func setStackView(_ views: [UIView] ) {
         stackView.subviews.forEach { $0.removeFromSuperview() }
         
@@ -46,6 +39,10 @@ final class PagingView: XibView {
         pageControl.currentPage = index
     }
      
+    func setItems(_ items: [UIView]) {
+        self.items = items
+    }
+    
 } 
 
 extension PagingView: UIScrollViewDelegate {

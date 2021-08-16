@@ -9,9 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagingView" customModule="Soyeon" customModuleProvider="target">
             <connections>
-                <outlet property="pageControl" destination="Eaf-FE-JNG" id="ezV-qY-tDm"/>
-                <outlet property="scrollView" destination="4Is-4Z-fsg" id="YU6-PR-oUP"/>
-                <outlet property="stackView" destination="xps-bl-DQK" id="wZ8-z6-LDQ"/>
+                <outlet property="pageControl" destination="Eaf-FE-JNG" id="rIq-Gd-BSA"/>
+                <outlet property="scrollView" destination="4Is-4Z-fsg" id="EH8-W5-yRM"/>
+                <outlet property="stackView" destination="xps-bl-DQK" id="Eab-qd-CWs"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
