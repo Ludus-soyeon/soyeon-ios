@@ -156,6 +156,8 @@
 		1D7C3243268767E100D7F2C9 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7C3242268767E100D7F2C9 /* AppAuth */; };
 		1D7C3245268767E100D7F2C9 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7C3244268767E100D7F2C9 /* AppAuthCore */; };
 		1D7C32582687680100D7F2C9 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C324F2687680100D7F2C9 /* AuthInfo.swift */; };
+		1D910ED526CA580200CB1EF5 /* RatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D910ED426CA580200CB1EF5 /* RatingStackView.swift */; };
+		1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D910EDA26CA58A600CB1EF5 /* RatingView.swift */; };
 		1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32032262C757900ED564A /* LoadSignupView.swift */; };
 		1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA32045262C75D900ED564A /* LoadSignupViewData.swift */; };
 		1DBA13C425D440E400979BB2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBA13C325D440E400979BB2 /* Moya */; };
@@ -366,6 +368,8 @@
 		1D5B63C625B4824F00A5321C /* StartSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashViewController.swift; sourceTree = "<group>"; };
 		1D64300425F4CBCE00A84D45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1D7C324F2687680100D7F2C9 /* AuthInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
+		1D910ED426CA580200CB1EF5 /* RatingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStackView.swift; sourceTree = "<group>"; };
+		1D910EDA26CA58A600CB1EF5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		1DA32032262C757900ED564A /* LoadSignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadSignupView.swift; sourceTree = "<group>"; };
 		1DA32045262C75D900ED564A /* LoadSignupViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSignupViewData.swift; sourceTree = "<group>"; };
 		1DC9DF4525AAEE7600822E99 /* PageViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewType.swift; sourceTree = "<group>"; };
@@ -1201,6 +1205,15 @@
 			path = AppAuth;
 			sourceTree = "<group>";
 		};
+		1D910ED126CA57CC00CB1EF5 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				1D910ED426CA580200CB1EF5 /* RatingStackView.swift */,
+				1D910EDA26CA58A600CB1EF5 /* RatingView.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
 		1DBA14DD25D46BE000979BB2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -1338,6 +1351,7 @@
 		D80D664A25BDBA1C002F47B9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1D910ED126CA57CC00CB1EF5 /* RatingView */,
 				008FB5B926885CBA00F4EF54 /* Manager */,
 				1DD0CCB6261A11AC003E6347 /* UserDefault */,
 				0A83E4232602549D001823C0 /* SoyeonToast */,
@@ -1783,6 +1797,7 @@
 				1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */,
 				0A4E515D25EAB4E400616C07 /* WriteProfileDefualtButton.swift in Sources */,
 				009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */,
+				1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
 				0AC21E0F2613FDE400AD0635 /* AdditionalViewController.swift in Sources */,
@@ -1881,6 +1896,7 @@
 				0A9C2A552699D6340042692D /* KKOIDAuth.swift in Sources */,
 				0A4E515825EAB4E400616C07 /* JobAlertItem.swift in Sources */,
 				0AC21E162613FDE400AD0635 /* AdditionalRouter.swift in Sources */,
+				1D910ED526CA580200CB1EF5 /* RatingStackView.swift in Sources */,
 				D8354D7125B4347000C9C531 /* NewAccountConfigurator.swift in Sources */,
 				008FB5B426871F5200F4EF54 /* ImagePickerManager.swift in Sources */,
 				1D19087525A9F77E008210D1 /* DetailContents.swift in Sources */,
@@ -1888,8 +1904,8 @@
 				00CF092E25E25CA70077700A /* ProviderManager.swift in Sources */,
 				000CEB2D25B47FF400F64A28 /* UIView+.swift in Sources */,
 				1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */,
-				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */, 
-				00E295E7266AB4DD00DB69CE /* UIImage+.swift in Sources */, 
+				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
+				00E295E7266AB4DD00DB69CE /* UIImage+.swift in Sources */,
 				0A9C2A63269A0C3E0042692D /* SYDefault.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				1DD0CCBC261A11F1003E6347 /* SoyeonUserDefault.swift in Sources */,
