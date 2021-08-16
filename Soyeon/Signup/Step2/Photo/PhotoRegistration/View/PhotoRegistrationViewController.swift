@@ -134,7 +134,7 @@ final class PhotoRegistrationViewController: SignupStepViewController<PhotoRegis
             setImageView(to: photoimage.first!)
         case 2...maxImageCount:
             setImageView(to: photoimage.first!)
-            setImageViews(to: photoimage[1..<photoimage.count].map { $0 })
+            setImageViews(to: Array(photoimage[1..<photoimage.count]))
             collectionView.reloadData()
         default:
             break
