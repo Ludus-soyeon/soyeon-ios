@@ -86,11 +86,11 @@ class RatingStackView: UIStackView {
    }
     
    func changeIndex(to index: Int) {
-       guard self.index != index, 0..<count ~= index else {
+       guard self.index != index, 0 <= index else {
            return
        }
-       
-       self.index = index
+    
+       self.index = min(index, count-1)
    }
    
    private func setHighlight(until i: Int) {
