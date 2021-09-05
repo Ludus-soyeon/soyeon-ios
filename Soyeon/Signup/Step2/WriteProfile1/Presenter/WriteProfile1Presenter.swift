@@ -12,7 +12,7 @@ protocol WriteProfile1PresenterInput: WriteProfile1InteractorOutput {
 
 }
 
-protocol WriteProfile1PresenterOutput: class { 
+protocol WriteProfile1PresenterOutput: AnyObject { 
     func displayWriteProfileOnLoad(response: WriteProfile1Model.ViewModel)
 }
 

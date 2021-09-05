@@ -8,8 +8,7 @@
 
 import UIKit.UIViewController
  
-/* TODO:
-M1 Mac book에서 naveridlogin-sdk-ios build 확인 후 추가 필요.
+/* TODO: M1 Mac book에서 naveridlogin-sdk-ios build 확인 후 추가 필요.
  */
 struct NIDAuth: AppAuthorizable, AuthErrorHandler {
     var clientID = SoyeonPrivateInfo.googleClientKey

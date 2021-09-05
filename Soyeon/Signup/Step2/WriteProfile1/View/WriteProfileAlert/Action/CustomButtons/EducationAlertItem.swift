@@ -44,7 +44,7 @@ extension EducationAlertItem: PlaceHolderTextViewDelegate {
 }
 
 extension EducationAlertItem: WriteProfileAlertCompleteButtonDelegate {
-    func completeButtonDidTap() {
+    func didTapCompleteButton() {
         inputTextView.endEditing(finalText: inputText)
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="completeButtonDidTap:" destination="fzi-7B-sAQ" eventType="touchUpInside" id="hhC-AS-2rX"/>
+                                <action selector="didTapCompleteButton:" destination="fzi-7B-sAQ" eventType="touchUpInside" id="hhC-AS-2rX"/>
                             </connections>
                         </button>
                     </subviews>
@@ -82,7 +82,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="completeButtonDidTap:" destination="Db0-eI-WMi" eventType="touchUpInside" id="qD5-DZ-7Up"/>
+                                <action selector="didTapCompleteButton:" destination="Db0-eI-WMi" eventType="touchUpInside" id="qD5-DZ-7Up"/>
                             </connections>
                         </button>
                     </subviews>
@@ -113,7 +113,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="268" height="42.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기타" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNx-XE-WVD">
-                                    <rect key="frame" x="20" y="12" width="28" height="19"/>
+                                    <rect key="frame" x="20" y="12.5" width="29.5" height="18"/>
                                     <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="highlightedColor" name="black"/>
@@ -163,7 +163,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="completeButtonDidTap:" destination="Tce-Oi-2dL" eventType="touchUpInside" id="03h-rx-GCw"/>
+                                <action selector="didTapCompleteButton:" destination="Tce-Oi-2dL" eventType="touchUpInside" id="03h-rx-GCw"/>
                             </connections>
                         </button>
                     </subviews>
@@ -219,10 +219,10 @@
                             <rect key="frame" x="0.0" y="78" width="268" height="48"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iy7-0H-aKZ">
-                                    <rect key="frame" x="20" y="6" width="228" height="28"/>
+                                    <rect key="frame" x="20" y="6" width="228" height="27"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예시)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaH-5h-fsu">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="14"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="13.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="WcS-Kc-1yH"/>
                                             </constraints>
@@ -231,7 +231,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공무원/미용사/자영업/공인회계사/삼성전자/변호사/디자이너 등" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-UL-6B0">
-                                            <rect key="frame" x="40" y="0.0" width="188" height="28"/>
+                                            <rect key="frame" x="40" y="0.0" width="188" height="27"/>
                                             <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="12"/>
                                             <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -258,7 +258,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="completeButtonDidTap:" destination="Q8Z-I6-xpm" eventType="touchUpInside" id="VmF-G7-idj"/>
+                                <action selector="didTapCompleteButton:" destination="Q8Z-I6-xpm" eventType="touchUpInside" id="VmF-G7-idj"/>
                             </connections>
                         </button>
                     </subviews>
@@ -288,7 +288,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="268" height="42.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="직접입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsw-rg-lhU">
-                                    <rect key="frame" x="20" y="12" width="55.5" height="19"/>
+                                    <rect key="frame" x="20" y="12.5" width="58.5" height="18"/>
                                     <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="highlightedColor" name="black"/>
@@ -339,7 +339,7 @@ California 대학원 석사졸</string>
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <action selector="completeButtonDidTap:" destination="ZLb-qU-bdH" eventType="touchUpInside" id="vZU-OC-kUU"/>
+                                <action selector="didTapCompleteButton:" destination="ZLb-qU-bdH" eventType="touchUpInside" id="vZU-OC-kUU"/>
                             </connections>
                         </button>
                     </subviews>
@@ -362,7 +362,7 @@ California 대학원 석사졸</string>
     </objects>
     <resources>
         <namedColor name="black">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="soyeonBlue">
             <color red="0.41200000047683716" green="0.46700000762939453" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

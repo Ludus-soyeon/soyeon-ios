@@ -90,8 +90,8 @@ class AllAgreeButton: ButtonByState {
                                               attribate: .init(boarderColor: #colorLiteral(red: 0.8509803922, green: 0.8509803922, blue: 0.8509803922, alpha: 1),
                                                                textColor: #colorLiteral(red: 0.4, green: 0.4, blue: 0.4, alpha: 1))),
                         ButtonByState.StateUI(state: .selected,
-                                              attribate: .init(boarderColor:  Colors.soyeonBlue.color(),
-                                                               textColor:  Colors.soyeonBlue.color())) ]
+                                              attribate: .init(boarderColor: Colors.soyeonBlue.color(),
+                                                               textColor: Colors.soyeonBlue.color())) ]
         
         layer.cornerRadius = self.frame.height / 2
         layer.borderWidth = 1.0

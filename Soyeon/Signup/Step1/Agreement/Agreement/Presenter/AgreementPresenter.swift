@@ -12,7 +12,7 @@ protocol AgreementPresenterInput: AgreementInteractorOutput {
 
 }
 
-protocol AgreementPresenterOutput: class {
+protocol AgreementPresenterOutput: AnyObject {
 
     func display(viewModel: Agreement.AgreementViewModel)
 }
@@ -43,8 +43,7 @@ extension AgreementPresenter: AgreementPresenterInput {
         
         output.display(viewModel: viewModel)
     }
-     
-    
+      
     func loadViewData(_ data: Agreement.Agreements) {
         output.display(viewModel: .init(agreements: data))
     }

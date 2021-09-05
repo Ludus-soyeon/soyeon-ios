@@ -114,7 +114,7 @@ extension LoginViewController: UITableViewDelegate {
         }
         
         auth.authorization(success: { token in
-            print(.success, token)
+            print(.success, token ?? "Not found token.")
         })
         
     }

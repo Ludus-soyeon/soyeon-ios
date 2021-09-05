@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RadioGroupDelegate: class {
+protocol RadioGroupDelegate: AnyObject {
     func radioButtonDidTap(_ sender: RadioButton)
 }
 

@@ -9,7 +9,7 @@
 import UIKit.UITextView
 import UIKit.UILabel
 
-protocol PlaceHolderTextViewDelegate: class {
+protocol PlaceHolderTextViewDelegate: AnyObject {
     var limitedTextCount: Int { get }
     func placeHolderTextViewDidChange(_ textView: UITextView)
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool

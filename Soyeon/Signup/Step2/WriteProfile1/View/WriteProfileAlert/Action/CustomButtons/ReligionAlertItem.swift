@@ -44,7 +44,7 @@ extension ReligionAlertItem: PlaceHolderTextViewDelegate {
 }
 
 extension ReligionAlertItem: WriteProfileAlertCompleteButtonDelegate {
-    func completeButtonDidTap() {
+    func didTapCompleteButton() {
         inputTextView.endEditing(finalText: inputText)
     }
 }

@@ -30,6 +30,7 @@ final class SoyeonBasicAlertButton: SoyeonAlertButton {
             titleLabel?.font = Fonts.nanumSquareB.size(14)
             setTitleColor(UIColor.white, for: .normal)
             backgroundColor = Colors.soyeonBlue.color()
+            
         case .cancel(let title):
             setTitle(title, for: .normal)
             titleLabel?.font = Fonts.nanumSquareR.size(14)

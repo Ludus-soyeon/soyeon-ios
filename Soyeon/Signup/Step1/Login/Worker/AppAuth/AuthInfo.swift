@@ -8,7 +8,7 @@
 import Foundation
   
 protocol AuthInfo: AuthErrorHandler {
-    typealias Completion = (Result<String?, AuthError>)->Void
+    typealias Completion = (Result<String?, AuthError>) -> Void
     
     func request(_ completion: @escaping Completion)
     func authorization(success: @escaping (_ token: String?) -> Void)
@@ -31,4 +31,3 @@ extension AuthInfo {
         }
     }
 }
- 

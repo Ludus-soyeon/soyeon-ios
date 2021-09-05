@@ -12,7 +12,7 @@ protocol AgreementDetailPresenterInput: AgreementDetailInteractorOutput {
 
 }
 
-protocol AgreementDetailPresenterOutput: class {
+protocol AgreementDetailPresenterOutput: AnyObject {
 
     func displayAgreementDetail(viewModel: AgreementDetail.AgreementDetailViewModel)
 }

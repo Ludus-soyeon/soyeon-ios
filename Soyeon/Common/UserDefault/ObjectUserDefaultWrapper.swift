@@ -40,6 +40,4 @@ struct ObjectUserDefaultWrapper<ViewDataType: Codable> {
     }
     
 }
-
  
-

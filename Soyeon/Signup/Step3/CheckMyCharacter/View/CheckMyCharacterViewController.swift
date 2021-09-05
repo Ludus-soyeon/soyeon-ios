@@ -139,8 +139,7 @@ extension CheckMyCharacterViewController: UICollectionViewDataSource {
              */
             
             // selectedItemButton 선택 여부는 mbti_id, point로 지정됨.
-            
-            
+             
             print(item.rawValue)
         }
 

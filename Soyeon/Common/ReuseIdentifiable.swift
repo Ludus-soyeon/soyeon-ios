@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ReuseIdentifiable: class {
+protocol ReuseIdentifiable: AnyObject {
     static var reuseIdentifier: String { get }
 }
 
