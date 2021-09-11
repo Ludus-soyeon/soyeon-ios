@@ -204,6 +204,7 @@
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
 		D89064C526E6D71B00545F7D /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C426E6D71B00545F7D /* NSAttributedString+.swift */; };
 		D89064C726E6F9E000545F7D /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C626E6F9E000545F7D /* MyProfileViewController.swift */; };
+		D8A0381026EA5AEC005C40FA /* MyProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */; };
 		D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */; };
 		D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */; };
 		D8A3CFB8262AC60200E3D201 /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CFB7262AC60200E3D201 /* RangeSliderTrackLayer.swift */; };
@@ -424,6 +425,7 @@
 		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
 		D89064C426E6D71B00545F7D /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		D89064C626E6F9E000545F7D /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDetailViewController.swift; sourceTree = "<group>"; };
 		D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityInfoCell.swift; sourceTree = "<group>"; };
 		D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		D8A3CFB7262AC60200E3D201 /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
@@ -1584,6 +1586,7 @@
 			children = (
 				D89064C626E6F9E000545F7D /* MyProfileViewController.swift */,
 				D8A7222426568B96008C388D /* MyProfile.storyboard */,
+				D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -1850,6 +1853,7 @@
 				1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
+				D8A0381026EA5AEC005C40FA /* MyProfileDetailViewController.swift in Sources */,
 				1DD00B8F25CDAD20004DC9AA /* SoyeonRoundAlertView.swift in Sources */,
 				0AC21E132613FDE400AD0635 /* AdditionalConfigurator.swift in Sources */,
 				0A9C2A5A2699DFFE0042692D /* DebugHelper.swift in Sources */,

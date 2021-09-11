@@ -9,7 +9,7 @@
 import UIKit
 
 final class MyProfileViewController: UIViewController {
-    @IBOutlet private weak var viewDetailButton: UIButton!
+    @IBOutlet private weak var showDetailButton: UIButton!
     
     private enum ViewMetrics {
         static let detailButtonCornerRadius: CGFloat = 15.0
@@ -24,11 +24,11 @@ final class MyProfileViewController: UIViewController {
     
     private func setupLayout() {
         setNavigationTitle("내 프로필", font: Fonts.nanumSquareR.size(20.0))
-        viewDetailButton.setTitleColor(Colors.soyeonBlue.color(),
+        showDetailButton.setTitleColor(Colors.soyeonBlue.color(),
                                        for: .normal)
-        viewDetailButton.layer.cornerRadius = ViewMetrics.detailButtonCornerRadius
-        viewDetailButton.layer.borderWidth = ViewMetrics.detailButtonBorderWidth
-        viewDetailButton.layer.borderColor = Colors.soyeonBlue.color().cgColor
+        showDetailButton.layer.cornerRadius = ViewMetrics.detailButtonCornerRadius
+        showDetailButton.layer.borderWidth = ViewMetrics.detailButtonBorderWidth
+        showDetailButton.layer.borderColor = Colors.soyeonBlue.color().cgColor
     }
     
 }
