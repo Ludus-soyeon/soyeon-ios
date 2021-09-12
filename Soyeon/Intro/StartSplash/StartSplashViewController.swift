@@ -6,22 +6,19 @@
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 final class StartSplashViewController: UIViewController {
-    @IBOutlet private weak var pageView: PagingView!
-    @IBOutlet private weak var startButton: UIButton!
     
+    private let pagingView: PagingView! = PagingView(views: PageViewType.StartSplashViews.views)
+     
+    @IBOutlet private weak var pagingFrameView: UIView!
+    @IBOutlet private weak var startButton: UIButton!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startButton.layer.cornerRadius = 24.0
-        pageView.setItems(PageViewType.StartSplashViews.views)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        setupLayout()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -32,6 +29,13 @@ final class StartSplashViewController: UIViewController {
         MarqueeScrollView.timer = nil
     }
  
+    private func setupLayout() {
+        startButton.layer.cornerRadius = 24.0
+        
+        pagingFrameView.addSubview(pagingView)
+        pagingView.fillConstraint(to: pagingFrameView)
+    }
+    
     @IBAction private func startButtonDidTap(_ sender: Any?) {
         if let location = SYDefault.saveSignUpLocation {
             continueSignupAlert(location)
