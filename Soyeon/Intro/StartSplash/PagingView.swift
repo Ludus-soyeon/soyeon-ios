@@ -7,19 +7,37 @@
 //
  
 import UIKit
-
+ 
 final class PagingView: XibView {
+    
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var pageControl: UIPageControl!
       
-    private var items: [UIView] = [] {
-        willSet {
-            setStackView(newValue)
-            setPageConrol(newValue.count)
-        }
+    private var items: [UIView]?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
-
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    convenience init(views: [UIView]) {
+        self.init(frame: .zero)
+        
+        items = views
+        
+        reload()
+    }
+    
+    private func reloadItems() {
+        guard let items = items else { return }
+        setStackView(items)
+        setPageConrol(items.count)
+    }
+    
     private func setStackView(_ views: [UIView] ) {
         stackView.subviews.forEach { $0.removeFromSuperview() }
         
@@ -32,15 +50,15 @@ final class PagingView: XibView {
     
     private func setPageConrol(_ size: Int) {
         pageControl.numberOfPages = size
-        setPageConrolIndex(0)
+        changePageConrolIndex(to: 0)
     }
     
-    private func setPageConrolIndex(_ index: Int) {
+    private func changePageConrolIndex(to index: Int) {
         pageControl.currentPage = index
     }
-     
-    func setItems(_ items: [UIView]) {
-        self.items = items
+    
+    func reload() {
+        reloadItems()
     }
     
 } 
@@ -50,7 +68,7 @@ extension PagingView: UIScrollViewDelegate {
         let pagingPosition = scrollView.contentOffset.x / self.frame.width
         let currentPaging = Int(round(pagingPosition))
         
-        setPageConrolIndex(currentPaging)
+        changePageConrolIndex(to: currentPaging)
         
     }
 }
