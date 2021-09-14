@@ -68,20 +68,20 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TfJ-rD-Ssh">
-                                                        <rect key="frame" x="160" y="24" width="234" height="112.5"/>
+                                                        <rect key="frame" x="160" y="25.5" width="234" height="109.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="tud-bs-Zvp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="70.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="67.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카푸치노" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-nc-XN0">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="19"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="18"/>
                                                                         <color key="tintColor" name="102102102"/>
                                                                         <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="16"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT3-bH-Dqc">
-                                                                        <rect key="frame" x="0.0" y="25" width="120" height="45.5"/>
+                                                                        <rect key="frame" x="0.0" y="24" width="125" height="43.5"/>
                                                                         <string key="text">28세 / 168cm
 외국계
 센스있는 해결사 고양이</string>
@@ -92,7 +92,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPH-zj-mnJ">
-                                                                <rect key="frame" x="0.0" y="82.5" width="160" height="30"/>
+                                                                <rect key="frame" x="0.0" y="79.5" width="160" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="160" id="fZt-7E-KFj"/>
                                                                     <constraint firstAttribute="height" constant="30" id="hPs-lj-aCi"/>
@@ -117,16 +117,16 @@
                                                 <rect key="frame" x="0.0" y="160" width="414" height="80"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6qF-yg-Sqi">
-                                                        <rect key="frame" x="18" y="21" width="378" height="40"/>
+                                                        <rect key="frame" x="18" y="21" width="378" height="38.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 완성도 80%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-A9-Muj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="126" height="19"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="18"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="16"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가치관 검사와 이상형 테스트를 통해 완성도를 높여보세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-0W-V0T">
-                                                                <rect key="frame" x="0.0" y="27" width="250" height="13"/>
+                                                                <rect key="frame" x="0.0" y="26" width="260" height="12.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="11"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
@@ -149,7 +149,7 @@
                                                         <rect key="frame" x="14" y="9" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 매력 지수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHf-dj-80O">
-                                                                <rect key="frame" x="4" y="20" width="362" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="362" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
@@ -179,22 +179,22 @@
                                                         <rect key="frame" x="14" y="66" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아는 사람 만나지 않기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAs-Me-zao">
-                                                                <rect key="frame" x="4" y="20" width="121" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="125.5" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EnB-Xx-9iw">
-                                                                <rect key="frame" x="298.5" y="16" width="82.5" height="24"/>
+                                                                <rect key="frame" x="295.5" y="16" width="85.5" height="24"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="412명 등록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61s-2G-zaj">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="24"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="24"/>
                                                                         <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="13"/>
                                                                         <color key="textColor" name="102102102"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoNextMyprofileNormal" translatesAutoresizingMaskIntoConstraints="NO" id="Qq9-zs-utV">
-                                                                        <rect key="frame" x="67.5" y="0.0" width="15" height="24"/>
+                                                                        <rect key="frame" x="70.5" y="0.0" width="15" height="24"/>
                                                                         <gestureRecognizers/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="24" id="1Np-5G-RtG"/>
@@ -220,22 +220,22 @@
                                                         <rect key="frame" x="14" y="123" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 계정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnZ-45-3pA">
-                                                                <rect key="frame" x="4" y="20" width="40.5" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="42" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lz9-6H-qjf">
-                                                                <rect key="frame" x="283" y="16" width="98" height="24"/>
+                                                                <rect key="frame" x="280.5" y="16" width="100.5" height="24"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정상 승인 완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiu-dc-dXT">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="24"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="24"/>
                                                                         <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="13"/>
                                                                         <color key="textColor" name="102102102"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoNextMyprofileNormal" translatesAutoresizingMaskIntoConstraints="NO" id="l18-Eu-MP0">
-                                                                        <rect key="frame" x="83" y="0.0" width="15" height="24"/>
+                                                                        <rect key="frame" x="85.5" y="0.0" width="15" height="24"/>
                                                                         <gestureRecognizers/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="15" id="pTj-ZL-OHL"/>
@@ -274,7 +274,7 @@
                                                         <rect key="frame" x="14" y="9" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소연 이용 방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbc-ME-jes">
-                                                                <rect key="frame" x="4" y="20" width="362" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="362" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
@@ -304,7 +304,7 @@
                                                         <rect key="frame" x="14" y="66" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공지사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmc-4T-uiL">
-                                                                <rect key="frame" x="4" y="20" width="362" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="362" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
@@ -334,7 +334,7 @@
                                                         <rect key="frame" x="14" y="123" width="381" height="56"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="푸시 알림 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epn-cz-06B">
-                                                                <rect key="frame" x="4" y="20" width="362" height="16.5"/>
+                                                                <rect key="frame" x="4" y="20.5" width="362" height="15.5"/>
                                                                 <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
@@ -522,9 +522,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="g3D-7N-m7D"/>
                     <connections>
-                        <outlet property="MBTYTypeView" destination="mKW-U0-Egi" id="8fb-FD-2wJ"/>
                         <outlet property="backButton" destination="dw2-ub-FwJ" id="hfc-gL-LaY"/>
-                        <outlet property="basicProfileView" destination="wh5-ft-WBB" id="Fjv-Es-z1M"/>
                         <outlet property="imageSliderView" destination="pmT-5Y-1HF" id="sP8-d3-cca"/>
                     </connections>
                 </viewController>

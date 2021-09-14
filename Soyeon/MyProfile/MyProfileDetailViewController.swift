@@ -12,8 +12,6 @@ final class MyProfileDetailViewController: UIViewController {
     
     @IBOutlet private weak var backButton: UIButton!
     @IBOutlet private weak var imageSliderView: ImageSliderView!
-    @IBOutlet private weak var basicProfileView: BasicProfileView!
-    @IBOutlet private weak var MBTYTypeView: MBTITypeView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
