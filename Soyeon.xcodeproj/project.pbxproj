@@ -195,6 +195,7 @@
 		D8243EB826EE420000DAC580 /* MannerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243EB726EE420000DAC580 /* MannerScoreView.xib */; };
 		D8243EBA26EE42B000DAC580 /* IdealTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8243EB926EE42B000DAC580 /* IdealTypeView.swift */; };
 		D8243EBC26EE431600DAC580 /* IdealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243EBB26EE431600DAC580 /* IdealTypeView.xib */; };
+		D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */; };
 		D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8332487265D38BD00D338BE /* ProfileCell.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
 		D8354D6925B4345600C9C531 /* NewAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */; };
@@ -427,6 +428,7 @@
 		D8243EB726EE420000DAC580 /* MannerScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MannerScoreView.xib; sourceTree = "<group>"; };
 		D8243EB926EE42B000DAC580 /* IdealTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeView.swift; sourceTree = "<group>"; };
 		D8243EBB26EE431600DAC580 /* IdealTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdealTypeView.xib; sourceTree = "<group>"; };
+		D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludingAcquaintancesViewController.swift; sourceTree = "<group>"; };
 		D8332487265D38BD00D338BE /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
 		D8354D6825B4345600C9C531 /* NewAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountPresenter.swift; sourceTree = "<group>"; };
@@ -1611,6 +1613,7 @@
 				D89064C626E6F9E000545F7D /* MyProfileViewController.swift */,
 				D8A7222426568B96008C388D /* MyProfile.storyboard */,
 				D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */,
+				D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */,
 				D8243EA326EE2F1600DAC580 /* ImageSliderView.swift */,
 				D8243EA526EE30B100DAC580 /* ImageSliderView.xib */,
 				D8243EA726EE385B00DAC580 /* BasicProfileView.swift */,
@@ -1875,6 +1878,7 @@
 				1D47F47B263178C900E85B94 /* SignupStepViewController.swift in Sources */,
 				1D19087925A9F77E008210D1 /* AgreementDetailConfigurator.swift in Sources */,
 				009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */,
+				D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */,
 				0AC9F64F26BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
 				0AC21E0E2613FDE400AD0635 /* AdditionalPresenter.swift in Sources */,

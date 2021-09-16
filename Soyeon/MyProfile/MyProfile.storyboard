@@ -24,7 +24,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ux7-ML-HvD" customClass="CustomBackButtonNavController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="butMyNaviN" selectedImage="butMyNaviS" id="Yab-NY-kcw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tK8-98-h2g">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tK8-98-h2g">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -392,7 +392,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="1o4-lv-xKm"/>
                     <connections>
+                        <outlet property="excludingAcquaintancesView" destination="Y9x-CT-6dG" id="5f1-MW-4vZ"/>
                         <outlet property="showDetailButton" destination="dPH-zj-mnJ" id="CZB-a5-CgD"/>
+                        <segue destination="XkC-Va-cSL" kind="show" identifier="ExcludingAcquaintancesViewController" id="1Al-tg-0r3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAU-Be-mdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -404,11 +406,11 @@
             <objects>
                 <viewController id="sMx-OV-mZV" customClass="MyProfileDetailViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fc3-Q0-4Me">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFB-cf-QWB">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zKs-wn-Jom">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1537"/>
@@ -491,7 +493,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="eSe-OY-MQs"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw2-ub-FwJ">
-                                <rect key="frame" x="18" y="106" width="32" height="22"/>
+                                <rect key="frame" x="18" y="18" width="32" height="22"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="NaK-wG-lGR"/>
@@ -529,6 +531,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoF-Pw-YL4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2028.985507246377" y="949.55357142857133"/>
+        </scene>
+        <!--Excluding Acquaintances View Controller-->
+        <scene sceneID="mNG-6C-z1K">
+            <objects>
+                <viewController id="XkC-Va-cSL" customClass="ExcludingAcquaintancesViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXm-wJ-WcG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XGT-Jg-vUi">
+                                <rect key="frame" x="0.0" y="8" width="414" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Wet-aO-eIu">
+                                        <rect key="frame" x="20" y="32" width="197.5" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처 등록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq6-nd-Czc">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 412개의 연락처가 등록되었습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bI-Pn-sag">
+                                                <rect key="frame" x="0.0" y="22.5" width="197.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="12"/>
+                                                <color key="textColor" name="102102102"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGi-WS-kxW">
+                                        <rect key="frame" x="303" y="34" width="92" height="32"/>
+                                        <color key="backgroundColor" name="soyeonBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="92" id="g5W-pS-GPi"/>
+                                            <constraint firstAttribute="height" constant="32" id="h6O-6z-buI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
+                                        <state key="normal" title="연락처 등록">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerContactsButtonTapped:" destination="XkC-Va-cSL" eventType="touchUpInside" id="V6H-zE-5VP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4CB-zb-Cj5"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="19"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yWi-J9-KgU"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XGT-Jg-vUi" firstAttribute="top" secondItem="yWi-J9-KgU" secondAttribute="top" constant="8" id="6PW-YR-0FC"/>
+                            <constraint firstItem="yWi-J9-KgU" firstAttribute="trailing" secondItem="XGT-Jg-vUi" secondAttribute="trailing" id="gRI-Bj-2Q9"/>
+                            <constraint firstItem="XGT-Jg-vUi" firstAttribute="leading" secondItem="yWi-J9-KgU" secondAttribute="leading" id="lc7-f5-SQ5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Qz-5a-F35"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GK0-Cz-Qrq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="950"/>
         </scene>
     </scenes>
     <resources>

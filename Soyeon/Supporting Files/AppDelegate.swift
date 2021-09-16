@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         barAppearance.setBackgroundImage(UIImage(), for: .default)
         barAppearance.shadowImage = UIImage()
-        barAppearance.isTranslucent = true
+        barAppearance.isTranslucent = false
         barAppearance.backIndicatorImage = backButtonImage
         barAppearance.backIndicatorTransitionMaskImage = backButtonImage
 

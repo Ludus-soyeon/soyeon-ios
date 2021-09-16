@@ -10,6 +10,7 @@ import UIKit
 
 final class MyProfileViewController: UIViewController {
     @IBOutlet private weak var showDetailButton: UIButton!
+    @IBOutlet private weak var excludingAcquaintancesView: UIStackView!
     
     private enum ViewMetrics {
         static let detailButtonCornerRadius: CGFloat = 15.0
@@ -20,6 +21,7 @@ final class MyProfileViewController: UIViewController {
         super.viewDidLoad()
 
         setupLayout()
+        configureView()
     }
     
     private func setupLayout() {
@@ -31,4 +33,15 @@ final class MyProfileViewController: UIViewController {
         showDetailButton.layer.borderColor = Colors.soyeonBlue.color().cgColor
     }
     
+    private func configureView() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self,
+                                                          action: #selector(excludingAcquiantancesViewTapped))
+        tapGestureRecognizer.numberOfTouchesRequired = 1
+        excludingAcquaintancesView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func excludingAcquiantancesViewTapped() {
+        performSegue(withIdentifier: "ExcludingAcquaintancesViewController",
+                     sender: nil)
+    }
 }
