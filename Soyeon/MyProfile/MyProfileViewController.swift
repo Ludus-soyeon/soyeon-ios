@@ -11,6 +11,7 @@ import UIKit
 final class MyProfileViewController: UIViewController {
     @IBOutlet private weak var showDetailButton: UIButton!
     @IBOutlet private weak var excludingAcquaintancesView: UIStackView!
+    @IBOutlet private weak var myAccountView: UIStackView!
     
     private enum ViewMetrics {
         static let detailButtonCornerRadius: CGFloat = 15.0
@@ -34,14 +35,28 @@ final class MyProfileViewController: UIViewController {
     }
     
     private func configureView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self,
-                                                          action: #selector(excludingAcquiantancesViewTapped))
+        makeTapGesture(with: excludingAcquaintancesView,
+                       target: self,
+                       action: #selector(excludingAcquiantancesViewTapped))
+        makeTapGesture(with: myAccountView,
+                       target: self,
+                       action: #selector(myAccountViewTapped))
+    }
+    
+    private func makeTapGesture(with view: UIView, target: Any?, action: Selector?) {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: target,
+                                                          action: action)
         tapGestureRecognizer.numberOfTouchesRequired = 1
-        excludingAcquaintancesView.addGestureRecognizer(tapGestureRecognizer)
+        view.addGestureRecognizer(tapGestureRecognizer)
     }
     
     @objc private func excludingAcquiantancesViewTapped() {
         performSegue(withIdentifier: "ExcludingAcquaintancesViewController",
+                     sender: nil)
+    }
+    
+    @objc private func myAccountViewTapped() {
+        performSegue(withIdentifier: "MyAccountViewController",
                      sender: nil)
     }
 }
