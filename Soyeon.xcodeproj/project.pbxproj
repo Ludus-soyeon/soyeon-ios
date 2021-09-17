@@ -199,6 +199,8 @@
 		D828115326F3E8030008D1DF /* AccountStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115226F3E8030008D1DF /* AccountStatusView.swift */; };
 		D828115526F414890008D1DF /* AccountStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D828115426F414890008D1DF /* AccountStatusView.xib */; };
 		D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */; };
+		D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */; };
+		D828115B26F4F4040008D1DF /* CoupleDomancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */; };
 		D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */; };
 		D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8332487265D38BD00D338BE /* ProfileCell.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
@@ -436,6 +438,8 @@
 		D828115226F3E8030008D1DF /* AccountStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusView.swift; sourceTree = "<group>"; };
 		D828115426F414890008D1DF /* AccountStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountStatusView.xib; sourceTree = "<group>"; };
 		D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusViewModel.swift; sourceTree = "<group>"; };
+		D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormantApplicationViewController.swift; sourceTree = "<group>"; };
+		D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleDomancyViewController.swift; sourceTree = "<group>"; };
 		D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludingAcquaintancesViewController.swift; sourceTree = "<group>"; };
 		D8332487265D38BD00D338BE /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
@@ -1638,6 +1642,8 @@
 				D828115226F3E8030008D1DF /* AccountStatusView.swift */,
 				D828115426F414890008D1DF /* AccountStatusView.xib */,
 				D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */,
+				D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */,
+				D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -1900,6 +1906,7 @@
 				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */,
 				0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */,
 				D8243EA826EE385B00DAC580 /* BasicProfileView.swift in Sources */,
+				D828115B26F4F4040008D1DF /* CoupleDomancyViewController.swift in Sources */,
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				D8243EAC26EE3DDC00DAC580 /* MBTITypeView.swift in Sources */,
 				D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */,
@@ -2016,6 +2023,7 @@
 				0A4E513225EA8E8B00616C07 /* WriteProfile1Worker.swift in Sources */,
 				1D19088025A9F77E008210D1 /* AgreementViewController.swift in Sources */,
 				D828115126F3B38B0008D1DF /* MyAccountViewController.swift in Sources */,
+				D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */,
 				00E295E2266AA05700DB69CE /* Array+.swift in Sources */,
 				0A4E515725EAB4E400616C07 /* WritingAlertStyle.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,

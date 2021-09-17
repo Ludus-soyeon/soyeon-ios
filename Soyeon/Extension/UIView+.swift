@@ -47,3 +47,12 @@ extension UIView: ReuseIdentifiable {
     }
     
 }
+
+extension UIView {
+    public func addTapGesture(tapsRequired: Int = 1, target: AnyObject, action: Selector) {
+        let gesture = UITapGestureRecognizer(target: target, action: action)
+        gesture.numberOfTapsRequired = tapsRequired
+        addGestureRecognizer(gesture)
+        isUserInteractionEnabled = true
+    }
+}
