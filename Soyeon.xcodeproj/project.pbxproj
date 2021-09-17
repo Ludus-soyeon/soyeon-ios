@@ -201,6 +201,9 @@
 		D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */; };
 		D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */; };
 		D828115B26F4F4040008D1DF /* CoupleDomancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */; };
+		D828115D26F507570008D1DF /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115C26F507570008D1DF /* ManualViewController.swift */; };
+		D828115F26F50BE00008D1DF /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115E26F50BE00008D1DF /* NoticeViewController.swift */; };
+		D828116126F5106A0008D1DF /* PushNotificationSetttingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */; };
 		D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */; };
 		D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8332487265D38BD00D338BE /* ProfileCell.swift */; };
 		D8354D6525B4344800C9C531 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */; };
@@ -440,6 +443,9 @@
 		D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusViewModel.swift; sourceTree = "<group>"; };
 		D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormantApplicationViewController.swift; sourceTree = "<group>"; };
 		D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleDomancyViewController.swift; sourceTree = "<group>"; };
+		D828115C26F507570008D1DF /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		D828115E26F50BE00008D1DF /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSetttingsViewController.swift; sourceTree = "<group>"; };
 		D82B80F226F36F00004AB418 /* ExcludingAcquaintancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludingAcquaintancesViewController.swift; sourceTree = "<group>"; };
 		D8332487265D38BD00D338BE /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		D8354D6425B4344800C9C531 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
@@ -1644,6 +1650,9 @@
 				D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */,
 				D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */,
 				D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */,
+				D828115C26F507570008D1DF /* ManualViewController.swift */,
+				D828115E26F50BE00008D1DF /* NoticeViewController.swift */,
+				D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -1871,6 +1880,7 @@
 				000CEB4825B484A800F64A28 /* GuidanceRouter.swift in Sources */,
 				0A4E516725EAB55100616C07 /* ReuseIdentifiable.swift in Sources */,
 				0AE9481226644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift in Sources */,
+				D828115D26F507570008D1DF /* ManualViewController.swift in Sources */,
 				000CEB4225B484A800F64A28 /* GuidancePresenter.swift in Sources */,
 				D8D9C0E725D2366700AB3BDA /* RadioGroup.swift in Sources */,
 				000CEB4325B484A800F64A28 /* GuidanceViewController.swift in Sources */,
@@ -1889,6 +1899,7 @@
 				009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */,
 				1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
+				D828115F26F50BE00008D1DF /* NoticeViewController.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
 				D80560E62675C51500832C0D /* Profile.swift in Sources */,
 				0AC21E0F2613FDE400AD0635 /* AdditionalViewController.swift in Sources */,
@@ -1962,6 +1973,7 @@
 				1D7C32582687680100D7F2C9 /* AuthInfo.swift in Sources */,
 				0AC21E142613FDE400AD0635 /* AdditionalWorker.swift in Sources */,
 				0A4E513125EA8E8B00616C07 /* WriteProfile1Configurator.swift in Sources */,
+				D828116126F5106A0008D1DF /* PushNotificationSetttingsViewController.swift in Sources */,
 				0A6DECAC2597716500B8713B /* Fonts.swift in Sources */,
 				D801C6502687230100F5A054 /* MatchSectionFooterView.swift in Sources */,
 				00CF093625E28F4E0077700A /* Term.swift in Sources */,

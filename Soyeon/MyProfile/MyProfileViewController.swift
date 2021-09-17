@@ -12,6 +12,9 @@ final class MyProfileViewController: UIViewController {
     @IBOutlet private weak var showDetailButton: UIButton!
     @IBOutlet private weak var excludingAcquaintancesView: UIStackView!
     @IBOutlet private weak var myAccountView: UIStackView!
+    @IBOutlet private weak var manualView: UIStackView!
+    @IBOutlet private weak var noticeView: UIStackView!
+    @IBOutlet private weak var pushNotificationSettingsView: UIStackView!
     
     private enum ViewMetrics {
         static let detailButtonCornerRadius: CGFloat = 15.0
@@ -35,28 +38,54 @@ final class MyProfileViewController: UIViewController {
     }
     
     private func configureView() {
-        makeTapGesture(with: excludingAcquaintancesView,
-                       target: self,
-                       action: #selector(excludingAcquiantancesViewTapped))
-        makeTapGesture(with: myAccountView,
-                       target: self,
-                       action: #selector(myAccountViewTapped))
+        excludingAcquaintancesView.addTapGesture(
+            tapsRequired: 1,
+            target: self,
+            action: #selector(excludingAcquaintancesViewTapped)
+        )
+        myAccountView.addTapGesture(
+            tapsRequired: 1,
+            target: self,
+            action: #selector(myAccountViewTapped)
+        )
+        manualView.addTapGesture(
+            tapsRequired: 1,
+            target: self,
+            action: #selector(manualViewTapped)
+        )
+        noticeView.addTapGesture(
+            tapsRequired: 1,
+            target: self,
+            action: #selector(noticeViewTapped))
+        pushNotificationSettingsView.addTapGesture(
+            tapsRequired: 1,
+            target: self,
+            action: #selector(pushNotificationSettingsViewTapped)
+        )
     }
     
-    private func makeTapGesture(with view: UIView, target: Any?, action: Selector?) {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: target,
-                                                          action: action)
-        tapGestureRecognizer.numberOfTouchesRequired = 1
-        view.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    @objc private func excludingAcquiantancesViewTapped() {
+    @objc private func excludingAcquaintancesViewTapped() {
         performSegue(withIdentifier: "ExcludingAcquaintancesViewController",
                      sender: nil)
     }
     
     @objc private func myAccountViewTapped() {
         performSegue(withIdentifier: "MyAccountViewController",
+                     sender: nil)
+    }
+    
+    @objc private func manualViewTapped() {
+        performSegue(withIdentifier: "ManualViewController",
+                     sender: nil)
+    }
+    
+    @objc private func noticeViewTapped() {
+        performSegue(withIdentifier: "NoticeViewController",
+                     sender: nil)
+    }
+    
+    @objc private func pushNotificationSettingsViewTapped() {
+        performSegue(withIdentifier: "PushNotificationSettingsViewController",
                      sender: nil)
     }
 }
