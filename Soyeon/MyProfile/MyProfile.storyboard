@@ -750,13 +750,14 @@ Cg
                                                                 <color key="textColor" name="102102102"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-8m-Tzn">
-                                                                <rect key="frame" x="327" y="14" width="56" height="28"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2k-G8-sPQ" customClass="SoyeonSwitch" customModule="Soyeon" customModuleProvider="target">
+                                                                <rect key="frame" x="327" y="14" width="54" height="28"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="28" id="CUJ-8d-fzT"/>
-                                                                    <constraint firstAttribute="width" constant="54" id="z7j-l5-7Ku"/>
+                                                                    <constraint firstAttribute="height" constant="28" id="Unr-w5-QwP"/>
+                                                                    <constraint firstAttribute="width" constant="54" id="ppi-gX-cDg"/>
                                                                 </constraints>
-                                                            </switch>
+                                                            </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="M6s-Qy-RBV"/>
@@ -1258,13 +1259,14 @@ Cg
                                                         <color key="textColor" name="102102102"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AWV-FN-ET1">
-                                                        <rect key="frame" x="325" y="16.5" width="56" height="28"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOT-pr-Cdu" customClass="SoyeonSwitch" customModule="Soyeon" customModuleProvider="target">
+                                                        <rect key="frame" x="325" y="16.5" width="54" height="28"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="28" id="O1f-MN-aFf"/>
-                                                            <constraint firstAttribute="width" constant="54" id="qoa-g3-RLs"/>
+                                                            <constraint firstAttribute="height" constant="28" id="XZ3-Hs-ge8"/>
+                                                            <constraint firstAttribute="width" constant="54" id="qD4-Ej-if4"/>
                                                         </constraints>
-                                                    </switch>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60.5" id="LJ9-AV-Iz1"/>
@@ -1287,13 +1289,14 @@ Cg
                                                         <color key="textColor" name="102102102"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pNu-Mc-7QL">
-                                                        <rect key="frame" x="325" y="17.5" width="56" height="28"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0d-tJ-bDn" customClass="SoyeonSwitch" customModule="Soyeon" customModuleProvider="target">
+                                                        <rect key="frame" x="325" y="17.5" width="54" height="28"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="54" id="NL8-pt-x9t"/>
-                                                            <constraint firstAttribute="height" constant="28" id="QBc-xb-vfp"/>
+                                                            <constraint firstAttribute="width" constant="54" id="kYd-Hg-QyG"/>
+                                                            <constraint firstAttribute="height" constant="28" id="vN4-Go-D0q"/>
                                                         </constraints>
-                                                    </switch>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="KEg-h1-gaW"/>
@@ -1316,13 +1319,14 @@ Cg
                                                         <color key="textColor" name="102102102"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p4p-PJ-DJe">
-                                                        <rect key="frame" x="325" y="17.5" width="56" height="28"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-d0-W3X" customClass="SoyeonSwitch" customModule="Soyeon" customModuleProvider="target">
+                                                        <rect key="frame" x="325" y="17.5" width="54" height="28"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="28" id="K1E-u4-Hzj"/>
-                                                            <constraint firstAttribute="width" constant="54" id="mNz-yx-fDC"/>
+                                                            <constraint firstAttribute="width" constant="54" id="Bc4-q2-SNj"/>
+                                                            <constraint firstAttribute="height" constant="28" id="J4u-A8-vef"/>
                                                         </constraints>
-                                                    </switch>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="IL2-Nh-oyG"/>
@@ -1345,13 +1349,14 @@ Cg
                                                         <color key="textColor" name="102102102"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CcG-7M-kwL">
-                                                        <rect key="frame" x="325" y="17.5" width="56" height="28"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgJ-zz-Hfi" customClass="SoyeonSwitch" customModule="Soyeon" customModuleProvider="target">
+                                                        <rect key="frame" x="325" y="17.5" width="54" height="28"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="54" id="5pw-xD-6Fb"/>
-                                                            <constraint firstAttribute="height" constant="28" id="7kE-w1-f0i"/>
+                                                            <constraint firstAttribute="width" constant="54" id="3Gg-y8-NDs"/>
+                                                            <constraint firstAttribute="height" constant="28" id="noM-Xk-wDk"/>
                                                         </constraints>
-                                                    </switch>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="7bh-dJ-okd"/>

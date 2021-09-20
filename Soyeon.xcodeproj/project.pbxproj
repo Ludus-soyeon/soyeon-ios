@@ -217,6 +217,7 @@
 		D8487C6225ED615D00F52B48 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = D8487C6125ED615D00F52B48 /* SwiftyGif */; };
 		D8487C6A25ED64CA00F52B48 /* phase_first.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8487C6925ED64CA00F52B48 /* phase_first.gif */; };
 		D8569C2925D4701000542872 /* Soyeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8569C2825D4701000542872 /* Soyeon.swift */; };
+		D8669A8826F85D15005B2A01 /* SoyeonSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */; };
 		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
@@ -459,6 +460,7 @@
 		D83760DE262F0CE6002FA23B /* PersonalityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityType.swift; sourceTree = "<group>"; };
 		D8487C6925ED64CA00F52B48 /* phase_first.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = phase_first.gif; sourceTree = "<group>"; };
 		D8569C2825D4701000542872 /* Soyeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soyeon.swift; sourceTree = "<group>"; };
+		D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonSwitch.swift; sourceTree = "<group>"; };
 		D875578C25C6C20300380F1E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1656,6 +1658,7 @@
 				D828115C26F507570008D1DF /* ManualViewController.swift */,
 				D828115E26F50BE00008D1DF /* NoticeViewController.swift */,
 				D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */,
+				D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -1933,6 +1936,7 @@
 				0A9C2A65269A0C620042692D /* ObjectUserDefaultWrapper.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
 				0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */,
+				D8669A8826F85D15005B2A01 /* SoyeonSwitch.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				0A89E62F265DDCD70048A3BC /* CheckMyCharacterWorker.swift in Sources */,
 				1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */,
