@@ -32,11 +32,9 @@ final class MyAccountViewController: UIViewController {
                 date: Date()
             )
         )
-        dormantApplicationView.addTapGesture(tapsRequired: 1,
-                                             target: self,
+        dormantApplicationView.addTapGesture(target: self,
                                              action: #selector(dormantApplicationViewTapped))
-        withdrawalView.addTapGesture(tapsRequired: 1,
-                                     target: self,
+        withdrawalView.addTapGesture(target: self,
                                      action: #selector(withdrawalViewTapped))
     }
     

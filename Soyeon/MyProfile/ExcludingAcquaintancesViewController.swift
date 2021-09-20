@@ -17,8 +17,7 @@ final class ExcludingAcquaintancesViewController: UIViewController {
     }
     
     private func setupLayout() {
-        setNavigationTitle("아는 사람 만나지 않기",
-                           font: Fonts.nanumSquareR.size(20.0))
+        setNavigationTitle("아는 사람 만나지 않기")
     }
     
     @IBAction private func registerContactsButtonTapped(_ sender: UIButton) {

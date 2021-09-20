@@ -25,11 +25,9 @@ final class DormantApplicationViewController: UIViewController {
     }
     
     private func configureView() {
-        normalDormancyView.addTapGesture(tapsRequired: 1,
-                                         target: self,
+        normalDormancyView.addTapGesture(target: self,
                                          action: #selector(normalDormancyViewTapped))
-        coupleDormancyView.addTapGesture(tapsRequired: 1,
-                                         target: self,
+        coupleDormancyView.addTapGesture(target: self,
                                          action: #selector(coupleDormancyViewTapped))
     }
     
@@ -42,13 +40,7 @@ final class DormantApplicationViewController: UIViewController {
     }
 
     @objc private func coupleDormancyViewTapped() {
-        SoyeonBasicAlertView
-            .alert(message: "휴면신청이 완료되었습니다.\n그리울거에요 ㅠㅠ")?
-            .action(style: .basic("커플 휴면 하기"), completion: { [weak self] _ in
-                self?.performSegue(withIdentifier: "CoupleDormancyViewController",
-                                   sender: nil)
-            })
-            .action(style: .cancel("취소"), completion: { _ in })
-            .show(to: self.view!, completion: nil)
+        performSegue(withIdentifier: "CoupleDormancyViewController",
+                     sender: nil)
     }
 }

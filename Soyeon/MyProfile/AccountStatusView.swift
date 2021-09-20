@@ -47,7 +47,7 @@ final class AccountStatusView: XibView {
         titleLabel.text = viewModel.status.description
         dateLabel.text = "\(formatter.string(from: viewModel.date)) 기준"
         if case let .dating(_, startDate) = viewModel.status {
-            coupleDateLabel.text = " / \(formatter.string(from: startDate)) 기준"
+            coupleDateLabel.text = " /커플휴면 D+\(startDate.daysBetween(date: Date()))"
         }
     }
 }

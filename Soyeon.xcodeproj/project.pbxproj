@@ -200,7 +200,7 @@
 		D828115526F414890008D1DF /* AccountStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D828115426F414890008D1DF /* AccountStatusView.xib */; };
 		D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */; };
 		D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */; };
-		D828115B26F4F4040008D1DF /* CoupleDomancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */; };
+		D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115A26F4F4040008D1DF /* CoupleDormancyViewController.swift */; };
 		D828115D26F507570008D1DF /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115C26F507570008D1DF /* ManualViewController.swift */; };
 		D828115F26F50BE00008D1DF /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115E26F50BE00008D1DF /* NoticeViewController.swift */; };
 		D828116126F5106A0008D1DF /* PushNotificationSetttingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */; };
@@ -226,6 +226,7 @@
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
 		D89064C526E6D71B00545F7D /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C426E6D71B00545F7D /* NSAttributedString+.swift */; };
 		D89064C726E6F9E000545F7D /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C626E6F9E000545F7D /* MyProfileViewController.swift */; };
+		D89E57D126F84D1C00E7C091 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E57D026F84D1C00E7C091 /* UIWindow+.swift */; };
 		D8A0381026EA5AEC005C40FA /* MyProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */; };
 		D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */; };
 		D8A3CFB4262AC5F300E3D201 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */; };
@@ -442,7 +443,7 @@
 		D828115426F414890008D1DF /* AccountStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountStatusView.xib; sourceTree = "<group>"; };
 		D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusViewModel.swift; sourceTree = "<group>"; };
 		D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormantApplicationViewController.swift; sourceTree = "<group>"; };
-		D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleDomancyViewController.swift; sourceTree = "<group>"; };
+		D828115A26F4F4040008D1DF /* CoupleDormancyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleDormancyViewController.swift; sourceTree = "<group>"; };
 		D828115C26F507570008D1DF /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		D828115E26F50BE00008D1DF /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSetttingsViewController.swift; sourceTree = "<group>"; };
@@ -469,6 +470,7 @@
 		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
 		D89064C426E6D71B00545F7D /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		D89064C626E6F9E000545F7D /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		D89E57D026F84D1C00E7C091 /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
 		D8A0380F26EA5AEC005C40FA /* MyProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDetailViewController.swift; sourceTree = "<group>"; };
 		D8A3CF912628AA5800E3D201 /* PersonalityInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityInfoCell.swift; sourceTree = "<group>"; };
 		D8A3CFB3262AC5F300E3D201 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 				00E295E8266AC19B00DB69CE /* UIButton+.swift */,
 				0096756426ADACFF00BF71D7 /* NSObject+.swift */,
 				D89064C426E6D71B00545F7D /* NSAttributedString+.swift */,
+				D89E57D026F84D1C00E7C091 /* UIWindow+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1649,7 +1652,7 @@
 				D828115426F414890008D1DF /* AccountStatusView.xib */,
 				D828115626F46AAB0008D1DF /* AccountStatusViewModel.swift */,
 				D828115826F48EE40008D1DF /* DormantApplicationViewController.swift */,
-				D828115A26F4F4040008D1DF /* CoupleDomancyViewController.swift */,
+				D828115A26F4F4040008D1DF /* CoupleDormancyViewController.swift */,
 				D828115C26F507570008D1DF /* ManualViewController.swift */,
 				D828115E26F50BE00008D1DF /* NoticeViewController.swift */,
 				D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */,
@@ -1900,6 +1903,7 @@
 				1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				D828115F26F50BE00008D1DF /* NoticeViewController.swift in Sources */,
+				D89E57D126F84D1C00E7C091 /* UIWindow+.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
 				D80560E62675C51500832C0D /* Profile.swift in Sources */,
 				0AC21E0F2613FDE400AD0635 /* AdditionalViewController.swift in Sources */,
@@ -1917,7 +1921,7 @@
 				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */,
 				0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */,
 				D8243EA826EE385B00DAC580 /* BasicProfileView.swift in Sources */,
-				D828115B26F4F4040008D1DF /* CoupleDomancyViewController.swift in Sources */,
+				D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */,
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				D8243EAC26EE3DDC00DAC580 /* MBTITypeView.swift in Sources */,
 				D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */,

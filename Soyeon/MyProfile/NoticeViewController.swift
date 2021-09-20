@@ -29,8 +29,10 @@ final class NoticeViewController: UIViewController {
         )
         inqueryButton.setBorderWithColor(UIColor(red: 0, green: 0, blue: 0, alpha: 0.15),
                                          width: 1)
-        
         inqueryButton.setRadius(4)
+        inqueryButton.translatesAutoresizingMaskIntoConstraints = false
+        inqueryButton.widthAnchor.constraint(equalToConstant: 68).isActive = true
+        inqueryButton.heightAnchor.constraint(equalToConstant: 32).isActive = true
     }
     
     @IBAction func inqueryButtonTapped(_ sender: UIButton) {

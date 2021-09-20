@@ -11,10 +11,10 @@ import UIKit
 class CustomBackButtonNavController: UINavigationController { }
 
 extension UIViewController {
-    func setNavigationTitle(_ title: String, font: UIFont? = nil) {
+    func setNavigationTitle(_ title: String) {
         guard let navigationBar = navigationController?.navigationBar,
               let titleColor = navigationBar.titleTextAttributes?[.foregroundColor] as? UIColor,
-              let font = font ?? navigationBar.titleTextAttributes?[.font] as? UIFont else {
+              let font = navigationBar.titleTextAttributes?[.font] as? UIFont else {
             return
         }
         let label = UILabel()

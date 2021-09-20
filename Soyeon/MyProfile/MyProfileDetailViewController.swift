@@ -31,6 +31,7 @@ final class MyProfileDetailViewController: UIViewController {
     }
     
     private func setupLayout() {
+        navigationController?.view.backgroundColor = .white
         navigationController?.isNavigationBarHidden = true
     }
     
