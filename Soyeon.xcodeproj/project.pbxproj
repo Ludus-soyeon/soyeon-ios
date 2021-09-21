@@ -225,6 +225,9 @@
 		D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8795C48258E6A2500DF4D64 /* Assets.xcassets */; };
 		D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C4A258E6A2500DF4D64 /* LaunchScreen.storyboard */; };
 		D881723F25FC721D00D5FC0C /* IdealTypeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */; };
+		D881BB7426F9A6400044607A /* MyAttractivenessScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881BB7326F9A6400044607A /* MyAttractivenessScoreViewController.swift */; };
+		D881BB7626F9AE370044607A /* SoyeonRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881BB7526F9AE370044607A /* SoyeonRatingView.swift */; };
+		D881BB7A26F9F5660044607A /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881BB7926F9F5660044607A /* UIStackView+.swift */; };
 		D89064C526E6D71B00545F7D /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C426E6D71B00545F7D /* NSAttributedString+.swift */; };
 		D89064C726E6F9E000545F7D /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89064C626E6F9E000545F7D /* MyProfileViewController.swift */; };
 		D89E57D126F84D1C00E7C091 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E57D026F84D1C00E7C091 /* UIWindow+.swift */; };
@@ -470,6 +473,9 @@
 		D8795C4B258E6A2500DF4D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8795C4D258E6A2500DF4D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D881723E25FC721D00D5FC0C /* IdealTypeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeInfoViewController.swift; sourceTree = "<group>"; };
+		D881BB7326F9A6400044607A /* MyAttractivenessScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAttractivenessScoreViewController.swift; sourceTree = "<group>"; };
+		D881BB7526F9AE370044607A /* SoyeonRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonRatingView.swift; sourceTree = "<group>"; };
+		D881BB7926F9F5660044607A /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		D89064C426E6D71B00545F7D /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		D89064C626E6F9E000545F7D /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		D89E57D026F84D1C00E7C091 /* UIWindow+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
@@ -598,6 +604,7 @@
 				0096756426ADACFF00BF71D7 /* NSObject+.swift */,
 				D89064C426E6D71B00545F7D /* NSAttributedString+.swift */,
 				D89E57D026F84D1C00E7C091 /* UIWindow+.swift */,
+				D881BB7926F9F5660044607A /* UIStackView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1659,6 +1666,8 @@
 				D828115E26F50BE00008D1DF /* NoticeViewController.swift */,
 				D828116026F5106A0008D1DF /* PushNotificationSetttingsViewController.swift */,
 				D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */,
+				D881BB7326F9A6400044607A /* MyAttractivenessScoreViewController.swift */,
+				D881BB7526F9AE370044607A /* SoyeonRatingView.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -1902,6 +1911,7 @@
 				D8354D7525B4347B00C9C531 /* NewAccountWorker.swift in Sources */,
 				1D19088425A9F77E008210D1 /* AgreementInteractor.swift in Sources */,
 				0A4E515D25EAB4E400616C07 /* WriteProfileDefualtButton.swift in Sources */,
+				D881BB7A26F9F5660044607A /* UIStackView+.swift in Sources */,
 				009B02AF25B47E9E00753847 /* LoginViewController.swift in Sources */,
 				1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
@@ -1998,6 +2008,7 @@
 				0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */,
 				D8A722332656A093008C388D /* HomeViewController.swift in Sources */,
 				D80560F02678DC5C00832C0D /* MatchSectionHeaderView.swift in Sources */,
+				D881BB7626F9AE370044607A /* SoyeonRatingView.swift in Sources */,
 				1D5B63B325B43FFB00A5321C /* MarqueeImageView.swift in Sources */,
 				0A71E4EA26B8FBE500C6DBCF /* SignupDataModel.swift in Sources */,
 				D89064C526E6D71B00545F7D /* NSAttributedString+.swift in Sources */,
@@ -2012,6 +2023,7 @@
 				0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */,
 				0A1D6197266FB94000C8674A /* CheckMyCharacterButton.swift in Sources */,
 				0AC21E152613FDE400AD0635 /* AdditionalInteractor.swift in Sources */,
+				D881BB7426F9A6400044607A /* MyAttractivenessScoreViewController.swift in Sources */,
 				D804DCA92635CD820073104B /* WriteIntroductionViewController.swift in Sources */,
 				D8243EBA26EE42B000DAC580 /* IdealTypeView.swift in Sources */,
 				0A4E515B25EAB4E400616C07 /* BirthYearAlertItem.swift in Sources */,

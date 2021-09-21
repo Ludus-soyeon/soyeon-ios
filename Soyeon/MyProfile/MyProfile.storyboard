@@ -404,6 +404,7 @@
                         <segue destination="DUi-Oy-eIQ" kind="show" identifier="ManualViewController" id="Efy-Kr-3Bs"/>
                         <segue destination="sNj-np-ygm" kind="show" identifier="NoticeViewController" id="XN9-EQ-G3p"/>
                         <segue destination="swi-9r-GK5" kind="show" identifier="PushNotificationSettingsViewController" id="Vfg-0f-0WH"/>
+                        <segue destination="acC-5v-P0B" kind="show" identifier="MyAttractivenessScoreViewController" id="Tkp-70-Zl7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAU-Be-mdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1397,6 +1398,133 @@ Cg
             </objects>
             <point key="canvasLocation" x="3502.898550724638" y="1645.9821428571429"/>
         </scene>
+        <!--My Attractiveness Score View Controller-->
+        <scene sceneID="AWO-AG-6bh">
+            <objects>
+                <viewController id="acC-5v-P0B" customClass="MyAttractivenessScoreViewController" customModule="Soyeon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vp7-Ig-MEi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUc-vp-bHX">
+                                <rect key="frame" x="90" y="98" width="234" height="250"/>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jUc-vp-bHX" secondAttribute="height" multiplier="234:250" id="L8M-cx-W7q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-1g-qEX">
+                                <rect key="frame" x="77" y="112" width="260" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pc5-1g-qEX" secondAttribute="height" multiplier="250:260" constant="10" id="f2d-zS-ZgG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VUw-dT-XYs">
+                                <rect key="frame" x="103.5" y="396" width="207" height="43"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ANx-j1-Fsq">
+                                        <rect key="frame" x="69.5" y="0.0" width="68" height="19"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9A-QN-PHB">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="19"/>
+                                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="16"/>
+                                                <color key="textColor" name="strongBlack"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2L-vr-MCR">
+                                                <rect key="frame" x="48" y="0.0" width="20" height="19"/>
+                                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
+                                                <color key="textColor" name="102102102"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="많은 사람들이 당신을 호감으로 보고 있어요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-La-Ak9">
+                                        <rect key="frame" x="0.0" y="29" width="207" height="14"/>
+                                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="12"/>
+                                        <color key="textColor" name="102102102"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmj-Vg-mOr" customClass="SoyeonRatingView" customModule="Soyeon" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="474.5" width="297.5" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TkY-cg-lCR"/>
+                                    <constraint firstAttribute="width" constant="297.5" id="eJP-zB-Xqf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1n-nh-RY6">
+                                <rect key="frame" x="18" y="542" width="377" height="46"/>
+                                <color key="backgroundColor" name="soyeonBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="sWv-mN-SiF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="15"/>
+                                <state key="normal" title="새로 측정하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rescoreButtonTapped:" destination="acC-5v-P0B" eventType="touchUpInside" id="wz1-UT-Hp6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnc-op-jfA" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="44" width="414" height="8"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="0Pi-8e-Ifd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ngI-6s-roy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jUc-vp-bHX" firstAttribute="width" secondItem="Pc5-1g-qEX" secondAttribute="width" multiplier="0.9" id="9vU-Lq-IGW"/>
+                            <constraint firstItem="Pc5-1g-qEX" firstAttribute="centerX" secondItem="ngI-6s-roy" secondAttribute="centerX" id="BOb-VR-iaU"/>
+                            <constraint firstItem="nmj-Vg-mOr" firstAttribute="centerX" secondItem="ngI-6s-roy" secondAttribute="centerX" id="N9L-On-7AJ"/>
+                            <constraint firstItem="jUc-vp-bHX" firstAttribute="top" secondItem="Lnc-op-jfA" secondAttribute="top" constant="54" id="NjD-Qw-FjS"/>
+                            <constraint firstItem="VUw-dT-XYs" firstAttribute="centerX" secondItem="ngI-6s-roy" secondAttribute="centerX" id="Nvn-Iq-4lR"/>
+                            <constraint firstItem="ngI-6s-roy" firstAttribute="trailing" secondItem="Lnc-op-jfA" secondAttribute="trailing" id="S7u-2L-xOQ"/>
+                            <constraint firstItem="b1n-nh-RY6" firstAttribute="top" secondItem="nmj-Vg-mOr" secondAttribute="bottom" constant="33" id="VDQ-gG-CDt"/>
+                            <constraint firstItem="Pc5-1g-qEX" firstAttribute="top" secondItem="Lnc-op-jfA" secondAttribute="top" constant="68" id="X2l-Jb-gqC"/>
+                            <constraint firstItem="VUw-dT-XYs" firstAttribute="top" secondItem="Pc5-1g-qEX" secondAttribute="bottom" constant="34" id="aF3-wQ-OcI"/>
+                            <constraint firstItem="nmj-Vg-mOr" firstAttribute="top" secondItem="VUw-dT-XYs" secondAttribute="bottom" constant="26" id="hq1-xt-Knh"/>
+                            <constraint firstItem="Pc5-1g-qEX" firstAttribute="width" secondItem="b1n-nh-RY6" secondAttribute="width" multiplier="0.8" id="mT3-SD-5Xm"/>
+                            <constraint firstItem="b1n-nh-RY6" firstAttribute="leading" secondItem="ngI-6s-roy" secondAttribute="leading" constant="18" id="my7-Hd-kdo"/>
+                            <constraint firstItem="ngI-6s-roy" firstAttribute="trailing" secondItem="b1n-nh-RY6" secondAttribute="trailing" constant="19" id="nXL-FF-kHh"/>
+                            <constraint firstItem="Lnc-op-jfA" firstAttribute="top" secondItem="ngI-6s-roy" secondAttribute="top" id="s8L-PG-qX6"/>
+                            <constraint firstItem="Lnc-op-jfA" firstAttribute="leading" secondItem="ngI-6s-roy" secondAttribute="leading" id="vX1-wi-ObJ"/>
+                            <constraint firstItem="jUc-vp-bHX" firstAttribute="centerX" secondItem="ngI-6s-roy" secondAttribute="centerX" id="xMH-Y5-HK0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CBW-iu-g6x"/>
+                    <connections>
+                        <outlet property="rescoreButton" destination="b1n-nh-RY6" id="Dpd-rZ-aon"/>
+                        <outlet property="scoreLabel" destination="C2L-vr-MCR" id="ANd-6e-sL6"/>
+                        <outlet property="soyeonRatingView" destination="nmj-Vg-mOr" id="FUX-F9-cxl"/>
+                        <outlet property="userStackView" destination="VUw-dT-XYs" id="BhH-1a-eAJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaW-7z-Dxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="276"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
@@ -1415,6 +1543,9 @@ Cg
         </namedColor>
         <namedColor name="soyeonPurple">
             <color red="0.57599997520446777" green="0.3880000114440918" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="strongBlack">
+            <color red="0.078000001609325409" green="0.078000001609325409" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

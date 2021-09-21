@@ -66,7 +66,7 @@ final class SoyeonSwitch: UIControl {
             (offContentLayer as? CATextLayer)?.string = offText
         }
     }
-    var thumbImage: CGImage? {
+    var thumbImage: CGImage? = UIImage(named: "icoCheckmark")?.cgImage {
         didSet {
             thumbLayer.contents = thumbImage
         }
@@ -188,8 +188,7 @@ final class SoyeonSwitch: UIControl {
     func stateDidChange() {
         trackLayer.backgroundColor = getBackgroundColor()
         trackLayer.borderWidth = isOn ? 0 : borderWidth
-        thumbTintColor = isOn ? Colors.soyeonBlue.color()
-            : UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1)
+        thumbImage = isOn ? UIImage(named: "icoCheckmark")?.cgImage : nil
     }
     func setOn(_ on: Bool, animated: Bool) {
         CATransaction.begin()

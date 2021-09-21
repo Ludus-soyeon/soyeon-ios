@@ -8,13 +8,6 @@
 
 import UIKit
 
-enum Tab: Int {
-    case myAttractiveness
-    case match
-    case home
-    case myProfile
-}
-
 final class MyProfileViewController: UIViewController {
     @IBOutlet private weak var showDetailButton: UIButton!
     @IBOutlet private weak var myAttractivenessView: UIStackView!
@@ -70,7 +63,8 @@ final class MyProfileViewController: UIViewController {
     }
     
     @objc private func myAttractivenessViewTapped() {
-        tabBarController?.selectedIndex = Tab.myAttractiveness.rawValue
+        performSegue(withIdentifier: "MyAttractivenessScoreViewController",
+                     sender: nil)
     }
     
     @objc private func excludingAcquaintancesViewTapped() {

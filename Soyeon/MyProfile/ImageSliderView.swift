@@ -50,13 +50,3 @@ extension ImageSliderView: UIScrollViewDelegate {
         pageLabel.text = "\(page) / \(stackView.arrangedSubviews.count)"
     }
 }
-
-private extension UIStackView {
-    func removeAllArrangedSubviews() {
-        arrangedSubviews.forEach {
-            removeArrangedSubview($0)
-            NSLayoutConstraint.deactivate($0.constraints)
-            $0.removeFromSuperview()
-        }
-    }
-}
