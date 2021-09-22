@@ -8,23 +8,41 @@
 
 import UIKit.UIButton
 
-final class SoyeonBasicAlertButton: SoyeonAlertButton {
+enum BasicAlertAction: AlertActionDefinable {
+    case basic(String)
+    case cancel(String)
     
-    typealias ActionStyle = SoyeonAlertStyle.ActionBasic
+    init?(rawValue: BasicAlertAction) {
+        switch rawValue {
+        case .basic(let title):
+            self = BasicAlertAction.basic(title)
+            
+        case .cancel(let title):
+            self = BasicAlertAction.cancel(title)
+             
+        }
+    }
+}
+
+final class SoyeonBasicAlertButton: SoyeonAlertButton, ActionStyleInitiateProtocol {
     
-    convenience init(_ style: ActionStyle, action: @escaping (String?) -> Void) {
-        self.init(action: action)
-        setLayout(style: style)
+    typealias DesigndActionType = BasicAlertAction
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    required init(action closure: @escaping (String?) -> Void) {
+        super.init(action: closure)
     }
     
     @available(iOS 14.0, *)
-    convenience init(_ style: ActionStyle, action: UIAction?) {
-        self.init(action: action)
-        setLayout(style: style)
+    required init(action: UIAction) {
+        super.init(action: action)
     }
     
-    private func setLayout(style: ActionStyle) {
-        switch style {
+    internal func setLayout(to action: BasicAlertAction) {
+        switch action {
         case .basic(let title):
             setTitle(title, for: .normal)
             titleLabel?.font = Fonts.nanumSquareB.size(14)

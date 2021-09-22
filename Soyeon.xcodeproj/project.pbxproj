@@ -53,12 +53,11 @@
 		0A4E513325EA8E8B00616C07 /* WriteProfile1Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512A25EA8E8B00616C07 /* WriteProfile1Interactor.swift */; };
 		0A4E513425EA8E8B00616C07 /* WriteProfile1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E512C25EA8E8B00616C07 /* WriteProfile1Router.swift */; };
 		0A4E515625EAB4E400616C07 /* WriteProfileAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E514825EAB4E400616C07 /* WriteProfileAlertView.xib */; };
-		0A4E515725EAB4E400616C07 /* WritingAlertStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E514925EAB4E400616C07 /* WritingAlertStyle.swift */; };
 		0A4E515825EAB4E400616C07 /* JobAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E514C25EAB4E400616C07 /* JobAlertItem.swift */; };
 		0A4E515925EAB4E400616C07 /* ReligionAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E514D25EAB4E400616C07 /* ReligionAlertItem.swift */; };
 		0A4E515A25EAB4E400616C07 /* EducationAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E514E25EAB4E400616C07 /* EducationAlertItem.swift */; };
 		0A4E515B25EAB4E400616C07 /* BirthYearAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E514F25EAB4E400616C07 /* BirthYearAlertItem.swift */; };
-		0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E515025EAB4E400616C07 /* WriteProfileAlertCustomButton.swift */; };
+		0A4E515C25EAB4E400616C07 /* WriteMyProfileAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E515025EAB4E400616C07 /* WriteMyProfileAlertView.swift */; };
 		0A4E515D25EAB4E400616C07 /* WriteProfileDefualtButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E515125EAB4E400616C07 /* WriteProfileDefualtButton.swift */; };
 		0A4E515E25EAB4E400616C07 /* WriteProfileAlertCustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E515225EAB4E400616C07 /* WriteProfileAlertCustomButton.xib */; };
 		0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E515325EAB4E400616C07 /* WriteProfileAlertAction.swift */; };
@@ -69,10 +68,14 @@
 		0A4E516E25EAB58700616C07 /* CaseIterable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516C25EAB58700616C07 /* CaseIterable+.swift */; };
 		0A4E516F25EAB58700616C07 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E516D25EAB58700616C07 /* Date+.swift */; };
 		0A4E518925EACB5D00616C07 /* HeightAlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */; };
+		0A6CF6032700A5640004AC15 /* SoyeonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CF6022700A5640004AC15 /* SoyeonUITests.swift */; };
 		0A6DECAB2597716500B8713B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECA92597716500B8713B /* Colors.swift */; };
 		0A6DECAC2597716500B8713B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DECAA2597716500B8713B /* Fonts.swift */; };
 		0A71E4EA26B8FBE500C6DBCF /* SignupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A71E4E926B8FBE500C6DBCF /* SignupDataModel.swift */; };
 		0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */; };
+		0A7F70BB26FB74B1001F37A7 /* TapDismissibleAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F70BA26FB74B1001F37A7 /* TapDismissibleAlertView.swift */; };
+		0A7F70BD26FB784C001F37A7 /* AnimationAlertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F70BC26FB784C001F37A7 /* AnimationAlertible.swift */; };
+		0A7F70BF26FB78AC001F37A7 /* AlertActionAddinible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F70BE26FB78AC001F37A7 /* AlertActionAddinible.swift */; };
 		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
 		0A86794626B6C170005D1F7E /* IdealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86794526B6C170005D1F7E /* IdealType.swift */; };
 		0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */; };
@@ -115,12 +118,12 @@
 		0AC9F64F26BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9F64526BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift */; };
 		0AC9F65026BFF41C006E15E8 /* PhotoRegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9F64726BFF41C006E15E8 /* PhotoRegistrationRouter.swift */; };
 		0AC9F65226BFF460006E15E8 /* PhotoGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9F65126BFF460006E15E8 /* PhotoGuideViewController.xib */; };
-		0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */; };
-		0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */; };
+		0ADB70D325CACE1300A10864 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70D225CACE1300A10864 /* Alertable.swift */; };
 		0ADB70E725CAD58A00A10864 /* SoyeonBasicAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */; };
 		0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */; };
 		0AE9480826644BE4008DA501 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9480726644BE4008DA501 /* APITests.swift */; };
 		0AE9481226644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */; };
+		0AF1658A26FCC4DE00695619 /* OppositesexProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */; };
 		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
 		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
 		0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */; };
@@ -247,6 +250,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A6CF6052700A5640004AC15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8795C34258E6A2100DF4D64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8795C3B258E6A2100DF4D64;
+			remoteInfo = Soyeon;
+		};
 		1D19089025A9F7A8008210D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8795C34258E6A2100DF4D64 /* Project object */;
@@ -300,12 +310,11 @@
 		0A4E512A25EA8E8B00616C07 /* WriteProfile1Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Interactor.swift; sourceTree = "<group>"; };
 		0A4E512C25EA8E8B00616C07 /* WriteProfile1Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfile1Router.swift; sourceTree = "<group>"; };
 		0A4E514825EAB4E400616C07 /* WriteProfileAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteProfileAlertView.xib; sourceTree = "<group>"; };
-		0A4E514925EAB4E400616C07 /* WritingAlertStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingAlertStyle.swift; sourceTree = "<group>"; };
 		0A4E514C25EAB4E400616C07 /* JobAlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobAlertItem.swift; sourceTree = "<group>"; };
 		0A4E514D25EAB4E400616C07 /* ReligionAlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReligionAlertItem.swift; sourceTree = "<group>"; };
 		0A4E514E25EAB4E400616C07 /* EducationAlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationAlertItem.swift; sourceTree = "<group>"; };
 		0A4E514F25EAB4E400616C07 /* BirthYearAlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthYearAlertItem.swift; sourceTree = "<group>"; };
-		0A4E515025EAB4E400616C07 /* WriteProfileAlertCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfileAlertCustomButton.swift; sourceTree = "<group>"; };
+		0A4E515025EAB4E400616C07 /* WriteMyProfileAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteMyProfileAlertView.swift; sourceTree = "<group>"; };
 		0A4E515125EAB4E400616C07 /* WriteProfileDefualtButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfileDefualtButton.swift; sourceTree = "<group>"; };
 		0A4E515225EAB4E400616C07 /* WriteProfileAlertCustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteProfileAlertCustomButton.xib; sourceTree = "<group>"; };
 		0A4E515325EAB4E400616C07 /* WriteProfileAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteProfileAlertAction.swift; sourceTree = "<group>"; };
@@ -316,10 +325,16 @@
 		0A4E516C25EAB58700616C07 /* CaseIterable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CaseIterable+.swift"; sourceTree = "<group>"; };
 		0A4E516D25EAB58700616C07 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeightAlertItem.swift; path = Soyeon/Extension/HeightAlertItem.swift; sourceTree = SOURCE_ROOT; };
+		0A6CF6002700A5640004AC15 /* SoyeonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyeonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A6CF6022700A5640004AC15 /* SoyeonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonUITests.swift; sourceTree = "<group>"; };
+		0A6CF6042700A5640004AC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6DECA92597716500B8713B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0A6DECAA2597716500B8713B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0A71E4E926B8FBE500C6DBCF /* SignupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataModel.swift; sourceTree = "<group>"; };
 		0A7C9DE3260264FB00D7644F /* SoyeonToast.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonToast.xib; sourceTree = "<group>"; };
+		0A7F70BA26FB74B1001F37A7 /* TapDismissibleAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapDismissibleAlertView.swift; sourceTree = "<group>"; };
+		0A7F70BC26FB784C001F37A7 /* AnimationAlertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAlertible.swift; sourceTree = "<group>"; };
+		0A7F70BE26FB78AC001F37A7 /* AlertActionAddinible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionAddinible.swift; sourceTree = "<group>"; };
 		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
 		0A86794526B6C170005D1F7E /* IdealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealType.swift; sourceTree = "<group>"; };
 		0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewModel.swift; sourceTree = "<group>"; };
@@ -362,12 +377,12 @@
 		0AC9F64526BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRegistrationConfigurator.swift; sourceTree = "<group>"; };
 		0AC9F64726BFF41C006E15E8 /* PhotoRegistrationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRegistrationRouter.swift; sourceTree = "<group>"; };
 		0AC9F65126BFF460006E15E8 /* PhotoGuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGuideViewController.xib; sourceTree = "<group>"; };
-		0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlertable.swift; sourceTree = "<group>"; };
-		0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonAlert.swift; sourceTree = "<group>"; };
+		0ADB70D225CACE1300A10864 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoyeonBasicAlertView.xib; sourceTree = "<group>"; };
 		0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertView.swift; sourceTree = "<group>"; };
 		0AE9480726644BE4008DA501 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositesexProfileTests.swift; sourceTree = "<group>"; };
 		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
 		0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLoadedNavigation.swift; sourceTree = "<group>"; };
@@ -496,6 +511,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A6CF5FD2700A5640004AC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D19088825A9F7A8008210D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -797,7 +819,6 @@
 			isa = PBXGroup;
 			children = (
 				0A4E514825EAB4E400616C07 /* WriteProfileAlertView.xib */,
-				0A4E514925EAB4E400616C07 /* WritingAlertStyle.swift */,
 				0A4E514A25EAB4E400616C07 /* Action */,
 				0A4E515425EAB4E400616C07 /* WriteProfileAlertViewModel.swift */,
 				0A4E515525EAB4E400616C07 /* WriteProfileAlertView.swift */,
@@ -809,7 +830,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4E514B25EAB4E400616C07 /* CustomButtons */,
-				0A4E515025EAB4E400616C07 /* WriteProfileAlertCustomButton.swift */,
+				0A4E515025EAB4E400616C07 /* WriteMyProfileAlertView.swift */,
 				0A4E515125EAB4E400616C07 /* WriteProfileDefualtButton.swift */,
 				0A4E515225EAB4E400616C07 /* WriteProfileAlertCustomButton.xib */,
 				0A4E515325EAB4E400616C07 /* WriteProfileAlertAction.swift */,
@@ -827,6 +848,15 @@
 				0A4E518825EACB5D00616C07 /* HeightAlertItem.swift */,
 			);
 			path = CustomButtons;
+			sourceTree = "<group>";
+		};
+		0A6CF6012700A5640004AC15 /* SoyeonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A6CF6022700A5640004AC15 /* SoyeonUITests.swift */,
+				0A6CF6042700A5640004AC15 /* Info.plist */,
+			);
+			path = SoyeonUITests;
 			sourceTree = "<group>";
 		};
 		0A71E4E726B8FAF400C6DBCF /* SignupDataStorage */ = {
@@ -1082,12 +1112,22 @@
 		0ADB70D125CACD7600A10864 /* SoyeonAlert */ = {
 			isa = PBXGroup;
 			children = (
-				0ADB70D225CACE1300A10864 /* SoyeonAlertable.swift */,
-				0ADB70E225CAD4C100A10864 /* SoyeonAlert.swift */,
+				0ADB70D225CACE1300A10864 /* Alertable.swift */,
+				0A7F70BC26FB784C001F37A7 /* AnimationAlertible.swift */,
+				0A7F70BE26FB78AC001F37A7 /* AlertActionAddinible.swift */,
+				0A7F70BA26FB74B1001F37A7 /* TapDismissibleAlertView.swift */,
 				1DD00B8725CDACDD004DC9AA /* AlertView */,
 				1DD00B8025CDA287004DC9AA /* Button */,
 			);
 			path = SoyeonAlert;
+			sourceTree = "<group>";
+		};
+		0AF1658826FCC35200695619 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		1D19085125A9F77E008210D1 /* Agreement */ = {
@@ -1245,6 +1285,7 @@
 		1D19088C25A9F7A8008210D1 /* SoyeonTests */ = {
 			isa = PBXGroup;
 			children = (
+				0AF1658826FCC35200695619 /* Alerts */,
 				0AE9480726644BE4008DA501 /* APITests.swift */,
 				1DD0CCAC261A0A0E003E6347 /* SignupUserDefault.swift */,
 				0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */,
@@ -1539,6 +1580,7 @@
 				00B3719E25973A65003F6C76 /* .swiftlint.yml */,
 				D8795C3E258E6A2100DF4D64 /* Soyeon */,
 				1D19088C25A9F7A8008210D1 /* SoyeonTests */,
+				0A6CF6012700A5640004AC15 /* SoyeonUITests */,
 				D8795C3D258E6A2100DF4D64 /* Products */,
 				572976794A38FB21146A1A93 /* Pods */,
 				987D4D40C92AB7DA7A4AEC60 /* Frameworks */,
@@ -1551,6 +1593,7 @@
 			children = (
 				D8795C3C258E6A2100DF4D64 /* Soyeon.app */,
 				1D19088B25A9F7A8008210D1 /* SoyeonTests.xctest */,
+				0A6CF6002700A5640004AC15 /* SoyeonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1678,6 +1721,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A6CF5FF2700A5640004AC15 /* SoyeonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A6CF6092700A5640004AC15 /* Build configuration list for PBXNativeTarget "SoyeonUITests" */;
+			buildPhases = (
+				0A6CF5FC2700A5640004AC15 /* Sources */,
+				0A6CF5FD2700A5640004AC15 /* Frameworks */,
+				0A6CF5FE2700A5640004AC15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A6CF6062700A5640004AC15 /* PBXTargetDependency */,
+			);
+			name = SoyeonUITests;
+			productName = SoyeonUITests;
+			productReference = 0A6CF6002700A5640004AC15 /* SoyeonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		1D19088A25A9F7A8008210D1 /* SoyeonTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D19089225A9F7A8008210D1 /* Build configuration list for PBXNativeTarget "SoyeonTests" */;
@@ -1730,10 +1791,14 @@
 		D8795C34258E6A2100DF4D64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = ludus;
 				TargetAttributes = {
+					0A6CF5FF2700A5640004AC15 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D8795C3B258E6A2100DF4D64;
+					};
 					1D19088A25A9F7A8008210D1 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = D8795C3B258E6A2100DF4D64;
@@ -1764,11 +1829,19 @@
 			targets = (
 				D8795C3B258E6A2100DF4D64 /* Soyeon */,
 				1D19088A25A9F7A8008210D1 /* SoyeonTests */,
+				0A6CF5FF2700A5640004AC15 /* SoyeonUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A6CF5FE2700A5640004AC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D19088925A9F7A8008210D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1868,10 +1941,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A6CF5FC2700A5640004AC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6CF6032700A5640004AC15 /* SoyeonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D19088725A9F7A8008210D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1658A26FCC4DE00695619 /* OppositesexProfileTests.swift in Sources */,
 				1DD0CCAD261A0A0E003E6347 /* SignupUserDefault.swift in Sources */,
 				0AE9480826644BE4008DA501 /* APITests.swift in Sources */,
 				0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */,
@@ -1931,13 +2013,15 @@
 				D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */,
 				0AC9F64F26BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
+				0A7F70BD26FB784C001F37A7 /* AnimationAlertible.swift in Sources */,
 				0AC21E0E2613FDE400AD0635 /* AdditionalPresenter.swift in Sources */,
 				1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */,
 				1DD0CCB8261A11C0003E6347 /* UserDefaultWrapper.swift in Sources */,
-				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */,
+				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */, 
 				0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */,
 				D8243EA826EE385B00DAC580 /* BasicProfileView.swift in Sources */,
-				D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */,
+				D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */, 
+				0A4E515C25EAB4E400616C07 /* WriteMyProfileAlertView.swift in Sources */, 
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				D8243EAC26EE3DDC00DAC580 /* MBTITypeView.swift in Sources */,
 				D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */,
@@ -1964,10 +2048,11 @@
 				00CF093A25E2914C0077700A /* LifeStyleAnswer.swift in Sources */,
 				1D4960A325CEE4CC0002C961 /* SoyeonAlertButton.swift in Sources */,
 				0A4E515A25EAB4E400616C07 /* EducationAlertItem.swift in Sources */,
+				0A7F70BB26FB74B1001F37A7 /* TapDismissibleAlertView.swift in Sources */,
 				1D19087D25A9F77E008210D1 /* AgreementViewModel.swift in Sources */,
 				00CF094225E293790077700A /* Mbti.swift in Sources */,
 				0A9C2A5E2699F7D70042692D /* APIDAuth.swift in Sources */,
-				0ADB70E325CAD4C100A10864 /* SoyeonAlert.swift in Sources */,
+				0A7F70BF26FB78AC001F37A7 /* AlertActionAddinible.swift in Sources */,
 				D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */,
 				0AC9F64D26BFF41C006E15E8 /* ProfileCollectionViewCell.swift in Sources */,
 				0A4E516625EAB55100616C07 /* PlaceHolderTextView.swift in Sources */,
@@ -1983,7 +2068,7 @@
 				0A86794626B6C170005D1F7E /* IdealType.swift in Sources */,
 				0A4E516025EAB4E400616C07 /* WriteProfileAlertViewModel.swift in Sources */,
 				0A89E630265DDCD70048A3BC /* CheckMyCharacterInteractor.swift in Sources */,
-				0ADB70D325CACE1300A10864 /* SoyeonAlertable.swift in Sources */,
+				0ADB70D325CACE1300A10864 /* Alertable.swift in Sources */,
 				0A9C2A5C2699EA630042692D /* AppSDKManager.swift in Sources */,
 				1D19087C25A9F77E008210D1 /* AgreementDetailRouter.swift in Sources */,
 				1D19087625A9F77E008210D1 /* AgreementDetailPresenter.swift in Sources */,
@@ -2061,7 +2146,6 @@
 				D828115126F3B38B0008D1DF /* MyAccountViewController.swift in Sources */,
 				D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */,
 				00E295E2266AA05700DB69CE /* Array+.swift in Sources */,
-				0A4E515725EAB4E400616C07 /* WritingAlertStyle.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
 				D828115326F3E8030008D1DF /* AccountStatusView.swift in Sources */,
 				D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */,
@@ -2076,6 +2160,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A6CF6062700A5640004AC15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8795C3B258E6A2100DF4D64 /* Soyeon */;
+			targetProxy = 0A6CF6052700A5640004AC15 /* PBXContainerItemProxy */;
+		};
 		1D19089125A9F7A8008210D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8795C3B258E6A2100DF4D64 /* Soyeon */;
@@ -2103,6 +2192,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A6CF6072700A5640004AC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R97CE6VN7C;
+				INFOPLIST_FILE = SoyeonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kr.SoyeonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Soyeon;
+			};
+			name = Debug;
+		};
+		0A6CF6082700A5640004AC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R97CE6VN7C;
+				INFOPLIST_FILE = SoyeonUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kr.SoyeonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Soyeon;
+			};
+			name = Release;
+		};
 		1D19089325A9F7A8008210D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2300,6 +2431,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A6CF6092700A5640004AC15 /* Build configuration list for PBXNativeTarget "SoyeonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A6CF6072700A5640004AC15 /* Debug */,
+				0A6CF6082700A5640004AC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D19089225A9F7A8008210D1 /* Build configuration list for PBXNativeTarget "SoyeonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

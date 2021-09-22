@@ -34,9 +34,9 @@ final class DormantApplicationViewController: UIViewController {
     @objc private func normalDormancyViewTapped() {
         SoyeonBasicAlertView
             .alert(message: "휴면신청 하시겠습니까?")?
-            .action(style: .basic("취소"), completion: { _ in })
-            .action(style: .cancel("계정 휴면"), completion: { _ in })
-            .show(to: self.view!, completion: nil)
+            .action(style: .basic("취소"))
+            .action(style: .cancel("계정 휴면"))
+            .show(to: view)
     }
 
     @objc private func coupleDormancyViewTapped() {

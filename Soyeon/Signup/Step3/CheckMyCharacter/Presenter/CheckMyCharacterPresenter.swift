@@ -12,7 +12,7 @@ protocol CheckMyCharacterPresenterInput: CheckMyCharacterInteractorOutput {
 
 }
 
-protocol CheckMyCharacterPresenterOutput: class {
+protocol CheckMyCharacterPresenterOutput: AnyObject {
 
     func displayQuestions(_ questions: [MQuestion])
 }

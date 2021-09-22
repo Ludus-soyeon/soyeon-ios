@@ -7,8 +7,8 @@
 //
 
 import UIKit.UITextView
- 
-final class ReligionAlertItem: WriteProfileAlertCustomButton {
+
+final class ReligionAlertItem: WriteMyProfileAlertView {
     @IBOutlet private weak var inputTextView: PlaceHolderWarningTextView!
     
     override func setDelegate() {
@@ -39,12 +39,12 @@ extension ReligionAlertItem: PlaceHolderTextViewDelegate {
     }
     
     func placeHolderTextViewDidChange(_ textView: UITextView) {
-        inputText = textView.text
+        result = textView.text
     }
 }
 
 extension ReligionAlertItem: WriteProfileAlertCompleteButtonDelegate {
     func didTapCompleteButton() {
-        inputTextView.endEditing(finalText: inputText)
+        inputTextView.endEditing(finalText: result)
     }
 }

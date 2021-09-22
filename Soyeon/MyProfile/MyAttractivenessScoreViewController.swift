@@ -48,8 +48,8 @@ final class MyAttractivenessScoreViewController: UIViewController {
             .action(style: .basic("아이템 충전하기"), completion: { [weak self] _ in
                 self?.setupRescoreLayout()
             })
-            .action(style: .cancel("취소"), completion: { _ in })
-            .show(to: self.view!, completion: nil)
+            .action(style: .cancel("취소"))
+            .show(to: view)
     }
     
     private func setupRescoreLayout() {

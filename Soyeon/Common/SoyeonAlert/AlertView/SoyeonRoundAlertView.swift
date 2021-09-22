@@ -8,48 +8,56 @@
  
 import UIKit
 
-final class SoyeonRoundAlertView: SoyeonAlert<SoyeonRoundAlertView>, SoyeonAlertActionable {
-    typealias ActionStyle = SoyeonAlertStyle.ActionRound
+final class SoyeonRoundAlertView: UIView, AnimationAlertible, XibLoadable {
+    
+    typealias XibViewType = SoyeonRoundAlertView
+    
+    typealias ActionStyle = RoundAlertAction
     
     @IBOutlet private weak var alertView: UIView!
     @IBOutlet private weak var messageLabel: UILabel!
     @IBOutlet private weak var buttonStackView: UIStackView!
-  
-    static func alert(message: String) -> Custom? {
-        guard let alert = super.alert() else {
+     
+    typealias BackgroundViewType = TapDismissibleAlertView
+    
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var backgroundView: BackgroundViewType!
+    
+    static func alert(to present: UIView, message: String) -> XibViewType? {
+        let view = SoyeonRoundAlertView(frame: .zero)
+      
+        guard let alert = view.load() else {
             return nil
         }
-        alert.setLayout()
+        
+        alert.attach(to: present)
+        
+        alert.setupLayout()
         
         alert.messageLabel.text = message
-          
+        
+        alert.backgroundView.delegate = alert
+        
         return alert
     }
-     
-    private func setLayout() {
+    
+    private func setupLayout() {
         alertView.setRadius(4)
     }
-    
-    @discardableResult
-    func action(style: ActionStyle,
-                completion: @escaping ((String?) -> Void)) -> Self {
-        let button: SoyeonRoundAlertButton!
-        if #available(iOS 14.0, *) {
-            button = SoyeonRoundAlertButton(style, action: .init(handler: { _ in
-                completion(nil)
-                super.dismiss()
-            }))
-        } else {
-            button = SoyeonRoundAlertButton(style, action: { _ in
-                completion(nil)
-                super.dismiss()
-            })
-        }
-        
-        buttonStackView.addArrangedSubview(button)
-          
-        return self
-    }
-      
 }
  
+extension SoyeonRoundAlertView: TapDismissibleAnimationAlertDelegate {
+    var style: AlertAnimationStyle? { .alpha }
+}
+
+extension SoyeonRoundAlertView: AlertActionAddinible {
+    
+    typealias ButtonType = SoyeonRoundAlertButton
+    
+    typealias Param = Void
+     
+    func insert(button: SoyeonRoundAlertButton) {
+        buttonStackView.addArrangedSubview(button)
+    }
+    
+}

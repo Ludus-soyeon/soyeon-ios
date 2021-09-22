@@ -15,15 +15,7 @@ final class PagingView: XibView {
     @IBOutlet private weak var pageControl: UIPageControl!
       
     private var items: [UIView]?
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
+      
     convenience init(views: [UIView]) {
         self.init(frame: .zero)
         

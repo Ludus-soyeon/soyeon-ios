@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,10 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="SoyeonBasicAlertView" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="SoyeonBasicAlertView" customModule="Soyeon" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-ub-9IF" customClass="TapDismissibleAlertView" customModule="Soyeon" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9Z-KB-IOJ">
-                    <rect key="frame" x="52" y="359.33333333333331" width="310" height="177.33333333333331"/>
+                    <rect key="frame" x="52" y="279.33333333333331" width="310" height="177.33333333333331"/>
                     <subviews>
                         <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S7c-ta-LoI" userLabel="Contents">
                             <rect key="frame" x="0.0" y="0.0" width="310" height="177.33333333333334"/>
@@ -31,9 +35,6 @@
                                                 <constraint firstAttribute="height" constant="45" id="yQC-E8-I0O"/>
                                             </constraints>
                                             <state key="normal" image="but_exit_signup"/>
-                                            <connections>
-                                                <action selector="closeButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="a8g-Ns-Wrd"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,17 +108,22 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" white="0.0" alpha="0.79807692307692313" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="B9Z-KB-IOJ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3z8-b5-NyM"/>
                 <constraint firstItem="B9Z-KB-IOJ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="9x5-j7-uSd"/>
+                <constraint firstItem="Wc5-ub-9IF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dnn-SQ-YQW"/>
                 <constraint firstItem="B9Z-KB-IOJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.748792" id="Ifj-jI-CuU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wc5-ub-9IF" secondAttribute="bottom" id="XBy-KZ-nBV"/>
+                <constraint firstItem="Wc5-ub-9IF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gzQ-L1-PTq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wc5-ub-9IF" secondAttribute="trailing" id="ygy-Lp-Vvc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="alertView" destination="B9Z-KB-IOJ" id="t1w-dF-xww"/>
+                <outlet property="backgroundView" destination="Wc5-ub-9IF" id="iQB-Bo-ha5"/>
                 <outlet property="buttonStackView" destination="HjO-yc-Jnx" id="Pvx-vz-oRj"/>
                 <outlet property="closeButton" destination="8o8-FA-tjJ" id="Pxk-iV-xyP"/>
+                <outlet property="contentView" destination="B9Z-KB-IOJ" id="t1w-dF-xww"/>
                 <outlet property="messageLabel" destination="nQQ-8p-8hk" id="Phu-JI-7uP"/>
             </connections>
             <point key="canvasLocation" x="-270" y="162"/>

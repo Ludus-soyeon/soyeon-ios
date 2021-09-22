@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +11,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-Vb-KVM" customClass="SoyeonRoundAlertView" customModule="Soyeon" customModuleProvider="target">
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-Vb-KVM" customClass="SoyeonRoundAlertView" customModule="Soyeon" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaH-Ic-0FD" customClass="TapDismissibleAlertView" customModule="Soyeon" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <viewLayoutGuide key="safeArea" id="3Tw-xG-vMg"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-yg-Fj4" userLabel="Alert View">
                     <rect key="frame" x="47" y="391" width="320" height="114"/>
                     <subviews>
@@ -70,17 +75,22 @@
                     </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="cmJ-72-Xjz"/>
-            <color key="backgroundColor" white="0.0" alpha="0.7980769231" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="yi6-yg-Fj4" firstAttribute="centerX" secondItem="cmJ-72-Xjz" secondAttribute="centerX" id="3Wy-6n-bOh"/>
-                <constraint firstItem="yi6-yg-Fj4" firstAttribute="width" secondItem="cmJ-72-Xjz" secondAttribute="width" multiplier="0.772947" id="6mM-Z9-gNo"/>
-                <constraint firstItem="yi6-yg-Fj4" firstAttribute="centerY" secondItem="cmJ-72-Xjz" secondAttribute="centerY" id="lmt-21-7w7"/>
+                <constraint firstItem="QaH-Ic-0FD" firstAttribute="top" secondItem="tBK-Vb-KVM" secondAttribute="top" id="0dV-6S-Z4P"/>
+                <constraint firstItem="yi6-yg-Fj4" firstAttribute="centerX" secondItem="tBK-Vb-KVM" secondAttribute="centerX" id="3Wy-6n-bOh"/>
+                <constraint firstAttribute="trailing" secondItem="QaH-Ic-0FD" secondAttribute="trailing" id="3t9-vJ-hc2"/>
+                <constraint firstItem="yi6-yg-Fj4" firstAttribute="width" secondItem="tBK-Vb-KVM" secondAttribute="width" multiplier="0.772947" id="6mM-Z9-gNo"/>
+                <constraint firstAttribute="bottom" secondItem="QaH-Ic-0FD" secondAttribute="bottom" id="TbT-hA-f8n"/>
+                <constraint firstItem="QaH-Ic-0FD" firstAttribute="leading" secondItem="tBK-Vb-KVM" secondAttribute="leading" id="X7L-OR-YrI"/>
+                <constraint firstItem="yi6-yg-Fj4" firstAttribute="centerY" secondItem="tBK-Vb-KVM" secondAttribute="centerY" id="lmt-21-7w7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="alertView" destination="yi6-yg-Fj4" id="WlL-yW-QTn"/>
+                <outlet property="backgroundView" destination="QaH-Ic-0FD" id="C6g-yS-dH1"/>
                 <outlet property="buttonStackView" destination="S7U-EC-PMW" id="5Yb-QM-e7g"/>
+                <outlet property="contentView" destination="yi6-yg-Fj4" id="QJz-Bo-VHi"/>
                 <outlet property="messageLabel" destination="PGi-c0-GlI" id="2NG-Mn-Nji"/>
             </connections>
             <point key="canvasLocation" x="-270" y="162"/>

@@ -155,11 +155,16 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
     
     private func presentWriteProfile(_ writeProfile: WriteProfileAlertViewModel.WriteProfileItem,
                                      completion: @escaping (String?) -> Void) {
-        writeProfile
-            .alert(action: { (selection) in
-                completion(selection)
-            })
-            .show(to: view)
+        guard let alert = WriteProfileAlertView.alert(title: writeProfile.title) else {
+            return
+        }
+         
+        alert.action(style: writeProfile, completion: { selection in
+            completion(selection)
+            alert.dismiss()
+        })
+        .show(to: view)
+        
     }
     
     @IBAction private func handleTap(_ sender: UITapGestureRecognizer) {

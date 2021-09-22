@@ -7,38 +7,65 @@
 //
 
 import UIKit.UIButton
+ 
+enum RoundAlertAction: AlertActionDefinable {
+  
+  case other(String)
+  case basic(String)
+  
+  init?(rawValue: RoundAlertAction) {
+      switch rawValue {
+      case .basic(let title):
+          self = RoundAlertAction.basic(title)
+          
+      case .other(let title):
+          self = RoundAlertAction.other(title)
+           
+      }
+  }
+}
 
 final class SoyeonRoundAlertButton: SoyeonAlertButton {
     
-    typealias ActionStyle = SoyeonAlertStyle.ActionRound
+    typealias DesigndActionType = RoundAlertAction
     
-    convenience init(_ style: ActionStyle, action: @escaping (String?) -> Void) {
-        self.init(action: action)
-        setLayout(style: style)
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    required init(action closure: @escaping (String?) -> Void) {
+        super.init(action: closure)
+        setupLayout()
     }
     
     @available(iOS 14.0, *)
-    convenience init(_ style: ActionStyle, action: UIAction?) {
-        self.init(action: action)
-        setLayout(style: style)
+    required init(action: UIAction) {
+        super.init(action: action)
+        setupLayout()
     }
     
-    private func setLayout(style: ActionStyle) {
+    private func setupLayout() {
         setRadius(23)
         titleLabel?.font = Fonts.nanumSquareR.size(16)
         heightAnchor.constraint(equalToConstant: 46).isActive = true
         
-        switch style {
-        case .basic(let title):
-            setTitle(title, for: .normal)
-            setTitleColor(UIColor.white, for: .normal)
-            backgroundColor = Colors.soyeonBlue.color()
-        case .other(let title):
-            setTitle(title, for: .normal)
-            setTitleColor(Colors.soyeonBlue.color(), for: .normal)
-            backgroundColor = UIColor.white
-            setBorderWithColor(Colors.soyeonBlue.color(),
-                               width: 1.0)
-        }
     }
+}
+ 
+extension SoyeonRoundAlertButton: ActionStyleInitiateProtocol {
+    
+  internal func setLayout(to action: RoundAlertAction) {
+      switch action {
+      case .basic(let title):
+          setTitle(title, for: .normal)
+          setTitleColor(UIColor.white, for: .normal)
+          backgroundColor = Colors.soyeonBlue.color()
+          
+      case .other(let title):
+          setTitle(title, for: .normal)
+          setTitleColor(Colors.soyeonBlue.color(), for: .normal)
+          backgroundColor = UIColor.white
+          setBorderWithColor(Colors.soyeonBlue.color(), width: 1.0)
+      }
+  }
 }

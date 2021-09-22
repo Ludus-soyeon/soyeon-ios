@@ -6,7 +6,7 @@
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct WriteProfileAlertViewModel {
     enum Education: String, CaseIterable {
@@ -56,7 +56,7 @@ struct WriteProfileAlertViewModel {
         case smaker         = "흡연"
     }
      
-    enum WriteProfileItem: Int {
+    enum WriteProfileItem: Int, CaseIterable {
         case birthYear = 0
         case education
         case job
@@ -117,33 +117,5 @@ extension WriteProfileAlertViewModel.WriteProfileItem {
         case .drink:
             return WriteProfileAlertViewModel.Drink.stringAllValues
         }
-    }
-    
-    func alert(action: @escaping (String?) -> Void) -> WriteProfileAlertView {
-        var alertView: WriteProfileAlertView! = WriteProfileAlertView
-            .alert(title: title )?
-            .action(style: .items( items ), completion: action)
-        
-        switch self {
-        case .birthYear:
-            alertView = alertView.action(style: .custom(.birthYear),
-                                         completion: action)
-        case .education:
-            alertView = alertView.action(style: .custom(.education),
-                                         completion: action)
-        case .job:
-            alertView = alertView.action(style: .custom(.job),
-                                         completion: action)
-        case .height:
-            alertView = alertView.action(style: .custom(.height),
-                                         completion: action)
-        case .religion:
-            alertView = alertView.action(style: .custom(.religion),
-                                         completion: action)
-        default:
-            return alertView
-        }
-        
-        return alertView
     }
 }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,8 +18,12 @@
         <view contentMode="scaleToFill" restorationIdentifier="SoyeonBasicAlertView" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-Bj-Afq" customClass="WriteProfileAlertView" customModule="Soyeon" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt4-Q6-Idb" customClass="TapDismissibleAlertView" customModule="Soyeon" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tES-35-PLP">
-                    <rect key="frame" x="52" y="430.5" width="310" height="45"/>
+                    <rect key="frame" x="52" y="425.5" width="310" height="45"/>
                     <subviews>
                         <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" spacing="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z5F-LJ-vAl" userLabel="Contents">
                             <rect key="frame" x="0.0" y="0.0" width="310" height="45"/>
@@ -69,17 +72,21 @@
                     </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="EmP-5x-gc8"/>
-            <color key="backgroundColor" white="0.0" alpha="0.7980769231" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="tES-35-PLP" firstAttribute="width" secondItem="xhf-Bj-Afq" secondAttribute="width" multiplier="0.748792" id="7Iz-Ge-VIA"/>
-                <constraint firstItem="tES-35-PLP" firstAttribute="centerX" secondItem="EmP-5x-gc8" secondAttribute="centerX" id="cDo-pE-Qw5"/>
-                <constraint firstItem="tES-35-PLP" firstAttribute="centerY" secondItem="EmP-5x-gc8" secondAttribute="centerY" id="pks-fi-tOR"/>
+                <constraint firstAttribute="bottom" secondItem="Yt4-Q6-Idb" secondAttribute="bottom" id="Auc-HK-X0V"/>
+                <constraint firstAttribute="trailing" secondItem="Yt4-Q6-Idb" secondAttribute="trailing" id="Ecm-r0-U0K"/>
+                <constraint firstItem="Yt4-Q6-Idb" firstAttribute="top" secondItem="xhf-Bj-Afq" secondAttribute="top" id="P4n-Vg-PpW"/>
+                <constraint firstItem="tES-35-PLP" firstAttribute="centerX" secondItem="xhf-Bj-Afq" secondAttribute="centerX" id="cDo-pE-Qw5"/>
+                <constraint firstItem="Yt4-Q6-Idb" firstAttribute="leading" secondItem="xhf-Bj-Afq" secondAttribute="leading" id="pEz-g8-bFA"/>
+                <constraint firstItem="tES-35-PLP" firstAttribute="centerY" secondItem="xhf-Bj-Afq" secondAttribute="centerY" id="pks-fi-tOR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="alertView" destination="tES-35-PLP" id="oWo-56-Qhc"/>
+                <outlet property="backgroundView" destination="Yt4-Q6-Idb" id="KOn-1j-ebg"/>
                 <outlet property="closeButton" destination="a06-Fr-1Wv" id="5zG-67-D26"/>
+                <outlet property="contentView" destination="tES-35-PLP" id="iBY-ox-tdE"/>
                 <outlet property="itemStackView" destination="Z5F-LJ-vAl" id="YY3-C0-NOt"/>
                 <outlet property="titleLabel" destination="pDk-ml-2VD" id="OrA-cw-hZM"/>
             </connections>

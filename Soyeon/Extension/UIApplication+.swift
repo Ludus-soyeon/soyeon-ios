@@ -10,6 +10,10 @@ import UIKit
 
 extension UIApplication {
     var soyeonWindow: UIWindow! {
-        return UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+    }
+    
+    var soyeonWindowView: UIView! {
+        soyeonWindow.rootViewController!.view
     }
 }
