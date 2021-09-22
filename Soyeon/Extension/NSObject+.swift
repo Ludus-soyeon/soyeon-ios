@@ -17,3 +17,4 @@ extension NSObject {
         return type(of: self).classname
     }
 }
+ 

@@ -33,8 +33,8 @@ final class CoupleDormancyViewController: UIViewController {
     @IBAction private func dormancyButtonTapped(_ sender: UIButton) {
         SoyeonBasicAlertView
             .alert(message: "커플이 되신 것을 축하드립니다!\n0님과 커플 휴면을 하시겠어요?")?
-            .action(style: .basic("커플 휴면 하기"), completion: { _ in })
-            .action(style: .cancel("취소"), completion: { _ in })
-            .show(to: self.view!, completion: nil)
+            .action(style: .basic("커플 휴면 하기"))
+            .action(style: .cancel("취소"))
+            .show(to: view)
     }
 }

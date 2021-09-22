@@ -118,14 +118,22 @@ final class WriteProfile1ViewController: SignupStepViewController<WriteProfile1M
     }
     
     private func showWriteProfile(_ writeProfile: WriteProfileAlertViewModel.WriteProfileItem) {
-        writeProfile
-            .alert(action: { [weak self] (result) in
-                guard let self = self,
-                      let result = result else { return }
-                self.completion(type: writeProfile,
-                                input: result)
-            })
-            .show(to: view!)
+        
+        guard let alert = WriteProfileAlertView.alert(title: writeProfile.title) else {
+            return
+        }
+            
+        alert.action(style: writeProfile, completion: { selection in
+            
+            guard let selection = selection else { return }
+            
+            self.completion(type: writeProfile,
+                            input: selection)
+            
+            alert.dismiss()
+        })
+        .show(to: view)
+
     }
 }
  

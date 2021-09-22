@@ -8,7 +8,7 @@
 
 import UIKit.UIPickerView
 
-final class HeightAlertItem: WriteProfileAlertCustomButton {
+final class HeightAlertItem: WriteMyProfileAlertView {
     @IBOutlet private weak var inputPickerView: UIPickerView!
     private var heights = Array(100...220)
     private var standardHeight: Int {
@@ -25,7 +25,7 @@ final class HeightAlertItem: WriteProfileAlertCustomButton {
                                   inComponent: 0,
                                   animated: false)
         
-        inputText = String(standardHeight)
+        result = String(standardHeight)
     }
     
     private func standardHeightRow() -> Int {
@@ -40,7 +40,7 @@ extension HeightAlertItem: UIPickerViewDelegate {
     }
      
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        inputText = String(heights[row])
+        result = String(heights[row])
     }
 }
 

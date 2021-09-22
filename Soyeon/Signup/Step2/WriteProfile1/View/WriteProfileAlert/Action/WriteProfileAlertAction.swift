@@ -6,19 +6,55 @@
 //  Copyright © 2021 ludus. All rights reserved.
 //
 
-import UIKit.UIView
-
-final class WriteProfileAlertAction: UIView {
-    func makeItems(_ val: [String],
-                   action: @escaping (String?) -> Void) -> [WriteProfileDefualtButton] {
-        return val.map { (val) -> WriteProfileDefualtButton in
-            return WriteProfileDefualtButton(title: val, action: action)
-        }
+import Foundation
+ 
+extension WriteProfileAlertViewModel.WriteProfileItem {
+    
+    private var editor: [WriteProfileAlertViewModel.WriteProfileItem] {
+        [.birthYear, .education, .job, .height, .religion]
     }
      
-    func makeCustomView(with: WritingAlertStyle.AlertCustomButtonStyle,
-                        action: @escaping (String?) -> Void) -> WriteProfileAlertCustomButton {
-        return with.view(action: action) ?? WriteProfileAlertCustomButton()
+    var isEditer: Bool {
+        editor.contains(self)
+    }
+     
+    var isSelection: Bool {
+        let notEditor = Set(AllCases()).subtracting(Set(editor))
+        return Array(notEditor).contains(self)
     }
     
+    func view(action: @escaping (String?) -> Void) -> WriteMyProfileAlertView? {
+        switch self {
+        case .birthYear:
+            return loadViews(action: action, type: BirthYearAlertItem.self)
+        case .education:
+            return loadViews(action: action, type: EducationAlertItem.self)
+        case .job:
+            return loadViews(action: action, type: JobAlertItem.self)
+        case .height:
+            return loadViews(action: action, type: HeightAlertItem.self)
+        case .religion:
+            return loadViews(action: action, type: ReligionAlertItem.self)
+        default:
+            return nil
+        }
+    }
+    
+    private func loadViews<ViewType: WriteMyProfileAlertView>(action: @escaping (String?) -> Void,
+                                                              type: ViewType.Type) -> ViewType? {
+        if let loadedNib = Bundle.main.loadNibNamed("WriteProfileAlertCustomButton",
+                                                    owner: self,
+                                                    options: nil) {
+            
+            for view in loadedNib {
+                if let view = view as? ViewType {
+                    view.actionClosure = action
+                    view.setDelegate()
+                    view.setupLayout()
+                    return view
+                }
+            }
+        }
+        return nil
+    }
 }

@@ -8,62 +8,71 @@
 
 import UIKit
 
-final class SoyeonBasicAlertView: SoyeonAlert<SoyeonBasicAlertView>, SoyeonAlertActionable {
-    typealias ActionStyle = SoyeonAlertStyle.ActionBasic
+final class SoyeonBasicAlertView: UIView, AnimationAlertible, XibLoadable {
      
-    @IBOutlet private weak var alertView: UIView!
+    typealias XibViewType = SoyeonBasicAlertView
+    
     @IBOutlet private weak var messageLabel: UILabel!
     @IBOutlet private weak var buttonStackView: UIStackView!
     @IBOutlet private weak var closeButton: UIButton!
- 
-    static func alert(style: SoyeonAlertStyle.Basic? = nil,
-                      message: String) -> Custom? {
-        guard let alert = super.alert() else {
+    
+    typealias BackgroundViewType = TapDismissibleAlertView
+    
+    @IBOutlet internal weak var contentView: UIView!
+    @IBOutlet internal weak var backgroundView: TapDismissibleAlertView!
+    
+    enum MyButtonStyle {
+        case showClose
+    }
+    
+    static func alert(closeStyle: MyButtonStyle? = nil, message: String) -> XibViewType? {
+        
+        guard let alertView = load() else {
             return nil
         }
         
-        alert.setLayout()
+        alertView.setupButton(to: closeStyle)
         
+        alertView.setupLayout()
+        
+        alertView.backgroundView.delegate = alertView
+        alertView.messageLabel.text = message
+        
+        return alertView
+    }
+    
+    private func setupLayout() {
+        contentView.setRadius(4)
+    }
+    
+    private func setupButton(to style: MyButtonStyle? = nil) {
         switch style {
-        case .close:
-            alert.closeButton.isHidden = false
-        case .none:
-            break
+        case .showClose:
+            closeButton.isHidden = false
+        default:
+            closeButton.isHidden = true
         }
-        
-        alert.messageLabel.text = message
-        
-        return alert
-    }
-    
-    private func setLayout() {
-        alertView.setRadius(4)
-    }
-    
-    @discardableResult
-    func action(style: ActionStyle,
-                completion: @escaping ((String?) -> Void)) -> Self {
-        let button: SoyeonBasicAlertButton!
-        if #available(iOS 14.0, *) {
-            button = SoyeonBasicAlertButton(style, action: .init(handler: { _ in
-                completion(nil)
-                super.dismiss()
-            }))
-        } else {
-            button = SoyeonBasicAlertButton(style, action: { _ in
-                completion(nil)
-                super.dismiss()
-            })
-        }
-        
-        buttonStackView.addArrangedSubview(button)
-          
-        return self
     }
     
     @IBAction private func closeButtonDidTap(_ sender: Any) {
-        dismiss()
+        dismissAnimation(with: .alpha)
     }
     
 }
- 
+
+extension SoyeonBasicAlertView: TapDismissibleAnimationAlertDelegate {
+    var style: AlertAnimationStyle? { .alpha }
+}
+
+extension SoyeonBasicAlertView: AlertActionAddinible {
+    
+    typealias ButtonType = SoyeonBasicAlertButton
+    typealias ActionStyle = BasicAlertAction
+    
+    typealias Param = Void
+    
+    func insert(button: SoyeonBasicAlertButton) {
+        buttonStackView.addArrangedSubview(button)
+    }
+    
+}

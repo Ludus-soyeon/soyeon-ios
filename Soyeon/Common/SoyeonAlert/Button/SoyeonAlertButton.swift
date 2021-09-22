@@ -15,15 +15,21 @@ class SoyeonAlertButton: UIButton {
         actionClosure?(titleLabel?.text)
     }
     
-    convenience init(action: @escaping (String?) -> Void) {
-        self.init()
-        actionClosure = action
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    required init(action closure: @escaping (String?) -> Void) {
+        super.init(frame: .zero)
+        self.actionClosure = closure
         self.addTarget(self, action: #selector(targetAction), for: .touchDown)
+        
     }
     
     @available(iOS 14.0, *)
-    convenience init(action: UIAction?) {
-        self.init(primaryAction: action)
+    required init(action: UIAction) {
+        super.init(frame: .zero)
+        self.addAction(action, for: .touchDown)
     }
-     
+    
 }

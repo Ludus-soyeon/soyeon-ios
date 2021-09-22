@@ -8,7 +8,7 @@
 
 import UIKit.UIPickerView
 
-final class BirthYearAlertItem: WriteProfileAlertCustomButton {
+final class BirthYearAlertItem: WriteMyProfileAlertView {
     @IBOutlet private weak var inputPickerView: UIPickerView!
     private var thisYear = Date().year
     private lazy var years = Array(thisYear - 70...thisYear)
@@ -26,7 +26,7 @@ final class BirthYearAlertItem: WriteProfileAlertCustomButton {
                                   inComponent: 0,
                                   animated: false)
         
-        inputText = String(standardYear)
+        result = String(standardYear)
     }
     
     private func standardYearRow() -> Int {
@@ -40,7 +40,7 @@ extension BirthYearAlertItem: UIPickerViewDelegate {
     }
      
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        inputText = String(years[row])
+        result = String(years[row])
     }
 }
 

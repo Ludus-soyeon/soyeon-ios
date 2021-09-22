@@ -55,6 +55,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="completionButton" destination="dv4-yK-9wb" id="ZHm-4G-3Oq"/>
                 <outlet property="inputPickerView" destination="arc-6c-YMb" id="h8N-65-p15"/>
             </connections>
             <point key="canvasLocation" x="-400" y="-31"/>
@@ -98,6 +99,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="completionButton" destination="FhG-Ua-tFD" id="uzx-40-ASR"/>
                 <outlet property="inputPickerView" destination="vKK-t7-DSd" id="PRb-WT-w8z"/>
             </connections>
             <point key="canvasLocation" x="-400" y="265"/>
@@ -179,6 +181,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="completionButton" destination="Qer-Uz-hw0" id="cxq-Bb-UdG"/>
                 <outlet property="inputTextView" destination="A8G-D9-h4X" id="CWh-s1-o2I"/>
             </connections>
             <point key="canvasLocation" x="259.19999999999999" y="184.85757121439281"/>
@@ -274,6 +277,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="completionButton" destination="IVr-wp-neO" id="HVk-hi-MXH"/>
                 <outlet property="inputTextView" destination="bFO-CP-pTo" id="Urm-lD-Wdx"/>
             </connections>
             <point key="canvasLocation" x="257.60000000000002" y="-8.5457271364317844"/>
@@ -355,6 +359,7 @@ California 대학원 석사졸</string>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="completionButton" destination="avK-nZ-7Vz" id="R9y-di-PWu"/>
                 <outlet property="inputTextView" destination="AnF-7R-3Fl" id="tWo-Rc-xew"/>
             </connections>
             <point key="canvasLocation" x="259" y="-203"/>

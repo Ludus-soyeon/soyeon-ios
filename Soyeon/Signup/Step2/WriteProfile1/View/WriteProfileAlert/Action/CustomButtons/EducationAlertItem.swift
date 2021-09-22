@@ -8,7 +8,7 @@
 
 import UIKit.UITextView
 
-final class EducationAlertItem: WriteProfileAlertCustomButton {
+final class EducationAlertItem: WriteMyProfileAlertView {
     @IBOutlet private weak var inputTextView: PlaceHolderWarningTextView!
     
     override func setDelegate() {
@@ -39,12 +39,12 @@ extension EducationAlertItem: PlaceHolderTextViewDelegate {
     }
     
     func placeHolderTextViewDidChange(_ textView: UITextView) {
-        inputText = textView.text
+        result = textView.text
     }
 }
 
 extension EducationAlertItem: WriteProfileAlertCompleteButtonDelegate {
     func didTapCompleteButton() {
-        inputTextView.endEditing(finalText: inputText)
+        inputTextView.endEditing(finalText: result)
     }
 }

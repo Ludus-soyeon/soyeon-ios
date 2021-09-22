@@ -1,5 +1,5 @@
 //
-//  WriteProfile1AlertView.swift
+//  WriteProfileAlertView.swift
 //  Soyeon
 //
 //  Created by 박은비 on 2021/02/21.
@@ -8,64 +8,71 @@
 
 import UIKit
 
-final class WriteProfileAlertView: SoyeonAlert<WriteProfileAlertView>, SoyeonAlertActionable { 
+final class WriteProfileAlertView: UIView, AnimationAlertible, XibLoadable {
     
-    typealias ActionStyle = WritingAlertStyle.Action
+    typealias XibViewType = WriteProfileAlertView
      
-    @IBOutlet private weak var alertView: UIView!
     @IBOutlet private weak var itemStackView: UIStackView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var closeButton: UIButton!
- 
-    static func alert(title: String) -> Custom? {
-        guard let alert = super.alert() else {
+    
+    // SoyeonAlertable
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var backgroundView: UIView!
+    
+    static func alert(title: String? = nil) -> XibViewType? {
+        let view = WriteProfileAlertView(frame: .zero)
+      
+        guard let alert = view.load() else {
             return nil
         }
         
         alert.setLayout()
+        
         alert.titleLabel.text = title
         
         return alert
     }
     
     private func setLayout() {
-        alertView.setRadius(4)
+        contentView.setRadius(4)
     }
     
-    @discardableResult
-    func action(style: ActionStyle,
-                completion: @escaping ((String?) -> Void)) -> Self {
-        let action = WriteProfileAlertAction()
-        
-        switch style {
-        case .items(let values):
-            setItems(action.makeItems(values, action: { (result) in
-                completion(result)
-                self.dismiss()
-            }))
-        case .custom(let style):
-            setInputViews(action.makeCustomView(with: style, action: { (result) in
-                completion(result)
-                self.dismiss()
-            }))
-        }
-          
-        return self
-    }
-    
-    private func setItems(_ items: [WriteProfileDefualtButton]) {
-        items.forEach { (button) in
-            itemStackView.addArrangedSubview(button)
-        }
-    }
-    
-    private func setInputViews(_ customView: WriteProfileAlertCustomButton) {
-        itemStackView.addArrangedSubview(customView)
-    }
-     
     @IBAction private func closeButtonDidTap(_ sender: Any) {
         dismiss()
     }
-    
 }
- 
+
+extension WriteProfileAlertView: AlertActionAddinible {
+    
+    typealias ButtonType = WriteMyProfileAlertView
+    typealias Param = String?
+    
+    func action(style: WriteProfileAlertViewModel.WriteProfileItem,
+                completion: ((String?) -> Void)? = nil) -> Self {
+        
+        guard style.isEditer, let view = style.view(action: { completion?($0) }) else {
+            let buttons = style.items.map {
+                WriteProfileDefualtButton($0) { result in
+                    completion?(result)
+                }
+            }
+            
+            insert(buttons: buttons)
+            return self
+        }
+         
+        insert(button: view)
+        return self
+    }
+  
+    /// WriteProfileItem의 String Array로 selection이 구성된 경우.
+    private func insert(buttons: [WriteProfileDefualtButton]) {
+        buttons.forEach { itemStackView.addArrangedSubview($0) }
+    }
+    
+    func insert(button: WriteMyProfileAlertView) {
+        itemStackView.addArrangedSubview(button)
+    }
+     
+}
