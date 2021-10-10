@@ -32,10 +32,9 @@ final class MyProfileViewController: UIViewController {
     private func setupLayout() {
         UINavigationBar.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
             .titleTextAttributes = [
-                NSAttributedString.Key.foregroundColor: UIColor(red: 57/255,
-                                                                green: 57/255,
-                                                                blue: 57/255,
-                                                                alpha: 1.0),
+                NSAttributedString.Key.foregroundColor: UIColor(r: 57,
+                                                                g: 57,
+                                                                b: 57),
                 NSAttributedString.Key.font: Fonts.nanumSquareR.size(20)
             ]
         UIApplication.shared.windows.reload()

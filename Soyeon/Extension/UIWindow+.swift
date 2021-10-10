@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIWindow {
+extension UIWindow {
     
     /// Unload all views and add back.
     /// Useful for applying `UIAppearance` changes to existing views.
@@ -20,7 +20,7 @@ public extension UIWindow {
     }
 }
 
-public extension Array where Element == UIWindow {
+extension Array where Element == UIWindow {
     
     /// Unload all views for each `UIWindow` and add back.
     /// Useful for applying `UIAppearance` changes to existing views.

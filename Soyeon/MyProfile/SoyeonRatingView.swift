@@ -64,7 +64,7 @@ final class SoyeonRatingView: UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = isHightlight ? Colors.soyeonBlue.color()
-            : UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
+            : UIColor(r: 242, g: 242, b: 242)
         view.heightAnchor.constraint(equalToConstant: 1).isActive = true
         view.widthAnchor.constraint(equalToConstant: 32).isActive = true
         return view
@@ -82,13 +82,13 @@ final class SoyeonRatingView: UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
             view.widthAnchor.constraint(equalToConstant: 16).isActive = true
             view.heightAnchor.constraint(equalToConstant: 16).isActive = true
-            view.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1.0)
+            view.backgroundColor = UIColor(r: 239, g: 239, b: 239)
             view.layer.cornerRadius = 8
         }
         let label = UILabel()
         label.text = level.title
         label.font = Fonts.nanumSquareR.size(13)
-        label.textColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+        label.textColor = UIColor(r: 153, g: 153, b: 153)
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 8).isActive =  true

@@ -27,7 +27,7 @@ final class NoticeViewController: UIViewController {
             bottom: 20,
             right: 19
         )
-        inqueryButton.setBorderWithColor(UIColor(red: 0, green: 0, blue: 0, alpha: 0.15),
+        inqueryButton.setBorderWithColor(UIColor(r: 0, g: 0, b: 0, a: 0.15),
                                          width: 1)
         inqueryButton.setRadius(4)
         inqueryButton.translatesAutoresizingMaskIntoConstraints = false

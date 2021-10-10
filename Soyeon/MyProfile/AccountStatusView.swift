@@ -38,8 +38,8 @@ final class AccountStatusView: XibView {
     
     private func setupLayout() {
         (layer as? CAGradientLayer)?.colors = [
-            UIColor(red: 111/255, green: 121/255, blue: 231/255, alpha: 1.0).cgColor,
-            UIColor(red: 136/255, green: 111/255, blue: 212/255, alpha: 1.0).cgColor
+            UIColor(r: 111, g: 121, b: 231).cgColor,
+            UIColor(r: 136, g: 111, b: 212).cgColor
         ]
     }
     

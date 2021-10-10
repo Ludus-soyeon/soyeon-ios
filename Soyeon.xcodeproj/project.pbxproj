@@ -195,6 +195,7 @@
 		D8243EB826EE420000DAC580 /* MannerScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243EB726EE420000DAC580 /* MannerScoreView.xib */; };
 		D8243EBA26EE42B000DAC580 /* IdealTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8243EB926EE42B000DAC580 /* IdealTypeView.swift */; };
 		D8243EBC26EE431600DAC580 /* IdealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243EBB26EE431600DAC580 /* IdealTypeView.xib */; };
+		D8260F792712F91E003E4334 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8260F782712F91E003E4334 /* UIColor+.swift */; };
 		D828115126F3B38B0008D1DF /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115026F3B38B0008D1DF /* MyAccountViewController.swift */; };
 		D828115326F3E8030008D1DF /* AccountStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115226F3E8030008D1DF /* AccountStatusView.swift */; };
 		D828115526F414890008D1DF /* AccountStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D828115426F414890008D1DF /* AccountStatusView.xib */; };
@@ -442,6 +443,7 @@
 		D8243EB726EE420000DAC580 /* MannerScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MannerScoreView.xib; sourceTree = "<group>"; };
 		D8243EB926EE42B000DAC580 /* IdealTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeView.swift; sourceTree = "<group>"; };
 		D8243EBB26EE431600DAC580 /* IdealTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdealTypeView.xib; sourceTree = "<group>"; };
+		D8260F782712F91E003E4334 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		D828115026F3B38B0008D1DF /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		D828115226F3E8030008D1DF /* AccountStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusView.swift; sourceTree = "<group>"; };
 		D828115426F414890008D1DF /* AccountStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountStatusView.xib; sourceTree = "<group>"; };
@@ -605,6 +607,7 @@
 				D89064C426E6D71B00545F7D /* NSAttributedString+.swift */,
 				D89E57D026F84D1C00E7C091 /* UIWindow+.swift */,
 				D881BB7926F9F5660044607A /* UIStackView+.swift */,
+				D8260F782712F91E003E4334 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1939,6 +1942,7 @@
 				D8243EAC26EE3DDC00DAC580 /* MBTITypeView.swift in Sources */,
 				D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */,
 				00CF093E25E291EF0077700A /* LifeStyleQuestion.swift in Sources */,
+				D8260F792712F91E003E4334 /* UIColor+.swift in Sources */,
 				0A89E631265DDCD70048A3BC /* CheckMyCharacterRouter.swift in Sources */,
 				0A89E645265DEF920048A3BC /* CheckMyCharacterCollectionBottomView.swift in Sources */,
 				0A89E62E265DDCD70048A3BC /* CheckMyCharacterConfigurator.swift in Sources */,

@@ -37,18 +37,18 @@ final class SoyeonSwitch: UIControl {
             layoutThumbLayer(for: layer.bounds)
         }
     }
-    var onTintColor: UIColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1) {
+    var onTintColor: UIColor = UIColor(r: 242, g: 242, b: 242) {
         didSet {
             trackLayer.backgroundColor = getBackgroundColor()
         }
     }
-    var offTintColor: UIColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1) {
+    var offTintColor: UIColor = UIColor(r: 242, g: 242, b: 242) {
         didSet {
             trackLayer.backgroundColor = getBackgroundColor()
             (offContentLayer as? CATextLayer)?.foregroundColor = offTintColor.cgColor
         }
     }
-    var thumbTintColor: UIColor = UIColor(red: 209/255, green: 209/255, blue: 209/255, alpha: 1) {
+    var thumbTintColor: UIColor = UIColor(r: 209, g: 209, b: 209) {
         didSet {
             thumbLayer.backgroundColor = thumbTintColor.cgColor
             (onContentLayer as? CATextLayer)?.foregroundColor = thumbTintColor.cgColor
@@ -127,7 +127,7 @@ final class SoyeonSwitch: UIControl {
         trackLayer.backgroundColor = getBackgroundColor()
         trackLayer.borderColor = getBackgroundColor()
         trackLayer.borderWidth = borderWidth
-        innerLayer.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1).cgColor
+        innerLayer.backgroundColor = UIColor(r: 242, g: 242, b: 242).cgColor
         contentsLayer.masksToBounds = true
         thumbLayer.backgroundColor = thumbTintColor.cgColor
         thumbLayer.contentsGravity = .resizeAspect
@@ -233,20 +233,20 @@ final class SoyeonSwitch: UIControl {
         layoutSublayers(of: layer)
     }
     // MARK: - Layout Helper
-    final func getBackgroundColor() -> CGColor {
+    func getBackgroundColor() -> CGColor {
         return (isOn ? onTintColor : offTintColor).cgColor
     }
-    final func getThumbSize() -> CGSize {
+    func getThumbSize() -> CGSize {
         let height = bounds.height - 2 * (borderWidth + thumbRadiusPadding)
         let width = (isTouchDown && isStretchEnable) ? height * 1.2 : height
         return CGSize(width: width, height: height)
     }
-    final func getThumbOrigin(for width: CGFloat) -> CGPoint {
+    func getThumbOrigin(for width: CGFloat) -> CGPoint {
         let inset = borderWidth + thumbRadiusPadding
         let x = isOn ? bounds.width - width - inset : inset
         return CGPoint(x: x, y: inset)
     }
-    final func getContentLayerSize(for layer: CALayer?) -> CGSize {
+    func getContentLayerSize(for layer: CALayer?) -> CGSize {
         let inset = 2 * (borderWidth + trackTopBottomPadding)
         let diameter = bounds.height - inset
         if let textLayer = layer as? CATextLayer {
