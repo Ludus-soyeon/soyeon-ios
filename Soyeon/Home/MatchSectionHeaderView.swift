@@ -14,7 +14,7 @@ final class MatchSectionHeaderView: UICollectionReusableView {
         static let titleLabelFont = Fonts.nanumSquareR.size(20.0)
         static let titleLabelTintColor = Colors.strongBlack.color()
         static let subTitleLabelFont = Fonts.nanumSquareR.size(14.0)
-        static let subTitleLabelTintColor = UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1.0)
+        static let subTitleLabelTintColor = UIColor(r: 102, g: 102, b: 102)
     }
     
     private lazy var titleLabel: UILabel = {

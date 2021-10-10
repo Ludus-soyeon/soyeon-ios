@@ -17,7 +17,7 @@ final class MatchSectionFooterView: UICollectionReusableView {
         button.setTitleColor(Colors.black.color(), for: .normal)
         button.setImage(UIImage(named: "plus"), for: .normal)
         button.layer.borderWidth = 1.0
-        button.layer.borderColor = UIColor(red: 226/255, green: 226/255, blue: 226/255, alpha: 1.0).cgColor
+        button.layer.borderColor = UIColor(r: 226, g: 226, b: 226).cgColor
         button.layer.cornerRadius = 25.0
         return button
     }()

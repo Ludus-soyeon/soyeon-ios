@@ -19,9 +19,9 @@ final class WriteIntroductionViewController: SignupStepViewController<Introducti
     private(set) var buttonObserver: NSKeyValueObservation?
     
     private enum Theme {
-        static let textViewBorderColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 1.0)
+        static let textViewBorderColor = UIColor(r: 236, g: 236, b: 236)
         static let enabledTitleTintColor = UIColor.white
-        static let disabledTitleTintColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+        static let disabledTitleTintColor = UIColor(r: 153, g: 153, b: 153)
         static let enabledBackgroundColor = Colors.soyeonBlue.color()
         static let disabledBackgroundColor = Colors.buttonDisabled.color()
     }

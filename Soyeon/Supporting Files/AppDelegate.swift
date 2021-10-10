@@ -21,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let backButtonImage = UIImage(named: "icoBackGnbNormal")?.withRenderingMode(.alwaysOriginal)
         let barAppearance = UINavigationBar.appearance(whenContainedInInstancesOf: [CustomBackButtonNavController.self])
         barAppearance.titleTextAttributes = [
-            .foregroundColor: UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1.0),
+            .foregroundColor: UIColor(r: 51, g: 51, b: 51),
             .font: Fonts.nanumSquareB.size(18.0)
         ]
         barAppearance.setBackgroundImage(UIImage(), for: .default)
         barAppearance.shadowImage = UIImage()
-        barAppearance.isTranslucent = true
+        barAppearance.isTranslucent = false
         barAppearance.backIndicatorImage = backButtonImage
         barAppearance.backIndicatorTransitionMaskImage = backButtonImage
 

@@ -22,7 +22,7 @@ final class ProfileCollectionViewCell: UICollectionViewCell {
     }
 
     private enum Theme {
-        static let cellBorderColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 1.0).cgColor
+        static let cellBorderColor = UIColor(r: 236, g: 236, b: 236).cgColor
         static let cellHightlitedColor = Colors.soyeonBlue.cgColor()
     }
 

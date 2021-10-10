@@ -9,14 +9,14 @@
 import UIKit
 
 final class RadioButton: UIButton {
-    private let ringColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+    private let ringColor = UIColor(r: 153, g: 153, b: 153)
     private let ringSize = CGSize(width: 22.0, height: 22.0)
     private let ringSpacing: CGFloat = 3.6
     private let ringWidth: CGFloat = 1.0
     
     private let selectedFillColor = Colors.soyeonBlue.color()
     
-    private let titleColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+    private let titleColor = UIColor(r: 153, g: 153, b: 153)
     private let titleFont = Fonts.nanumSquareR.size(15.0)
     private var titleSize: CGSize {
         guard let label = self.titleLabel,

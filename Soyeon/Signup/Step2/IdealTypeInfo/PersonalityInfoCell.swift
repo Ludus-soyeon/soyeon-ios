@@ -17,7 +17,7 @@ final class PersonalityInfoCell: UICollectionViewCell {
     }
     
     private enum Theme {
-        static let normalTintColor: UIColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+        static let normalTintColor: UIColor = UIColor(r: 153, g: 153, b: 153)
         static let selectedTintColor: UIColor = Colors.soyeonBlue.color()
     }
     
