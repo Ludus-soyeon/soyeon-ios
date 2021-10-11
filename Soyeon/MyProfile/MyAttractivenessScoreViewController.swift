@@ -49,7 +49,7 @@ final class MyAttractivenessScoreViewController: UIViewController {
                 self?.setupRescoreLayout()
             })
             .action(style: .cancel("취소"))
-            .show(to: view)
+            .show(to: self.view)
     }
     
     private func setupRescoreLayout() {

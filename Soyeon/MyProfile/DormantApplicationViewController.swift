@@ -36,7 +36,7 @@ final class DormantApplicationViewController: UIViewController {
             .alert(message: "휴면신청 하시겠습니까?")?
             .action(style: .basic("취소"))
             .action(style: .cancel("계정 휴면"))
-            .show(to: view)
+            .show(to: self.view)
     }
 
     @objc private func coupleDormancyViewTapped() {

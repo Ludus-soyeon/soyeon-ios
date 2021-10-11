@@ -123,7 +123,7 @@
 		0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */; };
 		0AE9480826644BE4008DA501 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9480726644BE4008DA501 /* APITests.swift */; };
 		0AE9481226644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */; };
-		0AF1658A26FCC4DE00695619 /* OppositesexProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */; };
+		0AF1658A26FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1658926FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift */; };
 		0AF58E8A2611EA46008F3E56 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E892611EA46008F3E56 /* Signup.swift */; };
 		0AF58E962611F7FB008F3E56 /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58E952611F7FB008F3E56 /* Step1.swift */; };
 		0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */; };
@@ -382,7 +382,7 @@
 		0ADB70EA25CAE74000A10864 /* SoyeonBasicAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonBasicAlertView.swift; sourceTree = "<group>"; };
 		0AE9480726644BE4008DA501 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		0AE9481126644F18008DA501 /* CheckMyCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
-		0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositesexProfileTests.swift; sourceTree = "<group>"; };
+		0AF1658926FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeSexProfileBasicAlertTests.swift; sourceTree = "<group>"; };
 		0AF58E892611EA46008F3E56 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		0AF58E952611F7FB008F3E56 /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
 		0AF58EA72611FD5E008F3E56 /* SignupLoadedNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLoadedNavigation.swift; sourceTree = "<group>"; };
@@ -1125,7 +1125,7 @@
 		0AF1658826FCC35200695619 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				0AF1658926FCC4DE00695619 /* OppositesexProfileTests.swift */,
+				0AF1658926FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -1953,7 +1953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF1658A26FCC4DE00695619 /* OppositesexProfileTests.swift in Sources */,
+				0AF1658A26FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift in Sources */,
 				1DD0CCAD261A0A0E003E6347 /* SignupUserDefault.swift in Sources */,
 				0AE9480826644BE4008DA501 /* APITests.swift in Sources */,
 				0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */,
@@ -2017,11 +2017,11 @@
 				0AC21E0E2613FDE400AD0635 /* AdditionalPresenter.swift in Sources */,
 				1D19087F25A9F77E008210D1 /* AgreementCustomButtons.swift in Sources */,
 				1DD0CCB8261A11C0003E6347 /* UserDefaultWrapper.swift in Sources */,
-				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */, 
-				0A4E515C25EAB4E400616C07 /* WriteProfileAlertCustomButton.swift in Sources */,
+				1DA32034262C757900ED564A /* LoadSignupView.swift in Sources */,
+				0A4E515C25EAB4E400616C07 /* WriteMyProfileAlertView.swift in Sources */,
 				D8243EA826EE385B00DAC580 /* BasicProfileView.swift in Sources */,
-				D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */, 
-				0A4E515C25EAB4E400616C07 /* WriteMyProfileAlertView.swift in Sources */, 
+				D828115B26F4F4040008D1DF /* CoupleDormancyViewController.swift in Sources */,
+				0A4E515C25EAB4E400616C07 /* WriteMyProfileAlertView.swift in Sources */,
 				1D5B63C325B481BA00A5321C /* XibView.swift in Sources */,
 				D8243EAC26EE3DDC00DAC580 /* MBTITypeView.swift in Sources */,
 				D828115726F46AAB0008D1DF /* AccountStatusViewModel.swift in Sources */,

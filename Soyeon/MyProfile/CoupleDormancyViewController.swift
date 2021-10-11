@@ -35,6 +35,6 @@ final class CoupleDormancyViewController: UIViewController {
             .alert(message: "커플이 되신 것을 축하드립니다!\n0님과 커플 휴면을 하시겠어요?")?
             .action(style: .basic("커플 휴면 하기"))
             .action(style: .cancel("취소"))
-            .show(to: view)
+            .show(to: self.view)
     }
 }

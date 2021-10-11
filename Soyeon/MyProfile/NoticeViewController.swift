@@ -39,6 +39,6 @@ final class NoticeViewController: UIViewController {
         SoyeonBasicAlertView
             .alert(message: "도움이 필요하실 경우\nhelp@soyeon.com로 문의주시면\n순차적으로 답변 드리겠습니다.")?
             .action(style: .basic("확인"))
-            .show(to: view)
+            .show(to: self.view)
     }
 }

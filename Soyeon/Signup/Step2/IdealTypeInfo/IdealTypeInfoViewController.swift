@@ -163,7 +163,7 @@ final class IdealTypeInfoViewController: SignupStepViewController<IdealType> {
             completion(selection)
             alert.dismiss()
         })
-        .show(to: view)
+        .show(to: self.view)
         
     }
     
