@@ -47,18 +47,16 @@ final class StartSplashViewController: UIViewController {
     }
     
     private func startSignupAlert() {
-        SoyeonRoundAlertView.alert(to: view,
-                             message: "당신은 법적 싱글이십니까? 법적 싱글이 아닐 경우 법적 처벌을 받을 수 있으며 소연에서는 이에 대한 책임을 지지 않습니다.")?
+        SoyeonRoundAlertView.alert(message: "당신은 법적 싱글이십니까? 법적 싱글이 아닐 경우 법적 처벌을 받을 수 있으며 소연에서는 이에 대한 책임을 지지 않습니다.")?
             .action(style: .other("동의합니다"), completion: { [weak self] _ in
                 self?.startSignup()
             })
-            .show(to: view, with: .alpha)
+            .show(to: self.view, with: .alpha)
         
     }
     
     private func continueSignupAlert(_ location: String) {
-        SoyeonRoundAlertView.alert(to: view,
-                             message: "이전에 진행 중인 회원가입 기록이 있습니다. 이어서 계속 하시겠습니까?")?
+        SoyeonRoundAlertView.alert(message: "이전에 진행 중인 회원가입 기록이 있습니다. 이어서 계속 하시겠습니까?")?
             .action(style: .other("처음부터 다시하기"), completion: { [weak self] _ in
                 self?.removeSignupData()
                 self?.startSignupAlert()
@@ -66,7 +64,7 @@ final class StartSplashViewController: UIViewController {
             .action(style: .basic("이어서 계속하기"), completion: { [weak self] _ in
                 self?.continueSignup(location)
             })
-            .show(to: view, with: .alpha)
+            .show(to: self.view, with: .alpha)
     }
     
     private func startSignup() {

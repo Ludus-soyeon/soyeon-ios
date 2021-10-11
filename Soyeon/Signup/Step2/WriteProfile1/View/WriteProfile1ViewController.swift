@@ -132,8 +132,8 @@ final class WriteProfile1ViewController: SignupStepViewController<WriteProfile1M
             
             alert.dismiss()
         })
-        .show(to: view)
-
+        .show(to: self.navigationController!.view)
+        
     }
 }
  

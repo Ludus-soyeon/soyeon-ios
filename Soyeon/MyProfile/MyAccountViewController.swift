@@ -52,6 +52,6 @@ final class MyAccountViewController: UIViewController {
                 let toast = SoyeonToast.toast(text: "탈퇴 완료!")
                 toast?.show(to: self.view)
             })
-            .show(to: view)
+            .show(to: self.view)
     }
 }

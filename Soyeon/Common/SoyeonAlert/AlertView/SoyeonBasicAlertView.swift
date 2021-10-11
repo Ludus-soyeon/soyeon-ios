@@ -25,18 +25,31 @@ final class SoyeonBasicAlertView: UIView, AnimationAlertible, XibLoadable {
         case showClose
     }
     
-    static func alert(closeStyle: MyButtonStyle? = nil, message: String) -> XibViewType? {
-        
+    static private func setup(closeStyle: MyButtonStyle? = nil) -> XibViewType? {
         guard let alertView = load() else {
             return nil
         }
         
         alertView.setupButton(to: closeStyle)
-        
         alertView.setupLayout()
         
         alertView.backgroundView.delegate = alertView
+        
+        return alertView
+    }
+    
+    static func alert(closeStyle: MyButtonStyle? = nil, message: String) -> XibViewType? {
+        guard let alertView = setup() else { return nil }
+        
         alertView.messageLabel.text = message
+        
+        return alertView
+    }
+    
+    static func alert(closeStyle: MyButtonStyle? = nil, message: NSAttributedString) -> XibViewType? {
+        guard let alertView = setup() else { return nil }
+
+        alertView.messageLabel.attributedText = message
         
         return alertView
     }

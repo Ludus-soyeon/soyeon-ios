@@ -23,15 +23,13 @@ final class SoyeonRoundAlertView: UIView, AnimationAlertible, XibLoadable {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var backgroundView: BackgroundViewType!
     
-    static func alert(to present: UIView, message: String) -> XibViewType? {
+    static func alert(message: String) -> XibViewType? {
         let view = SoyeonRoundAlertView(frame: .zero)
       
         guard let alert = view.load() else {
             return nil
         }
-        
-        alert.attach(to: present)
-        
+         
         alert.setupLayout()
         
         alert.messageLabel.text = message
