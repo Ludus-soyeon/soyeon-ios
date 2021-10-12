@@ -78,6 +78,9 @@
 		0A7F70BF26FB78AC001F37A7 /* AlertActionAddinible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F70BE26FB78AC001F37A7 /* AlertActionAddinible.swift */; };
 		0A83E42026025495001823C0 /* SoyeonToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E41F26025495001823C0 /* SoyeonToast.swift */; };
 		0A86794626B6C170005D1F7E /* IdealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86794526B6C170005D1F7E /* IdealType.swift */; };
+		0A86C82D2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */; };
+		0A86C82F2715A057008D06EF /* EvaluateOppositeSexAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */; };
+		0A86C8312715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C8302715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift */; };
 		0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */; };
 		0A89E62C265DDCD70048A3BC /* CheckMyCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */; };
 		0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */; };
@@ -337,6 +340,9 @@
 		0A7F70BE26FB78AC001F37A7 /* AlertActionAddinible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionAddinible.swift; sourceTree = "<group>"; };
 		0A83E41F26025495001823C0 /* SoyeonToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonToast.swift; sourceTree = "<group>"; };
 		0A86794526B6C170005D1F7E /* IdealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealType.swift; sourceTree = "<group>"; };
+		0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvaluateOppositeSexAlertView.xib; sourceTree = "<group>"; };
+		0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateOppositeSexAlertView.swift; sourceTree = "<group>"; };
+		0A86C8302715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateOppositeSexAlertViewTests.swift; sourceTree = "<group>"; };
 		0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewModel.swift; sourceTree = "<group>"; };
 		0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterPresenter.swift; sourceTree = "<group>"; };
 		0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewController.swift; sourceTree = "<group>"; };
@@ -880,6 +886,23 @@
 			path = SoyeonToast;
 			sourceTree = "<group>";
 		};
+		0A86C82A27159FCE008D06EF /* OppositeSexProfile */ = {
+			isa = PBXGroup;
+			children = (
+				0A86C82B27159FE5008D06EF /* Alert */,
+			);
+			path = OppositeSexProfile;
+			sourceTree = "<group>";
+		};
+		0A86C82B27159FE5008D06EF /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */,
+				0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		0A89E615265DDCB30048A3BC /* Step3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1149,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF1658926FCC4DE00695619 /* OppositeSexProfileBasicAlertTests.swift */,
+				0A86C8302715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -1665,6 +1689,7 @@
 		D8A721FB2653DE6F008C388D /* Match */ = {
 			isa = PBXGroup;
 			children = (
+				0A86C82A27159FCE008D06EF /* OppositeSexProfile */,
 				D8A7222026568B80008C388D /* Match.storyboard */,
 			);
 			path = Match;
@@ -1869,6 +1894,7 @@
 				D8795C4C258E6A2500DF4D64 /* LaunchScreen.storyboard in Resources */,
 				1D19087725A9F77E008210D1 /* AgreementDetailViewController.xib in Resources */,
 				0A7C9DE4260264FB00D7644F /* SoyeonToast.xib in Resources */,
+				0A86C82D2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib in Resources */,
 				D8795C49258E6A2500DF4D64 /* Assets.xcassets in Resources */,
 				0AC9F65226BFF460006E15E8 /* PhotoGuideViewController.xib in Resources */,
 				1DC9DF5C25AAF52C00822E99 /* CoupleInfoView.xib in Resources */,
@@ -1957,6 +1983,7 @@
 				1DD0CCAD261A0A0E003E6347 /* SignupUserDefault.swift in Sources */,
 				0AE9480826644BE4008DA501 /* APITests.swift in Sources */,
 				0AF58EA82611FD5E008F3E56 /* SignupLoadedNavigation.swift in Sources */,
+				0A86C8312715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift in Sources */,
 				1D19088E25A9F7A8008210D1 /* SoyeonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2001,6 +2028,7 @@
 				1D910EDB26CA58A600CB1EF5 /* RatingView.swift in Sources */,
 				D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */,
 				D828115F26F50BE00008D1DF /* NoticeViewController.swift in Sources */,
+				0A86C82F2715A057008D06EF /* EvaluateOppositeSexAlertView.swift in Sources */,
 				D89E57D126F84D1C00E7C091 /* UIWindow+.swift in Sources */,
 				0A4E515F25EAB4E400616C07 /* WriteProfileAlertAction.swift in Sources */,
 				D80560E62675C51500832C0D /* Profile.swift in Sources */,

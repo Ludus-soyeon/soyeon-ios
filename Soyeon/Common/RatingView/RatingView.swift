@@ -12,7 +12,7 @@ protocol RatingViewDelegate: AnyObject {
     func didChangeIndex(_ index: Int)
 }
 
-final class RatingView: UIView {
+class RatingView: UIView {
     
     private var stackView: RatingStackView!
     
@@ -48,10 +48,12 @@ final class RatingView: UIView {
         let count = attributes.count
         
         let imageViews: [UIImageView] = (0..<count).map { _ in
-            let image = UIImage(named: imageName)
+            let image = configureImage(named: imageName)
+            
             let highlight = image?.imageColor(to: highlightColor)
-            let iv = UIImageView(image: image,
-                                 highlightedImage: highlight)
+            
+            let iv = configureImageView(image: image, highlightedImage: highlight)
+             
             return iv
         }
         
@@ -78,6 +80,17 @@ final class RatingView: UIView {
         
         NSLayoutConstraint.activate(constraints)
     }
+    
+    func configureImage(named imageName: String) -> UIImage? {
+        let image = UIImage(named: imageName)
+        return image
+    }
+
+    func configureImageView(image baseImage: UIImage?, highlightedImage highlight: UIImage?) -> UIImageView {
+        let imageView = UIImageView(image: baseImage, highlightedImage: highlight)
+        return imageView
+    }
+    
 }
 
 extension RatingView: RatingStackDelegate {

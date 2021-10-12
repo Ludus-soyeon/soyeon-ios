@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SoyeonBasicAlertView" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-dQ-gMn" customClass="EvaluateOppositeSexAlertView" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-4g-wOW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boH-Fz-qWk" userLabel="Alert View">
+                    <rect key="frame" x="52" y="263.5" width="310" height="209"/>
+                    <subviews>
+                        <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XhH-Lf-ibx" userLabel="Body">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="209"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCe-SZ-Aa0" userLabel="Contents View">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="159.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13.1" translatesAutoresizingMaskIntoConstraints="NO" id="bZs-D8-BHI">
+                                            <rect key="frame" x="0.0" y="19.5" width="310" height="140"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRj-LR-EFI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="58.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pab-ZF-ApL" customClass="OppositeSexRatingView" customModule="Soyeon" customModuleProvider="target">
+                                                            <rect key="frame" x="42" y="6.5" width="226" height="45"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" priority="250" constant="226" id="A8f-od-OAG"/>
+                                                                <constraint firstAttribute="height" constant="45" id="MQw-xb-u5m"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="btn_star_rate"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                                                    <color key="value" name="soyeonBlue"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                                    <integer key="value" value="9"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                                                    <integer key="value" value="-1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="pab-ZF-ApL" firstAttribute="centerX" secondItem="SRj-LR-EFI" secondAttribute="centerX" id="Pyn-5j-s3l"/>
+                                                        <constraint firstAttribute="height" constant="58.299999999999997" id="V6d-C7-dXq"/>
+                                                        <constraint firstItem="pab-ZF-ApL" firstAttribute="centerY" secondItem="SRj-LR-EFI" secondAttribute="centerY" id="iiI-Rn-w77"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phd-GI-ILc">
+                                                    <rect key="frame" x="0.0" y="71.5" width="310" height="68.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-2Q-CBz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="38"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment>
+                                                                    <string key="content">ㅇㅇ님과의 만남은 어떠셨나요?
+소개팅 매너를 별점으로 선택해주세요.</string>
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="14" name="NanumSquareR"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="F3Y-2Q-CBz" secondAttribute="trailing" id="LiZ-Kc-Trp"/>
+                                                        <constraint firstItem="F3Y-2Q-CBz" firstAttribute="top" secondItem="phd-GI-ILc" secondAttribute="top" id="acR-gP-P8a"/>
+                                                        <constraint firstAttribute="bottom" secondItem="F3Y-2Q-CBz" secondAttribute="bottom" constant="30.5" id="cbO-SJ-RnI"/>
+                                                        <constraint firstItem="F3Y-2Q-CBz" firstAttribute="leading" secondItem="phd-GI-ILc" secondAttribute="leading" id="ktn-lB-7E0"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="bZs-D8-BHI" secondAttribute="bottom" id="ET0-GL-fcV"/>
+                                        <constraint firstItem="bZs-D8-BHI" firstAttribute="leading" secondItem="xCe-SZ-Aa0" secondAttribute="leading" id="Oh9-M8-aF1"/>
+                                        <constraint firstAttribute="trailing" secondItem="bZs-D8-BHI" secondAttribute="trailing" id="Rxc-BH-c6f"/>
+                                        <constraint firstAttribute="height" priority="250" constant="128" id="mjO-wz-nHk"/>
+                                        <constraint firstItem="bZs-D8-BHI" firstAttribute="top" secondItem="xCe-SZ-Aa0" secondAttribute="top" constant="19.399999999999999" id="tyA-YV-taJ"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-PJ-opA" userLabel="Bottom">
+                                    <rect key="frame" x="0.0" y="159.5" width="310" height="49.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-qX-RSw" userLabel="Line">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="1"/>
+                                            <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="2fJ-cP-VuA"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qf-Ne-lJW">
+                                            <rect key="frame" x="0.0" y="1" width="310" height="48.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48.5" id="Hzt-YM-vsI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="13"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="나중에 하기">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapEvaluateLaterButton:" destination="Uya-dQ-gMn" eventType="touchUpInside" id="o1P-PM-Nww"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="XhH-Lf-ibx" firstAttribute="leading" secondItem="boH-Fz-qWk" secondAttribute="leading" id="Azg-yr-t6P"/>
+                        <constraint firstAttribute="width" constant="310" id="EUW-zX-Vqp"/>
+                        <constraint firstAttribute="bottom" secondItem="XhH-Lf-ibx" secondAttribute="bottom" id="dDY-9O-FUy"/>
+                        <constraint firstAttribute="trailing" secondItem="XhH-Lf-ibx" secondAttribute="trailing" id="l1t-nC-M5o"/>
+                        <constraint firstItem="XhH-Lf-ibx" firstAttribute="top" secondItem="boH-Fz-qWk" secondAttribute="top" id="xHl-b9-LHN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5i3-4g-wOW" firstAttribute="leading" secondItem="Uya-dQ-gMn" secondAttribute="leading" id="0E9-d2-Lma"/>
+                <constraint firstAttribute="trailing" secondItem="5i3-4g-wOW" secondAttribute="trailing" id="779-li-jT5"/>
+                <constraint firstItem="boH-Fz-qWk" firstAttribute="centerY" secondItem="Uya-dQ-gMn" secondAttribute="centerY" id="WKb-nI-SzA"/>
+                <constraint firstItem="5i3-4g-wOW" firstAttribute="top" secondItem="Uya-dQ-gMn" secondAttribute="top" id="bcI-4Z-tgG"/>
+                <constraint firstAttribute="bottom" secondItem="5i3-4g-wOW" secondAttribute="bottom" id="dti-N4-UmG"/>
+                <constraint firstItem="boH-Fz-qWk" firstAttribute="centerX" secondItem="Uya-dQ-gMn" secondAttribute="centerX" id="rXy-7M-xpP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="5i3-4g-wOW" id="IW1-Co-nFK"/>
+                <outlet property="contentView" destination="boH-Fz-qWk" id="T9b-8j-ckX"/>
+                <outlet property="messageLabel" destination="F3Y-2Q-CBz" id="QyO-8C-QfE"/>
+                <outlet property="ratingView" destination="pab-ZF-ApL" id="gCt-nz-rTh"/>
+            </connections>
+            <point key="canvasLocation" x="-507" y="164"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="soyeonBlue">
+            <color red="0.41200000050000002" green="0.46700000759999999" blue="0.89399999379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
