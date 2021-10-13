@@ -14,8 +14,6 @@ final class AccountStatusView: XibView {
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var coupleDateLabel: UILabel!
     
-    private var formatter = defaultFormatter
-    
     override final class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
@@ -45,17 +43,9 @@ final class AccountStatusView: XibView {
     
     func configure(with viewModel: AccountStatusViewModel) {
         titleLabel.text = viewModel.status.description
-        dateLabel.text = "\(formatter.string(from: viewModel.date)) 기준"
+        dateLabel.text = "\(viewModel.date.string()) 기준"
         if case let .dating(_, startDate) = viewModel.status {
-            coupleDateLabel.text = " /커플휴면 D+\(startDate.daysBetween(date: Date()))"
+            coupleDateLabel.text = " / 커플휴면 D+\(startDate.daysBetween(date: Date()))"
         }
     }
-}
-
-private extension AccountStatusView {
-    static let defaultFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY.MM.dd"
-        return formatter
-    }()
 }

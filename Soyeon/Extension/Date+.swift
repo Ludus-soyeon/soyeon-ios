@@ -26,4 +26,10 @@ extension Date {
         let dateComponents = calendar.dateComponents([.day], from: start, to: end)
         return dateComponents.value(for: .day)!
     }
+    
+    func string(withFormat format: String = "YYYY.MM.dd") -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
 }

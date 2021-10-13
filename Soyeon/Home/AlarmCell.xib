@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareB.ttf">
+            <string>NanumSquareB</string>
+        </array>
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="FQ4-1j-0XG" customClass="AlarmCell" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IyG-oc-mi8" customClass="AlarmCell" customModule="Soyeon" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ike-qV-qGk">
+                        <rect key="frame" x="20" y="20" width="150.5" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBG-yj-ArJ">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="13.5"/>
+                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YYYY.MM.DD HH:MM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1C-As-Y4O">
+                                <rect key="frame" x="33" y="0.0" width="117.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="12"/>
+                                <color key="textColor" name="153153153"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNM-1J-MGZ">
+                        <rect key="frame" x="20" y="108.5" width="387" height="15.5"/>
+                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-SS-pQm">
+                        <rect key="frame" x="395" y="8" width="24" height="24"/>
+                        <state key="normal" image="icoRemoveCardNormal"/>
+                        <connections>
+                            <action selector="removeButtonTapped:" destination="FQ4-1j-0XG" eventType="touchUpInside" id="GLq-H1-Hvh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YNM-1J-MGZ" secondAttribute="bottom" constant="20" id="CaS-cM-piZ"/>
+                    <constraint firstItem="YNM-1J-MGZ" firstAttribute="top" secondItem="Ike-qV-qGk" secondAttribute="bottom" constant="11" id="JO6-Gk-EZD"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ike-qV-qGk" secondAttribute="trailing" constant="20" id="L8y-uF-zdY"/>
+                    <constraint firstItem="Ike-qV-qGk" firstAttribute="top" secondItem="IyG-oc-mi8" secondAttribute="top" constant="20" id="Qe9-Yx-AHg"/>
+                    <constraint firstItem="bMP-SS-pQm" firstAttribute="top" secondItem="IyG-oc-mi8" secondAttribute="top" constant="8" id="UzI-d6-Cey"/>
+                    <constraint firstItem="YNM-1J-MGZ" firstAttribute="leading" secondItem="IyG-oc-mi8" secondAttribute="leading" constant="20" id="bbP-0c-aLV"/>
+                    <constraint firstAttribute="trailing" secondItem="YNM-1J-MGZ" secondAttribute="trailing" constant="20" id="c8I-4B-J2o"/>
+                    <constraint firstItem="YNM-1J-MGZ" firstAttribute="leading" secondItem="Ike-qV-qGk" secondAttribute="leading" id="g13-eN-ubO"/>
+                    <constraint firstAttribute="trailing" secondItem="bMP-SS-pQm" secondAttribute="trailing" constant="8" id="kQv-23-aP4"/>
+                    <constraint firstItem="Ike-qV-qGk" firstAttribute="leading" secondItem="IyG-oc-mi8" secondAttribute="leading" constant="20" id="rWr-aj-sHL"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="427" height="144"/>
+            <connections>
+                <outlet property="dateLabel" destination="D1C-As-Y4O" id="fYv-oV-dxJ"/>
+                <outlet property="titleLabel" destination="YNM-1J-MGZ" id="zmf-8a-1HT"/>
+                <outlet property="typeLabel" destination="PBG-yj-ArJ" id="yuU-iU-84Q"/>
+            </connections>
+            <point key="canvasLocation" x="-89.130434782608702" y="-213.61607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icoRemoveCardNormal" width="24" height="24"/>
+        <namedColor name="153153153">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
