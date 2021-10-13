@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareB.ttf">
+            <string>NanumSquareB</string>
+        </array>
+        <array key="NanumSquareR.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfm-G1-98p" customClass="LowEvaluateOppositeSexAlertBody" customModule="Soyeon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="472"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DCU-fI-SQh">
+                    <rect key="frame" x="24" y="0.0" width="366" height="447"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-le-wvR" userLabel="Title">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="86"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-fY-MZg">
+                                    <rect key="frame" x="81.000000000000014" y="34" width="204.33333333333337" height="36"/>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">별점이 낮은 사유를 선택해주세요
+</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="NanumSquareR"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="사유를 선택해주시면 MP포인트가 적립됩니다">
+                                            <attributes>
+                                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="11" name="NanumSquareR"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="nvr-fY-MZg" firstAttribute="top" secondItem="TeJ-le-wvR" secondAttribute="top" constant="34" id="aMA-qM-1Gb"/>
+                                <constraint firstAttribute="bottom" secondItem="nvr-fY-MZg" secondAttribute="bottom" constant="16" id="stG-P7-2hR"/>
+                                <constraint firstItem="nvr-fY-MZg" firstAttribute="centerX" secondItem="TeJ-le-wvR" secondAttribute="centerX" id="wrN-9G-bUO"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-KU-3BC" userLabel="Selection">
+                            <rect key="frame" x="0.0" y="94" width="366" height="215"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-iq-7t9" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="hh0-vo-HQH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="14"/>
+                                    <state key="normal" title="카카오톡/문자 답장이 없어요.">
+                                        <color key="titleColor" name="soyeonBlue"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMw-ch-ZOR" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="57" width="366" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="ifE-dr-duu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="14"/>
+                                    <state key="normal" title="만나는 날 잠수를 탔어요.">
+                                        <color key="titleColor" name="black"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-dk-OIo" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="114" width="366" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="5EJ-rZ-sKF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="14"/>
+                                    <state key="normal" title="음란성/선정성 언행">
+                                        <color key="titleColor" name="black"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSS-i3-ihC" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="171" width="366" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="aAS-mh-T9W"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NanumSquareB" family="NanumSquare" pointSize="14"/>
+                                    <state key="normal" title="기타">
+                                        <color key="titleColor" name="black"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-m6-Fl4">
+                            <rect key="frame" x="0.0" y="317" width="366" height="130"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="130" id="9qG-zl-j4d"/>
+                            </constraints>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="310" id="h9T-hc-Pek"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="LowEvaluateOppositeSexAlertBody"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DCU-fI-SQh" secondAttribute="bottom" constant="25" id="9iy-Tf-epg"/>
+                <constraint firstAttribute="trailing" secondItem="DCU-fI-SQh" secondAttribute="trailing" constant="24" id="V0g-v6-KcM"/>
+                <constraint firstItem="DCU-fI-SQh" firstAttribute="top" secondItem="xfm-G1-98p" secondAttribute="top" id="kQ9-17-xKp"/>
+                <constraint firstItem="DCU-fI-SQh" firstAttribute="leading" secondItem="xfm-G1-98p" secondAttribute="leading" constant="24" id="sWl-M8-QiR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selection" destination="Bzi-KU-3BC" id="ZvZ-9l-wtL"/>
+            </connections>
+            <point key="canvasLocation" x="-801.44927536231887" y="657.06521739130437"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="soyeonBlue">
+            <color red="0.41200000047683716" green="0.46700000762939453" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

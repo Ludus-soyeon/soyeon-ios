@@ -45,6 +45,16 @@ extension UIView: ReuseIdentifiable {
     func setRadius(_ radius: CGFloat) {
         layer.cornerRadius = radius
     }
+ 
+    func attach(to superview: UIView) {
+        superview.addSubview(self)
+        sizeToFit(with: superview)
+    }
+
+}
+
+// Constraint
+extension UIView {
     
     /// Fill my constraints to view
     /// - Parameter view: will increase the size by parameter 'view'
@@ -61,11 +71,16 @@ extension UIView: ReuseIdentifiable {
         
     }
      
-    func attach(to superview: UIView) {
-        superview.addSubview(self)
-        sizeToFit(with: superview)
+    func center(at view: UIView) {
+        
+        let constraints = [
+            view.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            view.centerYAnchor.constraint(equalTo: self.centerYAnchor)
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
+        
     }
-
 }
 
 extension UIView {

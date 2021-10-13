@@ -27,10 +27,9 @@ extension Alertible {
 }
 
 // MARK: - SoyeonAlertable: 기본
-extension Alertible where Self: XibLoadable {
+extension Alertible {
     
     func show(to superview: UIView) {
-//        attachView(to: superview)
         self.attach(to: superview)
         isHidden = false
     }

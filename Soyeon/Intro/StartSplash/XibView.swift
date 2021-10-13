@@ -15,12 +15,26 @@ protocol XibLoadable: UIView {
 
 extension XibLoadable {
      
-    static func load() -> XibViewType? {
-        let name = classname
+    static func load(xibName: String = classname) -> XibViewType? {
+        let name = xibName
         if let loadedNib = Bundle.main.loadNibNamed(name, owner: self, options: nil)?.first as? XibViewType {
 
             return loadedNib
             
+        }
+        
+        return nil
+    }
+    
+   /// 서브클래싱 된 다수의 View로 구성되어 있을 경우.
+    static func load(xibName: String, identifier: String) -> XibViewType? {
+        
+        guard let loaded = Bundle.main.loadNibNamed(xibName, owner: self, options: nil) as? [UIView] else {
+            return nil
+        }
+        
+        for view in loaded where view.accessibilityIdentifier == identifier {
+            return view as? XibViewType
         }
         
         return nil
