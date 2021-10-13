@@ -81,6 +81,9 @@
 		0A86C82D2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */; };
 		0A86C82F2715A057008D06EF /* EvaluateOppositeSexAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */; };
 		0A86C8312715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C8302715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift */; };
+		0A86C8332715CF29008D06EF /* LowEvaluateOppositeSexAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C8322715CF29008D06EF /* LowEvaluateOppositeSexAlertView.swift */; };
+		0A86C8352715CF34008D06EF /* OppositeSexAlerts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A86C8342715CF34008D06EF /* OppositeSexAlerts.xib */; };
+		0A86C8372715D016008D06EF /* AssemblyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86C8362715D016008D06EF /* AssemblyAlertView.swift */; };
 		0A89E62B265DDCD70048A3BC /* CheckMyCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */; };
 		0A89E62C265DDCD70048A3BC /* CheckMyCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */; };
 		0A89E62D265DDCD70048A3BC /* CheckMyCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */; };
@@ -343,6 +346,9 @@
 		0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvaluateOppositeSexAlertView.xib; sourceTree = "<group>"; };
 		0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateOppositeSexAlertView.swift; sourceTree = "<group>"; };
 		0A86C8302715BE9F008D06EF /* EvaluateOppositeSexAlertViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateOppositeSexAlertViewTests.swift; sourceTree = "<group>"; };
+		0A86C8322715CF29008D06EF /* LowEvaluateOppositeSexAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowEvaluateOppositeSexAlertView.swift; sourceTree = "<group>"; };
+		0A86C8342715CF34008D06EF /* OppositeSexAlerts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OppositeSexAlerts.xib; sourceTree = "<group>"; };
+		0A86C8362715D016008D06EF /* AssemblyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyAlertView.swift; sourceTree = "<group>"; };
 		0A89E61E265DDCD70048A3BC /* CheckMyCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewModel.swift; sourceTree = "<group>"; };
 		0A89E620265DDCD70048A3BC /* CheckMyCharacterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterPresenter.swift; sourceTree = "<group>"; };
 		0A89E622265DDCD70048A3BC /* CheckMyCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMyCharacterViewController.swift; sourceTree = "<group>"; };
@@ -899,6 +905,8 @@
 			children = (
 				0A86C82C2715A04D008D06EF /* EvaluateOppositeSexAlertView.xib */,
 				0A86C82E2715A057008D06EF /* EvaluateOppositeSexAlertView.swift */,
+				0A86C8342715CF34008D06EF /* OppositeSexAlerts.xib */,
+				0A86C8322715CF29008D06EF /* LowEvaluateOppositeSexAlertView.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -1440,6 +1448,7 @@
 				0ADB70E625CAD58A00A10864 /* SoyeonBasicAlertView.xib */,
 				1DD00B8E25CDAD20004DC9AA /* SoyeonRoundAlertView.swift */,
 				1DD00B8A25CDAD11004DC9AA /* SoyeonRoundAlertView.xib */,
+				0A86C8362715D016008D06EF /* AssemblyAlertView.swift */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -1881,6 +1890,7 @@
 				0AC9F64B26BFF41C006E15E8 /* ProfileCollectionViewCell.xib in Resources */,
 				1DC9DF5825AAF51600822E99 /* MyChareactorInfoView.xib in Resources */,
 				D8243EB826EE420000DAC580 /* MannerScoreView.xib in Resources */,
+				0A86C8352715CF34008D06EF /* OppositeSexAlerts.xib in Resources */,
 				0AC21E102613FDE400AD0635 /* AdditionalCell.xib in Resources */,
 				1D1908C525AA13DF008210D1 /* PagingView.xib in Resources */,
 				D8A7222526568B96008C388D /* MyProfile.storyboard in Resources */,
@@ -2061,11 +2071,13 @@
 				1DD00B8225CDA2B0004DC9AA /* SoyeonBasicAlertButton.swift in Sources */,
 				0A9C2A65269A0C620042692D /* ObjectUserDefaultWrapper.swift in Sources */,
 				1D19087825A9F77E008210D1 /* AgreementDetailViewController.swift in Sources */,
+				0A86C8372715D016008D06EF /* AssemblyAlertView.swift in Sources */,
 				0A4E512F25EA8E8B00616C07 /* WriteProfile1ViewController.swift in Sources */,
 				D8669A8826F85D15005B2A01 /* SoyeonSwitch.swift in Sources */,
 				1D19087425A9F77E008210D1 /* AgreementDetailViewModel.swift in Sources */,
 				0A89E62F265DDCD70048A3BC /* CheckMyCharacterWorker.swift in Sources */,
 				1DA32046262C75D900ED564A /* LoadSignupViewData.swift in Sources */,
+				0A86C8332715CF29008D06EF /* LowEvaluateOppositeSexAlertView.swift in Sources */,
 				009B02B225B47E9E00753847 /* LoginInteractor.swift in Sources */,
 				D8A3CF922628AA5800E3D201 /* PersonalityInfoCell.swift in Sources */,
 				D8A0381026EA5AEC005C40FA /* MyProfileDetailViewController.swift in Sources */,
