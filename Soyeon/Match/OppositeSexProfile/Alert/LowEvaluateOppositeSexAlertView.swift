@@ -54,7 +54,8 @@ final class LowEvaluateOppositeSexAlertView: AssemblyAlertView {
     }
     
     init() {
-        super.init(body: bodyView, tail: bottomStackView)
+        super.init(body: bodyView, tail: bottomStackView,
+                   size: .init(width: .init(310), height: .init(210)))
         configure()
         setupLayout()
     }

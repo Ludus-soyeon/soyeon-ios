@@ -26,10 +26,10 @@
                     <rect key="frame" x="24" y="0.0" width="366" height="447"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-le-wvR" userLabel="Title">
-                            <rect key="frame" x="0.0" y="0.0" width="366" height="86"/>
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="88"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-fY-MZg">
-                                    <rect key="frame" x="81.000000000000014" y="34" width="204.33333333333337" height="36"/>
+                                    <rect key="frame" x="84.333333333333329" y="34" width="197.33333333333337" height="38"/>
                                     <attributedString key="attributedText">
                                         <fragment>
                                             <string key="content">별점이 낮은 사유를 선택해주세요
@@ -59,7 +59,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-KU-3BC" userLabel="Selection">
-                            <rect key="frame" x="0.0" y="94" width="366" height="215"/>
+                            <rect key="frame" x="0.0" y="96" width="366" height="213"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-iq-7t9" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
@@ -73,7 +73,7 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMw-ch-ZOR" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="57" width="366" height="44"/>
+                                    <rect key="frame" x="0.0" y="56.333333333333343" width="366" height="44"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="ifE-dr-duu"/>
@@ -84,7 +84,7 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-dk-OIo" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="114" width="366" height="44"/>
+                                    <rect key="frame" x="0.0" y="112.66666666666666" width="366" height="44"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="5EJ-rZ-sKF"/>
@@ -95,7 +95,7 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSS-i3-ihC" customClass="LowEvaluateOppositeSexAlertBodyButton" customModule="Soyeon" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="171" width="366" height="44"/>
+                                    <rect key="frame" x="0.0" y="169" width="366" height="44"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="aAS-mh-T9W"/>

@@ -43,7 +43,6 @@ class EvaluateOppositeSexAlertViewTests: XCTestCase {
         let alert = LowEvaluateOppositeSexAlertView()
         
         alert.backgroundColor = UIColor(r: 10, g: 10, b: 10, a: 0.8)
-        alert.size = CGSize(width: 300, height: 210)
         
         alert.show(to: alertTestingView)
         waiter.wait(for: [expectation], timeout: 3.0)
@@ -82,10 +81,10 @@ class EvaluateOppositeSexAlertViewTests: XCTestCase {
         stackview.translatesAutoresizingMaskIntoConstraints = false
         stackview.axis = .vertical
         
-        let alert = AssemblyAlertView(header: header, body: stackview, tail: tail)
+        let alert = AssemblyAlertView(header: header, body: stackview, tail: tail,
+                                      size: .init(width: .init(310), height: .init(210)))
         
         alert.backgroundColor = .init(white: 0, alpha: 0.6)
-        alert.size = CGSize(width: 300, height: 210)
 
         alert.show(to: alertTestingView)
         
