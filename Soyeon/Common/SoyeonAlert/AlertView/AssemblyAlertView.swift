@@ -39,8 +39,10 @@ class AssemblyAlertView: UIView, Alertible {
         case tail
     }
     
+    private let contentViewSize: SizeConstraint!
+    
     internal lazy var contentView: UIView! = {
-        let view = UIView()
+        let view = UIView(withConstraintSize: contentViewSize)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(contentStackView)
         contentStackView.sizeToFit(with: view)
@@ -60,20 +62,11 @@ class AssemblyAlertView: UIView, Alertible {
         
         return view
     }()
-    
-    lazy var size: CGSize = .zero {
-        didSet {
-            let fixWidth = contentView.widthAnchor.constraint(equalToConstant: size.width)
-            let height = contentView.heightAnchor.constraint(equalToConstant: size.height)
-            
-            height.priority = .defaultLow
-            
-            NSLayoutConstraint.activate([fixWidth, height])
-        }
-    }
-    
-    init(header: UIView? = nil, body: UIView, tail: UIView? = nil) {
+     
+    init(header: UIView? = nil, body: UIView, tail: UIView? = nil, size: SizeConstraint) {
+        self.contentViewSize = size
         super.init(frame: .zero)
+        
         translatesAutoresizingMaskIntoConstraints = false
         
         if let header = header {
@@ -94,12 +87,14 @@ class AssemblyAlertView: UIView, Alertible {
     }
     
     required init?(coder: NSCoder) {
+        self.contentViewSize = .zero
         super.init(coder: coder)
     }
     
-    static func alert(header: UIView? = nil, body: UIView, tail: UIView? = nil) -> AssemblyAlertView {
+    static func alert(header: UIView? = nil, body: UIView, tail: UIView? = nil,
+                      size: SizeConstraint) -> AssemblyAlertView {
         
-        let alert = AssemblyAlertView(header: header, body: body, tail: tail)
+        let alert = AssemblyAlertView(header: header, body: body, tail: tail, size: size)
         return alert
         
     }
@@ -112,6 +107,51 @@ class AssemblyAlertView: UIView, Alertible {
     func setupTail(_ tail: UIView) {
         tailView.addSubview(tail)
         tail.sizeToFit(with: tailView)
+    }
+    
+}
+
+extension UIView {
+    private var size: SizeConstraint {
+        get { self.size }
+        set {
+            let width = widthAnchor.constraint(equalToConstant: newValue.width.constraint)
+            let height = heightAnchor.constraint(equalToConstant: newValue.height.constraint)
+            
+            width.priority = newValue.width.priority
+            height.priority = newValue.height.priority
+            
+            NSLayoutConstraint.activate([width, width])
+        }
+    }
+    
+    struct ViewConstraintSize {
+        let constraint: CGFloat
+        var priority: UILayoutPriority = .defaultLow
+        
+        init(_ constraint: CGFloat, priority: UILayoutPriority = .defaultLow) {
+            self.constraint = constraint
+            self.priority = priority
+        }
+    }
+    
+    struct SizeConstraint {
+        let width: ViewConstraintSize
+        let height: ViewConstraintSize
+        
+        static let zero: SizeConstraint = .init()
+        
+        init(width: ViewConstraintSize = .init(0), height: ViewConstraintSize = .init(0)) {
+            self.width = width
+            self.height = height
+        }
+    }
+    
+    /// Init view to 'size' add constraint.
+    /// - Parameter size: Add width and height constraints as size values.
+    convenience init(withConstraintSize size: SizeConstraint) {
+        self.init(frame: .zero)
+        self.size = size
     }
     
 }
