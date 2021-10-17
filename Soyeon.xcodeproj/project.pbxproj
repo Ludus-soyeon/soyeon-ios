@@ -205,6 +205,9 @@
 		D8243EBA26EE42B000DAC580 /* IdealTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8243EB926EE42B000DAC580 /* IdealTypeView.swift */; };
 		D8243EBC26EE431600DAC580 /* IdealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243EBB26EE431600DAC580 /* IdealTypeView.xib */; };
 		D8260F792712F91E003E4334 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8260F782712F91E003E4334 /* UIColor+.swift */; };
+		D8260F7B2715A349003E4334 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8260F7A2715A349003E4334 /* AlarmsViewController.swift */; };
+		D8260F7D2715A3BE003E4334 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8260F7C2715A3BE003E4334 /* AlarmCell.swift */; };
+		D8260F7F2715A6E2003E4334 /* AlarmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8260F7E2715A6E2003E4334 /* AlarmCell.xib */; };
 		D828115126F3B38B0008D1DF /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115026F3B38B0008D1DF /* MyAccountViewController.swift */; };
 		D828115326F3E8030008D1DF /* AccountStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828115226F3E8030008D1DF /* AccountStatusView.swift */; };
 		D828115526F414890008D1DF /* AccountStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D828115426F414890008D1DF /* AccountStatusView.xib */; };
@@ -471,6 +474,9 @@
 		D8243EB926EE42B000DAC580 /* IdealTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealTypeView.swift; sourceTree = "<group>"; };
 		D8243EBB26EE431600DAC580 /* IdealTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdealTypeView.xib; sourceTree = "<group>"; };
 		D8260F782712F91E003E4334 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		D8260F7A2715A349003E4334 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		D8260F7C2715A3BE003E4334 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		D8260F7E2715A6E2003E4334 /* AlarmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmCell.xib; sourceTree = "<group>"; };
 		D828115026F3B38B0008D1DF /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		D828115226F3E8030008D1DF /* AccountStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatusView.swift; sourceTree = "<group>"; };
 		D828115426F414890008D1DF /* AccountStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountStatusView.xib; sourceTree = "<group>"; };
@@ -1713,6 +1719,9 @@
 				D8332487265D38BD00D338BE /* ProfileCell.swift */,
 				D80560EF2678DC5C00832C0D /* MatchSectionHeaderView.swift */,
 				D801C64F2687230100F5A054 /* MatchSectionFooterView.swift */,
+				D8260F7A2715A349003E4334 /* AlarmsViewController.swift */,
+				D8260F7C2715A3BE003E4334 /* AlarmCell.swift */,
+				D8260F7E2715A6E2003E4334 /* AlarmCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1926,6 +1935,7 @@
 				0A4E515E25EAB4E400616C07 /* WriteProfileAlertCustomButton.xib in Resources */,
 				D8243EB426EE3F5200DAC580 /* LifestyleView.xib in Resources */,
 				0AAF78FA26455B5D00812603 /* PhaseViewController.xib in Resources */,
+				D8260F7F2715A6E2003E4334 /* AlarmCell.xib in Resources */,
 				D8243EAA26EE386500DAC580 /* BasicProfileView.xib in Resources */,
 				009B02BB25B47F3B00753847 /* Step1.storyboard in Resources */,
 				D8A7221D26568B4F008C388D /* Estimation.storyboard in Resources */,
@@ -2006,6 +2016,7 @@
 				0ADB70EB25CAE74000A10864 /* SoyeonBasicAlertView.swift in Sources */,
 				D875578D25C6C20300380F1E /* RadioButton.swift in Sources */,
 				D8332488265D38BD00D338BE /* ProfileCell.swift in Sources */,
+				D8260F7B2715A349003E4334 /* AlarmsViewController.swift in Sources */,
 				009B02B925B47F3B00753847 /* LoginPlatformCell.swift in Sources */,
 				000CEB4525B484A800F64A28 /* GuidanceConfigurator.swift in Sources */,
 				D83760DF262F0CE6002FA23B /* PersonalityType.swift in Sources */,
@@ -2129,6 +2140,7 @@
 				0A9C2A532699D5BF0042692D /* SoyeonPrivateInfo.swift in Sources */,
 				D8354D6D25B4346200C9C531 /* NewAccountViewController.swift in Sources */,
 				D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */,
+				D8260F7D2715A3BE003E4334 /* AlarmCell.swift in Sources */,
 				00E295E9266AC19B00DB69CE /* UIButton+.swift in Sources */,
 				009B02B125B47E9E00753847 /* LoginWorker.swift in Sources */,
 				0A4E515925EAB4E400616C07 /* ReligionAlertItem.swift in Sources */,

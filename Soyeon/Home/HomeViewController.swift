@@ -48,8 +48,8 @@ final class HomeViewController: UIViewController {
         return UIBarButtonItem(
             image: UIImage(named: "icoAlarmGnbNew")?.withRenderingMode(.alwaysOriginal),
             style: .plain,
-            target: nil,
-            action: nil
+            target: self,
+            action: #selector(alarmButtonTapped)
         )
     }()
     
@@ -182,7 +182,7 @@ final class HomeViewController: UIViewController {
         return dataSource
     }
     
-    func applySnapshots(animatingDifferences: Bool = true) {
+    private func applySnapshots(animatingDifferences: Bool = true) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Profile>()
         Section.allCases.forEach {
             guard let profiles = sections[$0], !profiles.isEmpty else { return }
@@ -190,6 +190,10 @@ final class HomeViewController: UIViewController {
             snapshot.appendItems(profiles)
         }
         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
+    }
+    
+    @objc private func alarmButtonTapped() {
+        performSegue(withIdentifier: "AlarmsViewController", sender: nil)
     }
 }
 
