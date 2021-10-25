@@ -227,6 +227,7 @@
 		D8354D7925B4348300C9C531 /* NewAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */; };
 		D8354D7D25B4348E00C9C531 /* NewAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */; };
 		D83760DF262F0CE6002FA23B /* PersonalityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83760DE262F0CE6002FA23B /* PersonalityType.swift */; };
+		D841ACFE2726D980001EB986 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841ACFD2726D980001EB986 /* SwiftUIPreview.swift */; };
 		D8487C6225ED615D00F52B48 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = D8487C6125ED615D00F52B48 /* SwiftyGif */; };
 		D8487C6A25ED64CA00F52B48 /* phase_first.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8487C6925ED64CA00F52B48 /* phase_first.gif */; };
 		D8569C2925D4701000542872 /* Soyeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8569C2825D4701000542872 /* Soyeon.swift */; };
@@ -496,6 +497,7 @@
 		D8354D7825B4348300C9C531 /* NewAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountInteractor.swift; sourceTree = "<group>"; };
 		D8354D7C25B4348E00C9C531 /* NewAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountRouter.swift; sourceTree = "<group>"; };
 		D83760DE262F0CE6002FA23B /* PersonalityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityType.swift; sourceTree = "<group>"; };
+		D841ACFD2726D980001EB986 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		D8487C6925ED64CA00F52B48 /* phase_first.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = phase_first.gif; sourceTree = "<group>"; };
 		D8569C2825D4701000542872 /* Soyeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soyeon.swift; sourceTree = "<group>"; };
 		D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonSwitch.swift; sourceTree = "<group>"; };
@@ -1519,6 +1521,7 @@
 				0A9C2A522699D5BF0042692D /* SoyeonPrivateInfo.swift */,
 				0A9C2A592699DFFE0042692D /* DebugHelper.swift */,
 				0A9C2A5B2699EA630042692D /* AppSDKManager.swift */,
+				D841ACFD2726D980001EB986 /* SwiftUIPreview.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2199,6 +2202,7 @@
 				D828115926F48EE40008D1DF /* DormantApplicationViewController.swift in Sources */,
 				00E295E2266AA05700DB69CE /* Array+.swift in Sources */,
 				009B02AD25B47E9E00753847 /* LoginViewModel.swift in Sources */,
+				D841ACFE2726D980001EB986 /* SwiftUIPreview.swift in Sources */,
 				D828115326F3E8030008D1DF /* AccountStatusView.swift in Sources */,
 				D80DC17725D5016B0053C31A /* PhaseViewController.swift in Sources */,
 				1DCC5C8F260B808700B0736F /* IntroViewController.swift in Sources */,
