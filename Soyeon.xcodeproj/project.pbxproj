@@ -233,6 +233,8 @@
 		D8569C2925D4701000542872 /* Soyeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8569C2825D4701000542872 /* Soyeon.swift */; };
 		D8669A8826F85D15005B2A01 /* SoyeonSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */; };
 		D875578D25C6C20300380F1E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875578C25C6C20300380F1E /* RadioButton.swift */; };
+		D877C4BB271BDFC300E64F20 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877C4BA271BDFC300E64F20 /* MatchViewController.swift */; };
+		D877C4BE271C081900E64F20 /* ProfileCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877C4BC271C081900E64F20 /* ProfileCardCell.swift */; };
 		D8795C40258E6A2100DF4D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */; };
 		D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */; };
 		D8795C47258E6A2100DF4D64 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8795C45258E6A2100DF4D64 /* Intro.storyboard */; };
@@ -502,6 +504,8 @@
 		D8569C2825D4701000542872 /* Soyeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soyeon.swift; sourceTree = "<group>"; };
 		D8669A8726F85D15005B2A01 /* SoyeonSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyeonSwitch.swift; sourceTree = "<group>"; };
 		D875578C25C6C20300380F1E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		D877C4BA271BDFC300E64F20 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		D877C4BC271C081900E64F20 /* ProfileCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardCell.swift; sourceTree = "<group>"; };
 		D8795C3C258E6A2100DF4D64 /* Soyeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soyeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8795C3F258E6A2100DF4D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8795C41258E6A2100DF4D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -1709,6 +1713,8 @@
 			children = (
 				0A86C82A27159FCE008D06EF /* OppositeSexProfile */,
 				D8A7222026568B80008C388D /* Match.storyboard */,
+				D877C4BA271BDFC300E64F20 /* MatchViewController.swift */,
+				D877C4BC271C081900E64F20 /* ProfileCardCell.swift */,
 			);
 			path = Match;
 			sourceTree = "<group>";
@@ -2063,6 +2069,7 @@
 				1D19087925A9F77E008210D1 /* AgreementDetailConfigurator.swift in Sources */,
 				009B02AE25B47E9E00753847 /* LoginPresenter.swift in Sources */,
 				D82B80F326F36F00004AB418 /* ExcludingAcquaintancesViewController.swift in Sources */,
+				D877C4BE271C081900E64F20 /* ProfileCardCell.swift in Sources */,
 				0AC9F64F26BFF41C006E15E8 /* PhotoRegistrationConfigurator.swift in Sources */,
 				009B02B025B47E9E00753847 /* LoginConfigurator.swift in Sources */,
 				0A7F70BD26FB784C001F37A7 /* AnimationAlertible.swift in Sources */,
@@ -2187,6 +2194,7 @@
 				1D5B63C725B4824F00A5321C /* StartSplashViewController.swift in Sources */,
 				1D1908C925AA1645008210D1 /* PagingView.swift in Sources */,
 				00E295E7266AB4DD00DB69CE /* UIImage+.swift in Sources */,
+				D877C4BB271BDFC300E64F20 /* MatchViewController.swift in Sources */,
 				0A9C2A63269A0C3E0042692D /* SYDefault.swift in Sources */,
 				D8795C42258E6A2100DF4D64 /* SceneDelegate.swift in Sources */,
 				1DD0CCBC261A11F1003E6347 /* SoyeonUserDefault.swift in Sources */,
